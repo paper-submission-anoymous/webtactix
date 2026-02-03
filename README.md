@@ -51,7 +51,7 @@ WebTactix is a modular framework for web-based task execution and evaluation. It
 
 ## 🔗 Links
 
-- **Introduction**: https://github.com/paper-submission-anoymous/webtactix_introduction  
+- **Introduction**: https://paper-submission-anoymous.github.io/webtactix_introduction/
 - **Results**: https://drive.google.com/file/d/1jPKQrfx8dzNP82kBsaW96l-NujUbPDYI/view?usp=drive_link
 
 
