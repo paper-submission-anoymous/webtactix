@@ -49,6 +49,12 @@ WebTactix is a modular framework for web-based task execution and evaluation. It
 └── requirements.txt           # List of Python dependencies
 ```
 
+## 🔗 Links
+
+- **Introduction**: https://github.com/paper-submission-anoymous/webtactix_introduction  
+- **Results**: https://drive.google.com/file/d/1jPKQrfx8dzNP82kBsaW96l-NujUbPDYI/view?usp=drive_link
+
+
 ## 🛠️ Installation
 
 To get started with WebTactix, you can either clone the repository or use it in your existing Python environment. 
