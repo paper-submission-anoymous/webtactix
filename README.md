@@ -76,7 +76,7 @@ This project is evaluated on two benchmarks: **WebArena** and **Online Mind2Web*
 
 ### 1) Run on WebArena (Local Deployment)
 
-We deploy the official WebArena services locally (including the map service, see webarena/environment_docker/readme.md for detail). If you also use a local WebArena setup, you can follow our \`reset.sh\` to initialize the WebArena environment, and use \`start_map\` to launch the map service (the URLs and paths inside the script should be replaced with your own configuration).
+We deploy the official WebArena services locally (including the map service, see webarena/environment_docker/readme.md for detail). If you also use a local WebArena setup, you can follow our `reset.sh` to initialize the WebArena environment, and use `start_map.sh` to launch the map service (the URLs and paths inside the script should be replaced with your own configuration).
 
 After the services are up, you can directly run `main.py` to evaluate multiple WebArena tasks in parallel:
 
