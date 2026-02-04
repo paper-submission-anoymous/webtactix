@@ -298,8 +298,8 @@ def main() -> None:
         webarena_root=Path("./webarena"),
         lane_task_ids=[SHOPPING, SHOPPING_ADMIN, MAP, REDDIT, MULTISITE],
         headless=False,
-        max_rounds=8,
-        max_parallel=40,
+        max_rounds=15,
+        max_parallel=3,
         table_max_rows=10,
     )
     raise SystemExit(exit_code)
