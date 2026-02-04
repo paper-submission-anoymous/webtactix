@@ -5,7 +5,7 @@ import json
 from dataclasses import dataclass
 from typing import Any, Dict, Optional, Tuple, Union
 import tiktoken
-from openai import AsyncOpenAI  # ✅ 用异步 client
+from openai import AsyncOpenAI
 
 
 @dataclass(frozen=True)
@@ -61,7 +61,6 @@ class OpenAICompatClient:
             "model": model,
         }
 
-        # 1) 优先用官方 usage
         if hasattr(resp, "usage") and resp.usage is not None:
             usage["prompt_tokens"] = int(getattr(resp.usage, "prompt_tokens", 0) or 0)
             usage["completion_tokens"] = int(getattr(resp.usage, "completion_tokens", 0) or 0)
@@ -69,7 +68,6 @@ class OpenAICompatClient:
             usage["estimated"] = False
             return output_text, usage
 
-        # 2) 没有 usage 用 tiktoken 估算
         try:
             try:
                 enc = tiktoken.encoding_for_model(model)
@@ -85,7 +83,6 @@ class OpenAICompatClient:
             usage["total_tokens"] = int(total_tokens)
             usage["estimated"] = True
         except Exception:
-            # 极端兜底，保证不崩
             usage["estimated"] = True
 
         return output_text, usage

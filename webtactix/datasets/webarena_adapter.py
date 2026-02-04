@@ -64,7 +64,7 @@ class WebArenaAdapter:
             reference_answer_raw_annotation=str(eval_obj.get("reference_answer_raw_annotation") or ""),
             raw=dict(eval_obj),
         )
-
+        intent = obj.get("intent_") or ""
         return TaskSpec(
             dataset="webarena",
             task_id=int(obj.get("task_id", -1)),

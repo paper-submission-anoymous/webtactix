@@ -1,4 +1,3 @@
-# webtactix/core/priority_queue
 from __future__ import annotations
 
 from dataclasses import dataclass, field

@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="icon.png" alt="WebTactix Logo" width="900" />
+</p>
+
 # WebTactix Project
 
 WebTactix is a modular framework for web-based task execution and evaluation. It provides an infrastructure for running automated tasks, evaluating responses, and integrating with different web services using advanced AI models.
@@ -5,7 +9,6 @@ WebTactix is a modular framework for web-based task execution and evaluation. It
 ## 🧩 Project Structure (Key Files Description)
 
 ```
-
 ├── webtactix/
 │   ├── agents/                # Contains different types of agents for managing tasks
 │   │   ├── __init__.py
@@ -54,10 +57,9 @@ WebTactix is a modular framework for web-based task execution and evaluation. It
 - **Introduction**: https://paper-submission-anoymous.github.io/webtactix_introduction/
 - **Results**: https://drive.google.com/file/d/1jPKQrfx8dzNP82kBsaW96l-NujUbPDYI/view?usp=drive_link
 
-
 ## 🛠️ Installation
 
-To get started with WebTactix, you can either clone the repository or use it in your existing Python environment. 
+To get started with WebTactix, you can either clone the repository or use it in your existing Python environment.
 
 ### Prerequisites
 
@@ -68,57 +70,58 @@ To get started with WebTactix, you can either clone the repository or use it in 
 pip install -r requirements.txt
 ```
 
-3. Set the environment variable for `WEBARENA_ROOT`:
+## 🚀 Running the Code
 
-```bash
-export WEBARENA_ROOT="/path/to/webarena_root"
-```
+This project is evaluated on two benchmarks: **WebArena** and **Online Mind2Web**.
 
-### Dependencies
+### 1) Run on WebArena (Local Deployment)
 
-- **Playwright**: For web scraping and interaction with the browser.
-- **OpenAI API**: For interacting with GPT-like models.
-- **Other utilities**: Various Python libraries for data manipulation, evaluation, etc.
+We deploy the official WebArena services locally (including the map service, see webarena/environment_docker/readme.md for detail). If you also use a local WebArena setup, you can follow our \`reset.sh\` to initialize the WebArena environment, and use \`start_map\` to launch the map service (the URLs and paths inside the script should be replaced with your own configuration).
 
-## 🚀 Running the Experiment
-
-You can run the experiment either through the provided shell script (`start.sh`) or directly using Python.
-
-### Option 1: Using Shell Script
-
-```bash
-bash start.sh
-```
-
-### Option 2: Using Python Directly
+After the services are up, you can directly run `main.py` to evaluate multiple WebArena tasks in parallel:
 
 ```bash
 python main.py
 ```
 
-## 📝 File Descriptions
+### 2) Run on Online Mind2Web (Online Website)
 
-### `main.py`
-This is the main entry point for running WebTactix. It orchestrates the task execution and evaluation.
+Online Mind2Web does not require local services. To switch to the online benchmark, uncomment the following lines in \`main.py\`:
 
-### `start.sh`
-A shell script for setting up the environment and running the experiment. It simplifies the setup process.
+```python
+# dataset = "online_mind2web"
+# dataset_path = Path("./webtactix/datasets/Online_Mind2Web.json")
+# Task_1 = [0, 1, 2, 3, 4, 5]
+```
 
-### `webtactix/`
-This directory contains all the core logic for WebTactix, divided into several key modules:
+And uncomment the lane task configuration:
 
-- **agents/**: Contains various agents (planner, decision, data) responsible for task planning, decision-making, and data extraction.
-- **browser/**: Handles interaction with the web browser using Playwright.
-- **core/**: Contains the essential building blocks like the `PriorityQueue` and the `SemanticTree` for organizing tasks.
-- **datasets/**: Deals with loading and managing task datasets from WebArena.
-- **llm/**: Contains integration code for using large language models (LLMs) such as OpenAI's GPT models.
-- **preprocess/**: Preprocessing steps for observations and data.
-- **runner/**: Coordinates running the experiments, including tracking the task flow and recording results.
-- **tools/**: Miscellaneous utility tools that aid in the execution of tasks.
-- **workflows/**: Defines the workflows for running tasks in a predefined order.
+```python
+# lane_task_ids=[Task_1], # For Online Mind2Web
+```
 
-### `requirements.txt`
-This file lists all the necessary Python libraries and dependencies required to run the project.
+Then, set your `base_url` and API key in `llm/presets.py`, and run:
+
+```bash
+python main.py
+```
+
+### 3) Visualize Results (Build Record Site)
+
+After evaluation, you can generate an interactive visualization website:
+
+For Online Mind2Web:
+```bash
+python webtactix/tools/build_record_site.py --base record --dataset online_mind2web --model deepseek
+```
+
+For WebArena:
+```bash
+python webtactix/tools/build_record_site.py --base record --dataset webarena --model deepseek
+```
+
+The generated site will be saved to:
+- `record/site`
 
 ## 🧑‍💻 Contributing
 

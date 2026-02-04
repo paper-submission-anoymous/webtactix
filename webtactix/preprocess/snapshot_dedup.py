@@ -598,7 +598,7 @@ def render_table(table_val: Any, *, prev_sigset: Set[Tuple], hidden_ids: Set[int
                 kept += 1
                 if cap is not None and kept >= cap and row_j + 1 < len(data_rows):
                     hidden = len(data_rows) - row_j - 1
-                    new_rows.append(f"[There are {hidden} more rows folded below(user can see it) but for reduce tokens, You can only view it through plan <data_extraction> plan if you want to extract information from the folded rows.]")
+                    new_rows.append(f"[There are {hidden} more rows folded below for tokens reduction, You can only view it through <data_extraction> plan if you want to view or extract information from the folded rows.]")
                     break
 
             if new_rows:
@@ -825,8 +825,8 @@ def build_visible_tree_with_labels(
                         in_table=in_table, in_selectlike=child_in_selectlike
                     )
 
-                    if role == "textbox" and isinstance(nv, str) and nv.strip():
-                        nv = nv + " (pay attention to whether the textbox needs to be empty first)"
+                    # if role == "textbox" and isinstance(nv, str) and nv.strip():
+                    #     nv = nv + " (pay attention to whether the textbox needs to be empty first)"
 
                     label = f'{role} [{idx}]' + (f' "{name}"' if name else '') + (rest or '') if idx is not None else k
                     if nv is SENTINEL or nv == {} or nv == []:
@@ -988,8 +988,8 @@ def dump_yaml_aria(obj: Any) -> str:
                     m = KV_LABEL_LINE_RE.match(v)
                     if m:
                         k = m.group("k"); vv = m.group("v")
-                        if k.startswith("textbox [") and vv.strip():
-                            vv = vv + " (pay attention to whether the textbox needs to be empty first)"
+                        # if k.startswith("textbox [") and vv.strip():
+                            # vv = vv + " (pay attention to whether the textbox needs to be empty first)"
                         lines.append(f"{pre}- {_fmt_key_raw(k)}: {_fmt_scalar(vv)}")
                         continue
                     if LABEL_LINE_RE.match(v) or CELL_OR_ROW_LINE_RE.match(v):

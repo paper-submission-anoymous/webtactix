@@ -291,12 +291,14 @@ def main() -> None:
     # Online Mind2Web
     # dataset = "online_mind2web"
     # dataset_path = Path("./webtactix/datasets/Online_Mind2Web.json")
+    # Task_1 = [0, 1, 2, 3, 4, 5]
 
     exit_code = amain_process(
         dataset=dataset,
         dataset_path=dataset_path,
         webarena_root=Path("./webarena"),
         lane_task_ids=[SHOPPING, SHOPPING_ADMIN, MAP, REDDIT, MULTISITE],
+        # lane_task_ids=[Task_1], # For Online Mind2Web
         headless=False,
         max_rounds=15,
         max_parallel=3,

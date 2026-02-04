@@ -5,6 +5,7 @@ from pathlib import Path
 from typing import Any
 import re
 from playwright.async_api import async_playwright, Browser, BrowserContext
+from playwright.async_api import Error as PWError
 from webtactix.core.schemas import ActionStep, ActionType
 import yaml, time
 from typing import Callable, Iterable, Optional, Set
@@ -13,34 +14,28 @@ from playwright.async_api import Page, Request, Dialog
 
 CLOSE_NAME_RE = re.compile(r"I Accept|Continue|Allow All Cookies|Accept all|accept|save|no thanks|不要", re.I)
 
-def start_modal_watcher(page: Page, interval: float = 0.25) -> asyncio.Task:
+def start_modal_watcher(page: Page, interval: float = 0.5) -> asyncio.Task:
     async def watcher():
         while True:
             try:
                 if page.is_closed():
                     return
-
-                # 兼容 iframe：很多订阅弹窗在 frame 里
                 for frame in page.frames:
-                    # 找所有 aria dialog（DOM modal）
                     dialogs = frame.get_by_role("dialog")
                     count = await dialogs.count()
                     if count == 0:
                         continue
 
-                    # 遍历可见的 dialog，尝试点关闭
-                    for i in range(min(count, 5)):  # 上限防炸
+                    for i in range(min(count, 5)):
                         dlg = dialogs.nth(i)
                         if not await dlg.is_visible():
                             continue
 
-                        # 优先找语义化的 close button
                         close_btn = dlg.get_by_role("button", name=CLOSE_NAME_RE).first
                         if await close_btn.count() > 0 and await close_btn.is_visible():
                             await close_btn.click(timeout=500)
                             continue
 
-                        # 再兜底：aria-label 类 close
                         # close_btn2 = dlg.locator(
                         #     "[aria-label*='Close' i], [aria-label*='关闭' i]"
                         # ).first
@@ -48,25 +43,33 @@ def start_modal_watcher(page: Page, interval: float = 0.25) -> asyncio.Task:
                         #     await close_btn2.click(timeout=500)
                         #     continue
 
-                        # 最后兜底：ESC（不少 modal 支持）
                         # try:
                         #     await page.keyboard.press("Escape")
                         # except Exception:
                         #     pass
 
             except Exception:
-                # 任何异常都吞掉，避免 watcher 把主流程搞崩
                 pass
 
             await asyncio.sleep(interval)
 
     return asyncio.create_task(watcher())
 
+RETRY_ERRORS = ("ERR_NETWORK_CHANGED", "ERR_CONNECTION_CLOSED", "ERR_TIMED_OUT")
+async def safe_goto(page, url, timeout_ms=60000, retries=3):
+    for attempt in range(retries + 1):
+        try:
+            return await page.goto(url, wait_until="domcontentloaded", timeout=timeout_ms)
+        except PWError as e:
+            msg = str(e)
+            if any(k in msg for k in RETRY_ERRORS) and attempt < retries:
+                await asyncio.sleep(0.8 * (attempt + 1))
+                continue
+            raise
+    return None
+
+
 async def _capture_new_page(page: Page, click_coro, timeout_ms: int = 10000) -> Page | None:
-    """
-    在执行 click_coro() 的同时，捕获是否出现新 tab（new Page）。
-    成功返回 new_page，否则返回 None。
-    """
     ctx = page.context
     before = set(ctx.pages)
 
@@ -74,11 +77,9 @@ async def _capture_new_page(page: Page, click_coro, timeout_ms: int = 10000) -> 
         async with ctx.expect_page(timeout=timeout_ms) as pinfo:
             await click_coro()
         new_page = await pinfo.value
-        # 等到至少 DOMReady，后面你的 wait_for_page_stable 还能再稳一遍
         await new_page.wait_for_load_state("domcontentloaded")
         return new_page
     except Exception:
-        # 没捕获到新页：给一点点时间让 page 注册进 context
         await asyncio.sleep(1)
         after = [p for p in ctx.pages if p not in before]
         return after[-1] if after else None
@@ -107,8 +108,7 @@ class PlaywrightSession:
         self._pw = await async_playwright().start()
         self._browser = await self._pw.chromium.launch(
             headless=self.cfg.headless,
-            slow_mo=self.cfg.slow_mo_ms,
-            args=["--disable-http2"]
+            slow_mo=self.cfg.slow_mo_ms
         )
 
         context_kwargs = {}
@@ -121,50 +121,24 @@ class PlaywrightSession:
 
         self._context = await self._browser.new_context(**context_kwargs)
 
-    async def accept_cookies_if_present(self, page: Page) -> None:
-        candidates = [
-            "button:has-text('Accept')",
-            "button:has-text('Accept all')",
-            "button:has-text('Agree')",
-            "button:has-text('I agree')",
-            "button:has-text('同意')",
-            "button:has-text('全部接受')",
-            "button:has-text('接受全部')",
-            "text=Accept all",
-        ]
-
-        for sel in candidates:
-            try:
-                btn = page.locator(sel).first
-                if await btn.is_visible(timeout=800):
-                    await btn.click(timeout=800)
-                    return
-            except Exception:
-                pass
-
     async def new_page(self) -> Page:
         if self._context is None:
             raise RuntimeError("Session not started")
 
         page = await self._context.new_page()
 
-        # ✅ 原生 JS dialog：真的能事件监听到
         async def handle_js_dialog(d: Dialog):
             print("js dialog:", d.type, d.message)
             await d.accept()
 
         page.on("dialog", handle_js_dialog)
-
-        # ✅ DOM modal：用后台 watcher 自动关（不需要你手动在 goto 后点）
         page._modal_watcher_task = start_modal_watcher(page)
 
         return page
 
-    async def goto(self, page: Page, url: str, timeout_ms: int = 30000) -> None:
-        await page.goto(url, wait_until="domcontentloaded", timeout=timeout_ms)
+    async def goto(self, page: Page, url: str, timeout_ms: int = 60000) -> None:
+        await safe_goto(page, url, timeout_ms=timeout_ms)
         await wait_for_page_stable(page)
-        await self.accept_cookies_if_present(page)
-
 
     async def close(self) -> None:
         if self._context is not None:
@@ -189,12 +163,10 @@ class PlaywrightSession:
 
     @staticmethod
     async def apply_step(page: Page, step: ActionStep, replay: bool) -> Page:
-        await page.mouse.wheel(0, 100)
         frame = page.main_frame
-
         if step.action == ActionType.GOTO:
             if page.url != step.text:
-                await page.goto(url=step.text, timeout=30000)
+                await safe_goto(page, step.text)
                 await wait_for_page_stable(page, replay=replay)
             return page
 
@@ -214,8 +186,13 @@ class PlaywrightSession:
                 if name:
                     try:
                         async def _click():
-                            await loc.dispatch_event('click', timeout=3000)
+                            # await loc.dispatch_event('click', timeout=3000)
                             # await loc.click()
+                            await loc.scroll_into_view_if_needed(timeout=5000)
+                            box = await loc.bounding_box()
+                            if not box:
+                                raise Exception("[CLICK ERR] element's bounding_box is None: ")
+                            await page.mouse.click(box["x"] + box["width"] / 2, box["y"] + box["height"] / 2)
 
                         newp = await _capture_new_page(page, _click, timeout_ms=10000)
                         if newp is not None:
@@ -240,10 +217,15 @@ class PlaywrightSession:
                         raise Exception("[CLICK ERR] ", e)
 
             elif step.action == ActionType.INPUT:
+                if step.role == "textbox" and step.name == "URL" and step.index==11:
+                    # If filling, this will cause 500 Server Error
+                    print("no filling...")
+                    return page
+                # try:
+                #     await loc.fill(step.text)
+                # except Exception as e:
                 # Focus on the element
                 await loc.focus()
-
-                # Wait for the page to stabilize (if necessary)
                 await wait_for_page_stable(page, replay=replay)
 
                 # Clear the input field by pressing Backspace repeatedly or use fill("")
@@ -255,13 +237,15 @@ class PlaywrightSession:
 
                 # Type the text sequentially
                 for char in step.text:
-                    await page.keyboard.press(char)
-                    await page.wait_for_timeout(50)  # Add a small delay between key presses
-
+                    try:
+                        await page.keyboard.press(char)
+                        await page.wait_for_timeout(50)  # Add a small delay between key presses
+                    except Exception as e:
+                        print("[PLAYWRIGHT ERR] TYPE: ", char)
 
             elif step.action == ActionType.SELECT:
                 try:
-                    await page.get_by_label(step.name).select_option(step.text, timeout=3000)
+                    await loc.select_option(step.text, timeout=3000)
                 except Exception as e:
                     raise Exception(
                         f"{loc} cannot be select as {step.text}, if the option visible, you should use click instead. Detailed failure reason: {e}.")
@@ -271,7 +255,7 @@ class PlaywrightSession:
 
             return page
 
-        # 1) 先用 name 尝试
+        # 1) with name first
         if loc_with_name is not None:
             try:
                 page = await _do(loc_with_name, page, replay)
@@ -294,24 +278,105 @@ def _ms_since(t0: float) -> int:
 
 
 async def wait_for_layout_stable(
-    page: Page,
-    *,
-    stable_frames: int = 2,
-    timeout_ms: int = 2_000,
+        page: Page,
+        *,
+        timeout_ms: int = 10_000,
+        quiet_ms: int = 600,
+        stable_frames: int = 2,
+        check_spinners: bool = True,
+        spinner_selectors: Optional[Iterable[str]] = None,
+        allow_websockets: bool = True,
 ) -> None:
     """
-    Optional. Uses rAF to ensure the page geometry stays stable for N frames.
-    This mirrors Playwright's own notion of "stable" in actionability checks
-    (stable bounding box across consecutive animation frames). :contentReference[oaicite:5]{index=5}
-    """
-    await page.main_frame.wait_for_function(
-        """
-        (needFrames) => new Promise(resolve => {
-          let last = null;
-          let ok = 0;
+    Best-effort "page is ready":
+    - domcontentloaded (+ try load)
+    - pending fetch/xhr == 0 and no net activity for quiet_ms
+    - no DOM mutations for quiet_ms
+    - layout snapshot stable for stable_frames rAF frames
+    - optionally: no visible spinner/busy indicator
 
+    Notes:
+    - Can't guarantee *everything* is loaded (pages can stream data forever).
+    - Designed to be robust and not get stuck on long-lived connections.
+    """
+
+    DEFAULT_SPINNER_SELECTORS = [
+        # aria / role
+        "[aria-busy='true']",
+        "[role='progressbar']",
+        "[role='status']",
+
+        # common class / id patterns
+        ".spinner", ".loading", ".loader", ".progress",
+        "[class*='spinner']", "[class*='loading']", "[class*='loader']",
+        "[id*='spinner']", "[id*='loading']", "[id*='loader']",
+
+        # frameworks
+        ".ant-spin", ".ant-spin-spinning",
+        ".MuiCircularProgress-root",
+    ]
+
+    selectors = list(spinner_selectors) if spinner_selectors is not None else list(DEFAULT_SPINNER_SELECTORS)
+
+    # 2) Install in-page trackers (fetch/xhr + mutations + layout snapshot)
+    await page.evaluate(
+        """
+        (cfg) => {
+          if (window.__pw_ready_installed) return;
+          window.__pw_ready_installed = true;
+
+          const state = window.__pw_ready_state = {
+            pending: 0,
+            lastNet: Date.now(),
+            lastMut: Date.now(),
+            lastSnap: null,
+            stableOk: 0,
+          };
+
+          // Track DOM mutations (layout/content churn)
+          try {
+            const mo = new MutationObserver(() => { state.lastMut = Date.now(); });
+            mo.observe(document, { subtree: true, childList: true, attributes: true, characterData: true });
+          } catch (e) {}
+
+          // Track fetch
+          try {
+            const origFetch = window.fetch;
+            if (typeof origFetch === "function") {
+              window.fetch = function(...args) {
+                state.pending += 1;
+                state.lastNet = Date.now();
+                return origFetch.apply(this, args)
+                  .catch((e) => { throw e; })
+                  .finally(() => {
+                    state.pending = Math.max(0, state.pending - 1);
+                    state.lastNet = Date.now();
+                  });
+              };
+            }
+          } catch (e) {}
+
+          // Track XHR
+          try {
+            const XHR = window.XMLHttpRequest;
+            if (XHR && XHR.prototype && XHR.prototype.open && XHR.prototype.send) {
+              const origSend = XHR.prototype.send;
+              XHR.prototype.send = function(...args) {
+                state.pending += 1;
+                state.lastNet = Date.now();
+                this.addEventListener("loadend", () => {
+                  state.pending = Math.max(0, state.pending - 1);
+                  state.lastNet = Date.now();
+                }, { once: true });
+                return origSend.apply(this, args);
+              };
+            }
+          } catch (e) {}
+
+          // Layout snapshot per rAF
           const snapshot = () => {
             const de = document.documentElement;
+            if (!de) return "no-de";
             const r = de.getBoundingClientRect();
             return [
               Math.round(r.width), Math.round(r.height),
@@ -322,18 +387,75 @@ async def wait_for_layout_stable(
 
           const step = () => {
             const cur = snapshot();
-            ok = (cur === last) ? (ok + 1) : 0;
-            last = cur;
-            if (ok >= needFrames) return resolve(true);
+            if (cur === state.lastSnap) state.stableOk += 1;
+            else state.stableOk = 0;
+            state.lastSnap = cur;
             requestAnimationFrame(step);
           };
-
           requestAnimationFrame(step);
-        })
+        }
         """,
-        arg=stable_frames,
+        {"quiet_ms": quiet_ms, "stable_frames": stable_frames, "selectors": selectors},
+    )
+
+    # 3) Wait until all conditions satisfied
+    await page.wait_for_function(
+        """
+        (cfg) => {
+          const st = window.__pw_ready_state;
+          if (!st) return false;
+
+          const now = Date.now();
+          const quiet = cfg.quiet_ms ?? 600;
+          const needStable = cfg.stable_frames ?? 2;
+
+          // Network quiet: no pending and no recent activity
+          const netQuiet = (st.pending === 0) && ((now - st.lastNet) >= quiet);
+
+          // DOM quiet: no recent mutations
+          const domQuiet = (now - st.lastMut) >= quiet;
+
+          // Layout stable: stable for N frames
+          const layoutStable = st.stableOk >= needStable;
+
+          // Spinner/busy detection (best-effort)
+          const isVisible = (el) => {
+            if (!el) return false;
+            const cs = window.getComputedStyle(el);
+            if (!cs) return false;
+            if (cs.display === "none" || cs.visibility === "hidden") return false;
+            if (parseFloat(cs.opacity || "1") <= 0.01) return false;
+            const r = el.getBoundingClientRect();
+            return (r.width > 1 && r.height > 1);
+          };
+
+          let spinnerGone = true;
+          if (cfg.check_spinners) {
+            const sels = cfg.selectors || [];
+            for (const sel of sels) {
+              try {
+                const nodes = document.querySelectorAll(sel);
+                for (const n of nodes) {
+                  if (isVisible(n)) { spinnerGone = false; break; }
+                }
+              } catch (e) {}
+              if (!spinnerGone) break;
+            }
+          }
+
+          // If page streams forever, you might want to relax netQuiet/domQuiet.
+          return netQuiet && domQuiet && layoutStable && spinnerGone;
+        }
+        """,
+        arg={
+            "quiet_ms": quiet_ms,
+            "stable_frames": stable_frames,
+            "check_spinners": check_spinners,
+            "selectors": selectors,
+            "allow_websockets": allow_websockets,
+        },
         timeout=timeout_ms,
-        polling="raf",
+        polling=100,
     )
 
 
@@ -346,47 +468,16 @@ async def wait_for_page_stable(
     network_idle_ms: int = 10000,
     layout_stable: bool = True,
 ) -> None:
-    # 1) 很短的 DOMContentLoaded 等待，避免卡死
     start_t = time.time()
     try:
         await page.wait_for_load_state("domcontentloaded", timeout=60000)
-        await page.wait_for_load_state("networkidle", timeout=min(domcontentloaded_budget_ms, timeout_ms))
+        await page.wait_for_load_state("networkidle", timeout=network_idle_ms)
+        await wait_for_layout_stable(page, timeout_ms=6000)
     except Exception:
         print('[PlayWright Err] wait_for_load_state')
-
     # if not replay:
     #     await asyncio.sleep(10)
     # else:
     #     await asyncio.sleep(1)
     mid_1 = time.time()
     print('[PlayWright 1] ', mid_1-start_t)
-    # 2) 网络空闲（事件驱动，比注入补丁稳）
-    # try:
-    #     await wait_for_network_idle(
-    #         page,
-    #         timeout_ms=timeout_ms,
-    #         idle_ms=network_idle_ms,
-    #         ignore_url=lambda u: (
-    #             "analytics" in u
-    #             or "sockjs" in u
-    #             or "hot-update" in u
-    #         ),
-    #     )
-    # except Exception:
-    #     print('[PlayWright Err] wait_for_network_idle')
-    #
-    # mid_2 = time.time()
-    # print('[PlayWright 2] ', mid_2-start_t)
-
-    # 3) 可选的布局稳定
-    # try:
-    #     if not replay:
-    #         await wait_for_layout_stable(page, stable_frames=300, timeout_ms=10000)
-    #     else:
-    #         await wait_for_layout_stable(page, stable_frames=60, timeout_ms=5000)
-    # except:
-    #     print('[PlayWright Err] wait_for_layout_stable')
-    # await asyncio.sleep(1)
-    # end_t = time.time()
-    # print('[PlayWright END] ', end_t-start_t)
-

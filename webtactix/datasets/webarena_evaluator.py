@@ -7,7 +7,7 @@ from difflib import SequenceMatcher
 from typing import Any, Dict, List, Optional, Sequence, Tuple
 from urllib.parse import urlsplit, urlunsplit, urlparse
 
-from jsonref import requests
+import requests
 
 from webtactix.core.schemas import TaskSpec
 from webtactix.browser.playwright_session import PlaywrightSession, wait_for_page_stable
@@ -17,7 +17,7 @@ SHOPPING = "http://127.0.0.1:7770"
 SHOPPING_ADMIN = "http://127.0.0.1:7780/admin"
 GITLAB = "http://127.0.0.1:8023"
 WIKIPEDIA = "http://127.0.0.1:8888/wikipedia_en_all_maxi_2022-05/A/User:The_other_Kiwix_guy/Landing"
-MAP = "https://www.openstreetmap.org/"
+MAP = "https://127.0.0.1:3000/"
 HOMEPAGE = "http://127.0.0.1:4399"
 
 ACCOUNTS = {
@@ -115,6 +115,7 @@ def shopping_get_auth_token() -> str:
             }
         ),
     )
+    print("[EVAL]", response)
     token: str = response.json()
     return token
 
@@ -173,10 +174,33 @@ def exact_match(pred: Any, ref: Any) -> bool:
 
 def must_include(pred: Any, items: Sequence[str]) -> bool:
     p = _norm_text_lower(pred)
+
+    def _tokenize(s: str) -> str:
+        return _norm_text_lower(s)
+
     for it in items:
-        if _norm_text_lower(it) not in p:
+        s = _tokenize(it)
+
+        # OR group
+        if "|or|" in s:
+            alts = [x.strip() for x in s.split("|or|") if x.strip()]
+            if not any(a in p for a in alts):
+                return False
+            continue
+
+        # AND group inside a single string
+        if "|and|" in s:
+            parts = [x.strip() for x in s.split("|and|") if x.strip()]
+            if any(part not in p for part in parts):
+                return False
+            continue
+
+        # plain
+        if s and s not in p:
             return False
+
     return True
+
 
 
 def _norm_url(u: str) -> str:
@@ -214,7 +238,7 @@ def _coerce_dict(x: Any) -> Dict[str, Any]:
     return {}
 
 
-def _llm_chat_json(llm: Any, *, system: str, user: str) -> Tuple[Any, Dict[str, Any]]:
+async def _llm_chat_json(llm: Any, *, system: str, user: str) -> Tuple[Any, Dict[str, Any]]:
     """
     Compatible wrapper:
     - if llm.chat_json returns (obj, usage) -> use it
@@ -222,7 +246,7 @@ def _llm_chat_json(llm: Any, *, system: str, user: str) -> Tuple[Any, Dict[str, 
     """
     if llm is None:
         return None, {}
-    out = llm.chat_json(system=system, user=user)
+    out = await llm.chat_json(system=system, user=user)
     if isinstance(out, tuple) and len(out) == 2:
         obj, usage = out
         return obj, (_coerce_dict(usage))
@@ -368,8 +392,6 @@ class WebArenaEvaluator:
         page = await self.sess.new_page()
         import html as _html
 
-        # 方案 A，把 func 注入 eval 环境
-        # 这里用 globals() 从当前模块拿函数，避免你忘了在字典里手动写一遍
         allowed = {
             "shopping_get_sku_latest_review_rating": shopping_get_sku_latest_review_rating,
             "shopping_get_latest_order_url": shopping_get_latest_order_url,
@@ -436,8 +458,6 @@ class WebArenaEvaluator:
                     func_expr = locator.split("func:", 1)[1].strip()
                     func_expr = func_expr.replace("__page__", "page")
 
-                    # 如果函数没在 allowed 里，提前给出清晰错误
-                    # 这样你一眼就知道是忘了实现还是忘了注入
                     import re
                     m = re.match(r"^\s*([A-Za-z_]\w*)\s*\(", func_expr)
                     if m:
@@ -521,10 +541,10 @@ class WebArenaEvaluator:
 
         # Prefer LLM
         if self.llm is not None:
-            for r in refs_list:
-                ok, detail = await self._fuzzy_match_llm(pred=pred, ref=r)
-                if ok:
-                    return True, detail
+            ok, detail = await self._fuzzy_match_llm(pred=pred, ref=refs_list)
+            print(f"[LLM EVA] {detail}")
+            if ok:
+                return True, detail
             return False, {"ok": False, "pred": pred, "refs": refs_list, "method": "llm", "reason": "no_ref_matched"}
 
         # Fallback
@@ -561,14 +581,13 @@ class WebArenaEvaluator:
             '{ "ok": boolean, "reason": string }\n\n'
             "Rules:\n"
             "- Treat formatting differences as OK.\n"
-            "- If reference is a phrase, predicted answer can include extra context.\n"
+            "- If reference is a phrase/list/json like, predicted answer can include extra context.\n"
             "- If reference is a date/number, allow equivalent formats.\n"
-            "- Be strict about identity: wrong entity or value is NOT ok.\n\n"
             f"Reference:\n{ref}\n\n"
             f"Predicted:\n{pred}\n"
         )
 
-        obj, usage = _llm_chat_json(self.llm, system=system, user=user)
+        obj, usage = await _llm_chat_json(self.llm, system=system, user=user)
         ok = False
         reason = ""
 

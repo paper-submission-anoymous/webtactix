@@ -1,4 +1,3 @@
-# webtactix/agents/decision_agent.py
 from __future__ import annotations
 
 import json
@@ -66,8 +65,8 @@ class DecisionAgent:
 
     @staticmethod
     def _is_all_go_back(candidates: Sequence[NodeState]) -> bool:
-        if not candidates:
-            return True
+        if not len(candidates):
+            return False
         for c in candidates:
             for p in c.next_plans:
                 if p.name != "go_back":
@@ -147,28 +146,17 @@ class DecisionAgent:
             exp_flag = True
 
         if explore_parent or exp_flag:
-            selected = next_nodes[0].node_id
+            selected = parent_node_id
             state = self.tree.state[selected]
             page = state.page
             print("[DECISION AGENT] explore parent")
-            await page.go_back()
-            await wait_for_page_stable(page)
-            cur = await self.sess.get_snapshot(page)
-            cur_enc = self.encoder.encode(cur_snapshot=cur)
-            plan = state.next_plans[0]
+            await self.executor.replay_to_node(page=page, node_id=parent_node_id)
 
-            new_node = self.tree.add_child(
-                parent=next_nodes[0].node_id,
-                plan=plan,
-                child_enc=cur_enc,
-                url_after=page.url,
-                page=page
-            )
-
-            self.tree.state[new_node].reflection.append(reflection)
+            self.tree.state[parent_node_id].reflection.append(reflection)
             self.rec.save_decision(result={"kind": "reflect_and_replan", "reflection": reflection, "reason": reason},
                                    usage=usage)
-            return DecisionResult(kind="reflect_and_replan", selected_node_id=selected, reflection=reflection, reason=reason, new_child=[new_node])
+            parent_parent_node_id = self.tree.parent[parent_node_id]
+            return DecisionResult(kind="reflect_and_replan", selected_node_id=parent_parent_node_id, reflection=reflection, reason=reason, new_child=[parent_node_id])
 
         chosen = self.queue.pop()
 
@@ -231,11 +219,11 @@ class DecisionAgent:
                 "- for each candidate node v: incoming_action, page_summary, next_plans\n\n"
                 "Selection criteria:\n"
                 "Choose the single best candidate to continue.\n"
-                "Then prioritize efficiency: among feasible branches, prefer partially done and prefer the one that can directly reach the goal with fewer steps, less detouring, and simpler interactions. Never choose go back. \n"
+                "Then prioritize efficiency: among feasible branches, prefer partially done and prefer the one that can directly reach the goal with less detouring, and simpler interactions. Never choose go back. \n"
                 "Prefer branches whose next_plans are concrete and directly move toward the answer, and with smaller workload when available.\n"
                 "Other rules:\n"
-                "Your 'reason' must brief and short to explain (1) why this branch can progress the task, and (2) why it can most satisfy the constraints.\n"
-                "If the unselected action also contain useful information, summarize the actions and its outcome's task related part in detail; otherwise set extra_info to an empty string.\n\n"
+                "Your 'reason' must brief and short to explain (1) why this branch can progress the task, and (2) why its next plans can most satisfy the constraints.\n"
+                "If the unselected page also contain useful information, summarize the actions and its content in 'extra_info' in detail, write in this format: <Action <xxx>'s result(URL: xxx): summary>. All information must be fact and mustn't contain any subjective information.\n\n"
                 "Output JSON schema:\n"
                 '{ "selected_node_id": string, "reason": string, "extra_info": string, "replay" }\n\n'
                 f"user's task:\n{self.q}\n\n"
@@ -285,9 +273,9 @@ class DecisionAgent:
         exec_outcom = await self.executor.execute_next_plans(selected_node_id=selected)
         new_child = [out.new_node_id for out in exec_outcom if out.new_node_id]
         all_error = bool(exec_outcom) and all(o.kind == "error" for o in exec_outcom)
-        if exec_outcom[0].kind == "finish":
+        if len(exec_outcom) and exec_outcom[0].kind == "finish":
             return DecisionResult(kind="finish", reason=exec_outcom[0].executed_plan.goal, eval_result=exec_outcom[0].eval_result)
-        elif all_error:
+        elif len(exec_outcom) and all_error:
             state = self.tree.state[selected]
             print("[EXEC] ALL ERROR")
             reflection = "The following actions have failed to execute on this page, here are the reasons:\n\n"

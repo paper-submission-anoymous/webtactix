@@ -21,12 +21,12 @@ def preset_deepseek_chat(key_num: int = 0) -> OpenAICompatConfig:
     DeepSeek official OpenAI-compatible endpoint.
     Supports parallel runs by choosing api_key via key_num.
     """
-    base_url_list = ["https://api.deepseek.com/v1", "https://api.siliconflow.cn/v1"]
+    base_url_list = ["https://api.deepseek.com/v1", "xxx"]
     api_key_list = [
         "sk-xxx",
         "sk-xxx",
     ]
-    model_list = ["deepseek-chat", "deepseek-ai/DeepSeek-V3.2"]
+    model_list = ["deepseek-chat", "xxx"]
 
     api_key = api_key_list[key_num % len(api_key_list)]
     base_url = base_url_list[key_num % len(base_url_list)]

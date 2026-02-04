@@ -1,6 +1,5 @@
 from __future__ import annotations
 
-# webtactix/workflows/execute
 import asyncio
 import copy
 import random
@@ -16,7 +15,7 @@ from webtactix.core.schemas import ActionStep
 from webtactix.runner.recorder import Recorder
 from webtactix.agents.data_agent import DataExtractionAgent
 from webtactix.datasets.webarena_evaluator import WebArenaEvaluator, EvalResult
-
+from playwright.async_api import Error as PWError
 
 def _action_sig_from_plan(plan: Plan) -> str:
     if plan.name != "web_operation":
@@ -75,11 +74,10 @@ class Executor:
         cur = await self.sess.get_snapshot(page)
         cur_enc = await asyncio.to_thread(self.encoder.encode, cur_snapshot=cur)
 
-        # 判断是否和最终需要的内容相同，相同则直接返回
         if cur_enc.actree_yaml == state.enc.actree_yaml:
             print(f"[EXEC][replay] skipped...")
             return None
-        # 不相同就要一步步执行
+
         replay_steps = self.tree.get_replay_steps(node_id)
 
         print(f"[EXEC][replay] node={node_id} url={url} replay_steps={len(replay_steps)}")
@@ -101,10 +99,44 @@ class Executor:
 
     async def _save_page_artifacts(self, *, page: Any, node_id: NodeId, enc: EncodedObservation) -> None:
         self.rec.save_actree(node_id=str(node_id), actree_text=enc.actree_yaml)
+        path = self.rec.snapshot_path(node_id=str(node_id))
         try:
-            await page.screenshot(path=self.rec.snapshot_path(node_id=str(node_id)), full_page=True)
-        except:
-            pass
+            full_page = True
+            try:
+                h = await page.evaluate(
+                    "() => Math.max(document.body?.scrollHeight || 0, document.documentElement?.scrollHeight || 0)"
+                )
+                if isinstance(h, (int, float)) and h > 20000:
+                    full_page = False
+            except Exception:
+                full_page = False
+
+            await page.screenshot(
+                path=path,
+                full_page=full_page,
+                timeout=8000,
+                animations="disabled",
+                caret="hide",
+            )
+
+        except asyncio.CancelledError:
+            raise
+        except PWError as e:
+            print("screenshot error:", repr(e))
+            try:
+                if hasattr(page, "is_closed") and page.is_closed():
+                    return
+                await page.screenshot(
+                    path=path,
+                    full_page=False,
+                    timeout=8000,
+                    animations="disabled",
+                    caret="hide",
+                )
+            except Exception as e2:
+                print("screenshot fallback error:", repr(e2))
+        except Exception as e:
+            print("screenshot error:", repr(e))
 
 
     async def run_one_web_operation_plan_in_fresh_tab(
@@ -183,9 +215,9 @@ class Executor:
                         error=f"{type(e).__name__}: {e}",
                     )
 
-                cur = await self.sess.get_snapshot(page)
-                enc_cur = self.encoder.encode(cur_snapshot=cur)
-                # if enc_cur.roles != enc.roles:
+                # cur = await self.sess.get_snapshot(page)
+                # enc_cur = self.encoder.encode(cur_snapshot=cur)
+                # if len(enc_cur.roles) != len(enc.roles):
                 #     print("[EXEC] page has changed, sequence stop")
                 #     break
             plan.steps = steps
@@ -246,8 +278,7 @@ class Executor:
         node_id = self.tree.nodes[selected_node_id].node_id
         result = await self.data_agent.run(node_state=node_state, node_id=node_id)
         plan.answer = result.answer
-        # data extraction 一般不产生新节点也可以
-        # 但你想把它挂到树里，就创建 child，url 不变
+
         new_node = self.tree.add_child(
             parent=selected_node_id,
             plan=plan,
@@ -311,7 +342,6 @@ class Executor:
             print(f"[EXEC] selected_node={selected_node_id} has no next_plans")
             return []
 
-        # 如果包含 finish，直接短路返回 finish
         for p in next_plans:
             if p.name == "finish":
                 sig = _action_sig_from_plan(p)
@@ -330,16 +360,13 @@ class Executor:
                     eval_result=eval_result
                 )]
 
-        # data_extraction 同样可以短路，只执行一个
         for p in next_plans:
             if p.name == "data_extraction":
                 return [await self.run_data_extraction(selected_node_id=selected_node_id, plan=p)]
             elif p.name == "partially_done":
                 return [await self.run_partially_done(selected_node_id=selected_node_id, plan=p)]
-        # 其余只并发执行 web_operation
         web_ops: List[Plan] = [p for p in next_plans if p.name == "web_operation"]
         if not web_ops:
-            # 其它类型你暂时不执行
             return [ExecuteOutcome(
                 executed_plan=p,
                 action_sig=_action_sig_from_plan(p),

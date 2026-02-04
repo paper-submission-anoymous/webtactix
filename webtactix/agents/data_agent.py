@@ -20,6 +20,19 @@ class DataExtractionAgentConfig:
     max_history_items: int = 20
     max_steps_per_round: int = 8
 
+external_knowledge = '''
+- Date format: **Month/Day/YYYY** (e.g., "1/31/2024").
+- Brand and product type can be infer from product name.
+- 0 or not found can also be a result.
+- The descending order for dates means that the earlier dates are located at the top, you must combined with the table to verify.\n
+- All task can ONLY operate under the website as follow. Following URL shows the homepage of these websites.
+  1 REDDIT: http://127.0.0.1:9999
+  2 GITLAB: http://127.0.0.1:8023
+  3 SHOPPING: http://127.0.0.1:7770
+  4 SHOPPING_ADMIN: http://127.0.0.1:7780
+  5 OPENSTREETMAP: https://www.openstreetmap.org/ (For map task, you can use your external knowledge.)
+'''
+
 @dataclass(frozen=True)
 class DataExtractionResult:
     done: bool
@@ -78,11 +91,9 @@ class DataExtractionAgent:
         cur = await self.sess.get_snapshot(page)
         cur_enc = self.encoder.encode(cur_snapshot=cur)
 
-        # 判断是否和最终需要的内容相同，相同则直接返回
         if cur_enc.roles == node_state.enc.roles and cur_enc.role_nums == node_state.enc.role_nums:
             print("[DATA][replay_no_need]")
         else:
-            # 不相同就要一步步执行
             replay_steps = self.tree.get_replay_steps(node_id)
             for s in replay_steps:
                 try:
@@ -162,11 +173,9 @@ class DataExtractionAgent:
                 try:
                     await self.sess.apply_step(page, action, False)
 
-                    # 记录成功
                     hist.append(f"ACTION: {action_sig}")
                     print(f'[DATA AGENT] Click successful: {action_sig}')
                 except Exception as e:
-                    # 记录失败
                     error_type = type(e).__name__
                     error_msg = str(e)
                     error_sig = f"{action_sig} failed: {error_type}: {error_msg}"
@@ -183,7 +192,6 @@ class DataExtractionAgent:
                     hist.append(f"ACTION: GOTO {URL}")
                     print(f'[DATA AGENT] goto {URL}')
                 except Exception as e:
-                    # 记录失败
                     error_type = type(e).__name__
                     error_msg = str(e)
                     error_sig = f"goto {URL} failed: {error_type}: {error_msg}"
@@ -202,6 +210,9 @@ class DataExtractionAgent:
                 hist.append(f"ACTION: Write code and execute.\n CODE:\n{code}\n Code's output:\n {out_text}\n")
 
                 action_sig = f"code's output:\n{out_text}"
+            else:
+                print(f"[DATA AGENT] {step['action']}")
+                action_sig = ""
 
             self.rec.data_log_turn(
                 node_id=node_id,
@@ -283,6 +294,7 @@ class DataExtractionAgent:
             "- If the task requires obtaining the answer from an extremely long table(>100 rows) and it is clearly possible to set up a filter to optimize the extraction process, set done=true and explain in answer. You can't set filters yourself\n"
             "- If you want to apply filters, set done=true and ask PLANNER to do this in 'answer'.\n\n"
             "- If the output result is more than 10, only the URL(display on the browser) where the result is located and a description are required.\n\n"
+            # f"TIPS:\n {external_knowledge}\n\n"
             f"History (older to newer):\n{h}\n\n"
             "actree:\n"
             f"{enc.actree_yaml}\n\n"
@@ -330,10 +342,8 @@ class DataExtractionAgent:
         s = (code or "").strip()
         if s.startswith("```"):
             lines = s.splitlines()
-            # 去掉开头 ``` 或 ```python
             if lines and lines[0].strip().startswith("```"):
                 lines = lines[1:]
-            # 去掉结尾 ```
             if lines and lines[-1].strip() == "```":
                 lines = lines[:-1]
             s = "\n".join(lines).strip()
@@ -341,10 +351,6 @@ class DataExtractionAgent:
 
     @staticmethod
     def _run_code_capture(code: str, *, timeout_s: float = 5.0) -> Tuple[str, str]:
-        """
-        在本机 python 子进程执行，捕获 stdout/stderr。
-        注意：这会执行模型生成的代码，务必只在你信任的环境里用。
-        """
         try:
             p = subprocess.run(
                 [sys.executable, "-c", code],

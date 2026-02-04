@@ -105,10 +105,8 @@ class Recorder:
         self.task_dir = self.root / f"task_{self.task_id}"
         self._data_dirs: Dict[str, Path] = {}
 
-        # 覆盖旧记录：直接删除整个 task 目录，避免旧 round/actions 混入
         shutil.rmtree(self.task_dir, ignore_errors=True)
 
-        # 确保目录存在
         self.task_dir.mkdir(parents=True, exist_ok=True)
 
         self._t0_perf = time.perf_counter()

@@ -126,10 +126,8 @@ class SemanticTree:
           - If url changes (url_after != parent_url_before), child replay_steps resets to empty
           - If url same, child replay_steps = parent.replay_steps + plan.steps
         """
-        # 解析 URL
         parsed_url = urlparse(url_after)
 
-        # 去掉末尾的 #（锚点）
         url_after = parsed_url._replace(fragment="").geturl()
 
         if parent not in self.nodes:
@@ -144,7 +142,7 @@ class SemanticTree:
         self.parent[child] = parent
         self.incoming_action_sig[child] = self._sig_from_plan(plan).strip()
         self.children_map.setdefault(parent, []).append(child)
-        self.children_map.setdefault(child, [])  # 让 child 也有空列表，方便 leaf 判断
+        self.children_map.setdefault(child, [])
 
         # compute replay_steps
         parent_state = self.state.get(parent)
@@ -185,7 +183,7 @@ class SemanticTree:
         """
         path = self.path_to_root(node_id)
         if not path:
-            return ""
+            return "", 0
         items: List[str] = []
         for nid in path[1:]:
             sig = self.get_incoming_action_sig(nid)

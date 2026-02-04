@@ -1,6 +1,7 @@
 # webtactix/runner/experiment_runner
 from __future__ import annotations
 
+import copy
 from dataclasses import dataclass
 from pathlib import Path
 from typing import Any, Callable, Dict, List, Optional, Sequence, Tuple
@@ -20,7 +21,7 @@ from webtactix.datasets.webarena_evaluator import EvalResult
 
 @dataclass(frozen=True)
 class RunnerConfig:
-    max_rounds: int = 25
+    max_rounds: int = 15
     max_parallel: int = 4
     table_max_rows: int = 10
     # llm_type: str = "gpt-4o"
@@ -72,7 +73,7 @@ class ExperimentRunner:
             print(f"[PLAN] plan#{i} name={p.name}")
             print(f"[PLAN] plan#{i} goal={p.goal}")
             if getattr(p, "steps", None):
-                sig = self.tree._sig_from_plan(p)  # 复用 SemanticTree 的静态方法
+                sig = self.tree._sig_from_plan(p)
                 print(f"[PLAN] plan#{i} action_sig={sig}")
 
     async def _plan_frontier(self, node_ids: Sequence[NodeId], *, _round: int) -> Dict[NodeId, PlanningResult]:
@@ -115,7 +116,7 @@ class ExperimentRunner:
         for _round in range(self.cfg.max_rounds):
             self.rec.start_round(_round+1, frontier=frontier, f_parent=f_parent)
             if not frontier:
-                break
+                frontier = copy.deepcopy(f_parent)
             plan_by_node = await self._plan_frontier(frontier, _round=_round)
             if plan_by_node is None:
                 print('index error, regenerate..')
