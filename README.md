@@ -10,46 +10,51 @@ WebTactix is a modular framework for web-based task execution and evaluation. It
 
 ```
 ├── webtactix/
-│   ├── agents/                # Contains different types of agents for managing tasks
+│   ├── agents/                  # Agents for planning/decision/constraints/data extraction
 │   │   ├── __init__.py
-│   │   ├── constraint_agent.py # Agent responsible for task constraints
-│   │   ├── data_agent.py      # Agent responsible for data extraction
-│   │   ├── decision_agent.py  # Agent that makes decisions based on the current state
-│   │   ├── planner_agent.py   # Agent that plans task execution
-│   ├── browser/               # Browser-related modules for web scraping and automation
+│   │   ├── constraint_agent.py  # Extracts/maintains task constraints
+│   │   ├── data_agent.py        # Data extraction agent (e.g., collecting target info)
+│   │   ├── decision_agent.py    # Chooses next branch/action based on current state
+│   │   └── planner_agent.py     # Generates candidate plans/actions
+│   ├── browser/                 # Browser automation layer
 │   │   ├── __init__.py
-│   │   ├── playwright_session.py # Playwright session for browser interaction
-│   ├── core/                  # Core modules providing essential utilities and data structures
+│   │   └── playwright_session.py# Playwright session wrapper
+│   ├── core/                    # Core data structures and utilities
 │   │   ├── __init__.py
-│   │   ├── priority_queue.py  # FIFO Queue for managing nodes
-│   │   ├── schemas.py         # Data schemas used across the project
-│   │   ├── semantic_tree.py   # Semantic tree structure for organizing tasks
-│   ├── datasets/              # Modules for handling datasets and task specifications
+│   │   ├── priority_queue.py    # Priority queue / frontier management
+│   │   ├── schemas.py           # Shared data schemas
+│   │   └── semantic_tree.py     # Semantic tree memory structure
+│   ├── datasets/                # Dataset adapters and evaluators
 │   │   ├── __init__.py
-│   │   ├── webarena_adapter.py # Adapter for fetching tasks from WebArena repository
-│   │   ├── webarena_evaluator.py # Evaluator for assessing task completion
-│   ├── llm/                   # Integration with LLM (Large Language Models)
+│   │   ├── online_min2web_adapter.py # Adapter for Online Mind2Web tasks
+│   │   ├── Online Mind2Web.json      # Example/config for Online Mind2Web
+│   │   ├── test_evaluator.py         # Lightweight evaluator for testing
+│   │   ├── webarena_adapter.py       # Adapter for WebArena tasks
+│   │   └── webarena_evaluator.py     # WebArena evaluator
+│   ├── llm/                     # LLM interface and presets
 │   │   ├── __init__.py
-│   │   ├── openai_compat.py   # Wrapper for OpenAI API
-│   │   ├── presets.py         # Presets for different LLM configurations
-│   ├── preprocess/            # Modules for preprocessing tasks and observations
+│   │   ├── openai_compat.py     # OpenAI-compatible API wrapper
+│   │   └── presets.py           # Presets/configs for different LLM setups
+│   ├── preprocess/              # Observation preprocessing and dedup
 │   │   ├── __init__.py
-│   │   ├── observation_encoder.py # Encoder for task observations
-│   │   ├── snapshot_dedup.py   # Module for deduplication of snapshots
-│   ├── runner/                # Handles the execution and running of experiments
+│   │   ├── observation_encoder.py # Encodes observations (e.g., AxTree processing)
+│   │   └── snapshot_dedup.py      # Snapshot deduplication
+│   ├── runner/                  # Experiment execution orchestration
 │   │   ├── __init__.py
-│   │   ├── experiment_runner.py # Runner for experiments
-│   │   ├── ft.py              # Additional functionality for the runner
-│   │   ├── recorder.py        # Records the results of each task execution
-│   ├── tools/                 # Utility tools for the framework
-│   ├── workflows/             # Workflows for running predefined sequences of tasks
-│   │   ├── __init__.py
-│   │   ├── execute.py         # Executes workflows defined by the user
-│   │   ├── f_test.py          # Example test workflows
-├── main.py                    # Main entry point for running the framework
-├── start.sh                   # Shell script to start the experiment
-├── README.md                  # This file
-└── requirements.txt           # List of Python dependencies
+│   │   ├── experiment_runner.py  # Main experiment runner
+│   │   ├── ft.py                 # Use for environment test (can ignore)
+│   │   └── recorder.py           # Recording/logging of trajectories/results
+│   └── workflows/               # Workflow entrypoints
+│       ├── __init__.py
+│       └── execute.py            # Executes a workflow / task loop
+├── tools/                       # Utility scripts (record visualization / inspection)
+│   ├── __init__.py
+│   ├── build_record_site.py      # Build visualization site from records
+│   └── inspect_record.py         # Inspect records locally
+├── main.py                       # Main entry point
+├── start.sh                      # Convenience script to start webarena environment
+├── README.md
+└── requirements.txt
 ```
 
 ## 🔗 Links
