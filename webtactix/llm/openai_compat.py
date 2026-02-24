@@ -5,7 +5,7 @@ import json
 from dataclasses import dataclass
 from typing import Any, Dict, Optional, Tuple, Union
 import tiktoken
-from openai import AsyncOpenAI
+#from openai import AsyncOpenAI
 
 
 @dataclass(frozen=True)

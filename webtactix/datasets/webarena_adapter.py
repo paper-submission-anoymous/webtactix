@@ -1,11 +1,48 @@
 from __future__ import annotations
 
 import json
+import os
 from dataclasses import dataclass
 from pathlib import Path
 from typing import Iterator, List, Optional
 
 from webtactix.core.schemas import EvalSpec, TaskSpec
+
+# Remap Docker-internal hostnames to real accessible URLs.
+# Values are read from env vars (same as env_config.py) with fallback defaults.
+_HOST_MAP: dict[str, str] = {
+    "agentic-ai-reddit":        os.environ.get("REDDIT",         "http://143.215.184.110:9999").rstrip("/"),
+    "agentic-ai-shopping":      os.environ.get("SHOPPING",       "http://143.215.184.110:7770").rstrip("/"),
+    "agentic-ai-shopping-admin":os.environ.get("SHOPPING_ADMIN", "http://143.215.184.110:7780/admin").rstrip("/"),
+    "agentic-ai-gitlab":        os.environ.get("GITLAB",         "http://143.215.184.110:8023").rstrip("/"),
+    "agentic-ai-wikipedia":     os.environ.get("WIKIPEDIA",      "http://143.215.184.110:8888").rstrip("/"),
+    "agentic-ai-map":           os.environ.get("MAP",            "http://143.215.184.110:3000").rstrip("/"),
+}
+
+
+def _remap_url(url: str) -> str:
+    """Replace Docker-internal hostnames with real IPs and ensure http:// scheme."""
+    if not url:
+        return url
+    # strip scheme if present to get host:port/path
+    scheme = ""
+    rest = url
+    if "://" in url:
+        scheme, rest = url.split("://", 1)
+    # rest is like "agentic-ai-reddit:9999/some/path"
+    for docker_host, real_base in _HOST_MAP.items():
+        if rest.startswith(docker_host):
+            suffix = rest[len(docker_host):]
+            # suffix may start with :port — drop it since real_base already has port
+            if suffix.startswith(":"):
+                # strip the port number part
+                slash_idx = suffix.find("/")
+                suffix = suffix[slash_idx:] if slash_idx != -1 else ""
+            return real_base + suffix
+    # no remapping needed — just ensure scheme
+    if not scheme:
+        return "http://" + rest
+    return url
 
 
 @dataclass(frozen=True)
@@ -54,6 +91,7 @@ class WebArenaAdapter:
         return files
 
     def _parse(self, obj: dict, source_path: str) -> TaskSpec:
+        #print(obj)
         eval_obj = obj.get("eval") or {}
         eval_spec = EvalSpec(
             eval_types=list(eval_obj.get("eval_types") or []),
@@ -69,7 +107,7 @@ class WebArenaAdapter:
             dataset="webarena",
             task_id=int(obj.get("task_id", -1)),
             intent=str(obj.get("intent") or ""),
-            start_url=str(obj.get("start_url") or ""),
+            start_url=_remap_url(str(obj.get("start_url") or "")),
             sites=list(obj.get("sites") or []),
             require_login=bool(obj.get("require_login", False)),
             storage_state_path=str(obj.get("storage_state") or "") or None,

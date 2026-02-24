@@ -1,0 +1,119 @@
+{
+  "time_utc": "2026-02-20T22:38:53.444902+00:00",
+  "t_end": 830.5464125657454,
+  "dataset": "webarena",
+  "task_id": "651",
+  "status": "finish",
+  "answer": "Comment posted successfully.",
+  "final_node_id": null,
+  "reason": "finish",
+  "real_answer": {
+    "eval_types": [
+      "url_match",
+      "program_html"
+    ],
+    "reference_answers": {},
+    "reference_url": "agentic-ai-reddit:9999/f/pittsburgh/45899/driving-in-pittsburgh-summed-up-by-one-traffic-sign",
+    "string_note": "",
+    "program_html": [
+      {
+        "url": "last",
+        "locator": "document.querySelector('.comment__body').outerText",
+        "required_contents": {
+          "exact_match": "Yeah, pittsburgh traffic, you know..."
+        }
+      }
+    ],
+    "reference_answer_raw_annotation": "",
+    "raw": {
+      "eval_types": [
+        "url_match",
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "agentic-ai-reddit:9999/f/pittsburgh/45899/driving-in-pittsburgh-summed-up-by-one-traffic-sign",
+      "program_html": [
+        {
+          "url": "last",
+          "locator": "document.querySelector('.comment__body').outerText",
+          "required_contents": {
+            "exact_match": "Yeah, pittsburgh traffic, you know..."
+          }
+        }
+      ],
+      "url_note": "GOLD in PRED"
+    }
+  },
+  "eval_result": {
+    "ok": false,
+    "score": 0.0,
+    "reason": "failed",
+    "details": {
+      "per_type": [
+        {
+          "ok": false,
+          "score": 0.0,
+          "reason": "url_match_failed",
+          "details": {
+            "pred": "http://143.215.184.110:9999/f/pittsburgh/45899/driving-in-pittsburgh-summed-up-by-one-traffic-sign/comment/2",
+            "ref": "agentic-ai-reddit:9999/f/pittsburgh/45899/driving-in-pittsburgh-summed-up-by-one-traffic-sign"
+          }
+        },
+        {
+          "ok": true,
+          "score": 1.0,
+          "reason": "program_html_ok",
+          "details": {
+            "items": [
+              {
+                "idx": 0,
+                "target_url": "http://143.215.184.110:9999/f/pittsburgh/45899/driving-in-pittsburgh-summed-up-by-one-traffic-sign/comment/2",
+                "locator": "document.querySelector('.comment__body').outerText",
+                "required_contents": {
+                  "exact_match": "Yeah, pittsburgh traffic, you know..."
+                },
+                "resolved_url": "http://143.215.184.110:9999/f/pittsburgh/45899/driving-in-pittsburgh-summed-up-by-one-traffic-sign/comment/2",
+                "selected_element_len": 37,
+                "selected_element_preview": "Yeah, pittsburgh traffic, you know...",
+                "check": {
+                  "ok": true,
+                  "pred": "Yeah, pittsburgh traffic, you know...",
+                  "ref": [
+                    "Yeah, pittsburgh traffic, you know..."
+                  ],
+                  "method": "llm",
+                  "reason": "The predicted answer exactly matches the reference phrase, ignoring formatting differences.",
+                  "usage": {
+                    "prompt_tokens": 118,
+                    "completion_tokens": 99,
+                    "total_tokens": 217,
+                    "estimated": false,
+                    "model": "nvidia/nemotron-3-nano-30b-a3b:free"
+                  },
+                  "type": "fuzzy_match"
+                },
+                "ok": true
+              }
+            ]
+          }
+        }
+      ]
+    }
+  },
+  "summary": {
+    "total_tokens": 33712,
+    "total_prompt_tokens": 28469,
+    "total_completion_tokens": 5243,
+    "llm_calls": 4,
+    "estimated_calls": 0,
+    "planner_calls": 2,
+    "decision_calls": 2,
+    "total_rounds": 3,
+    "total_nodes": null,
+    "planner_frontier_sizes": {
+      "0": 0,
+      "1": 1,
+      "2": 1
+    }
+  }
+}
