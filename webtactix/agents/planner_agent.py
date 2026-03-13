@@ -11,6 +11,10 @@ from webtactix.core.schemas import NodeId
 from webtactix.agents.constraint_agent import Constraint
 from webtactix.runner.recorder import Recorder
 
+# ── profiler ──────────────────────────────────────────────────────────────
+from webtactix.profiler import Profiler
+# ─────────────────────────────────────────────────────────────────────────────
+
 _ALLOWED_PLAN_NAMES = {"web_operation", "data_extraction", "partially_done", "go_back", "finish"}
 _ALLOWED_ACTIONS = {"click", "input", "select", "press_enter", "goto"}
 
@@ -86,6 +90,7 @@ class PlannerAgent:
             tree: SemanticTree = None,
             rec: Recorder = None,
             cfg: Optional[PlannerAgentConfig] = None,
+            mode: str = "child",
     ) -> None:
         self.llm = llm
         self.q = q
@@ -93,6 +98,7 @@ class PlannerAgent:
         self.tree = tree
         self.rec = rec
         self.cfg = cfg or PlannerAgentConfig()
+        self.profiler = Profiler(mode)
 
     async def run(self, node_id: NodeId, _round: int) -> PlanningResult:
         st = self.tree.state.get(node_id)
@@ -159,34 +165,23 @@ class PlannerAgent:
             "3) partially_done\n"
             "   - Use this when you found important information or partially completed the task. With this type, you can compress the complex historical records into a concise completed description, along with the tasks that still need to be accomplished below.\n"
             "   - A typical usage scenario is a multi-stage task. Once a stage is completed, the completed part can be summarized. \n"
-            "   - When use this plan, leave step empty and write in goal, the completed part must be ground truth and cannot be changed.\n"
-            "   - Example: (1) We have already obtained the xxx information, next we will xxx based on this information. (2) We have already finish book a hotel(time), next we will buy ticket before the time."
-            "4) go_back\n"
-            "   - Use when the current page does not support useful actions for progress.\n"
-            "   - If you want to go to previous page, please use category web operation's goto action.\n"
-            "   - Output exactly ONE plan. Leave steps empty.\n"
-            "5) finish\n"
-            "   - Use when you can obtained the final answer from history and current observation or task completed.\n"
-            "   - Output exactly ONE plan with the final answer in goal, only contain <the direct answer> without explanation or other text.\n"
-            "TIPS: \n"
-            "- Stop as soon as the user's request is satisfied (“good-enough” is correct).\n"
-            "- If the user asks for ONE item/example, return the first valid match and DO NOT continue searching or comparing.\n"
-            "- Do not apply extra filters or open extra details unless needed to produce the requested answer.\n"
-            "- Do not verify across multiple candidates unless the user explicitly asks for “best / all / compare / exhaustive”.\n"
-            "- For user task of <Viewing/showing/display/browse/get report/find out> or other similar task, just present the content the user needs on the page and describe what needs to do on this page is fine, never make unnecessary actions(extraction, page by page examine...).\n"
-            "- If the relevant entries that meet the criteria have already been displayed on the webpage, there is no need to perform the filtering process.\n"
-            "- Sometimes exact filters are not exist, you can make some deduction to identify the constraints instead of evidence.\n"
-            "- 0, N/A, not found or unavaliable can also be consider as answer or result. \n"
-            "- For user task, you can also use the external knowledge that you already knew.\n"
-            f"{TIPS}\n\n"
-            "User's task:\n"
-            f"{self.q}\n\n"
         )
-        if self.constraints:
-            user += "Constraints:\n" + "\n".join(f"- [{c.kind}] {c.text}" for c in self.constraints) + "\n\n"
 
-        if history_text.strip():
-            user += "History Actions you have done (older to newer):\n" + history_text.strip() + "\n\n"
+        if self.constraints:
+            user += (
+                "Constraints (must be satisfied by the final answer):\n"
+                + "\n".join(f"- [{c.kind}] {c.text}" for c in self.constraints)
+                + "\n\n"
+            )
+
+        user += (
+            f"Task:\n{self.q}\n\n"
+            "TIPS:\n"
+            f"{TIPS}\n\n"
+        )
+
+        if len_hist > 0:
+            user += f"History (older to newer):\n{history_text}\n\n"
         else:
             user += "History (older to newer):\n This is the start website, no actions have been done before. You should make progress on the current page.\n\n"
 
@@ -218,7 +213,22 @@ class PlannerAgent:
 
         self.rec.plan_begin(node_id)
 
+        # ── PROFILER: record start ────────────────────────────────────────
+        # step_name encodes round + node so every call is uniquely
+        # identifiable in the DB without joining any other table.
+        _cid = self.profiler.emit_llm_start(
+            step_name     = f"planner|round={_round}|node={node_id}",
+            model_name    = getattr(self.llm, "model", ""),
+            system_prompt = system,
+            user_prompt   = user,
+        )
+        # ─────────────────────────────────────────────────────────────────
+
         obj, usage = await self.llm.chat_json(system=system, user=user)
+
+        # ── PROFILER: record end with exact token counts from usage ───────
+        self.profiler.emit_llm_end(_cid, step_name = f"planner|round={_round}|node={node_id}", usage=usage, output_obj=obj)
+        # ─────────────────────────────────────────────────────────────────
 
         page_summary = ""
         progress_analysis = ""
@@ -348,4 +358,3 @@ class PlannerAgent:
         self.rec.save_plan(node_id=node_id, result=planning_result, usage=usage)
 
         return planning_result
-

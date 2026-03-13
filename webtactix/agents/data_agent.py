@@ -14,6 +14,11 @@ from webtactix.browser.playwright_session import PlaywrightSession, wait_for_pag
 import sys
 import subprocess
 
+# ── profiler ──────────────────────────────────────────────────────────────
+from webtactix.profiler import Profiler
+# ─────────────────────────────────────────────────────────────────────────────
+
+
 @dataclass
 class DataExtractionAgentConfig:
     max_rounds: int = 20
@@ -61,6 +66,7 @@ class DataExtractionAgent:
         sess: PlaywrightSession,
         rec: Recorder,
         cfg: Optional[DataExtractionAgentConfig] = None,
+        mode: str = "child",
     ) -> None:
         self.task = task
         self.llm = llm
@@ -69,6 +75,7 @@ class DataExtractionAgent:
         self.rec = rec
         self.encoder = ObservationEncoder(ObservationEncoderConfig(table_max_rows=1e10))
         self.cfg = cfg or DataExtractionAgentConfig()
+        self.profiler = Profiler(mode)
 
     async def run(
         self,
@@ -109,17 +116,37 @@ class DataExtractionAgent:
         page_initial = await self.sess.get_snapshot(page)
         enc_initial = self.encoder.encode(cur_snapshot=page_initial)
         common_hist, _ = self.tree.history_for_planner(node_id)
+
+        system = self._system_prompt()   # constant — build once outside loop
+
         for turn_idx in range(self.cfg.max_rounds):
             print('[DATA EXTRACTION] ', turn_idx)
             await wait_for_page_stable(page)
             cur = await self.sess.get_snapshot(page)
             enc = self.encoder.encode(cur_snapshot=cur)
 
-            # 1) LLM decides: record key info + next actions OR done with final extraction
-            obj, usage = await self.llm.chat_json(
-                system=self._system_prompt(),
-                user=self._user_prompt(goal=goal, enc=enc, common_history=common_hist, history=hist, url=page.url),
+            user = self._user_prompt(
+                goal=goal, enc=enc, common_history=common_hist,
+                history=hist, url=page.url,
             )
+
+            # ── PROFILER: record start of this extraction turn ────────────
+            # step_name encodes turn index + node_id so every loop
+            # iteration is individually queryable in the DB.
+            _cid = self.profiler.emit_llm_start(
+                step_name     = f"data|turn={turn_idx}|node={node_id}",
+                model_name    = getattr(self.llm, "model", ""),
+                system_prompt = system,
+                user_prompt   = user,
+            )
+            # ─────────────────────────────────────────────────────────────
+
+            # 1) LLM decides: record key info + next actions OR done with final extraction
+            obj, usage = await self.llm.chat_json(system=system, user=user)
+
+            # ── PROFILER: record end with exact usage ─────────────────────
+            self.profiler.emit_llm_end(_cid, usage=usage, output_obj=obj)
+            # ─────────────────────────────────────────────────────────────
 
             parsed = self._parse_llm(obj)
             note = parsed.get("note", "").strip()
@@ -200,7 +227,6 @@ class DataExtractionAgent:
                     action_sig = f"ERROR: {error_sig}"
 
             elif step['action'] == "code":
-                # analyze = parsed.get("analyze", "").strip()
                 raw = step.get("executable_code", "") or ""
                 code = self._strip_code_fence(raw)
 
@@ -290,11 +316,10 @@ class DataExtractionAgent:
             "answer's Rules:\n"
             "- Set done=true to give the final output and put the final answer and its explanation in 'answer'.\n"
             "- If the task cannot be completed correctly within current page(The details or editing page, which is a derivative of the current page, is also considered part of the current page.) because extra information or other navigation need to be acted, set done=true and explain(must mention cannot be done just in current page, not a negation of the entire task ). \n"
-            "- If completing the task would require an unreasonable amount of repetitive clicking or navigation, for example more than 10 items to open one by one, set done=true and explain in answer. \n"
+            "- If completing the task would require an unreasonable amount of repetitive clicking or navigation, for example more than 10 items to open one by one, set done=true and explain. \n"
             "- If the task requires obtaining the answer from an extremely long table(>100 rows) and it is clearly possible to set up a filter to optimize the extraction process, set done=true and explain in answer. You can't set filters yourself\n"
             "- If you want to apply filters, set done=true and ask PLANNER to do this in 'answer'.\n\n"
             "- If the output result is more than 10, only the URL(display on the browser) where the result is located and a description are required.\n\n"
-            # f"TIPS:\n {external_knowledge}\n\n"
             f"History (older to newer):\n{h}\n\n"
             "actree:\n"
             f"{enc.actree_yaml}\n\n"

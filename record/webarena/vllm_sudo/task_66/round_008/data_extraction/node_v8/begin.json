@@ -1,0 +1,8 @@
+{
+  "node_id": "v8",
+  "goal": "Post URLs that recommend a single book among top 10 posts in books forum: http://127.0.0.1:9999/f/books/17445/i-just-finished-reading-the-hobbit-to-my-6-year-old-daughter",
+  "url": "http://127.0.0.1:9999/f/books",
+  "time_utc": "2026-03-04T00:10:16.099625+00:00",
+  "t_start": 373.2485191002488,
+  "round": 8
+}

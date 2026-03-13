@@ -1,0 +1,34 @@
+- navigation:
+  - link [0] "Jump to main content":
+    - /url: "#main"
+  - link [1] "Jump to sidebar":
+    - /url: "#sidebar"
+- navigation:
+  - link [2] "Home":
+    - /url: /
+    - text: Postmill
+  - list:
+    - link [3] "Forums":
+      - /url: /forums
+    - link [4] "Wiki":
+      - /url: /wiki
+  - searchbox [5] "Search query": explainlikeim5
+  - list:
+    - link [6] "Log in":
+      - /url: /login
+    - link [7] "Sign up":
+      - /url: /registration
+- main:
+  - heading "Search" [level=1]
+  - text: Search query
+  - searchbox [8] "Search query": explainlikeim5
+  - button [9] "Search"
+  - "heading \"No results for explainlikeim5\" [level=2]":
+    - text: No results for
+    - emphasis: explainlikeim5
+  - paragraph: There are no entries to display.
+- contentinfo:
+  - paragraph:
+    - text: Running
+    - link [10] "Postmill":
+      - /url: "https://postmill.xyz/"

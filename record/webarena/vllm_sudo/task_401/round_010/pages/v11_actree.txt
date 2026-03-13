@@ -1,0 +1,52 @@
+- alert:
+  - paragraph: Your account has been registered.
+  - button [0] "Dismiss"
+- navigation:
+  - link [1] "Jump to main content":
+    - /url: "#main"
+  - link [2] "Jump to sidebar":
+    - /url: "#sidebar"
+- navigation:
+  - link [3] "Home":
+    - /url: /
+    - text: Postmill
+  - list:
+    - link [4] "Forums":
+      - /url: /forums
+    - link [5] "Wiki":
+      - /url: /wiki
+  - searchbox [6] "Search query"
+  - list:
+    - link [7] "Notifications (0)":
+      - /url: /notifications
+      - img
+    - link [8] "Submit":
+      - /url: /submit
+      - img
+      - text: Submit
+    - button [9] "TestUser123":
+      - img
+      - strong: TestUser123
+- main:
+  - navigation:
+    - list:
+      - link [10] "Submissions":
+        - /url: /
+      - link [11] "Comments":
+        - /url: /comments
+    - list:
+      - button [12] "Filter on: Featured":
+        - img
+        - text: Featured
+      - button [13] "Sort by: Hot":
+        - img
+        - text: Hot
+  - paragraph: You are not subscribed to any forum. Showing featured forums instead.
+- complementary:
+  - heading "Featured forums" [level=1]
+  - paragraph: There are no featured forums to display.
+- contentinfo:
+  - paragraph:
+    - text: Running
+    - link [14] "Postmill":
+      - /url: "https://postmill.xyz/"

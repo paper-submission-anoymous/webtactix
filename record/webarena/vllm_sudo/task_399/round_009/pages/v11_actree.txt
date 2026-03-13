@@ -1,0 +1,36 @@
+- navigation:
+  - link [0] "Jump to main content":
+    - /url: "#main"
+  - link [1] "Jump to sidebar":
+    - /url: "#sidebar"
+- navigation:
+  - link [2] "Home":
+    - /url: /
+    - text: Postmill
+  - list:
+    - link [3] "Forums":
+      - /url: /forums
+    - link [4] "Wiki":
+      - /url: /wiki
+  - searchbox [5] "Search query"
+  - list:
+    - link [6] "Log in":
+      - /url: /login
+    - link [7] "Sign up":
+      - /url: /registration
+- main:
+  - heading "Request password reset link" [level=1]
+  - paragraph: If you never receive an email, the address you specified is probably incorrect. For privacy reasons we will not confirm if a user with the specified email address actually exists.
+  - paragraph: If you have several accounts registered to one email address, you will receive one email per account.
+  - text: Email address *
+  - textbox [8] "Email address This field is required."
+  - text: Verification *
+  - button [9] "Verification image":
+    - img "Verification image"
+  - textbox [10] "Verification This field is required."
+  - button [11] "Submit"
+- contentinfo:
+  - paragraph:
+    - text: Running
+    - link [12] "Postmill":
+      - /url: "https://postmill.xyz/"

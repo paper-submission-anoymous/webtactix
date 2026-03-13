@@ -1,0 +1,190 @@
+
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Record Site - webarena / vllm_sudo</title>
+  <style>
+:root{
+  --bg:#0b1220;
+  --panel:#0f1b33;
+  --card:#0c1730;
+  --muted:#94a3b8;
+  --text:#e5e7eb;
+  --line:#233055;
+  --accent:#60a5fa;
+  --good:#34d399;
+  --warn:#fbbf24;
+  --bad:#fb7185;
+  --purple:#c4b5fd;
+}
+*{box-sizing:border-box}
+body{
+  margin:0;
+  font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
+  background: radial-gradient(1000px 600px at 20% 10%, rgba(96,165,250,.15), transparent 50%),
+              radial-gradient(800px 500px at 80% 20%, rgba(196,181,253,.12), transparent 45%),
+              var(--bg);
+  color:var(--text);
+}
+a{color:var(--accent); text-decoration:none}
+a:hover{text-decoration:underline}
+header{
+  padding:18px 22px;
+  border-bottom:1px solid var(--line);
+  background: rgba(15, 27, 51, 0.65);
+  backdrop-filter: blur(10px);
+  position: sticky;
+  top:0;
+  z-index:10;
+}
+.wrap{max-width:1200px; margin:0 auto; padding:18px 22px}
+h1{font-size:20px; margin:0}
+h2{font-size:16px; margin:0 0 10px 0; color:#dbeafe}
+.grid{display:grid; gap:12px}
+.grid.cols2{grid-template-columns: repeat(2, minmax(0,1fr))}
+.grid.cols3{grid-template-columns: repeat(3, minmax(0,1fr))}
+@media (max-width: 980px){
+  .grid.cols2,.grid.cols3{grid-template-columns: 1fr}
+}
+.card{
+  background: linear-gradient(180deg, rgba(12, 23, 48, .96), rgba(12, 23, 48, .86));
+  border: 1px solid rgba(35,48,85,.75);
+  border-radius: 14px;
+  padding: 12px 12px 14px;
+  box-shadow: 0 12px 28px rgba(0,0,0,.25);
+}
+.card-title{
+  font-weight: 650;
+  color:#e0f2fe;
+  margin-bottom:10px;
+  display:flex;
+  align-items:center;
+  gap:10px;
+}
+.card-body{color:var(--text)}
+.subttl{margin:10px 0 6px; font-weight:650; color:#bfdbfe}
+.meta{color:var(--muted); font-size:12px; margin:6px 0}
+.muted{color:var(--muted)}
+.row{display:flex; gap:10px; align-items:center; justify-content:space-between}
+.col{flex:1}
+.right{text-align:right}
+.badge{
+  display:inline-flex;
+  align-items:center;
+  padding:3px 8px;
+  border-radius:999px;
+  font-size:12px;
+  border:1px solid rgba(148,163,184,.25);
+  background: rgba(148,163,184,.08);
+  color: #e5e7eb;
+  white-space:nowrap;
+}
+.badge.blue{border-color: rgba(96,165,250,.35); background: rgba(96,165,250,.12)}
+.badge.green{border-color: rgba(52,211,153,.35); background: rgba(52,211,153,.12)}
+.badge.yellow{border-color: rgba(251,191,36,.35); background: rgba(251,191,36,.12)}
+.badge.red{border-color: rgba(251,113,133,.35); background: rgba(251,113,133,.12)}
+.badge.purple{border-color: rgba(196,181,253,.35); background: rgba(196,181,253,.12)}
+.badge.gray{border-color: rgba(148,163,184,.25); background: rgba(148,163,184,.08)}
+.kv{width:100%; border-collapse: collapse; font-size:13px}
+.kv td{padding:6px 8px; border-top: 1px solid rgba(35,48,85,.6)}
+.kv td.k{width:180px; color:#cbd5e1}
+.kv td.v{color:#e5e7eb}
+.tblwrap{overflow:auto; border: 1px solid rgba(35,48,85,.65); border-radius: 12px}
+.tbl{width:100%; border-collapse: collapse; font-size:13px; min-width: 760px}
+.tbl th,.tbl td{padding:8px 10px; border-bottom: 1px solid rgba(35,48,85,.55); vertical-align: top}
+.tbl th{color:#c7d2fe; text-align:left; background: rgba(15,27,51,.55); position: sticky; top:0}
+.tbl td.mono, .mono{font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace}
+.snippet{
+  background: rgba(15,27,51,.55);
+  border:1px solid rgba(35,48,85,.6);
+  border-radius: 12px;
+  padding: 10px 12px;
+  overflow:auto;
+  max-height: 320px;
+  font-size:12px;
+  line-height: 1.45;
+}
+details{border:1px solid rgba(35,48,85,.6); border-radius:12px; padding:8px 10px; background: rgba(15,27,51,.35); margin:10px 0}
+summary{cursor:pointer; color:#e0f2fe; font-weight:650}
+.imggrid{display:grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap:10px; margin-top:10px}
+@media (max-width: 980px){ .imggrid{grid-template-columns: 1fr} }
+.imgcard{
+  display:block;
+  border:1px solid rgba(35,48,85,.65);
+  border-radius: 12px;
+  overflow:hidden;
+  background: rgba(15,27,51,.4);
+}
+.imgcard img{width:100%; height:auto; display:block}
+.imgcap{padding:8px 10px; font-size:12px; color:var(--muted)}
+.timeline{
+  display:flex;
+  flex-direction: column;
+  gap:10px;
+}
+.tline-item{
+  padding:10px 12px;
+  border:1px solid rgba(35,48,85,.65);
+  border-radius: 14px;
+  background: rgba(15,27,51,.35);
+  display:flex;
+  justify-content:space-between;
+  align-items:flex-start;
+  gap:10px;
+}
+.tline-left{min-width: 240px}
+.tline-right{flex:1}
+.tline-rt{margin-top:6px}
+.pill{
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+}
+.hr{height:1px; background: rgba(35,48,85,.75); margin:14px 0}
+.footer{color:var(--muted); font-size:12px; padding:20px 0}
+.small{font-size:12px}
+.de .card-title{color:#ddd6fe}
+.graph{
+  height: 360px;
+  border:1px solid rgba(35,48,85,.65);
+  border-radius: 14px;
+  background: rgba(15,27,51,.35);
+}
+.star{
+  margin-left:6px;
+  color:var(--warn);
+  font-size:14px;
+  vertical-align:middle;
+  cursor:help;
+}
+</style>
+</head>
+<body>
+  <header>
+    <div class="wrap">
+      <h1>Record Site <span class="muted">| webarena / vllm_sudo</span></h1>
+    </div>
+  </header>
+  
+    <div class="wrap">
+      <div class="grid cols2">
+        
+    <section class="card">
+      <div class="card-title">Dataset / Model</div>
+      <div class="card-body"><table class='kv'><tr><td class='k'>dataset</td><td class='v'>webarena</td></tr><tr><td class='k'>model</td><td class='v'>vllm_sudo</td></tr><tr><td class='k'>generated_at</td><td class='v'>2026-03-12T00:31:55.376793Z</td></tr></table></div>
+    </section>
+    
+        
+    <section class="card">
+      <div class="card-title">Tasks</div>
+      <div class="card-body"><div class='meta'>click task_id to open detail page</div><div class='tblwrap'><table class='tbl'><thead><tr><th>task_id</th><th>intent</th><th>status</th><th>eval</th><th>tokens</th><th>t_end</th><th>workflow</th></tr></thead><tbody><tr><td class='mono'><a href='task_27.html'>27</a></td><td>Tell me the count of comments that have received more downvotes than upvotes for the user who made the latest post on th…</td><td></td><td><span class='badge gray'>n/a</span> <span class='mono'></span></td><td class='mono'></td><td class='mono'></td><td class='mono'>wo 0 / de 0</td></tr><tr><td class='mono'><a href='task_28.html'>28</a></td><td>Tell me the count of comments that have received more downvotes than upvotes for the user who made the latest post on th…</td><td></td><td><span class='badge gray'>n/a</span> <span class='mono'></span></td><td class='mono'></td><td class='mono'></td><td class='mono'>wo 1 / de 0</td></tr><tr><td class='mono'><a href='task_29.html'>29</a></td><td>Tell me the count of comments that have received more downvotes than upvotes for the user who made the latest post on th…</td><td>finish</td><td><span class='badge red'>fail</span> <span class='mono'>0.0</span></td><td class='mono'>38452</td><td class='mono'>243.998</td><td class='mono'>wo 3 / de 0</td></tr><tr><td class='mono'><a href='task_30.html'>30</a></td><td>Tell me the count of comments that have received more downvotes than upvotes for the user who made the latest post on th…</td><td></td><td><span class='badge gray'>n/a</span> <span class='mono'></span></td><td class='mono'></td><td class='mono'></td><td class='mono'>wo 3 / de 0</td></tr><tr><td class='mono'><a href='task_31.html'>31</a></td><td>Tell me the count of comments that have received more downvotes than upvotes for the user who made the latest post on th…</td><td></td><td><span class='badge gray'>n/a</span> <span class='mono'></span></td><td class='mono'></td><td class='mono'></td><td class='mono'>wo 3 / de 0</td></tr><tr><td class='mono'><a href='task_66.html'>66</a></td><td>Among the top 10 post in &quot;books&quot; forum, show me the post URLs that recommand a single book</td><td>finish</td><td><span class='badge red'>fail</span> <span class='mono'>0.0</span></td><td class='mono'>73528</td><td class='mono'>398.338</td><td class='mono'>wo 7 / de 1</td></tr><tr><td class='mono'><a href='task_67.html'>67</a></td><td>Among the top 10 post in &quot;books&quot; forum, show me the book names from posts that recommand a single book</td><td>finish</td><td><span class='badge green'>ok</span> <span class='mono'>1.0</span></td><td class='mono'>38759</td><td class='mono'>170.515</td><td class='mono'>wo 5 / de 0</td></tr><tr><td class='mono'><a href='task_68.html'>68</a></td><td>Among the top 10 post in &quot;books&quot; forum, show me the author name and the book name from posts that recommand a single boo…</td><td>finish</td><td><span class='badge red'>fail</span> <span class='mono'>0.0</span></td><td class='mono'>81301</td><td class='mono'>462.903</td><td class='mono'>wo 6 / de 1</td></tr><tr><td class='mono'><a href='task_69.html'>69</a></td><td>Among the top 10 post in &quot;books&quot; forum, is there any post talks about supporting local book stores? If so, tell me the o…</td><td>finish</td><td><span class='badge green'>ok</span> <span class='mono'>1.0</span></td><td class='mono'>41852</td><td class='mono'>124.857</td><td class='mono'>wo 4 / de 0</td></tr><tr><td class='mono'><a href='task_399.html'>399</a></td><td>Change my reddit bio to &quot;I am a robot&quot;</td><td>finish</td><td><span class='badge red'>fail</span> <span class='mono'>0.0</span></td><td class='mono'>82343</td><td class='mono'>563.430</td><td class='mono'>wo 12 / de 0</td></tr><tr><td class='mono'><a href='task_400.html'>400</a></td><td>Change my reddit bio to &quot;Pro Python Developer with 20 years of Experience&quot;</td><td></td><td><span class='badge gray'>n/a</span> <span class='mono'></span></td><td class='mono'></td><td class='mono'></td><td class='mono'>wo 12 / de 0</td></tr><tr><td class='mono'><a href='task_401.html'>401</a></td><td>Change my reddit bio to &quot;Seeking SDE positions&quot;</td><td>finish</td><td><span class='badge red'>fail</span> <span class='mono'>0.0</span></td><td class='mono'>69580</td><td class='mono'>397.329</td><td class='mono'>wo 12 / de 0</td></tr><tr><td class='mono'><a href='task_402.html'>402</a></td><td>Change my reddit bio to &quot;Freelance Web Developer&quot;</td><td>finish</td><td><span class='badge red'>fail</span> <span class='mono'>0.0</span></td><td class='mono'>62206</td><td class='mono'>291.250</td><td class='mono'>wo 13 / de 0</td></tr><tr><td class='mono'><a href='task_403.html'>403</a></td><td>Change my reddit bio to &quot;Awesome Prompt Artist&quot;</td><td>finish</td><td><span class='badge red'>fail</span> <span class='mono'>0.0</span></td><td class='mono'>86717</td><td class='mono'>443.217</td><td class='mono'>wo 13 / de 0</td></tr><tr><td class='mono'><a href='task_404.html'>404</a></td><td>Upvote the newest post in books subreddit</td><td>finish</td><td><span class='badge red'>fail</span> <span class='mono'>0.0</span></td><td class='mono'>61893</td><td class='mono'>254.684</td><td class='mono'>wo 10 / de 0</td></tr><tr><td class='mono'><a href='task_405.html'>405</a></td><td>Upvote the newest post in DIY subreddit</td><td>finish</td><td><span class='badge red'>fail</span> <span class='mono'>0.0</span></td><td class='mono'>117103</td><td class='mono'>481.474</td><td class='mono'>wo 13 / de 0</td></tr><tr><td class='mono'><a href='task_406.html'>406</a></td><td>Upvote the newest post in future technology subreddit</td><td></td><td><span class='badge gray'>n/a</span> <span class='mono'></span></td><td class='mono'></td><td class='mono'></td><td class='mono'>wo 11 / de 0</td></tr><tr><td class='mono'><a href='task_407.html'>407</a></td><td>Upvote the newest post in deeplearning subreddit</td><td>finish</td><td><span class='badge red'>fail</span> <span class='mono'>0.0</span></td><td class='mono'>72727</td><td class='mono'>322.522</td><td class='mono'>wo 12 / de 0</td></tr><tr><td class='mono'><a href='task_408.html'>408</a></td><td>Upvote the newest post in explain like im 5 subreddit</td><td>finish</td><td><span class='badge red'>fail</span> <span class='mono'>0.0</span></td><td class='mono'>76169</td><td class='mono'>401.340</td><td class='mono'>wo 12 / de 0</td></tr><tr><td class='mono'><a href='task_409.html'>409</a></td><td>Reply to the manager of the website in this post with &quot;thanks! I am a big fan of your website.&quot;</td><td>finish</td><td><span class='badge red'>fail</span> <span class='mono'>0.0</span></td><td class='mono'>78553</td><td class='mono'>121.239</td><td class='mono'>wo 2 / de 0</td></tr><tr><td class='mono'><a href='task_410.html'>410</a></td><td>Reply to the first reply in this post with &quot;don&#x27;t panic&quot;</td><td></td><td><span class='badge gray'>n/a</span> <span class='mono'></span></td><td class='mono'></td><td class='mono'></td><td class='mono'>wo 2 / de 0</td></tr><tr><td class='mono'><a href='task_None.html'></a></td><td></td><td></td><td><span class='badge gray'>n/a</span> <span class='mono'></span></td><td class='mono'></td><td class='mono'></td><td class='mono'>wo 0 / de 0</td></tr><tr><td class='mono'><a href='task_None.html'></a></td><td></td><td></td><td><span class='badge gray'>n/a</span> <span class='mono'></span></td><td class='mono'></td><td class='mono'></td><td class='mono'>wo 0 / de 0</td></tr><tr><td class='mono'><a href='task_None.html'></a></td><td></td><td></td><td><span class='badge gray'>n/a</span> <span class='mono'></span></td><td class='mono'></td><td class='mono'></td><td class='mono'>wo 0 / de 0</td></tr><tr><td class='mono'><a href='task_None.html'></a></td><td></td><td></td><td><span class='badge gray'>n/a</span> <span class='mono'></span></td><td class='mono'></td><td class='mono'></td><td class='mono'>wo 0 / de 0</td></tr><tr><td class='mono'><a href='task_None.html'></a></td><td></td><td></td><td><span class='badge gray'>n/a</span> <span class='mono'></span></td><td class='mono'></td><td class='mono'></td><td class='mono'>wo 0 / de 0</td></tr><tr><td class='mono'><a href='task_None.html'></a></td><td></td><td></td><td><span class='badge gray'>n/a</span> <span class='mono'></span></td><td class='mono'></td><td class='mono'></td><td class='mono'>wo 0 / de 0</td></tr><tr><td class='mono'><a href='task_None.html'></a></td><td></td><td></td><td><span class='badge gray'>n/a</span> <span class='mono'></span></td><td class='mono'></td><td class='mono'></td><td class='mono'>wo 0 / de 0</td></tr><tr><td class='mono'><a href='task_None.html'></a></td><td></td><td></td><td><span class='badge gray'>n/a</span> <span class='mono'></span></td><td class='mono'></td><td class='mono'></td><td class='mono'>wo 0 / de 0</td></tr><tr><td class='mono'><a href='task_None.html'></a></td><td></td><td></td><td><span class='badge gray'>n/a</span> <span class='mono'></span></td><td class='mono'></td><td class='mono'></td><td class='mono'>wo 0 / de 0</td></tr><tr><td class='mono'><a href='task_None.html'></a></td><td></td><td></td><td><span class='badge gray'>n/a</span> <span class='mono'></span></td><td class='mono'></td><td class='mono'></td><td class='mono'>wo 0 / de 0</td></tr><tr><td class='mono'><a href='task_None.html'></a></td><td></td><td></td><td><span class='badge gray'>n/a</span> <span class='mono'></span></td><td class='mono'></td><td class='mono'></td><td class='mono'>wo 0 / de 0</td></tr><tr><td class='mono'><a href='task_None.html'></a></td><td></td><td></td><td><span class='badge gray'>n/a</span> <span class='mono'></span></td><td class='mono'></td><td class='mono'></td><td class='mono'>wo 0 / de 0</td></tr><tr><td class='mono'><a href='task_None.html'></a></td><td></td><td></td><td><span class='badge gray'>n/a</span> <span class='mono'></span></td><td class='mono'></td><td class='mono'></td><td class='mono'>wo 0 / de 0</td></tr><tr><td class='mono'><a href='task_None.html'></a></td><td></td><td></td><td><span class='badge gray'>n/a</span> <span class='mono'></span></td><td class='mono'></td><td class='mono'></td><td class='mono'>wo 0 / de 0</td></tr><tr><td class='mono'><a href='task_None.html'></a></td><td></td><td></td><td><span class='badge gray'>n/a</span> <span class='mono'></span></td><td class='mono'></td><td class='mono'></td><td class='mono'>wo 0 / de 0</td></tr><tr><td class='mono'><a href='task_None.html'></a></td><td></td><td></td><td><span class='badge gray'>n/a</span> <span class='mono'></span></td><td class='mono'></td><td class='mono'></td><td class='mono'>wo 0 / de 0</td></tr><tr><td class='mono'><a href='task_None.html'></a></td><td></td><td></td><td><span class='badge gray'>n/a</span> <span class='mono'></span></td><td class='mono'></td><td class='mono'></td><td class='mono'>wo 0 / de 0</td></tr><tr><td class='mono'><a href='task_None.html'></a></td><td></td><td></td><td><span class='badge gray'>n/a</span> <span class='mono'></span></td><td class='mono'></td><td class='mono'></td><td class='mono'>wo 0 / de 0</td></tr><tr><td class='mono'><a href='task_None.html'></a></td><td></td><td></td><td><span class='badge gray'>n/a</span> <span class='mono'></span></td><td class='mono'></td><td class='mono'></td><td class='mono'>wo 0 / de 0</td></tr><tr><td class='mono'><a href='task_None.html'></a></td><td></td><td></td><td><span class='badge gray'>n/a</span> <span class='mono'></span></td><td class='mono'></td><td class='mono'></td><td class='mono'>wo 0 / de 0</td></tr><tr><td class='mono'><a href='task_None.html'></a></td><td></td><td></td><td><span class='badge gray'>n/a</span> <span class='mono'></span></td><td class='mono'></td><td class='mono'></td><td class='mono'>wo 0 / de 0</td></tr><tr><td class='mono'><a href='task_None.html'></a></td><td></td><td></td><td><span class='badge gray'>n/a</span> <span class='mono'></span></td><td class='mono'></td><td class='mono'></td><td class='mono'>wo 0 / de 0</td></tr><tr><td class='mono'><a href='task_None.html'></a></td><td></td><td></td><td><span class='badge gray'>n/a</span> <span class='mono'></span></td><td class='mono'></td><td class='mono'></td><td class='mono'>wo 0 / de 0</td></tr><tr><td class='mono'><a href='task_None.html'></a></td><td></td><td></td><td><span class='badge gray'>n/a</span> <span class='mono'></span></td><td class='mono'></td><td class='mono'></td><td class='mono'>wo 0 / de 0</td></tr><tr><td class='mono'><a href='task_None.html'></a></td><td></td><td></td><td><span class='badge gray'>n/a</span> <span class='mono'></span></td><td class='mono'></td><td class='mono'></td><td class='mono'>wo 0 / de 0</td></tr><tr><td class='mono'><a href='task_None.html'></a></td><td></td><td></td><td><span class='badge gray'>n/a</span> <span class='mono'></span></td><td class='mono'></td><td class='mono'></td><td class='mono'>wo 0 / de 0</td></tr><tr><td class='mono'><a href='task_None.html'></a></td><td></td><td></td><td><span class='badge gray'>n/a</span> <span class='mono'></span></td><td class='mono'></td><td class='mono'></td><td class='mono'>wo 0 / de 0</td></tr><tr><td class='mono'><a href='task_None.html'></a></td><td></td><td></td><td><span class='badge gray'>n/a</span> <span class='mono'></span></td><td class='mono'></td><td class='mono'></td><td class='mono'>wo 0 / de 0</td></tr><tr><td class='mono'><a href='task_None.html'></a></td><td></td><td></td><td><span class='badge gray'>n/a</span> <span class='mono'></span></td><td class='mono'></td><td class='mono'></td><td class='mono'>wo 0 / de 0</td></tr><tr><td class='mono'><a href='task_None.html'></a></td><td></td><td></td><td><span class='badge gray'>n/a</span> <span class='mono'></span></td><td class='mono'></td><td class='mono'></td><td class='mono'>wo 0 / de 0</td></tr><tr><td class='mono'><a href='task_None.html'></a></td><td></td><td></td><td><span class='badge gray'>n/a</span> <span class='mono'></span></td><td class='mono'></td><td class='mono'></td><td class='mono'>wo 0 / de 0</td></tr><tr><td class='mono'><a href='task_None.html'></a></td><td></td><td></td><td><span class='badge gray'>n/a</span> <span class='mono'></span></td><td class='mono'></td><td class='mono'></td><td class='mono'>wo 0 / de 0</td></tr><tr><td class='mono'><a href='task_None.html'></a></td><td></td><td></td><td><span class='badge gray'>n/a</span> <span class='mono'></span></td><td class='mono'></td><td class='mono'></td><td class='mono'>wo 0 / de 0</td></tr><tr><td class='mono'><a href='task_None.html'></a></td><td></td><td></td><td><span class='badge gray'>n/a</span> <span class='mono'></span></td><td class='mono'></td><td class='mono'></td><td class='mono'>wo 0 / de 0</td></tr><tr><td class='mono'><a href='task_None.html'></a></td><td></td><td></td><td><span class='badge gray'>n/a</span> <span class='mono'></span></td><td class='mono'></td><td class='mono'></td><td class='mono'>wo 0 / de 0</td></tr><tr><td class='mono'><a href='task_None.html'></a></td><td></td><td></td><td><span class='badge gray'>n/a</span> <span class='mono'></span></td><td class='mono'></td><td class='mono'></td><td class='mono'>wo 0 / de 0</td></tr><tr><td class='mono'><a href='task_None.html'></a></td><td></td><td></td><td><span class='badge gray'>n/a</span> <span class='mono'></span></td><td class='mono'></td><td class='mono'></td><td class='mono'>wo 0 / de 0</td></tr><tr><td class='mono'><a href='task_None.html'></a></td><td></td><td></td><td><span class='badge gray'>n/a</span> <span class='mono'></span></td><td class='mono'></td><td class='mono'></td><td class='mono'>wo 0 / de 0</td></tr><tr><td class='mono'><a href='task_None.html'></a></td><td></td><td></td><td><span class='badge gray'>n/a</span> <span class='mono'></span></td><td class='mono'></td><td class='mono'></td><td class='mono'>wo 0 / de 0</td></tr><tr><td class='mono'><a href='task_None.html'></a></td><td></td><td></td><td><span class='badge gray'>n/a</span> <span class='mono'></span></td><td class='mono'></td><td class='mono'></td><td class='mono'>wo 0 / de 0</td></tr><tr><td class='mono'><a href='task_None.html'></a></td><td></td><td></td><td><span class='badge gray'>n/a</span> <span class='mono'></span></td><td class='mono'></td><td class='mono'></td><td class='mono'>wo 0 / de 0</td></tr><tr><td class='mono'><a href='task_None.html'></a></td><td></td><td></td><td><span class='badge gray'>n/a</span> <span class='mono'></span></td><td class='mono'></td><td class='mono'></td><td class='mono'>wo 0 / de 0</td></tr><tr><td class='mono'><a href='task_None.html'></a></td><td></td><td></td><td><span class='badge gray'>n/a</span> <span class='mono'></span></td><td class='mono'></td><td class='mono'></td><td class='mono'>wo 0 / de 0</td></tr><tr><td class='mono'><a href='task_None.html'></a></td><td></td><td></td><td><span class='badge gray'>n/a</span> <span class='mono'></span></td><td class='mono'></td><td class='mono'></td><td class='mono'>wo 0 / de 0</td></tr><tr><td class='mono'><a href='task_None.html'></a></td><td></td><td></td><td><span class='badge gray'>n/a</span> <span class='mono'></span></td><td class='mono'></td><td class='mono'></td><td class='mono'>wo 0 / de 0</td></tr><tr><td class='mono'><a href='task_None.html'></a></td><td></td><td></td><td><span class='badge gray'>n/a</span> <span class='mono'></span></td><td class='mono'></td><td class='mono'></td><td class='mono'>wo 0 / de 0</td></tr><tr><td class='mono'><a href='task_None.html'></a></td><td></td><td></td><td><span class='badge gray'>n/a</span> <span class='mono'></span></td><td class='mono'></td><td class='mono'></td><td class='mono'>wo 0 / de 0</td></tr><tr><td class='mono'><a href='task_None.html'></a></td><td></td><td></td><td><span class='badge gray'>n/a</span> <span class='mono'></span></td><td class='mono'></td><td class='mono'></td><td class='mono'>wo 0 / de 0</td></tr><tr><td class='mono'><a href='task_None.html'></a></td><td></td><td></td><td><span class='badge gray'>n/a</span> <span class='mono'></span></td><td class='mono'></td><td class='mono'></td><td class='mono'>wo 0 / de 0</td></tr><tr><td class='mono'><a href='task_None.html'></a></td><td></td><td></td><td><span class='badge gray'>n/a</span> <span class='mono'></span></td><td class='mono'></td><td class='mono'></td><td class='mono'>wo 0 / de 0</td></tr><tr><td class='mono'><a href='task_None.html'></a></td><td></td><td></td><td><span class='badge gray'>n/a</span> <span class='mono'></span></td><td class='mono'></td><td class='mono'></td><td class='mono'>wo 0 / de 0</td></tr><tr><td class='mono'><a href='task_None.html'></a></td><td></td><td></td><td><span class='badge gray'>n/a</span> <span class='mono'></span></td><td class='mono'></td><td class='mono'></td><td class='mono'>wo 0 / de 0</td></tr><tr><td class='mono'><a href='task_None.html'></a></td><td></td><td></td><td><span class='badge gray'>n/a</span> <span class='mono'></span></td><td class='mono'></td><td class='mono'></td><td class='mono'>wo 0 / de 0</td></tr><tr><td class='mono'><a href='task_None.html'></a></td><td></td><td></td><td><span class='badge gray'>n/a</span> <span class='mono'></span></td><td class='mono'></td><td class='mono'></td><td class='mono'>wo 0 / de 0</td></tr><tr><td class='mono'><a href='task_None.html'></a></td><td></td><td></td><td><span class='badge gray'>n/a</span> <span class='mono'></span></td><td class='mono'></td><td class='mono'></td><td class='mono'>wo 0 / de 0</td></tr><tr><td class='mono'><a href='task_None.html'></a></td><td></td><td></td><td><span class='badge gray'>n/a</span> <span class='mono'></span></td><td class='mono'></td><td class='mono'></td><td class='mono'>wo 0 / de 0</td></tr><tr><td class='mono'><a href='task_None.html'></a></td><td></td><td></td><td><span class='badge gray'>n/a</span> <span class='mono'></span></td><td class='mono'></td><td class='mono'></td><td class='mono'>wo 0 / de 0</td></tr><tr><td class='mono'><a href='task_None.html'></a></td><td></td><td></td><td><span class='badge gray'>n/a</span> <span class='mono'></span></td><td class='mono'></td><td class='mono'></td><td class='mono'>wo 0 / de 0</td></tr><tr><td class='mono'><a href='task_None.html'></a></td><td></td><td></td><td><span class='badge gray'>n/a</span> <span class='mono'></span></td><td class='mono'></td><td class='mono'></td><td class='mono'>wo 0 / de 0</td></tr><tr><td class='mono'><a href='task_None.html'></a></td><td></td><td></td><td><span class='badge gray'>n/a</span> <span class='mono'></span></td><td class='mono'></td><td class='mono'></td><td class='mono'>wo 0 / de 0</td></tr><tr><td class='mono'><a href='task_None.html'></a></td><td></td><td></td><td><span class='badge gray'>n/a</span> <span class='mono'></span></td><td class='mono'></td><td class='mono'></td><td class='mono'>wo 0 / de 0</td></tr><tr><td class='mono'><a href='task_None.html'></a></td><td></td><td></td><td><span class='badge gray'>n/a</span> <span class='mono'></span></td><td class='mono'></td><td class='mono'></td><td class='mono'>wo 0 / de 0</td></tr><tr><td class='mono'><a href='task_None.html'></a></td><td></td><td></td><td><span class='badge gray'>n/a</span> <span class='mono'></span></td><td class='mono'></td><td class='mono'></td><td class='mono'>wo 0 / de 0</td></tr><tr><td class='mono'><a href='task_None.html'></a></td><td></td><td></td><td><span class='badge gray'>n/a</span> <span class='mono'></span></td><td class='mono'></td><td class='mono'></td><td class='mono'>wo 0 / de 0</td></tr><tr><td class='mono'><a href='task_None.html'></a></td><td></td><td></td><td><span class='badge gray'>n/a</span> <span class='mono'></span></td><td class='mono'></td><td class='mono'></td><td class='mono'>wo 0 / de 0</td></tr><tr><td class='mono'><a href='task_None.html'></a></td><td></td><td></td><td><span class='badge gray'>n/a</span> <span class='mono'></span></td><td class='mono'></td><td class='mono'></td><td class='mono'>wo 0 / de 0</td></tr><tr><td class='mono'><a href='task_None.html'></a></td><td></td><td></td><td><span class='badge gray'>n/a</span> <span class='mono'></span></td><td class='mono'></td><td class='mono'></td><td class='mono'>wo 0 / de 0</td></tr><tr><td class='mono'><a href='task_None.html'></a></td><td></td><td></td><td><span class='badge gray'>n/a</span> <span class='mono'></span></td><td class='mono'></td><td class='mono'></td><td class='mono'>wo 0 / de 0</td></tr><tr><td class='mono'><a href='task_None.html'></a></td><td></td><td></td><td><span class='badge gray'>n/a</span> <span class='mono'></span></td><td class='mono'></td><td class='mono'></td><td class='mono'>wo 0 / de 0</td></tr><tr><td class='mono'><a href='task_None.html'></a></td><td></td><td></td><td><span class='badge gray'>n/a</span> <span class='mono'></span></td><td class='mono'></td><td class='mono'></td><td class='mono'>wo 0 / de 0</td></tr><tr><td class='mono'><a href='task_None.html'></a></td><td></td><td></td><td><span class='badge gray'>n/a</span> <span class='mono'></span></td><td class='mono'></td><td class='mono'></td><td class='mono'>wo 0 / de 0</td></tr><tr><td class='mono'><a href='task_None.html'></a></td><td></td><td></td><td><span class='badge gray'>n/a</span> <span class='mono'></span></td><td class='mono'></td><td class='mono'></td><td class='mono'>wo 0 / de 0</td></tr><tr><td class='mono'><a href='task_None.html'></a></td><td></td><td></td><td><span class='badge gray'>n/a</span> <span class='mono'></span></td><td class='mono'></td><td class='mono'></td><td class='mono'>wo 0 / de 0</td></tr><tr><td class='mono'><a href='task_None.html'></a></td><td></td><td></td><td><span class='badge gray'>n/a</span> <span class='mono'></span></td><td class='mono'></td><td class='mono'></td><td class='mono'>wo 0 / de 0</td></tr><tr><td class='mono'><a href='task_None.html'></a></td><td></td><td></td><td><span class='badge gray'>n/a</span> <span class='mono'></span></td><td class='mono'></td><td class='mono'></td><td class='mono'>wo 0 / de 0</td></tr><tr><td class='mono'><a href='task_None.html'></a></td><td></td><td></td><td><span class='badge gray'>n/a</span> <span class='mono'></span></td><td class='mono'></td><td class='mono'></td><td class='mono'>wo 0 / de 0</td></tr><tr><td class='mono'><a href='task_None.html'></a></td><td></td><td></td><td><span class='badge gray'>n/a</span> <span class='mono'></span></td><td class='mono'></td><td class='mono'></td><td class='mono'>wo 0 / de 0</td></tr><tr><td class='mono'><a href='task_None.html'></a></td><td></td><td></td><td><span class='badge gray'>n/a</span> <span class='mono'></span></td><td class='mono'></td><td class='mono'></td><td class='mono'>wo 0 / de 0</td></tr><tr><td class='mono'><a href='task_None.html'></a></td><td></td><td></td><td><span class='badge gray'>n/a</span> <span class='mono'></span></td><td class='mono'></td><td class='mono'></td><td class='mono'>wo 0 / de 0</td></tr><tr><td class='mono'><a href='task_None.html'></a></td><td></td><td></td><td><span class='badge gray'>n/a</span> <span class='mono'></span></td><td class='mono'></td><td class='mono'></td><td class='mono'>wo 0 / de 0</td></tr><tr><td class='mono'><a href='task_None.html'></a></td><td></td><td></td><td><span class='badge gray'>n/a</span> <span class='mono'></span></td><td class='mono'></td><td class='mono'></td><td class='mono'>wo 0 / de 0</td></tr><tr><td class='mono'><a href='task_None.html'></a></td><td></td><td></td><td><span class='badge gray'>n/a</span> <span class='mono'></span></td><td class='mono'></td><td class='mono'></td><td class='mono'>wo 0 / de 0</td></tr><tr><td class='mono'><a href='task_None.html'></a></td><td></td><td></td><td><span class='badge gray'>n/a</span> <span class='mono'></span></td><td class='mono'></td><td class='mono'></td><td class='mono'>wo 0 / de 0</td></tr><tr><td class='mono'><a href='task_None.html'></a></td><td></td><td></td><td><span class='badge gray'>n/a</span> <span class='mono'></span></td><td class='mono'></td><td class='mono'></td><td class='mono'>wo 0 / de 0</td></tr><tr><td class='mono'><a href='task_None.html'></a></td><td></td><td></td><td><span class='badge gray'>n/a</span> <span class='mono'></span></td><td class='mono'></td><td class='mono'></td><td class='mono'>wo 0 / de 0</td></tr></tbody></table></div></div>
+    </section>
+    
+      </div>
+      <div class="footer">site generated from record</div>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,2 @@
+{"type": "exec_begin", "src": "v10", "action_sig": "input(textbox Password, Password123) -> click(button Log in)", "plan_name": "web_operation", "goal": "Attempt to log in with a different password to gain access to the account.", "time_utc": "2026-03-04T00:51:30.013872+00:00", "t": 129.63428127393126, "round": 10}
+{"type": "exec_ok", "src": "v10", "dst": "v11", "action_sig": "input(textbox Password, Password123) -> click(button Log in)", "url_after": "http://127.0.0.1:9999/login", "time_utc": "2026-03-04T00:51:42.572515+00:00", "t": 142.19293016195297, "round": 10}

@@ -1,0 +1,376 @@
+- navigation:
+  - link [0] "Jump to main content":
+    - /url: "#main"
+  - link [1] "Jump to sidebar":
+    - /url: "#sidebar"
+- navigation:
+  - link [2] "Home":
+    - /url: /
+    - text: Postmill
+  - list:
+    - link [3] "Forums":
+      - /url: /forums
+    - link [4] "Wiki":
+      - /url: /wiki
+  - searchbox [5] "Search query"
+  - list:
+    - link [6] "Notifications (0)":
+      - /url: /notifications
+      - img
+    - link [7] "Submit":
+      - /url: /submit
+      - img
+      - text: Submit
+    - button [8] "MarvelsGrantMan136":
+      - img
+      - strong: MarvelsGrantMan136
+- main:
+  - navigation:
+    - list:
+      - link [9] "Overview":
+        - /url: /user/Sorkill
+      - link [10] "Submissions":
+        - /url: /user/Sorkill/submissions
+      - link [11] "Comments":
+        - /url: /user/Sorkill/comments
+  - article:
+    - checkbox [12] "Hide −" [checked]
+    - "heading \"Sorkill Original poster [t1_j4afntv] wrote 3 years ago\" [level=1]":
+      - link [13] "Sorkill":
+        - /url: /user/Sorkill
+        - strong: Sorkill
+      - text: [OP] [t1_j4afntv] wrote
+      - time: 3 years ago
+    - list:
+      - Hide −
+    - img
+    - paragraph:
+      - text: Reply to comment by
+      - link [14] "HaveASeatChrisHansen":
+        - /url: /user/HaveASeatChrisHansen
+        - strong: HaveASeatChrisHansen
+      - text: in
+      - link [15] "I made a makeup table for my girlfriend's birthday out of an old bar cabinet":
+        - /url: /f/DIY/76184
+        - strong: I made a makeup table for my girlfriend's birthday out of an old bar cabinet
+      - text: by
+      - link [16] "Sorkill":
+        - /url: /user/Sorkill
+        - strong: Sorkill
+    - paragraph: If you're seated and a bit closer to the mirror the top led strip reflects in the mirror so it gives direct light. My gf says its enough light so ill trust her on that. In any case its more light than we have in the bathroom so i think it is sufficient.
+    - navigation:
+      - list:
+        - link [17] "Reply":
+          - /url: /f/DIY/76184/-/comment/1358504
+          - strong: Reply
+        - link [18] "Permalink":
+          - /url: /f/DIY/76184/-/comment/1358504
+        - link [19] "Parent":
+          - /url: /f/DIY/76184/-/comment/1354867
+    - button [20] "Upvote"
+    - text: 1
+    - button [21] "Downvote"
+  - article:
+    - checkbox [22] "Hide −" [checked]
+    - "heading \"Sorkill Original poster [t1_j4725ic] wrote 3 years ago\" [level=1]":
+      - link [23] "Sorkill":
+        - /url: /user/Sorkill
+        - strong: Sorkill
+      - text: [OP] [t1_j4725ic] wrote
+      - time: 3 years ago
+    - list:
+      - Hide −
+    - img
+    - paragraph:
+      - text: Reply to comment by
+      - link [24] "poretabletti":
+        - /url: /user/poretabletti
+        - strong: poretabletti
+      - text: in
+      - link [25] "I made a makeup table for my girlfriend's birthday out of an old bar cabinet":
+        - /url: /f/DIY/76184
+        - strong: I made a makeup table for my girlfriend's birthday out of an old bar cabinet
+      - text: by
+      - link [26] "Sorkill":
+        - /url: /user/Sorkill
+        - strong: Sorkill
+    - paragraph: Her reaction was very cute, a bit flabbergasted in the beginning. She really loves it. Makes all the effort worth it.
+    - navigation:
+      - list:
+        - link [27] "Reply":
+          - /url: /f/DIY/76184/-/comment/1351725
+          - strong: Reply
+        - link [28] "Permalink":
+          - /url: /f/DIY/76184/-/comment/1351725
+        - link [29] "Parent":
+          - /url: /f/DIY/76184/-/comment/1349384
+    - button [30] "Upvote"
+    - text: 16
+    - button [31] "Downvote"
+  - article:
+    - checkbox [32] "Hide −" [checked]
+    - "heading \"Sorkill Original poster [t1_j471xde] wrote 3 years ago\" [level=1]":
+      - link [33] "Sorkill":
+        - /url: /user/Sorkill
+        - strong: Sorkill
+      - text: [OP] [t1_j471xde] wrote
+      - time: 3 years ago
+    - list:
+      - Hide −
+    - img
+    - paragraph:
+      - text: Reply to comment by
+      - link [34] "No-Hunt-7796":
+        - /url: /user/No-Hunt-7796
+        - strong: No-Hunt-7796
+      - text: in
+      - link [35] "I made a makeup table for my girlfriend's birthday out of an old bar cabinet":
+        - /url: /f/DIY/76184
+        - strong: I made a makeup table for my girlfriend's birthday out of an old bar cabinet
+      - text: by
+      - link [36] "Sorkill":
+        - /url: /user/Sorkill
+        - strong: Sorkill
+    - paragraph: Kept it to use later. Didn't have a good way to integrade in this piece.
+    - paragraph: It was also split in the original bar cabinet so will have to glue it.
+    - navigation:
+      - list:
+        - link [37] "Reply":
+          - /url: /f/DIY/76184/-/comment/1351711
+          - strong: Reply
+        - link [38] "Permalink":
+          - /url: /f/DIY/76184/-/comment/1351711
+        - link [39] "Parent":
+          - /url: /f/DIY/76184/-/comment/1351008
+    - button [40] "Upvote"
+    - text: 6
+    - button [41] "Downvote"
+  - article:
+    - checkbox [42] "Hide −" [checked]
+    - "heading \"Sorkill Original poster [t1_j471o6n] wrote 3 years ago\" [level=1]":
+      - link [43] "Sorkill":
+        - /url: /user/Sorkill
+        - strong: Sorkill
+      - text: [OP] [t1_j471o6n] wrote
+      - time: 3 years ago
+    - list:
+      - Hide −
+    - img
+    - paragraph:
+      - text: Reply to comment by
+      - link [44] "SamfromRI":
+        - /url: /user/SamfromRI
+        - strong: SamfromRI
+      - text: in
+      - link [45] "I made a makeup table for my girlfriend's birthday out of an old bar cabinet":
+        - /url: /f/DIY/76184
+        - strong: I made a makeup table for my girlfriend's birthday out of an old bar cabinet
+      - text: by
+      - link [46] "Sorkill":
+        - /url: /user/Sorkill
+        - strong: Sorkill
+    - paragraph: No idea yet. I should test it sometime. For now, with limited use the power bank still indicates a full charge.
+    - navigation:
+      - list:
+        - link [47] "Reply":
+          - /url: /f/DIY/76184/-/comment/1351693
+          - strong: Reply
+        - link [48] "Permalink":
+          - /url: /f/DIY/76184/-/comment/1351693
+        - link [49] "Parent":
+          - /url: /f/DIY/76184/-/comment/1350192
+    - button [50] "Upvote"
+    - text: 4
+    - button [51] "Downvote"
+  - article:
+    - checkbox [52] "Hide −" [checked]
+    - "heading \"Sorkill Original poster [t1_j470yjt] wrote 3 years ago\" [level=1]":
+      - link [53] "Sorkill":
+        - /url: /user/Sorkill
+        - strong: Sorkill
+      - text: [OP] [t1_j470yjt] wrote
+      - time: 3 years ago
+    - list:
+      - Hide −
+    - img
+    - paragraph:
+      - text: Reply to comment by
+      - link [54] "dariamorgenderper":
+        - /url: /user/dariamorgenderper
+        - strong: dariamorgenderper
+      - text: in
+      - link [55] "I made a makeup table for my girlfriend's birthday out of an old bar cabinet":
+        - /url: /f/DIY/76184
+        - strong: I made a makeup table for my girlfriend's birthday out of an old bar cabinet
+      - text: by
+      - link [56] "Sorkill":
+        - /url: /user/Sorkill
+        - strong: Sorkill
+    - paragraph: Indeed, when seated the top led strip also reflects in the mirror so it gives direct light to the face.
+    - navigation:
+      - list:
+        - link [57] "Reply":
+          - /url: /f/DIY/76184/-/comment/1351643
+          - strong: Reply
+        - link [58] "Permalink":
+          - /url: /f/DIY/76184/-/comment/1351643
+        - link [59] "Parent":
+          - /url: /f/DIY/76184/-/comment/1349361
+    - button [60] "Upvote"
+    - text: 7
+    - button [61] "Downvote"
+  - article:
+    - checkbox [62] "Hide −" [checked]
+    - "heading \"Sorkill Original poster [t1_j470t4a] wrote 3 years ago\" [level=1]":
+      - link [63] "Sorkill":
+        - /url: /user/Sorkill
+        - strong: Sorkill
+      - text: [OP] [t1_j470t4a] wrote
+      - time: 3 years ago
+    - list:
+      - Hide −
+    - img
+    - paragraph:
+      - text: Reply to comment by
+      - link [64] "agent_kater":
+        - /url: /user/agent_kater
+        - strong: agent_kater
+      - text: in
+      - link [65] "I made a makeup table for my girlfriend's birthday out of an old bar cabinet":
+        - /url: /f/DIY/76184
+        - strong: I made a makeup table for my girlfriend's birthday out of an old bar cabinet
+      - text: by
+      - link [66] "Sorkill":
+        - /url: /user/Sorkill
+        - strong: Sorkill
+    - paragraph: It is also a concern for me. But the top led strip also reflects in the mirror so it gives direct light to the face. I hope that will be enough. If it is not enough i have wound extra lights specialy made for makeup around the mirror.
+    - navigation:
+      - list:
+        - link [67] "Reply":
+          - /url: /f/DIY/76184/-/comment/1351635
+          - strong: Reply
+        - link [68] "Permalink":
+          - /url: /f/DIY/76184/-/comment/1351635
+        - link [69] "Parent":
+          - /url: /f/DIY/76184/-/comment/1349067
+    - button [70] "Upvote"
+    - text: 13
+    - button [71] "Downvote"
+  - article:
+    - checkbox [72] "Hide −" [checked]
+    - "heading \"Sorkill Original poster [t1_j46zqez] wrote 3 years ago\" [level=1]":
+      - link [73] "Sorkill":
+        - /url: /user/Sorkill
+        - strong: Sorkill
+      - text: [OP] [t1_j46zqez] wrote
+      - time: 3 years ago
+    - list:
+      - Hide −
+    - img
+    - paragraph:
+      - text: Reply to comment by
+      - link [74] "Flip86":
+        - /url: /user/Flip86
+        - strong: Flip86
+      - text: in
+      - link [75] "I made a makeup table for my girlfriend's birthday out of an old bar cabinet":
+        - /url: /f/DIY/76184
+        - strong: I made a makeup table for my girlfriend's birthday out of an old bar cabinet
+      - text: by
+      - link [76] "Sorkill":
+        - /url: /user/Sorkill
+        - strong: Sorkill
+    - paragraph: TIL
+    - navigation:
+      - list:
+        - link [77] "Reply":
+          - /url: /f/DIY/76184/-/comment/1351576
+          - strong: Reply
+        - link [78] "Permalink":
+          - /url: /f/DIY/76184/-/comment/1351576
+        - link [79] "Parent":
+          - /url: /f/DIY/76184/-/comment/1349044
+    - button [80] "Upvote"
+    - text: 12
+    - button [81] "Downvote"
+  - article:
+    - checkbox [82] "Hide −" [checked]
+    - "heading \"Sorkill Original poster [t1_j46zmzc] wrote 3 years ago\" [level=1]":
+      - link [83] "Sorkill":
+        - /url: /user/Sorkill
+        - strong: Sorkill
+      - text: [OP] [t1_j46zmzc] wrote
+      - time: 3 years ago
+    - list:
+      - Hide −
+    - img
+    - paragraph:
+      - text: Reply to comment by
+      - link [84] "veryverymango":
+        - /url: /user/veryverymango
+        - strong: veryverymango
+      - text: in
+      - link [85] "I made a makeup table for my girlfriend's birthday out of an old bar cabinet":
+        - /url: /f/DIY/76184
+        - strong: I made a makeup table for my girlfriend's birthday out of an old bar cabinet
+      - text: by
+      - link [86] "Sorkill":
+        - /url: /user/Sorkill
+        - strong: Sorkill
+    - paragraph: I almost cried a bit when she got it and when i saw her genuine reaction. At that moment i got it that all the time and effort i put in it was really worth it!
+    - navigation:
+      - list:
+        - link [87] "Reply":
+          - /url: /f/DIY/76184/-/comment/1351571
+          - strong: Reply
+        - link [88] "Permalink":
+          - /url: /f/DIY/76184/-/comment/1351571
+        - link [89] "Parent":
+          - /url: /f/DIY/76184/-/comment/1349988
+    - button [90] "Upvote"
+    - text: 281
+    - button [91] "Downvote"
+  - article:
+    - "heading \"I made a makeup table for my girlfriend's birthday out of an old bar cabinet\" [level=1]":
+      - link [92] "I made a makeup table for my girlfriend's birthday out of an old bar cabinet":
+        - /url: "https://imgur.com/a/5aSTETX"
+    - link [93] "imgur.com":
+      - /url: /search?q=imgur.com
+    - paragraph:
+      - text: Submitted by
+      - link [94] "Sorkill":
+        - /url: /user/Sorkill
+        - strong: Sorkill
+      - text: [t3_10aqhun]
+      - time: 3 years ago
+      - text: in
+      - link [95] "DIY":
+        - /url: /f/DIY
+        - strong: DIY
+    - navigation:
+      - list:
+        - link [96] "173 comments":
+          - /url: /f/DIY/76184/i-made-a-makeup-table-for-my-girlfriend-s-birthday-out-of-an
+          - strong: 173 comments
+    - button [97] "Upvote"
+    - text: 5649
+    - button [98] "Downvote"
+- complementary:
+  - "heading \"Sorkill\" [level=1]":
+    - link [99] "Sorkill":
+      - /url: /user/Sorkill
+  - paragraph:
+    - text: Registered
+    - time: 12 years ago
+  - paragraph: t2_dpjb8
+  - heading "Toolbox" [level=1]
+  - list:
+    - link [100] "Block user":
+      - /url: /user/Sorkill/block_user
+    - link [101] "Send message":
+      - /url: /user/Sorkill/compose_message
+- contentinfo:
+  - paragraph:
+    - text: Running
+    - link [102] "Postmill":
+      - /url: "https://postmill.xyz/"

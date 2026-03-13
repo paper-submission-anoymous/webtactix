@@ -92,6 +92,7 @@ class Recorder:
             base_dir: Path = Path("record"),
             task: TaskSpec = None,
             model_name: str = "unknown_model",
+            task_dir: Optional[Path] = None,
     ) -> None:
         if task is None:
             raise ValueError("Recorder requires a TaskSpec: task cannot be None")
@@ -101,8 +102,12 @@ class Recorder:
         self.task_id = str(task.task_id)
         self.model_name = (model_name or "").strip() or "unknown_model"
 
-        self.root = base_dir / self.dataset / self.model_name
-        self.task_dir = self.root / f"task_{self.task_id}"
+        if task_dir is not None:
+            self.root = task_dir.parent
+            self.task_dir = task_dir
+        else:
+            self.root = base_dir / self.dataset / self.model_name
+            self.task_dir = self.root / f"task_{self.task_id}"
         self._data_dirs: Dict[str, Path] = {}
 
         shutil.rmtree(self.task_dir, ignore_errors=True)

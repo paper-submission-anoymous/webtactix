@@ -4,6 +4,7 @@ from __future__ import annotations
 import json
 from dataclasses import dataclass
 from typing import Any, Dict, Optional, Tuple, Union
+from openai import AsyncOpenAI, OpenAI
 import tiktoken
 #from openai import AsyncOpenAI
 

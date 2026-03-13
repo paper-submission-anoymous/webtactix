@@ -868,7 +868,7 @@ def _base_js_cdn() -> str:
 """
 
 
-def render_index(tasks: List[Dict[str, Any]], *, dataset: str, model: str) -> str:
+def render_index(tasks: List[Dict[str, Any]], *, agent_name: str, timestamp: str, run_id: str) -> str:
     rows = []
     for t in tasks:
         tid = t.get("task_id", "")
@@ -905,7 +905,7 @@ def render_index(tasks: List[Dict[str, Any]], *, dataset: str, model: str) -> st
     body = f"""
     <div class="wrap">
       <div class="grid cols2">
-        {_card("Dataset / Model", _kv_table({"dataset":dataset,"model":model,"generated_at":datetime.utcnow().isoformat()+"Z"}, ["dataset","model","generated_at"]))}
+        {_card("Run Info", _kv_table({"agent":agent_name,"timestamp":timestamp,"run":run_id,"generated_at":datetime.utcnow().isoformat()+"Z"}, ["agent","timestamp","run","generated_at"]))}
         {_card("Tasks", f"<div class='meta'>click task_id to open detail page</div><div class='tblwrap'><table class='tbl'><thead><tr><th>task_id</th><th>intent</th><th>status</th><th>eval</th><th>tokens</th><th>t_end</th><th>workflow</th></tr></thead><tbody>{''.join(rows)}</tbody></table></div>")}
       </div>
       <div class="footer">site generated from record</div>
@@ -917,13 +917,13 @@ def render_index(tasks: List[Dict[str, Any]], *, dataset: str, model: str) -> st
 <head>
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <title>Record Site - {html.escape(dataset)} / {html.escape(model)}</title>
+  <title>Record Site - {html.escape(agent_name)} / {html.escape(timestamp)} / {html.escape(run_id)}</title>
   <style>{_base_css()}</style>
 </head>
 <body>
   <header>
     <div class="wrap">
-      <h1>Record Site <span class="muted">| {html.escape(dataset)} / {html.escape(model)}</span></h1>
+      <h1>Record Site <span class="muted">| {html.escape(agent_name)} / {html.escape(timestamp)} / {html.escape(run_id)}</span></h1>
     </div>
   </header>
   {body}
@@ -932,7 +932,7 @@ def render_index(tasks: List[Dict[str, Any]], *, dataset: str, model: str) -> st
 """
 
 
-def render_task(task_run: Dict[str, Any], *, dataset: str, model: str, out_dir: Path) -> str:
+def render_task(task_run: Dict[str, Any], *, agent_name: str, timestamp: str, run_id: str, out_dir: Path) -> str:
     meta = task_run.get("meta", {}) if isinstance(task_run.get("meta", {}), dict) else {}
     task = task_run.get("task", {}) if isinstance(task_run.get("task", {}), dict) else {}
     final = task_run.get("final", {}) if isinstance(task_run.get("final", {}), dict) else {}
@@ -1182,7 +1182,7 @@ def render_task(task_run: Dict[str, Any], *, dataset: str, model: str, out_dir: 
   <div class="wrap">
     <div class="row">
       <div class="col">
-        <h1>Task {html.escape(str(task_spec.get('task_id','')))} <span class="muted">| {html.escape(dataset)} / {html.escape(model)}</span></h1>
+        <h1>Task {html.escape(str(task_spec.get('task_id','')))} <span class="muted">| {html.escape(agent_name)} / {html.escape(timestamp)} / {html.escape(run_id)}</span></h1>
         <div class="meta"><a href="{_safe(back_link)}">← back to index</a></div>
       </div>
       <div class="col right">
@@ -1325,7 +1325,7 @@ function safeGraph() {{
 <head>
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <title>Task {html.escape(str(task_spec.get('task_id','')))} - {html.escape(dataset)} / {html.escape(model)}</title>
+  <title>Task {html.escape(str(task_spec.get('task_id','')))} - {html.escape(agent_name)} / {html.escape(timestamp)} / {html.escape(run_id)}</title>
   <style>{_base_css()}</style>
 </head>
 <body>
@@ -1340,8 +1340,8 @@ function safeGraph() {{
 
 # ---------------- scanning ----------------
 
-def scan(base: Path, dataset: str, model: str, tasks: Optional[List[int]] = None) -> List[Path]:
-    root = base / dataset / model
+def scan(base: Path, agent_name: str, timestamp: str, run_id: str, tasks: Optional[List[int]] = None) -> List[Path]:
+    root = base / agent_name / timestamp / run_id
     if not root.exists():
         return []
     task_dirs = []
@@ -1404,24 +1404,28 @@ def summarize_for_index(task_run: Dict[str, Any]) -> Dict[str, Any]:
 
 def main() -> None:
     ap = argparse.ArgumentParser()
-    ap.add_argument("--base", type=str, default="record")
-    ap.add_argument("--dataset", type=str, required=True)
-    ap.add_argument("--model", type=str, required=True)
+    ap.add_argument("--base",        type=str, default="record")
+    ap.add_argument("--agent-name",  type=str, default="webtactix", help="agent name (default: webtactix)")
+    ap.add_argument("--timestamp",   type=str, required=True, help="timestamp string, e.g. 20241215_143022")
+    ap.add_argument("--run",         type=str, required=True, help="run id, e.g. run_0")
     ap.add_argument("--task", type=int, nargs="*", default=None, help="optional list of task ids")
-    ap.add_argument("--out", type=str, default="", help="output dir, default: <base>/site/<dataset>/<model>")
+    ap.add_argument("--out", type=str, default="", help="output dir, default: sites/<agent_name>/<timestamp>/<run>")
     args = ap.parse_args()
-
+    print(f"[INFO] scanning records under {args.base}/{args.agent_name}/{args.timestamp}/{args.run} ...")
     base = Path(args.base).resolve()
-    dataset = args.dataset
-    model = args.model
+    agent_name = args.agent_name
+    timestamp = args.timestamp
+    run_id = args.run
     tasks_filter = args.task if args.task else None
 
-    task_dirs = scan(base, dataset, model, tasks_filter)
+    task_dirs = scan(base, agent_name, timestamp, run_id, tasks_filter)
     if not task_dirs:
-        print(f"[ERR] no tasks found under {base}/{dataset}/{model}")
+        print(f"[ERR] no tasks found under {base}/{agent_name}/{timestamp}/{run_id}")
         return
 
-    out_root = Path(args.out).resolve() if args.out else (base / "site" / dataset / model).resolve()
+    # Default output: <base>/<agent_name>/<timestamp>/site/<run_id>/
+    # Sits inside the record tree but in a dedicated "site" subdir, separate from task data.
+    out_root = Path(args.out).resolve() if args.out else (base / agent_name / timestamp / "site" / run_id).resolve()
     out_root.mkdir(parents=True, exist_ok=True)
 
     parsed: List[Dict[str, Any]] = []
@@ -1438,13 +1442,13 @@ def main() -> None:
             # fallback from dir name
             tid = int(run["task_dir"].name.replace("task_", ""))
 
-        html_text = render_task(run, dataset=dataset, model=model, out_dir=out_root)
+        html_text = render_task(run, agent_name=agent_name, timestamp=timestamp, run_id=run_id, out_dir=out_root)
         (out_root / f"task_{tid}.html").write_text(html_text, encoding="utf-8")
         print(f"[OK] wrote task_{tid}.html")
 
     # write index
     idx_items = [summarize_for_index(r) for r in parsed]
-    index_html = render_index(idx_items, dataset=dataset, model=model)
+    index_html = render_index(idx_items, agent_name=agent_name, timestamp=timestamp, run_id=run_id)
     (out_root / "index.html").write_text(index_html, encoding="utf-8")
     print(f"[OK] wrote index.html at {out_root}")
 

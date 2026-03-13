@@ -3,6 +3,7 @@ from __future__ import annotations
 
 from webtactix.llm.openai_compat import OpenAICompatConfig
 from webtactix.llm.openrouter_client import OpenRouterClient, OpenRouterConfig
+from webtactix.llm.vllm_client import VLLMConfig
 
 
 def preset_qwen32b(key_num: int = 0) -> OpenAICompatConfig:
@@ -68,3 +69,13 @@ def preset_chatgpt(key_num: int = 0) -> OpenAICompatConfig:
     api_key = api_key_list[key_num % len(api_key_list)]
     model = "gpt-4o"
     return OpenAICompatConfig(base_url=base_url, api_key=api_key, model=model)
+
+def preset_vllm(key_num: int = 0) -> OpenAICompatConfig:
+    """
+    Local vLLM server endpoint.
+    Assumes vLLM server is running at http://localhost:8080/v1 with a compatible model loaded.
+    """
+    base_url = "http://localhost:8080/v1"
+    api_key = "EMPTY"  # vLLM doesn't require a real API key, but the OpenAI SDK requires a non-empty string
+    model = "openai/gpt-oss-20b" #TODO - change the model here
+    return VLLMConfig(base_url=base_url, api_key=api_key, model=model)

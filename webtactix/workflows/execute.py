@@ -16,6 +16,10 @@ from webtactix.runner.recorder import Recorder
 from webtactix.agents.data_agent import DataExtractionAgent
 from webtactix.datasets.webarena_evaluator import WebArenaEvaluator, EvalResult
 from playwright.async_api import Error as PWError
+# ── profiler IPC ──────────────────────────────────────────────────────────
+from webtactix.profiler import Profiler
+
+
 
 def _action_sig_from_plan(plan: Plan) -> str:
     if plan.name != "web_operation":
@@ -29,6 +33,7 @@ def _action_sig_from_plan(plan: Plan) -> str:
         else:
             parts.append(f"{s.action.value}({s.role} {s.name}, {s.text})")
     return " -> ".join(parts)
+
 
 @dataclass(frozen=True)
 class ExecuteOutcome:
@@ -54,6 +59,7 @@ class Executor:
         data_agent: DataExtractionAgent = None,
         evaluator: WebArenaEvaluator = None,
         max_parallel: int = 4,
+        mode: str = "child",
     ) -> None:
         self.sess = sess
         self.tree = tree
@@ -62,8 +68,13 @@ class Executor:
         self.data_agent = data_agent
         self.evaluator = evaluator
         self.max_parallel = int(max_parallel)
+        self.profiler = Profiler(mode)
 
     async def replay_to_node(self, *, page: Any, node_id: NodeId) -> ActionStep:
+        # replay_to_node is always called as a sub-operation inside
+        # run_one_web_operation_plan_in_fresh_tab which already has an exec span.
+        # Tracking it separately would create double-counted time windows.
+        # It is therefore NOT individually instrumented.
         url = self.tree.get_url(node_id)
         state = self.tree.state[node_id]
         if not url:
@@ -144,13 +155,29 @@ class Executor:
         *,
         selected_node_id: NodeId,
         plan: Plan,
-        only: bool
+        only: bool,
+        _plan_idx: int = 0,   # index within the parallel batch (0-based), used for step_name
     ) -> ExecuteOutcome:
         action_sig = _action_sig_from_plan(plan)
         print(f"[DBG] task start action_sig={action_sig}")
 
         st = self.tree.state[selected_node_id]
         last_step = None
+
+        # ── PROFILER: span start ──────────────────────────────────────────
+        # We need url_before but the page doesn't exist yet if only=False.
+        # Use the tree's recorded URL for this node as the starting point.
+        url_before_known = self.tree.get_url(selected_node_id) or ""
+        exec_id = self.profiler.emit_exec_start(
+            exec_type  = "web_op",
+            step_name  = f"exec:web_op|node={selected_node_id}|plan={_plan_idx}",
+            node_id    = str(selected_node_id),
+            action_sig = action_sig,
+            url_before = url_before_known,
+            plan_goal  = plan.goal,
+        )
+        # ─────────────────────────────────────────────────────────────────
+
         try:
             if not only or st.page is None:
                 page = await self.sess.new_page()
@@ -182,10 +209,6 @@ class Executor:
             for i in range(len(plan.steps)):
                 s = plan.steps[i]
                 print(f"[DBG] step={s}")
-                # if i==0 and last_step is not None:
-                #     if s.role == last_step.role and s.name == last_step.name and s.text == last_step.text and s.action == last_step.action and s.index == last_step.index:
-                #         print(f"[EXEC] action_sig duplicated, go on...")
-                #         continue
                 try:
                     await self.sess.apply_step(page, s, False)
                     steps.append(s)
@@ -207,6 +230,17 @@ class Executor:
                             "error": f"{type(e).__name__}: {e}",
                         })
 
+                    # ── PROFILER: span end (step failure) ─────────────────
+                    self.profiler.emit_exec_end(
+                        exec_id,
+                        url_after   = page.url,
+                        steps_count = len(steps),
+                        success     = False,
+                        error       = f"{type(e).__name__}: {e}",
+                        kind        = "error",
+                    )
+                    # ─────────────────────────────────────────────────────
+
                     return ExecuteOutcome(
                         executed_plan=plan,
                         action_sig=action_sig,
@@ -215,11 +249,6 @@ class Executor:
                         error=f"{type(e).__name__}: {e}",
                     )
 
-                # cur = await self.sess.get_snapshot(page)
-                # enc_cur = self.encoder.encode(cur_snapshot=cur)
-                # if len(enc_cur.roles) != len(enc.roles):
-                #     print("[EXEC] page has changed, sequence stop")
-                #     break
             plan.steps = steps
 
             url_after = page.url
@@ -245,6 +274,17 @@ class Executor:
                     "url_after": url_after,
                 })
 
+            # ── PROFILER: span end (success) ──────────────────────────────
+            self.profiler.emit_exec_end(
+                exec_id,
+                url_after   = url_after,
+                steps_count = len(steps),
+                new_node_id = str(new_node),
+                success     = True,
+                kind        = "new_node",
+            )
+            # ─────────────────────────────────────────────────────────────
+
             return ExecuteOutcome(
                 executed_plan=plan,
                 action_sig=action_sig,
@@ -256,6 +296,14 @@ class Executor:
 
         except Exception as e:
             print('other Exception', e)
+            # ── PROFILER: span end (outer exception) ──────────────────────
+            self.profiler.emit_exec_end(
+                exec_id,
+                success = False,
+                error   = f"{type(e).__name__}: {e}",
+                kind    = "error",
+            )
+            # ─────────────────────────────────────────────────────────────
             return ExecuteOutcome(
                 executed_plan=plan,
                 action_sig=action_sig,
@@ -270,10 +318,24 @@ class Executor:
         plan: Plan,
     ) -> ExecuteOutcome:
 
+        # ── PROFILER: span start ──────────────────────────────────────────
+        # data_extraction can run up to 20 LLM turns internally.
+        # Those LLM turns each emit their own llm_start/end events via data_agent.py.
+        # This exec span captures the entire data_extraction call as a single
+        # time window so we can join cpu/network ticks to it.
+        exec_id = self.profiler.emit_exec_start(
+            exec_type  = "data_extract",
+            step_name  = f"exec:data_extract|node={selected_node_id}",
+            node_id    = str(selected_node_id),
+            action_sig = f"data_extraction -> {plan.goal}",
+            url_before = self.tree.get_url(selected_node_id) or "",
+            plan_goal  = plan.goal,
+        )
+        # ─────────────────────────────────────────────────────────────────
+
         page = await self.sess.new_page()
         await wait_for_page_stable(page)
 
-        # try:
         node_state = self.tree.state[selected_node_id]
         node_id = self.tree.nodes[selected_node_id].node_id
         result = await self.data_agent.run(node_state=node_state, node_id=node_id)
@@ -294,6 +356,17 @@ class Executor:
                 "extracted_len": len(result.answer or ""),
             })
 
+        # ── PROFILER: span end ────────────────────────────────────────────
+        self.profiler.emit_exec_end(
+            exec_id,
+            url_after   = result.url,
+            new_node_id = str(new_node),
+            success     = True,
+            kind        = "data_extraction",
+            extracted   = result.answer or "",
+        )
+        # ─────────────────────────────────────────────────────────────────
+
         return ExecuteOutcome(
             executed_plan=plan,
             action_sig=_action_sig_from_plan(plan),
@@ -310,7 +383,8 @@ class Executor:
             selected_node_id: NodeId,
             plan: Plan,
     ) -> ExecuteOutcome:
-
+        # Pure in-memory tree update — no browser I/O, no network, ~0ms.
+        # Not instrumented: there is nothing to measure here.
         plan.partially_done = plan.goal
         new_node = self.tree.add_child(
             parent=selected_node_id,
@@ -347,10 +421,35 @@ class Executor:
                 sig = _action_sig_from_plan(p)
                 print(f"[EXEC] finish plan goal={p.goal}")
                 last_url = self.tree.state[selected_node_id].url
+
+                # ── PROFILER: evaluator call span ─────────────────────────
+                # evaluator.evaluate() calls an external scoring endpoint —
+                # it is a real external I/O call with measurable latency
+                # and potential network traffic. Track it as its own span.
+                exec_id = self.profiler.emit_exec_start(
+                    exec_type  = "finish_eval",
+                    step_name  = f"exec:finish_eval|node={selected_node_id}",
+                    node_id    = str(selected_node_id),
+                    action_sig = f"finish -> {p.goal}",
+                    url_before = last_url or "",
+                    plan_goal  = p.goal,
+                )
+                # ─────────────────────────────────────────────────────────
+
                 if self.evaluator:
                     eval_result = await self.evaluator.evaluate(final_answer=p.goal, last_url=last_url)
                 else:
                     eval_result = None
+
+                # ── PROFILER: evaluator span end ──────────────────────────
+                self.profiler.emit_exec_end(
+                    exec_id,
+                    url_after = last_url or "",
+                    success   = True,
+                    kind      = "finish",
+                )
+                # ─────────────────────────────────────────────────────────
+
                 return [ExecuteOutcome(
                     executed_plan=p,
                     action_sig=sig,
@@ -365,6 +464,7 @@ class Executor:
                 return [await self.run_data_extraction(selected_node_id=selected_node_id, plan=p)]
             elif p.name == "partially_done":
                 return [await self.run_partially_done(selected_node_id=selected_node_id, plan=p)]
+
         web_ops: List[Plan] = [p for p in next_plans if p.name == "web_operation"]
         if not web_ops:
             return [ExecuteOutcome(
@@ -375,13 +475,18 @@ class Executor:
                 new_url=self.tree.get_url(selected_node_id),
             ) for p in next_plans]
 
-        async def _run(p: Plan, only: bool) -> ExecuteOutcome:
+        # Pass plan index so each parallel web_op gets a unique step_name.
+        # When len==1: only=True (reuse existing tab if possible).
+        # When len>1:  only=False (each plan gets its own fresh tab).
+        async def _run(p: Plan, only: bool, idx: int) -> ExecuteOutcome:
             return await self.run_one_web_operation_plan_in_fresh_tab(
                 selected_node_id=selected_node_id,
                 plan=p,
-                only=only
+                only=only,
+                _plan_idx=idx,
             )
+
         if len(web_ops) == 1:
-            return await asyncio.gather(*[_run(p, 1) for p in web_ops])
+            return await asyncio.gather(*[_run(p, True,  i) for i, p in enumerate(web_ops)])
         else:
-            return await asyncio.gather(*[_run(p, 0) for p in web_ops])
+            return await asyncio.gather(*[_run(p, False, i) for i, p in enumerate(web_ops)])

@@ -1,0 +1,11 @@
+{
+  "max_rounds": 15,
+  "max_parallel": 3,
+  "table_max_rows": 10,
+  "llm_type": "vllm",
+  "key_num": 0,
+  "dataset": "webarena",
+  "mode": "parent",
+  "task_id": "634",
+  "t0_iso": "2026-03-03T23:19:33.431350+00:00"
+}

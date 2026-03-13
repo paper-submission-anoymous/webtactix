@@ -15,6 +15,11 @@ from webtactix.workflows.execute import Executor
 from webtactix.datasets.webarena_evaluator import EvalResult
 from webtactix.preprocess.observation_encoder import ObservationEncoder, EncodedObservation
 
+# ── profiler ──────────────────────────────────────────────────────────────
+from webtactix.profiler import Profiler
+# ─────────────────────────────────────────────────────────────────────────────
+
+
 @dataclass(frozen=True)
 class DecisionResult:
     """
@@ -51,6 +56,7 @@ class DecisionAgent:
             sess: PlaywrightSession = None,
             rec: Recorder = None,
             cfg: Optional[DecisionAgentConfig] = None,
+            mode: str = "child",
     ) -> None:
         self.llm = llm
         self.q = q
@@ -62,6 +68,7 @@ class DecisionAgent:
         self.cfg = cfg or DecisionAgentConfig()
         self.queue = PriorityQueue()
         self.encoder = ObservationEncoder()
+        self.profiler = Profiler(mode)
 
     @staticmethod
     def _is_all_go_back(candidates: Sequence[NodeState]) -> bool:
@@ -131,7 +138,21 @@ class DecisionAgent:
         if len(self.queue) == 0:
             user += "Notice: Since the backtrace nodes are empty you can only explore parent."
 
+        # ── PROFILER ──────────────────────────────────────────────────────
+        _cid = self.profiler.emit_llm_start(
+            step_name     = f"decision:reflect_or_reselect|parent={parent_node_id}",
+            model_name    = getattr(self.llm, "model", ""),
+            system_prompt = system,
+            user_prompt   = user,
+        )
+        # ─────────────────────────────────────────────────────────────────
+
         obj, usage = await self.llm.chat_json(system=system, user=user)
+
+        # ── PROFILER ──────────────────────────────────────────────────────
+        self.profiler.emit_llm_end(_cid, step_name = f"decision:reflect_or_reselect|parent={parent_node_id}", usage=usage, output_obj=obj)
+        # ─────────────────────────────────────────────────────────────────
+
         explore_parent = True
         reflection = ""
         reason = ""
@@ -162,14 +183,6 @@ class DecisionAgent:
 
         if chosen is None:
             raise EOFError
-            # self.rec.save_decision(result={"kind": "reflect_and_replan", "reflection": "", "reason": "Queue empty."},
-            #                        usage=usage)
-            # return DecisionResult(
-            #     kind="reflect_and_replan",
-            #     selected_node_id="v1",
-            #     new_child=['v1'],
-            #     reason=reason or "Queue empty.",
-            # )
 
         print("[DECISION AGENT] explore queue")
         exec_outcom = await self.executor.execute_next_plans(selected_node_id=chosen)
@@ -237,7 +250,23 @@ class DecisionAgent:
                 f"{payload_json}\n"
             ])
 
+            # ── PROFILER ──────────────────────────────────────────────────
+            # NOTE: this block is inside `if len(next_nodes) > 1`.
+            # When there is only one candidate no LLM call is made,
+            # so no IPC events are emitted — correct behaviour.
+            _cid = self.profiler.emit_llm_start(
+                step_name     = f"decision:select_and_execute|parent={parent_node_id}",
+                model_name    = getattr(self.llm, "model", ""),
+                system_prompt = system,
+                user_prompt   = user,
+            )
+            # ─────────────────────────────────────────────────────────────
+
             obj, usage = await self.llm.chat_json(system=system, user=user)
+
+            # ── PROFILER ──────────────────────────────────────────────────
+            self.profiler.emit_llm_end(_cid, step_name = f"decision:select_and_execute|parent={parent_node_id}", usage=usage, output_obj=obj)
+            # ─────────────────────────────────────────────────────────────
 
             selected: str = ""
 
@@ -258,7 +287,14 @@ class DecisionAgent:
                 if c.node_id != selected:
                     self.queue.push(c.node_id)
         else:
+            # Only one candidate — no LLM call, no IPC events emitted.
             selected = next_nodes[0].node_id
+            _cid = self.profiler.emit_llm_start(
+              
+                step_name     = f"decision:select_and_execute|parent={parent_node_id}",
+                model_name    = getattr(self.llm, "model", ""),
+                system_prompt = "No decision needed",
+                user_prompt   = "Only one candidate, no need to decide.",)
             reason = "This is the only option."
             usage = {
                 "prompt_tokens": 0,
@@ -267,6 +303,12 @@ class DecisionAgent:
                 "estimated": False,
                 "model": "Pass",
             }
+            self.profiler.emit_llm_end(
+                _cid,
+                step_name = f"decision:select_and_execute|parent={parent_node_id}",
+                usage=usage,
+                output_obj={"selected_node_id": selected, "reason": reason, "extra_info": extra_info},
+            )
         print(f'[DECISION] node {selected}')
         self.rec.save_decision(result={"kind": "select_and_execute", "selected": selected, "reason": reason, "extra_info": extra_info}, usage=usage)
         print(f'[DECISION] extra info: {extra_info}')

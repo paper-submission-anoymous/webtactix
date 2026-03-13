@@ -1,0 +1,72 @@
+{
+  "task": {
+    "dataset": "webarena",
+    "task_id": 408,
+    "intent": "Upvote the newest post in explain like im 5 subreddit",
+    "start_url": "http://143.215.184.110:9999",
+    "sites": [
+      "reddit"
+    ],
+    "require_login": true,
+    "storage_state_path": "./.auth/reddit_state.json",
+    "geolocation": null,
+    "require_reset": false,
+    "intent_template": "Upvote the newest post in {{subreddit}} subreddit",
+    "instantiation_dict": {
+      "subreddit": "explain like im 5"
+    },
+    "eval_spec": {
+      "eval_types": [
+        "program_html"
+      ],
+      "reference_answers": {},
+      "reference_url": "",
+      "string_note": "",
+      "program_html": [
+        {
+          "url": "agentic-ai-reddit:9999/f/explainlikeimfive/39244/eli5-how-does-pinching-a-ribbon-and-sliding-your-finger",
+          "locator": "document.querySelector('div.submission__vote').querySelector('form').getAttribute('class')",
+          "required_contents": {
+            "must_include": [
+              "vote vote--user-upvoted"
+            ]
+          }
+        }
+      ],
+      "reference_answer_raw_annotation": "",
+      "raw": {
+        "eval_types": [
+          "program_html"
+        ],
+        "reference_answers": null,
+        "reference_url": "",
+        "program_html": [
+          {
+            "url": "agentic-ai-reddit:9999/f/explainlikeimfive/39244/eli5-how-does-pinching-a-ribbon-and-sliding-your-finger",
+            "locator": "document.querySelector('div.submission__vote').querySelector('form').getAttribute('class')",
+            "required_contents": {
+              "must_include": [
+                "vote vote--user-upvoted"
+              ]
+            }
+          }
+        ]
+      }
+    },
+    "source_path": "/home/ivohra6/benchmarks/webarena/config_files/408.json"
+  },
+  "constraints": [
+    {
+      "text": "upvote",
+      "kind": "action"
+    },
+    {
+      "text": "explain like im 5",
+      "kind": "subreddit"
+    },
+    {
+      "text": "newest post",
+      "kind": "target"
+    }
+  ]
+}

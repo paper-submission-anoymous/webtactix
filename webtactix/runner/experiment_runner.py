@@ -25,7 +25,7 @@ class RunnerConfig:
     max_parallel: int = 4
     table_max_rows: int = 10
     # llm_type: str = "gpt-4o"
-    llm_type: str = "deepseek"
+    llm_type: str = "vllm"
 
 @dataclass
 class RunnerResult:

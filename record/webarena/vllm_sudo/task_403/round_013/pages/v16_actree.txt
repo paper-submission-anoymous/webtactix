@@ -1,0 +1,39 @@
+- navigation:
+  - link [0] "Jump to main content":
+    - /url: "#main"
+  - link [1] "Jump to sidebar":
+    - /url: "#sidebar"
+- navigation:
+  - link [2] "Home":
+    - /url: /
+    - text: Postmill
+  - list:
+    - link [3] "Forums":
+      - /url: /forums
+    - link [4] "Wiki":
+      - /url: /wiki
+  - searchbox [5] "Search query"
+  - list:
+    - link [6] "Log in":
+      - /url: /login
+    - link [7] "Sign up":
+      - /url: /registration
+- main:
+  - heading "Sign up" [level=1]
+  - text: Username *
+  - textbox [8] "Username This field is required.": AwesomePromptArtistUser
+  - paragraph: Allowed characters are A-Z, a-z, 0-9 and underscore.
+  - text: Password *
+  - textbox [9] "Password This field is required.": Password.123
+  - textbox [10] "Password (repeat)":
+    - /placeholder: (repeat)
+  - paragraph: Minimum of 8 characters.
+  - text: Email address
+  - textbox [11] "Email address"
+  - paragraph: Providing an email address is optional. We will only use it for resetting passwords.
+  - button [12] "Sign up"
+- contentinfo:
+  - paragraph:
+    - text: Running
+    - link [13] "Postmill":
+      - /url: "https://postmill.xyz/"

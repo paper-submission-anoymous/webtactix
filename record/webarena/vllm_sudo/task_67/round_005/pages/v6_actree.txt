@@ -1,0 +1,557 @@
+- navigation:
+  - link [0] "Jump to main content":
+    - /url: "#main"
+  - link [1] "Jump to sidebar":
+    - /url: "#sidebar"
+- navigation:
+  - link [2] "Home":
+    - /url: /
+    - text: Postmill
+  - list:
+    - link [3] "Forums":
+      - /url: /forums
+    - link [4] "Wiki":
+      - /url: /wiki
+  - searchbox [5] "Search query"
+  - list:
+    - link [6] "Log in":
+      - /url: /login
+    - link [7] "Sign up":
+      - /url: /registration
+- main:
+  - "heading \"/f/books\" [level=1]":
+    - text: /f/
+    - strong: books
+  - navigation:
+    - list:
+      - link [8] "Submissions":
+        - /url: /f/books
+      - link [9] "Comments":
+        - /url: /f/books/comments
+    - list:
+      - button [10] "Sort by: Hot":
+        - img
+        - text: Hot
+  - article:
+    - "heading \"The letters of T. S. Eliot to Emily Hale that were kept sealed from 1956 to 2020 have been released for free online\" [level=1]":
+      - link [11] "The letters of T. S. Eliot to Emily Hale that were kept sealed from 1956 to 2020 have been released for free online":
+        - /url: "https://tseliot.com/the-eliot-hale-letters"
+    - link [12] "tseliot.com":
+      - /url: /search?q=tseliot.com
+    - paragraph:
+      - text: Submitted by
+      - link [13] "RunDNA":
+        - /url: /user/RunDNA
+        - strong: RunDNA
+      - text: [t3_10p83br]
+      - time: 3 years ago
+    - navigation:
+      - list:
+        - link [14] "184 comments":
+          - /url: /f/books/81371/the-letters-of-t-s-eliot-to-emily-hale-that-were-kept-sealed
+          - strong: 184 comments
+    - button [15] "Upvote"
+    - text: 3,591
+    - button [16] "Downvote"
+  - article:
+    - "heading \"Friendly reminder bookshop.org exists.\" [level=1]":
+      - link [17] "Friendly reminder bookshop.org exists.":
+        - /url: /f/books/59421/friendly-reminder-bookshop-org-exists
+    - paragraph:
+      - text: Submitted by
+      - link [18] "smita16":
+        - /url: /user/smita16
+        - strong: smita16
+      - text: [t3_zzvi0q]
+      - time: 3 years ago
+    - navigation:
+      - list:
+        - link [19] "125 comments":
+          - /url: /f/books/59421/friendly-reminder-bookshop-org-exists
+          - strong: 125 comments
+    - button [20] "Upvote"
+    - text: 3,085
+    - button [21] "Downvote"
+  - article:
+    - "heading \"Appalachian prison book project seeks notebook donations: \\"The books can help inmates learn new skills, broaden their worldviews and obtain college credits through the West Virginia University Higher Education in Prison Initiative\\"\" [level=1]":
+      - "link [22] \"Appalachian prison book project seeks notebook donations: \\"The books can help inmates learn new skills, broaden their worldviews and obtain college credits through the West Virginia University Higher Education in Prison Initiative\\"\"":
+        - /url: "https://www.timeswv.com/news/monday_news/appalachian-prison-book-project-seeks-notebook-donations/article_1b2d021a-c8c6-509a-9a01-185e71d54448.html"
+    - link [23] "timeswv.com":
+      - /url: /search?q=www.timeswv.com
+    - paragraph:
+      - text: Submitted by
+      - link [24] "SAT0725":
+        - /url: /user/SAT0725
+        - strong: SAT0725
+      - text: [t3_zd6cxz]
+      - time: 3 years ago
+    - navigation:
+      - list:
+        - link [25] "33 comments":
+          - /url: /f/books/59447/appalachian-prison-book-project-seeks-notebook-donations-the
+          - strong: 33 comments
+    - button [26] "Upvote"
+    - text: 1,716
+    - button [27] "Downvote"
+  - article:
+    - "heading \"After Two Decades And 38 Children’s Books Lin Oliver Continues Her Thriving Collaboration With Henry Winkler\" [level=1]":
+      - link [28] "After Two Decades And 38 Children’s Books Lin Oliver Continues Her Thriving Collaboration With Henry Winkler":
+        - /url: "https://www.forbes.com/sites/jerylbrunner/2023/02/26/after-two-decades-and-38-childrens-books-lin-oliver-continues-her-thriving-collaboration-with-henry-winkler/?sh=7fd671c16e63"
+    - link [29] "forbes.com":
+      - /url: /search?q=www.forbes.com
+    - paragraph:
+      - text: Submitted by
+      - link [30] "drak0bsidian":
+        - /url: /user/drak0bsidian
+        - strong: drak0bsidian
+      - text: [t3_11dewje]
+      - time: 3 years ago
+    - navigation:
+      - list:
+        - link [31] "27 comments":
+          - /url: /f/books/103102/after-two-decades-and-38-children-s-books-lin-oliver
+          - strong: 27 comments
+    - button [32] "Upvote"
+    - text: 1,695
+    - button [33] "Downvote"
+  - article:
+    - "heading \"Museum issues appeal to save famed \\"Misty of Chincoteague\\" ranch from being sold to developers\" [level=1]":
+      - "link [34] \"Museum issues appeal to save famed \\"Misty of Chincoteague\\" ranch from being sold to developers\"":
+        - /url: "https://www.delmarvanow.com/story/news/local/virginia/2023/03/01/museum-issues-appeal-to-help-save-home-of-misty-of-chincoteague/69950922007/"
+    - link [35] "delmarvanow.com":
+      - /url: /search?q=www.delmarvanow.com
+    - paragraph:
+      - text: Submitted by
+      - link [36] "ZebZ":
+        - /url: /user/ZebZ
+        - strong: ZebZ
+      - text: [t3_11goa5z]
+      - time: 3 years ago
+    - navigation:
+      - list:
+        - link [37] "43 comments":
+          - /url: /f/books/124017/museum-issues-appeal-to-save-famed-misty-of-chincoteague
+          - strong: 43 comments
+    - button [38] "Upvote"
+    - text: 1,539
+    - button [39] "Downvote"
+  - article:
+    - "heading \"How Ukrainian publishers are fighting to survive\" [level=1]":
+      - link [40] "How Ukrainian publishers are fighting to survive":
+        - /url: "https://www.publishersweekly.com/pw/by-topic/international/international-book-news/article/91178-ukrainian-publishers-fight-on.html"
+    - link [41] "publishersweekly.com":
+      - /url: /search?q=www.publishersweekly.com
+    - paragraph:
+      - text: Submitted by
+      - link [42] "livingmybestestlyfe":
+        - /url: /user/livingmybestestlyfe
+        - strong: livingmybestestlyfe
+      - text: [t3_zwihxz]
+      - time: 3 years ago
+    - navigation:
+      - list:
+        - link [43] "31 comments":
+          - /url: /f/books/59466/how-ukrainian-publishers-are-fighting-to-survive
+          - strong: 31 comments
+    - button [44] "Upvote"
+    - text: 1,434
+    - button [45] "Downvote"
+  - article:
+    - "heading \"The simple greatness of Agatha Christie\" [level=1]":
+      - link [46] "The simple greatness of Agatha Christie":
+        - /url: /f/books/59478/the-simple-greatness-of-agatha-christie
+    - paragraph:
+      - text: Submitted by
+      - link [47] "-something_something":
+        - /url: /user/-something_something
+        - strong: -something_something
+      - text: [t3_zvr666]
+      - time: 3 years ago
+    - navigation:
+      - list:
+        - link [48] "147 comments":
+          - /url: /f/books/59478/the-simple-greatness-of-agatha-christie
+          - strong: 147 comments
+    - button [49] "Upvote"
+    - text: 1,423
+    - button [50] "Downvote"
+  - article:
+    - "heading \"I just finished reading The Hobbit to my 6 year old daughter, and she loved it!\" [level=1]":
+      - link [51] "I just finished reading The Hobbit to my 6 year old daughter, and she loved it!":
+        - /url: /f/books/17445/i-just-finished-reading-the-hobbit-to-my-6-year-old-daughter
+    - paragraph:
+      - text: Submitted by
+      - link [52] "Shaosil":
+        - /url: /user/Shaosil
+        - strong: Shaosil
+      - text: [t3_ydeu5t]
+      - time: 3 years ago
+    - navigation:
+      - list:
+        - link [53] "138 comments":
+          - /url: /f/books/17445/i-just-finished-reading-the-hobbit-to-my-6-year-old-daughter
+          - strong: 138 comments
+    - button [54] "Upvote"
+    - text: 1,423
+    - button [55] "Downvote"
+  - article:
+    - "heading \"Apple Books has a free audiobook of A Christmas Carol narrated by LeVar Burton!\" [level=1]":
+      - link [56] "Apple Books has a free audiobook of A Christmas Carol narrated by LeVar Burton!":
+        - /url: /f/books/59396/apple-books-has-a-free-audiobook-of-a-christmas-carol
+    - paragraph:
+      - text: Submitted by
+      - link [57] "ancienthippo":
+        - /url: /user/ancienthippo
+        - strong: ancienthippo
+      - text: [t3_zs60at]
+      - time: 3 years ago
+    - navigation:
+      - list:
+        - link [58] "39 comments":
+          - /url: /f/books/59396/apple-books-has-a-free-audiobook-of-a-christmas-carol
+          - strong: 39 comments
+    - button [59] "Upvote"
+    - text: 1,335
+    - button [60] "Downvote"
+  - article:
+    - "heading \"What Is It That Makes Used Bookstores So Wonderful?\" [level=1]":
+      - link [61] "What Is It That Makes Used Bookstores So Wonderful?":
+        - /url: "https://crimereads.com/what-is-it-that-makes-used-bookstores-so-wonderful/"
+    - link [62] "crimereads.com":
+      - /url: /search?q=crimereads.com
+    - paragraph:
+      - text: Submitted by
+      - link [63] "zsreport":
+        - /url: /user/zsreport
+        - strong: zsreport
+      - text: [t3_11bs6is]
+      - time: 3 years ago
+    - navigation:
+      - list:
+        - link [64] "142 comments":
+          - /url: /f/books/103061/what-is-it-that-makes-used-bookstores-so-wonderful
+          - strong: 142 comments
+    - button [65] "Upvote"
+    - text: 1,334
+    - button [66] "Downvote"
+  - article:
+    - "heading \"After 30+ years, 'The Stinky Cheese Man' is aging well\" [level=1]":
+      - link [67] "After 30+ years, 'The Stinky Cheese Man' is aging well":
+        - /url: "https://www.npr.org/2023/01/22/1150382945/after-30-years-the-stinky-cheese-man-is-aging-well"
+    - link [68] "npr.org":
+      - /url: /search?q=www.npr.org
+    - paragraph:
+      - text: Submitted by
+      - link [69] "drak0bsidian":
+        - /url: /user/drak0bsidian
+        - strong: drak0bsidian
+      - text: [t3_10mny74]
+      - time: 3 years ago
+    - navigation:
+      - list:
+        - link [70] "81 comments":
+          - /url: /f/books/81489/after-30-years-the-stinky-cheese-man-is-aging-well
+          - strong: 81 comments
+    - button [71] "Upvote"
+    - text: 1,321
+    - button [72] "Downvote"
+  - article:
+    - "heading \"Just finished Things Fall Apart (Chinua Achebe) and I LOVED it\" [level=1]":
+      - link [73] "Just finished Things Fall Apart (Chinua Achebe) and I LOVED it":
+        - /url: /f/books/59401/just-finished-things-fall-apart-chinua-achebe-and-i-loved-it
+    - paragraph:
+      - text: Submitted by
+      - link [74] "SublimeLime1":
+        - /url: /user/SublimeLime1
+        - strong: SublimeLime1
+      - text: [t3_zbxnpm]
+      - time: 3 years ago
+    - navigation:
+      - list:
+        - link [75] "116 comments":
+          - /url: /f/books/59401/just-finished-things-fall-apart-chinua-achebe-and-i-loved-it
+          - strong: 116 comments
+    - button [76] "Upvote"
+    - text: 1,103
+    - button [77] "Downvote"
+  - article:
+    - "heading \"The haunting of hill house was so good\" [level=1]":
+      - link [78] "The haunting of hill house was so good":
+        - /url: /f/books/38309/the-haunting-of-hill-house-was-so-good
+    - paragraph:
+      - text: Submitted by
+      - link [79] "AxidentalMe":
+        - /url: /user/AxidentalMe
+        - strong: AxidentalMe
+      - text: [t3_z4ph9t]
+      - time: 3 years ago
+    - navigation:
+      - list:
+        - link [80] "88 comments":
+          - /url: /f/books/38309/the-haunting-of-hill-house-was-so-good
+          - strong: 88 comments
+    - button [81] "Upvote"
+    - text: 1,011
+    - button [82] "Downvote"
+  - article:
+    - "heading \"Post book depression\" [level=1]":
+      - link [83] "Post book depression":
+        - /url: /f/books/124150/post-book-depression
+    - paragraph:
+      - text: Submitted by
+      - link [84] "bertiewoooster":
+        - /url: /user/bertiewoooster
+        - strong: bertiewoooster
+      - text: [t3_124f4e2]
+      - time: 3 years ago
+    - navigation:
+      - list:
+        - link [85] "185 comments":
+          - /url: /f/books/124150/post-book-depression
+          - strong: 185 comments
+    - button [86] "Upvote"
+    - text: 965
+    - button [87] "Downvote"
+  - article:
+    - "heading \"I fell in love and my interests in books changed drastically.\" [level=1]":
+      - link [88] "I fell in love and my interests in books changed drastically.":
+        - /url: /f/books/59471/i-fell-in-love-and-my-interests-in-books-changed-drastically
+    - paragraph:
+      - text: Submitted by
+      - link [89] "kingkontroverseP0si":
+        - /url: /user/kingkontroverseP0si
+        - strong: kingkontroverseP0si
+      - text: [t3_zutjs8]
+      - time: 3 years ago
+    - navigation:
+      - list:
+        - link [90] "203 comments":
+          - /url: /f/books/59471/i-fell-in-love-and-my-interests-in-books-changed-drastically
+          - strong: 203 comments
+    - button [91] "Upvote"
+    - text: 926
+    - button [92] "Downvote"
+  - article:
+    - "heading \"Fayette County Schools partnered with AFT Kentucky 120 United and First Book to distribute 40,000 free books in Lexington on Saturday.\" [level=1]":
+      - link [93] "Fayette County Schools partnered with AFT Kentucky 120 United and First Book to distribute 40,000 free books in Lexington on Saturday.":
+        - /url: "https://www.wkyt.com/2022/10/22/40k-free-books-distributed-lexington/"
+    - link [94] "wkyt.com":
+      - /url: /search?q=www.wkyt.com
+    - paragraph:
+      - text: Submitted by
+      - link [95] "Sariel007":
+        - /url: /user/Sariel007
+        - strong: Sariel007
+      - text: [t3_ycal5t]
+      - time: 3 years ago
+    - navigation:
+      - list:
+        - link [96] "12 comments":
+          - /url: /f/books/17460/fayette-county-schools-partnered-with-aft-kentucky-120
+          - strong: 12 comments
+    - button [97] "Upvote"
+    - text: 906
+    - button [98] "Downvote"
+  - article:
+    - "heading \"I just can’t with the forced romances in mysteries and thrillers! They are so ridiculous\" [level=1]":
+      - link [99] "I just can’t with the forced romances in mysteries and thrillers! They are so ridiculous":
+        - /url: /f/books/59477/i-just-can-t-with-the-forced-romances-in-mysteries-and
+    - paragraph:
+      - text: Submitted by
+      - link [100] "ginnygrakie":
+        - /url: /user/ginnygrakie
+        - strong: ginnygrakie
+      - text: [t3_zyxdsp]
+      - time: 3 years ago
+    - navigation:
+      - list:
+        - link [101] "129 comments":
+          - /url: /f/books/59477/i-just-can-t-with-the-forced-romances-in-mysteries-and
+          - strong: 129 comments
+    - button [102] "Upvote"
+    - text: 890
+    - button [103] "Downvote"
+  - article:
+    - "heading \"\\"All Spaniards, we discovered, knew two English expressions. One was ‘OK, baby,’ the other was a word used by the Barcelona whores in their dealings with English sailors, and I am afraid the compositors would not print it.\\"\" [level=1]":
+      - "link [104] \"\\"All Spaniards, we discovered, knew two English expressions. One was ‘OK, baby,’ the other was a word used by the Barcelona whores in their dealings with English sailors, and I am afraid the compositors would not print it.\\"\"":
+        - /url: /f/books/17589/all-spaniards-we-discovered-knew-two-english-expressions-one
+    - paragraph:
+      - text: Submitted by
+      - link [105] "SlitchBap":
+        - /url: /user/SlitchBap
+        - strong: SlitchBap
+      - text: [t3_yc28u1]
+      - time: 3 years ago
+    - navigation:
+      - list:
+        - link [106] "119 comments":
+          - /url: /f/books/17589/all-spaniards-we-discovered-knew-two-english-expressions-one
+          - strong: 119 comments
+    - button [107] "Upvote"
+    - text: 847
+    - button [108] "Downvote"
+  - article:
+    - "heading \"\\"The Bell Jar\\" by Sylvia Plath\" [level=1]":
+      - "link [109] \"\\"The Bell Jar\\" by Sylvia Plath\"":
+        - /url: /f/books/17578/the-bell-jar-by-sylvia-plath
+    - paragraph:
+      - text: Submitted by
+      - link [110] "salon_i":
+        - /url: /user/salon_i
+        - strong: salon_i
+      - text: [t3_yffxuw]
+      - time: 3 years ago
+    - navigation:
+      - list:
+        - link [111] "76 comments":
+          - /url: /f/books/17578/the-bell-jar-by-sylvia-plath
+          - strong: 76 comments
+    - button [112] "Upvote"
+    - text: 762
+    - button [113] "Downvote"
+  - article:
+    - "heading \"5 N.Y. Schools Evacuated After Bomb Threats Over LGBTQ+ Book\" [level=1]":
+      - link [114] "5 N.Y. Schools Evacuated After Bomb Threats Over LGBTQ+ Book":
+        - /url: "https://www.advocate.com/news/groomer-bomb-threat-new-york"
+    - link [115] "advocate.com":
+      - /url: /search?q=www.advocate.com
+    - paragraph:
+      - text: Submitted by
+      - link [116] "wdcmsnbcgay":
+        - /url: /user/wdcmsnbcgay
+        - strong: wdcmsnbcgay
+      - text: [t3_11ywemh]
+      - time: 3 years ago
+    - navigation:
+      - list:
+        - link [117] "184 comments":
+          - /url: /f/books/124024/5-n-y-schools-evacuated-after-bomb-threats-over-lgbtq-book
+          - strong: 184 comments
+    - button [118] "Upvote"
+    - text: 738
+    - button [119] "Downvote"
+  - article:
+    - "heading \"Banning Words Won’t Make the World More Just - The Atlantic\" [level=1]":
+      - link [120] "Banning Words Won’t Make the World More Just - The Atlantic":
+        - /url: "https://www.theatlantic.com/magazine/archive/2023/04/equity-language-guides-sierra-club-banned-words/673085/"
+    - link [121] "theatlantic.com":
+      - /url: /search?q=www.theatlantic.com
+    - paragraph:
+      - text: Submitted by
+      - link [122] "vaikrunta":
+        - /url: /user/vaikrunta
+        - strong: vaikrunta
+      - text: [t3_11h76xc]
+      - time: 3 years ago
+    - navigation:
+      - list:
+        - link [123] "135 comments":
+          - /url: /f/books/124043/banning-words-won-t-make-the-world-more-just-the-atlantic
+          - strong: 135 comments
+    - button [124] "Upvote"
+    - text: 722
+    - button [125] "Downvote"
+  - article:
+    - "heading \"All Systems Red by Martha Wells\" [level=1]":
+      - link [126] "All Systems Red by Martha Wells":
+        - /url: /f/books/38271/all-systems-red-by-martha-wells
+    - paragraph:
+      - text: Submitted by
+      - link [127] "angryscout2":
+        - /url: /user/angryscout2
+        - strong: angryscout2
+      - text: [t3_yrgfhk]
+      - time: 3 years ago
+    - navigation:
+      - list:
+        - link [128] "180 comments":
+          - /url: /f/books/38271/all-systems-red-by-martha-wells
+          - strong: 180 comments
+    - button [129] "Upvote"
+    - text: 712
+    - button [130] "Downvote"
+  - article:
+    - "heading \"Joining the “The Song of Achilles” Appreciation Club\" [level=1]":
+      - link [131] "Joining the “The Song of Achilles” Appreciation Club":
+        - /url: /f/books/59467/joining-the-the-song-of-achilles-appreciation-club
+    - paragraph:
+      - text: Submitted by
+      - link [132] "my-nips-hurt":
+        - /url: /user/my-nips-hurt
+        - strong: my-nips-hurt
+      - text: [t3_zwlfq6]
+      - time: 3 years ago
+    - navigation:
+      - list:
+        - link [133] "117 comments":
+          - /url: /f/books/59467/joining-the-the-song-of-achilles-appreciation-club
+          - strong: 117 comments
+    - button [134] "Upvote"
+    - text: 710
+    - button [135] "Downvote"
+  - article:
+    - "heading \"I read 13 horror novels for the month of October, and here is a short pitch for each to see if you should read one!\" [level=1]":
+      - link [136] "I read 13 horror novels for the month of October, and here is a short pitch for each to see if you should read one!":
+        - /url: /f/books/17399/i-read-13-horror-novels-for-the-month-of-october-and-here-is
+    - paragraph:
+      - text: Submitted by
+      - link [137] "CasualTotoro":
+        - /url: /user/CasualTotoro
+        - strong: CasualTotoro
+      - text: [t3_yiee62]
+      - time: 3 years ago
+    - navigation:
+      - list:
+        - link [138] "96 comments":
+          - /url: /f/books/17399/i-read-13-horror-novels-for-the-month-of-october-and-here-is
+          - strong: 96 comments
+    - button [139] "Upvote"
+    - text: 694
+    - button [140] "Downvote"
+  - article:
+    - "heading \"Just finished Fahrenheit 451 and I think I've found me a new favorite author\" [level=1]":
+      - link [141] "Just finished Fahrenheit 451 and I think I've found me a new favorite author":
+        - /url: /f/books/38256/just-finished-fahrenheit-451-and-i-think-i-ve-found-me-a-new
+    - paragraph:
+      - text: Submitted by
+      - link [142] "bookworm579":
+        - /url: /user/bookworm579
+        - strong: bookworm579
+      - text: [t3_z1a32i]
+      - time: 3 years ago
+    - navigation:
+      - list:
+        - link [143] "171 comments":
+          - /url: /f/books/38256/just-finished-fahrenheit-451-and-i-think-i-ve-found-me-a-new
+          - strong: 171 comments
+    - button [144] "Upvote"
+    - text: 687
+    - button [145] "Downvote"
+  - navigation:
+    - list:
+      - link [146] "More":
+        - /url: "http://127.0.0.1:9999/f/books?next%5Branking%5D=631&next%5Bid%5D=124082"
+- complementary:
+  - "heading \"books\" [level=1]":
+    - link [147] "books":
+      - /url: /f/books
+  - paragraph: t5_2qh4i
+  - separator
+  - list:
+    - text: Created
+    - time: 3 years ago
+    - link [148] "Subscribe via RSS":
+      - /url: /f/books/new.atom
+      - img
+      - text: Subscribe via RSS
+  - heading "Toolbox" [level=1]
+  - list:
+    - link [149] "Bans":
+      - /url: /f/books/bans
+    - link [150] "Moderation log":
+      - /url: /f/books/moderation_log
+- contentinfo:
+  - paragraph:
+    - text: Running
+    - link [151] "Postmill":
+      - /url: "https://postmill.xyz/"

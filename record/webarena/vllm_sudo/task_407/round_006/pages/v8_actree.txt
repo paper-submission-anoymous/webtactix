@@ -1,0 +1,541 @@
+- navigation:
+  - link [0] "Jump to main content":
+    - /url: "#main"
+  - link [1] "Jump to sidebar":
+    - /url: "#sidebar"
+- navigation:
+  - link [2] "Home":
+    - /url: /
+    - text: Postmill
+  - list:
+    - link [3] "Forums":
+      - /url: /forums
+    - link [4] "Wiki":
+      - /url: /wiki
+  - searchbox [5] "Search query"
+  - list:
+    - link [6] "Log in":
+      - /url: /login
+    - link [7] "Sign up":
+      - /url: /registration
+- main:
+  - "heading \"/f/deeplearning\" [level=1]":
+    - text: /f/
+    - strong: deeplearning
+  - navigation:
+    - list:
+      - link [8] "Submissions":
+        - /url: /f/deeplearning
+      - link [9] "Comments":
+        - /url: /f/deeplearning/comments
+    - list:
+      - button [10] "Sort by: Hot":
+        - img
+        - text: Hot
+  - article:
+    - "heading \"Meta’s LLaMa weights leaked on torrent... and the best thing about it is someone put up a PR to replace the google form in the repo with it 😂\" [level=1]":
+      - link [11] "Meta’s LLaMa weights leaked on torrent... and the best thing about it is someone put up a PR to replace the google form in the repo with it 😂":
+        - /url: "http://127.0.0.1:9999/submission_images/8a8295e5f93380b9a7b78eab9245c38c3ce350c353ae15a9c1f3025375b067d3.jpg"
+    - paragraph:
+      - text: Submitted by
+      - link [12] "RandomForests92":
+        - /url: /user/RandomForests92
+        - strong: RandomForests92
+      - text: [t3_11hezvk]
+      - time: 3 years ago
+    - navigation:
+      - list:
+        - link [13] "22 comments":
+          - /url: /f/deeplearning/124993/meta-s-llama-weights-leaked-on-torrent-and-the-best-thing
+          - strong: 22 comments
+    - button [14] "Upvote"
+    - text: 173
+    - button [15] "Downvote"
+  - article:
+    - "heading \"I just started out guys, wish me luck\" [level=1]":
+      - link [16] "I just started out guys, wish me luck":
+        - /url: "http://127.0.0.1:9999/submission_images/e87bffabef6429b1d7cc2afb07497c33f2ec1da5165f1dfe65bdb4d1097189bc.jpg"
+    - paragraph:
+      - text: Submitted by
+      - link [17] "47153":
+        - /url: /user/47153
+        - strong: 47153
+      - text: [t3_10a3fwn]
+      - time: 3 years ago
+    - navigation:
+      - list:
+        - link [18] "10 comments":
+          - /url: /f/deeplearning/82403/i-just-started-out-guys-wish-me-luck
+          - strong: 10 comments
+    - button [19] "Upvote"
+    - text: 168
+    - button [20] "Downvote"
+  - article:
+    - "heading \"the biggest risk with generative AI is not its potential for misinformation but cringe.\" [level=1]":
+      - link [21] "the biggest risk with generative AI is not its potential for misinformation but cringe.":
+        - /url: "http://127.0.0.1:9999/submission_images/1ab8486c96bfc7887794bf0c2ec6b081d611af05c2b31bdbfce59cc80b36eda5.png"
+    - paragraph:
+      - text: Submitted by
+      - link [22] "hayAbhay":
+        - /url: /user/hayAbhay
+        - strong: hayAbhay
+      - text: [t3_zdi9v6]
+      - time: 3 years ago
+    - navigation:
+      - list:
+        - link [23] "9 comments":
+          - /url: /f/deeplearning/60308/the-biggest-risk-with-generative-ai-is-not-its-potential-for
+          - strong: 9 comments
+    - button [24] "Upvote"
+    - text: 149
+    - button [25] "Downvote"
+  - article:
+    - "heading \"GPT-3 Generated Rap Battle between Yann LeCun &amp; Gary Marcus\" [level=1]":
+      - link [26] "GPT-3 Generated Rap Battle between Yann LeCun &amp; Gary Marcus":
+        - /url: "http://127.0.0.1:9999/submission_images/37978fc3b477a203555fbfc4f355cd1c48810486b8bf609cafb227e1ae5331f8.png"
+    - paragraph:
+      - text: Submitted by
+      - link [27] "hayAbhay":
+        - /url: /user/hayAbhay
+        - strong: hayAbhay
+      - text: [t3_za73dc]
+      - time: 3 years ago
+    - navigation:
+      - list:
+        - link [28] "16 comments":
+          - /url: /f/deeplearning/60299/gpt-3-generated-rap-battle-between-yann-lecun-amp-gary
+          - strong: 16 comments
+    - button [29] "Upvote"
+    - text: 137
+    - button [30] "Downvote"
+  - article:
+    - "heading \"Does anyone here use newer or custom frameworks aside from TensorFlow, Keras and PyTorch?\" [level=1]":
+      - link [31] "Does anyone here use newer or custom frameworks aside from TensorFlow, Keras and PyTorch?":
+        - /url: /f/deeplearning/82390/does-anyone-here-use-newer-or-custom-frameworks-aside-from
+    - paragraph:
+      - text: Submitted by
+      - link [32] "ConsciousInsects":
+        - /url: /user/ConsciousInsects
+        - strong: ConsciousInsects
+      - text: [t3_103azcq]
+      - time: 3 years ago
+    - navigation:
+      - list:
+        - link [33] "18 comments":
+          - /url: /f/deeplearning/82390/does-anyone-here-use-newer-or-custom-frameworks-aside-from
+          - strong: 18 comments
+    - button [34] "Upvote"
+    - text: 134
+    - button [35] "Downvote"
+  - article:
+    - "heading \"⭕ What People Are Missing About Microsoft’s $10B Investment In OpenAI\" [level=1]":
+      - link [36] "⭕ What People Are Missing About Microsoft’s $10B Investment In OpenAI":
+        - /url: /f/deeplearning/82425/what-people-are-missing-about-microsoft-s-10b-investment-in
+    - paragraph:
+      - text: Submitted by
+      - link [37] "LesleyFair":
+        - /url: /user/LesleyFair
+        - strong: LesleyFair
+      - text: [t3_10mhyek]
+      - time: 3 years ago
+    - navigation:
+      - list:
+        - link [38] "13 comments":
+          - /url: /f/deeplearning/82425/what-people-are-missing-about-microsoft-s-10b-investment-in
+          - strong: 13 comments
+    - button [39] "Upvote"
+    - text: 102
+    - button [40] "Downvote"
+  - article:
+    - "heading \"Vectory: a tool for tracking and comparing embedding spaces\" [level=1]":
+      - link [41] "Vectory: a tool for tracking and comparing embedding spaces":
+        - /url: "http://127.0.0.1:9999/submission_images/1b19e01b52f81d132d03ea09104c0028d66d65afa5e55bf5e2712f7aac163b2d.gif"
+    - paragraph:
+      - text: Submitted by
+      - link [42] "Leopiney":
+        - /url: /user/Leopiney
+        - strong: Leopiney
+      - text: [t3_yk4xnl]
+      - time: 3 years ago
+    - navigation:
+      - list:
+        - link [43] "8 comments":
+          - /url: /f/deeplearning/39154/vectory-a-tool-for-tracking-and-comparing-embedding-spaces
+          - strong: 8 comments
+    - button [44] "Upvote"
+    - text: 79
+    - button [45] "Downvote"
+  - article:
+    - "heading \"GPT-4 Will Be 500x Smaller Than People Think - Here Is Why\" [level=1]":
+      - link [46] "GPT-4 Will Be 500x Smaller Than People Think - Here Is Why":
+        - /url: /f/deeplearning/82411/gpt-4-will-be-500x-smaller-than-people-think-here-is-why
+    - paragraph:
+      - text: Submitted by
+      - link [47] "LesleyFair":
+        - /url: /user/LesleyFair
+        - strong: LesleyFair
+      - text: [t3_10fw22o]
+      - time: 3 years ago
+    - navigation:
+      - list:
+        - link [48] "11 comments":
+          - /url: /f/deeplearning/82411/gpt-4-will-be-500x-smaller-than-people-think-here-is-why
+          - strong: 11 comments
+    - button [49] "Upvote"
+    - text: 68
+    - button [50] "Downvote"
+  - article:
+    - "heading \"Physics-Informed Neural Networks\" [level=1]":
+      - link [51] "Physics-Informed Neural Networks":
+        - /url: "https://v.redd.it/grjijnsli5ia1"
+    - link [52] "v.redd.it":
+      - /url: /search?q=v.redd.it
+    - paragraph:
+      - text: Submitted by
+      - link [53] "vadhavaniyafaijan":
+        - /url: /user/vadhavaniyafaijan
+        - strong: vadhavaniyafaijan
+      - text: [t3_112sunq]
+      - time: 3 years ago
+    - navigation:
+      - list:
+        - link [54] "28 comments":
+          - /url: /f/deeplearning/104066/physics-informed-neural-networks
+          - strong: 28 comments
+    - button [55] "Upvote"
+    - text: 64
+    - button [56] "Downvote"
+  - article:
+    - "heading \"this is reality.\" [level=1]":
+      - link [57] "this is reality.":
+        - /url: "http://127.0.0.1:9999/submission_images/cbcddc94255af95278ac1be2edfe1e5f2e5951cc528bb96478298257ea69b759.png"
+    - paragraph:
+      - text: Submitted by
+      - link [58] "Genius_feed":
+        - /url: /user/Genius_feed
+        - strong: Genius_feed
+      - text: [t3_11mnw1m]
+      - time: 3 years ago
+    - navigation:
+      - list:
+        - link [59] "6 comments":
+          - /url: /f/deeplearning/125001/this-is-reality
+          - strong: 6 comments
+    - button [60] "Upvote"
+    - text: 59
+    - button [61] "Downvote"
+  - article:
+    - "heading \"Are TensorFlow and other ML frameworks worth learning in 2023?\" [level=1]":
+      - link [62] "Are TensorFlow and other ML frameworks worth learning in 2023?":
+        - /url: /f/deeplearning/82413/are-tensorflow-and-other-ml-frameworks-worth-learning-in
+    - paragraph:
+      - text: Submitted by
+      - link [63] "ActionParticular7697":
+        - /url: /user/ActionParticular7697
+        - strong: ActionParticular7697
+      - text: [t3_10gy477]
+      - time: 3 years ago
+    - navigation:
+      - list:
+        - link [64] "7 comments":
+          - /url: /f/deeplearning/82413/are-tensorflow-and-other-ml-frameworks-worth-learning-in
+          - strong: 7 comments
+    - button [65] "Upvote"
+    - text: 59
+    - button [66] "Downvote"
+  - article:
+    - "heading \"arXiv Feed: Keep up with AI research, the easy way.\" [level=1]":
+      - link [67] "arXiv Feed: Keep up with AI research, the easy way.":
+        - /url: /f/deeplearning/82415/arxiv-feed-keep-up-with-ai-research-the-easy-way
+    - paragraph:
+      - text: Submitted by
+      - link [68] "BullyMaguireJr":
+        - /url: /user/BullyMaguireJr
+        - strong: BullyMaguireJr
+      - text: [t3_10iyx52]
+      - time: 3 years ago
+    - navigation:
+      - list:
+        - link [69] "15 comments":
+          - /url: /f/deeplearning/82415/arxiv-feed-keep-up-with-ai-research-the-easy-way
+          - strong: 15 comments
+    - button [70] "Upvote"
+    - text: 56
+    - button [71] "Downvote"
+  - article:
+    - "heading \"AI Startup Cerebras releases open source ChatGPT-like alternative models\" [level=1]":
+      - link [72] "AI Startup Cerebras releases open source ChatGPT-like alternative models":
+        - /url: "https://gpt4chatgpt.tistory.com/entry/Cerebras-releases-open-source-ChatGPT-like-alternative-models"
+    - link [73] "gpt4chatgpt.tistory.com":
+      - /url: /search?q=gpt4chatgpt.tistory.com
+    - paragraph:
+      - text: Submitted by
+      - link [74] "Time_Key8052":
+        - /url: /user/Time_Key8052
+        - strong: Time_Key8052
+      - text: [t3_125pbbf]
+      - time: 3 years ago
+    - navigation:
+      - list:
+        - link [75] "7 comments":
+          - /url: /f/deeplearning/125029/ai-startup-cerebras-releases-open-source-chatgpt-like
+          - strong: 7 comments
+    - button [76] "Upvote"
+    - text: 46
+    - button [77] "Downvote"
+  - article:
+    - "heading \"Do we really need 100B+ parameters in a large language model?\" [level=1]":
+      - link [78] "Do we really need 100B+ parameters in a large language model?":
+        - /url: /f/deeplearning/125025/do-we-really-need-100b-parameters-in-a-large-language-model
+    - paragraph:
+      - text: Submitted by
+      - link [79] "Vegetable-Skill-9700":
+        - /url: /user/Vegetable-Skill-9700
+        - strong: Vegetable-Skill-9700
+      - text: [t3_121agx4]
+      - time: 3 years ago
+    - navigation:
+      - list:
+        - link [80] "54 comments":
+          - /url: /f/deeplearning/125025/do-we-really-need-100b-parameters-in-a-large-language-model
+          - strong: 54 comments
+    - button [81] "Upvote"
+    - text: 43
+    - button [82] "Downvote"
+  - article:
+    - "heading \"[P] From “iron manual” to “Iron Man” — Augmenting GPT for fast editable memory to enable context aware question &amp; answering\" [level=1]":
+      - link [83] "[P] From “iron manual” to “Iron Man” — Augmenting GPT for fast editable memory to enable context aware question &amp; answering":
+        - /url: "http://127.0.0.1:9999/submission_images/0124235c3ae3496d593165c4927aa207399a5b6faf1ff0dead2c39cd9687b1a5.gif"
+    - paragraph:
+      - text: Submitted by
+      - link [84] "skeltzyboiii":
+        - /url: /user/skeltzyboiii
+        - strong: skeltzyboiii
+      - text: [t3_112u10p]
+      - time: 3 years ago
+    - navigation:
+      - list:
+        - link [85] "7 comments":
+          - /url: /f/deeplearning/104067/p-from-iron-manual-to-iron-man-augmenting-gpt-for-fast
+          - strong: 7 comments
+    - button [86] "Upvote"
+    - text: 42
+    - button [87] "Downvote"
+  - article:
+    - "heading \"How To Fine-tune LLaMA Models, Smaller Models With Performance Of GPT3\" [level=1]":
+      - link [88] "How To Fine-tune LLaMA Models, Smaller Models With Performance Of GPT3":
+        - /url: /f/deeplearning/125012/how-to-fine-tune-llama-models-smaller-models-with
+    - paragraph:
+      - text: Submitted by
+      - link [89] "l33thaxman":
+        - /url: /user/l33thaxman
+        - strong: l33thaxman
+      - text: [t3_11ryc3s]
+      - time: 3 years ago
+    - navigation:
+      - list:
+        - link [90] "10 comments":
+          - /url: /f/deeplearning/125012/how-to-fine-tune-llama-models-smaller-models-with
+          - strong: 10 comments
+    - button [91] "Upvote"
+    - text: 40
+    - button [92] "Downvote"
+  - article:
+    - "heading \"I made densify –– a tool for enriching point cloud datasets\" [level=1]":
+      - link [93] "I made densify –– a tool for enriching point cloud datasets":
+        - /url: "http://127.0.0.1:9999/submission_images/9fa6d3c3532c34e80b92a62ad5c913cc9326e1314c8e25bb268498d81d1775a2.gif"
+    - paragraph:
+      - text: Submitted by
+      - link [94] "jsonathan":
+        - /url: /user/jsonathan
+        - strong: jsonathan
+      - text: [t3_y13wjg]
+      - time: 3 years ago
+    - navigation:
+      - list:
+        - link [95] "12 comments":
+          - /url: /f/deeplearning/18463/i-made-densify-a-tool-for-enriching-point-cloud-datasets
+          - strong: 12 comments
+    - button [96] "Upvote"
+    - text: 39
+    - button [97] "Downvote"
+  - article:
+    - "heading \"BlogNLP: AI Writing Tool\" [level=1]":
+      - link [98] "BlogNLP: AI Writing Tool":
+        - /url: /f/deeplearning/39158/blognlp-ai-writing-tool
+    - paragraph:
+      - text: Submitted by
+      - link [99] "britdev":
+        - /url: /user/britdev
+        - strong: britdev
+      - text: [t3_ylj1ux]
+      - time: 3 years ago
+    - navigation:
+      - list:
+        - link [100] "9 comments":
+          - /url: /f/deeplearning/39158/blognlp-ai-writing-tool
+          - strong: 9 comments
+    - button [101] "Upvote"
+    - text: 38
+    - button [102] "Downvote"
+  - article:
+    - "heading \"Is Linux still vastly preferred for deep learning over Windows?\" [level=1]":
+      - link [103] "Is Linux still vastly preferred for deep learning over Windows?":
+        - /url: /f/deeplearning/39179/is-linux-still-vastly-preferred-for-deep-learning-over
+    - paragraph:
+      - text: Submitted by
+      - link [104] "moekou":
+        - /url: /user/moekou
+        - strong: moekou
+      - text: [t3_z4lpry]
+      - time: 3 years ago
+    - navigation:
+      - list:
+        - link [105] "50 comments":
+          - /url: /f/deeplearning/39179/is-linux-still-vastly-preferred-for-deep-learning-over
+          - strong: 50 comments
+    - button [106] "Upvote"
+    - text: 37
+    - button [107] "Downvote"
+  - article:
+    - "heading \"what exactly is Variance(Xt) during the Forward Process in Diffusion model ?\" [level=1]":
+      - link [108] "what exactly is Variance(Xt) during the Forward Process in Diffusion model ?":
+        - /url: "http://127.0.0.1:9999/submission_images/182a98d83c7f04a5ee38308c05eca98617b322a0fe296ca59eb12dbf849b72a0.jpg"
+    - paragraph:
+      - text: Submitted by
+      - link [109] "eugene129":
+        - /url: /user/eugene129
+        - strong: eugene129
+      - text: [t3_11lgo2d]
+      - time: 3 years ago
+    - navigation:
+      - list:
+        - link [110] "13 comments":
+          - /url: /f/deeplearning/124999/what-exactly-is-variance-xt-during-the-forward-process-in
+          - strong: 13 comments
+    - button [111] "Upvote"
+    - text: 31
+    - button [112] "Downvote"
+  - article:
+    - "heading \"Progress Table - is it better than TQDM for your use case?\" [level=1]":
+      - link [113] "Progress Table - is it better than TQDM for your use case?":
+        - /url: /f/deeplearning/60314/progress-table-is-it-better-than-tqdm-for-your-use-case
+    - paragraph:
+      - text: Submitted by
+      - link [114] "gahaalt":
+        - /url: /user/gahaalt
+        - strong: gahaalt
+      - text: [t3_zh381d]
+      - time: 3 years ago
+    - navigation:
+      - list:
+        - link [115] "7 comments":
+          - /url: /f/deeplearning/60314/progress-table-is-it-better-than-tqdm-for-your-use-case
+          - strong: 7 comments
+    - button [116] "Upvote"
+    - text: 31
+    - button [117] "Downvote"
+  - article:
+    - "heading \"Any advanced and updated DL courses?\" [level=1]":
+      - link [118] "Any advanced and updated DL courses?":
+        - /url: /f/deeplearning/125034/any-advanced-and-updated-dl-courses
+    - paragraph:
+      - text: Submitted by
+      - link [119] "nuquichoco":
+        - /url: /user/nuquichoco
+        - strong: nuquichoco
+      - text: [t3_12749vf]
+      - time: 3 years ago
+    - navigation:
+      - list:
+        - link [120] "7 comments":
+          - /url: /f/deeplearning/125034/any-advanced-and-updated-dl-courses
+          - strong: 7 comments
+    - button [121] "Upvote"
+    - text: 27
+    - button [122] "Downvote"
+  - article:
+    - "heading \"Alpaca Turbo : A chat interface to interact with alpaca models with history and context\" [level=1]":
+      - link [123] "Alpaca Turbo : A chat interface to interact with alpaca models with history and context":
+        - /url: /f/deeplearning/125020/alpaca-turbo-a-chat-interface-to-interact-with-alpaca-models
+    - paragraph:
+      - text: Submitted by
+      - link [124] "viperx7":
+        - /url: /user/viperx7
+        - strong: viperx7
+      - text: [t3_11xdx3w]
+      - time: 3 years ago
+    - navigation:
+      - list:
+        - link [125] "21 comments":
+          - /url: /f/deeplearning/125020/alpaca-turbo-a-chat-interface-to-interact-with-alpaca-models
+          - strong: 21 comments
+    - button [126] "Upvote"
+    - text: 27
+    - button [127] "Downvote"
+  - article:
+    - "heading \"LLaMA model parallelization and server configuration\" [level=1]":
+      - link [128] "LLaMA model parallelization and server configuration":
+        - /url: /f/deeplearning/124995/llama-model-parallelization-and-server-configuration
+    - paragraph:
+      - text: Submitted by
+      - link [129] "ChristmasInOct":
+        - /url: /user/ChristmasInOct
+        - strong: ChristmasInOct
+      - text: [t3_11ium8l]
+      - time: 3 years ago
+    - navigation:
+      - list:
+        - link [130] "8 comments":
+          - /url: /f/deeplearning/124995/llama-model-parallelization-and-server-configuration
+          - strong: 8 comments
+    - button [131] "Upvote"
+    - text: 24
+    - button [132] "Downvote"
+  - article:
+    - "heading \"Beat GPT-3 which has unlimited money using Open Source community\" [level=1]":
+      - link [133] "Beat GPT-3 which has unlimited money using Open Source community":
+        - /url: /f/deeplearning/104055/beat-gpt-3-which-has-unlimited-money-using-open-source
+    - paragraph:
+      - text: Submitted by
+      - link [134] "koyo4ever":
+        - /url: /user/koyo4ever
+        - strong: koyo4ever
+      - text: [t3_10ugxmc]
+      - time: 3 years ago
+    - navigation:
+      - list:
+        - link [135] "8 comments":
+          - /url: /f/deeplearning/104055/beat-gpt-3-which-has-unlimited-money-using-open-source
+          - strong: 8 comments
+    - button [136] "Upvote"
+    - text: 23
+    - button [137] "Downvote"
+  - navigation:
+    - list:
+      - link [138] "More":
+        - /url: "http://127.0.0.1:9999/f/deeplearning?next%5Branking%5D=23&next%5Bid%5D=39161"
+- complementary:
+  - "heading \"deeplearning\" [level=1]":
+    - link [139] "deeplearning":
+      - /url: /f/deeplearning
+  - paragraph: t5_2t5eh
+  - separator
+  - list:
+    - text: Created
+    - time: 3 years ago
+    - link [140] "Subscribe via RSS":
+      - /url: /f/deeplearning/new.atom
+      - img
+      - text: Subscribe via RSS
+  - heading "Toolbox" [level=1]
+  - list:
+    - link [141] "Bans":
+      - /url: /f/deeplearning/bans
+    - link [142] "Moderation log":
+      - /url: /f/deeplearning/moderation_log
+- contentinfo:
+  - paragraph:
+    - text: Running
+    - link [143] "Postmill":
+      - /url: "https://postmill.xyz/"
