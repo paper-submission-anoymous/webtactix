@@ -19,6 +19,10 @@ from webtactix.runner.recorder import Recorder
 from webtactix.core.schemas import TaskSpec
 from webtactix.datasets.webarena_evaluator import EvalResult
 
+# ── profiler ──────────────────────────────────────────────────────────────
+from webtactix.profiler import Profiler
+# ─────────────────────────────────────────────────────────────────────────
+
 @dataclass(frozen=True)
 class RunnerConfig:
     max_rounds: int = 15
@@ -44,6 +48,7 @@ class ExperimentRunner:
         task: TaskSpec,
         rec: Recorder,
         cfg: Optional[RunnerConfig] = None,
+        mode: str = "child",
     ) -> None:
         self.sess = sess
         self.tree = tree
@@ -56,6 +61,7 @@ class ExperimentRunner:
         self.encoder = ObservationEncoder(
             ObservationEncoderConfig(table_max_rows=self.cfg.table_max_rows)
         )
+        self.profiler = Profiler(mode)
 
     def _print_planning_result(self, node_id: NodeId, r: PlanningResult) -> None:
         url = self.tree.get_url(node_id)
@@ -99,7 +105,32 @@ class ExperimentRunner:
     ) -> RunnerResult:
 
         # try:
+
+        # ── PROFILER: browser session startup ─────────────────────────────
+        _exec_browser_start = self.profiler.emit_exec_start(
+            exec_type  = "browser_start",
+            step_name  = "exec:browser_start",
+            node_id    = "",
+            action_sig = "sess.start",
+            url_before = "",
+            plan_goal  = "start browser session",
+        )
+        # ─────────────────────────────────────────────────────────────────
         await self.sess.start(storage_state=storage_state, geolocation=geolocation)
+        # ── PROFILER: end browser session startup ─────────────────────────
+        self.profiler.emit_exec_end(_exec_browser_start, success=True, kind="browser_start")
+        # ─────────────────────────────────────────────────────────────────
+
+        # ── PROFILER: initial page observation ────────────────────────────
+        _exec_init_obs = self.profiler.emit_exec_start(
+            exec_type  = "init_observation",
+            step_name  = "exec:init_observation",
+            node_id    = "",
+            action_sig = f"goto {start_url}",
+            url_before = "",
+            plan_goal  = "load start page and build root node",
+        )
+        # ─────────────────────────────────────────────────────────────────
         # root
         page = await self.sess.new_page()
         await self.sess.goto(page, start_url)
@@ -109,6 +140,15 @@ class ExperimentRunner:
         root = self.tree.add_root(url=page.url, enc=enc)
         self.rec.start_round(0, frontier=[], f_parent=[])
         await self._save_page_artifacts(page=page, node_id=root, enc=enc)
+        # ── PROFILER: end initial page observation ────────────────────────
+        self.profiler.emit_exec_end(
+            _exec_init_obs,
+            url_after   = page.url,
+            success     = True,
+            kind        = "init_observation",
+            new_node_id = str(root),
+        )
+        # ─────────────────────────────────────────────────────────────────
 
         decision_result: DecisionResult
         frontier: List[NodeId] = [root]

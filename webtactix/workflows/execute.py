@@ -318,26 +318,36 @@ class Executor:
         plan: Plan,
     ) -> ExecuteOutcome:
 
-        # ── PROFILER: span start ──────────────────────────────────────────
-        # data_extraction can run up to 20 LLM turns internally.
-        # Those LLM turns each emit their own llm_start/end events via data_agent.py.
-        # This exec span captures the entire data_extraction call as a single
-        # time window so we can join cpu/network ticks to it.
-        exec_id = self.profiler.emit_exec_start(
-            exec_type  = "data_extract",
-            step_name  = f"exec:data_extract|node={selected_node_id}",
-            node_id    = str(selected_node_id),
-            action_sig = f"data_extraction -> {plan.goal}",
-            url_before = self.tree.get_url(selected_node_id) or "",
-            plan_goal  = plan.goal,
+        node_state = self.tree.state[selected_node_id]
+        node_id = self.tree.nodes[selected_node_id].node_id
+
+        # ── PROFILER: exec span for new_page + stabilize ──────────────────
+        _exec_setup = self.profiler.emit_exec_start(
+            exec_type  = "data_extraction_setup",
+            step_name  = f"exec:data_extraction_setup|node={node_id}",
+            node_id    = str(node_id),
+            action_sig = "new_page",
+            url_before = "",
+            plan_goal  = (plan.goal or "").strip(),
         )
         # ─────────────────────────────────────────────────────────────────
 
         page = await self.sess.new_page()
         await wait_for_page_stable(page)
 
-        node_state = self.tree.state[selected_node_id]
-        node_id = self.tree.nodes[selected_node_id].node_id
+        # ── PROFILER: end setup exec span ─────────────────────────────────
+        self.profiler.emit_exec_end(
+            _exec_setup,
+            url_after   = page.url,
+            steps_count = 1,
+            success     = True,
+            kind        = "data_extraction_setup",
+        )
+        # ─────────────────────────────────────────────────────────────────
+
+        # data_agent.run() is internally instrumented with granular spans:
+        #   exec:data_setup, pre:data|turn=N, llm_start/end,
+        #   post:data|turn=N, exec:data_action
         result = await self.data_agent.run(node_state=node_state, node_id=node_id)
         plan.answer = result.answer
 
@@ -355,17 +365,6 @@ class Executor:
                 "dst": str(new_node),
                 "extracted_len": len(result.answer or ""),
             })
-
-        # ── PROFILER: span end ────────────────────────────────────────────
-        self.profiler.emit_exec_end(
-            exec_id,
-            url_after   = result.url,
-            new_node_id = str(new_node),
-            success     = True,
-            kind        = "data_extraction",
-            extracted   = result.answer or "",
-        )
-        # ─────────────────────────────────────────────────────────────────
 
         return ExecuteOutcome(
             executed_plan=plan,

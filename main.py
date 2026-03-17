@@ -153,7 +153,7 @@ async def _run_one_task(
             mode=mode,
         )
 
-        runner = ExperimentRunner(sess=sess, tree=tree, planner=planner, decision=decision, task=task, rec=rec)
+        runner = ExperimentRunner(sess=sess, tree=tree, planner=planner, decision=decision, task=task, rec=rec, mode=mode)
 
         storage_state = task.storage_state_abs(webarena_root)
 
