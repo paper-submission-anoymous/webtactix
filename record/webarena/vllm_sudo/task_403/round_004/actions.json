@@ -1,2 +1,0 @@
-{"type": "exec_begin", "src": "v5", "action_sig": "click(link Log in)", "plan_name": "web_operation", "goal": "Navigate to login page", "time_utc": "2026-03-04T00:55:49.582293+00:00", "t": 97.92904791608453, "round": 4}
-{"type": "exec_ok", "src": "v5", "dst": "v6", "action_sig": "click(link Log in)", "url_after": "http://127.0.0.1:9999/login?_cookie_check=1772585749", "time_utc": "2026-03-04T00:56:01.444454+00:00", "t": 109.7912120372057, "round": 4}

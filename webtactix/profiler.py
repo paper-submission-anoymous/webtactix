@@ -79,18 +79,20 @@ class Profiler:
                 emit_llm_end as _ele,
                 emit_exec_start as _ees,
                 emit_exec_end as _eee,
+                emit_step_start as _ess,
+                emit_step_end as _ese,
             )
             self.emit_llm_start = _els
             self.emit_llm_end = _ele
             self.emit_exec_start = _ees
             self.emit_exec_end = _eee
+            self.emit_step_start = _ess
+            self.emit_step_end = _ese
         else:
             # parent mode — all calls are silent no-ops
             self.emit_llm_start = _noop
             self.emit_llm_end = _noop
             self.emit_exec_start = _noop
             self.emit_exec_end = _noop
-
-        # These are no-ops for now in both modes (reserved for future use).
-        self.emit_step_start = _noop
-        self.emit_step_end = _noop
+            self.emit_step_start = _noop
+            self.emit_step_end = _noop

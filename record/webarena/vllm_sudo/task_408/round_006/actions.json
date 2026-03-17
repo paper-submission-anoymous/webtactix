@@ -1,2 +1,0 @@
-{"type": "exec_begin", "src": "v6", "action_sig": "goto http://127.0.0.1:9999/r/explainlikeim5", "plan_name": "web_operation", "goal": "Navigate to the explain like im 5 subreddit page", "time_utc": "2026-03-04T01:32:03.198812+00:00", "t": 169.54670501500368, "round": 6}
-{"type": "exec_ok", "src": "v6", "dst": "v7", "action_sig": "goto http://127.0.0.1:9999/r/explainlikeim5", "url_after": "http://127.0.0.1:9999/r/explainlikeim5", "time_utc": "2026-03-04T01:32:04.684603+00:00", "t": 171.03248941525817, "round": 6}

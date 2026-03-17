@@ -1,2 +1,0 @@
-{"type": "exec_begin", "src": "v13", "action_sig": "input(textbox Username, MarvelsGrantMan136) -> input(textbox Password, Password.123)", "plan_name": "web_operation", "goal": "Enter correct credentials to log in", "time_utc": "2026-03-04T00:54:05.942707+00:00", "t": 285.56311580725014, "round": 13}
-{"type": "exec_ok", "src": "v13", "dst": "v14", "action_sig": "input(textbox Username, MarvelsGrantMan136) -> input(textbox Password, Password.123)", "url_after": "http://127.0.0.1:9999/login", "time_utc": "2026-03-04T00:54:08.216152+00:00", "t": 287.8365646097809, "round": 13}

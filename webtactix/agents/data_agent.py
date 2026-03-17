@@ -89,6 +89,17 @@ class DataExtractionAgent:
             p0 = node_state.next_plans[0] if len(node_state.next_plans) > 0 else None
             goal = (getattr(p0, "goal", "") or "").strip()
 
+        # ── PROFILER: exec span for initial navigation + replay ───────────
+        _exec_setup = self.profiler.emit_exec_start(
+            exec_type  = "data_setup",
+            step_name  = f"exec:data_setup|node={node_id}",
+            node_id    = str(node_id),
+            action_sig = f"goto {node_state.url}",
+            url_before = "",
+            plan_goal  = goal,
+        )
+        # ─────────────────────────────────────────────────────────────────
+
         page = await self.sess.new_page()
         await self.sess.goto(page, node_state.url)
         await wait_for_page_stable(page)
@@ -109,6 +120,16 @@ class DataExtractionAgent:
                     print("[DATA][replay_err]", e)
                     break
 
+        # ── PROFILER: end setup exec span ─────────────────────────────────
+        self.profiler.emit_exec_end(
+            _exec_setup,
+            url_after    = page.url,
+            steps_count  = 1,
+            success      = True,
+            kind         = "data_setup",
+        )
+        # ─────────────────────────────────────────────────────────────────
+
         notes: List[str] = []
         hist: List[str] = []  # alternating entries: NOTE: ... / ACTION: ...
         answer = ""
@@ -125,10 +146,27 @@ class DataExtractionAgent:
             cur = await self.sess.get_snapshot(page)
             enc = self.encoder.encode(cur_snapshot=cur)
 
+            # ── PROFILER: preprocessing step ──────────────────────────────
+            _sid_pre = self.profiler.emit_step_start(
+                stage         = "pre",
+                step_name     = f"pre:data|turn={turn_idx}|node={node_id}",
+                agent         = "data",
+                node_id       = str(node_id),
+                input_summary = {"turn": turn_idx, "hist_len": len(hist), "actree_chars": len(enc.actree_yaml)},
+            )
+            # ─────────────────────────────────────────────────────────────
+
             user = self._user_prompt(
                 goal=goal, enc=enc, common_history=common_hist,
                 history=hist, url=page.url,
             )
+
+            # ── PROFILER: end preprocessing step ──────────────────────────
+            self.profiler.emit_step_end(
+                _sid_pre,
+                output_summary = {"user_chars": len(user)},
+            )
+            # ─────────────────────────────────────────────────────────────
 
             # ── PROFILER: record start of this extraction turn ────────────
             # step_name encodes turn index + node_id so every loop
@@ -146,6 +184,16 @@ class DataExtractionAgent:
 
             # ── PROFILER: record end with exact usage ─────────────────────
             self.profiler.emit_llm_end(_cid, usage=usage, output_obj=obj)
+            # ─────────────────────────────────────────────────────────────
+
+            # ── PROFILER: postprocessing step ─────────────────────────────
+            _sid_post = self.profiler.emit_step_start(
+                stage         = "post",
+                step_name     = f"post:data|turn={turn_idx}|node={node_id}",
+                agent         = "data",
+                node_id       = str(node_id),
+                input_summary = {"obj_type": type(obj).__name__, "turn": turn_idx},
+            )
             # ─────────────────────────────────────────────────────────────
 
             parsed = self._parse_llm(obj)
@@ -173,17 +221,50 @@ class DataExtractionAgent:
             if parsed.get("done", False):
                 answer = (parsed.get("answer", "") or "").strip()
                 done = True
+                # ── PROFILER: end postprocessing step ─────────────────────
+                self.profiler.emit_step_end(
+                    _sid_post,
+                    output_summary = {"is_done": True, "answer_chars": len(answer), "note_chars": len(note)},
+                )
+                # ─────────────────────────────────────────────────────────
                 break
 
             step = parsed.get("step", {})
             if not step:
                 # no steps and not done: stop to avoid infinite loop
+                # ── PROFILER: end postprocessing step ─────────────────────
+                self.profiler.emit_step_end(
+                    _sid_post,
+                    output_summary = {"is_done": False, "no_step": True, "note_chars": len(note)},
+                )
+                # ─────────────────────────────────────────────────────────
                 break
 
+            # ── PROFILER: end postprocessing step (action determined) ──────
+            self.profiler.emit_step_end(
+                _sid_post,
+                output_summary = {"is_done": False, "action": step.get("action", ""), "note_chars": len(note)},
+            )
+            # ─────────────────────────────────────────────────────────────
+
+            action_sig = ""
             if step['action'] == "go_back":
+                # ── PROFILER: exec span for go_back ───────────────────────
+                _exec_act = self.profiler.emit_exec_start(
+                    exec_type  = "data_action",
+                    step_name  = f"exec:data_action|turn={turn_idx}|node={node_id}",
+                    node_id    = str(node_id),
+                    action_sig = "go_back",
+                    url_before = page.url,
+                    plan_goal  = goal,
+                )
+                # ─────────────────────────────────────────────────────────
                 await page.go_back()
                 action_sig = "go back"
                 hist.append(f"ACTION: GO BACK")
+                # ── PROFILER: end exec span ───────────────────────────────
+                self.profiler.emit_exec_end(_exec_act, url_after=page.url, steps_count=1, success=True, kind="go_back")
+                # ─────────────────────────────────────────────────────────
 
             elif step['action'] == "wait":
                 await asyncio.sleep(30)
@@ -197,11 +278,24 @@ class DataExtractionAgent:
                 role_nth = enc.role_nums[idx]
                 action = ActionStep(index=idx, action=ActionType.CLICK, role=role, name=name_, nth=nth, role_nth=role_nth)
                 action_sig = self._sig_from_steps(action)
+                # ── PROFILER: exec span for click ─────────────────────────
+                _exec_act = self.profiler.emit_exec_start(
+                    exec_type  = "data_action",
+                    step_name  = f"exec:data_action|turn={turn_idx}|node={node_id}",
+                    node_id    = str(node_id),
+                    action_sig = action_sig,
+                    url_before = page.url,
+                    plan_goal  = goal,
+                )
+                # ─────────────────────────────────────────────────────────
                 try:
                     await self.sess.apply_step(page, action, False)
 
                     hist.append(f"ACTION: {action_sig}")
                     print(f'[DATA AGENT] Click successful: {action_sig}')
+                    # ── PROFILER: end exec span ───────────────────────────
+                    self.profiler.emit_exec_end(_exec_act, url_after=page.url, steps_count=1, success=True, kind="click")
+                    # ─────────────────────────────────────────────────────
                 except Exception as e:
                     error_type = type(e).__name__
                     error_msg = str(e)
@@ -209,15 +303,31 @@ class DataExtractionAgent:
                     hist.append(f"ERROR: {error_sig}")
                     print(f'[DATA AGENT ERROR] {error_sig}')
                     action_sig = f"{action_sig} failed: {error_type}: {error_msg}"
+                    # ── PROFILER: end exec span (error) ───────────────────
+                    self.profiler.emit_exec_end(_exec_act, url_after=page.url, steps_count=1, success=False, error=error_sig, kind="click")
+                    # ─────────────────────────────────────────────────────
 
             elif step['action'] == "goto":
+                URL = step.get("URL", "about:blank")
+                # ── PROFILER: exec span for goto ──────────────────────────
+                _exec_act = self.profiler.emit_exec_start(
+                    exec_type  = "data_action",
+                    step_name  = f"exec:data_action|turn={turn_idx}|node={node_id}",
+                    node_id    = str(node_id),
+                    action_sig = f"goto {URL}",
+                    url_before = page.url,
+                    plan_goal  = goal,
+                )
+                # ─────────────────────────────────────────────────────────
                 try:
-                    URL = step.get("URL", "about:blank")
                     await page.goto(URL, timeout=60000)
                     await wait_for_page_stable(page)
                     action_sig = f"goto {URL}"
                     hist.append(f"ACTION: GOTO {URL}")
                     print(f'[DATA AGENT] goto {URL}')
+                    # ── PROFILER: end exec span ───────────────────────────
+                    self.profiler.emit_exec_end(_exec_act, url_after=page.url, steps_count=1, success=True, kind="goto")
+                    # ─────────────────────────────────────────────────────
                 except Exception as e:
                     error_type = type(e).__name__
                     error_msg = str(e)
@@ -225,6 +335,9 @@ class DataExtractionAgent:
                     hist.append(f"ERROR: {error_sig}")
                     print(f'[DATA AGENT ERROR] {error_sig}')
                     action_sig = f"ERROR: {error_sig}"
+                    # ── PROFILER: end exec span (error) ───────────────────
+                    self.profiler.emit_exec_end(_exec_act, url_after=page.url, steps_count=1, success=False, error=error_sig, kind="goto")
+                    # ─────────────────────────────────────────────────────
 
             elif step['action'] == "code":
                 raw = step.get("executable_code", "") or ""

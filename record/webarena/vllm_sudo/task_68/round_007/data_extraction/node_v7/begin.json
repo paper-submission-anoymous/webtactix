@@ -1,8 +1,0 @@
-{
-  "node_id": "v7",
-  "goal": "Extract author name and book name from posts that recommend a single book among top 10 posts",
-  "url": "http://143.215.184.110:9999/f/books",
-  "time_utc": "2026-03-04T00:21:02.209286+00:00",
-  "t_start": 450.4552696868777,
-  "round": 7
-}

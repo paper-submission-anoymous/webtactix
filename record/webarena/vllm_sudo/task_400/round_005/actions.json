@@ -1,2 +1,0 @@
-{"type": "exec_begin", "src": "v5", "action_sig": "click(button Log in)", "plan_name": "web_operation", "goal": "Submit the login form again to authenticate the user.", "time_utc": "2026-03-04T00:35:03.846610+00:00", "t": 140.82543068751693, "round": 5}
-{"type": "exec_ok", "src": "v5", "dst": "v6", "action_sig": "click(button Log in)", "url_after": "http://127.0.0.1:9999/login", "time_utc": "2026-03-04T00:35:15.035272+00:00", "t": 152.0140970144421, "round": 5}

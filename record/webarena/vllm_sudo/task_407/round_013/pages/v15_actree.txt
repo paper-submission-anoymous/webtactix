@@ -1,8 +1,0 @@
-- banner:
-  - paragraph:
-    - img
-  - heading "404 Not Found" [level=1]
-- navigation:
-  - paragraph:
-    - link [0] "Go to home page":
-      - /url: /

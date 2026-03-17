@@ -1,2 +1,0 @@
-{"type": "exec_begin", "src": "v15", "action_sig": "click(button Sign up)", "plan_name": "web_operation", "goal": "Create account and navigate to profile edit page to change bio", "time_utc": "2026-03-04T01:01:19.938373+00:00", "t": 428.28512792289257, "round": 13}
-{"type": "exec_ok", "src": "v15", "dst": "v16", "action_sig": "click(button Sign up)", "url_after": "http://127.0.0.1:9999/registration", "time_utc": "2026-03-04T01:01:31.474202+00:00", "t": 439.82095988094807, "round": 13}

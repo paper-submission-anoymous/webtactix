@@ -101,6 +101,16 @@ class PlannerAgent:
         self.profiler = Profiler(mode)
 
     async def run(self, node_id: NodeId, _round: int) -> PlanningResult:
+        # ── PROFILER: preprocessing step ──────────────────────────────────
+        _sid_pre = self.profiler.emit_step_start(
+            stage         = "pre",
+            step_name     = f"pre:planner|round={_round}|node={node_id}",
+            agent         = "planner",
+            node_id       = str(node_id),
+            input_summary = {"round": _round},
+        )
+        # ─────────────────────────────────────────────────────────────────
+
         st = self.tree.state.get(node_id)
         parent_id = self.tree.parent.get(node_id, None)
         parent_st = self.tree.state.get(parent_id, None)
@@ -213,6 +223,17 @@ class PlannerAgent:
 
         self.rec.plan_begin(node_id)
 
+        # ── PROFILER: end preprocessing step ──────────────────────────────
+        self.profiler.emit_step_end(
+            _sid_pre,
+            output_summary = {
+                "history_turns":  len_hist,
+                "prompt_chars":   len(system) + len(user),
+                "has_reflection": bool(len(st.reflection)),
+            },
+        )
+        # ─────────────────────────────────────────────────────────────────
+
         # ── PROFILER: record start ────────────────────────────────────────
         # step_name encodes round + node so every call is uniquely
         # identifiable in the DB without joining any other table.
@@ -228,6 +249,16 @@ class PlannerAgent:
 
         # ── PROFILER: record end with exact token counts from usage ───────
         self.profiler.emit_llm_end(_cid, step_name = f"planner|round={_round}|node={node_id}", usage=usage, output_obj=obj)
+        # ─────────────────────────────────────────────────────────────────
+
+        # ── PROFILER: postprocessing step ─────────────────────────────────
+        _sid_post = self.profiler.emit_step_start(
+            stage         = "post",
+            step_name     = f"post:planner|round={_round}|node={node_id}",
+            agent         = "planner",
+            node_id       = str(node_id),
+            input_summary = {"obj_type": type(obj).__name__},
+        )
         # ─────────────────────────────────────────────────────────────────
 
         page_summary = ""
@@ -356,5 +387,15 @@ class PlannerAgent:
         )
 
         self.rec.save_plan(node_id=node_id, result=planning_result, usage=usage)
+
+        # ── PROFILER: end postprocessing step ─────────────────────────────
+        self.profiler.emit_step_end(
+            _sid_post,
+            output_summary = {
+                "valid_plans": len(plans),
+                "plan_names":  [p.name for p in plans],
+            },
+        )
+        # ─────────────────────────────────────────────────────────────────
 
         return planning_result

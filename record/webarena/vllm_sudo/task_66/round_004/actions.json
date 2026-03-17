@@ -1,2 +1,0 @@
-{"type": "exec_begin", "src": "v4", "action_sig": "goto http://127.0.0.1:9999/forums/books", "plan_name": "web_operation", "goal": "Navigate to the books forum", "time_utc": "2026-03-04T00:07:55.841597+00:00", "t": 232.99052213318646, "round": 4}
-{"type": "exec_ok", "src": "v4", "dst": "v5", "action_sig": "goto http://127.0.0.1:9999/forums/books", "url_after": "http://127.0.0.1:9999/forums/books", "time_utc": "2026-03-04T00:07:57.144503+00:00", "t": 234.29342938028276, "round": 4}

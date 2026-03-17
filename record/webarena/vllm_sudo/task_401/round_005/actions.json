@@ -1,2 +1,0 @@
-{"type": "exec_begin", "src": "v5", "action_sig": "click(button Log in)", "plan_name": "web_operation", "goal": "Attempt to log in to Reddit account", "time_utc": "2026-03-04T00:44:02.939875+00:00", "t": 79.91700980067253, "round": 5}
-{"type": "exec_ok", "src": "v5", "dst": "v6", "action_sig": "click(button Log in)", "url_after": "http://127.0.0.1:9999/login", "time_utc": "2026-03-04T00:44:14.130791+00:00", "t": 91.1079307757318, "round": 5}
