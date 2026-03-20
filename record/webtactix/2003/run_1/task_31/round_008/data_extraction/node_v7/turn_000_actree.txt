@@ -1,0 +1,97 @@
+- navigation:
+  - link [0] "Jump to main content":
+    - /url: "#main"
+  - link [1] "Jump to sidebar":
+    - /url: "#sidebar"
+- navigation:
+  - link [2] "Home":
+    - /url: /
+    - text: Postmill
+  - list:
+    - link [3] "Forums":
+      - /url: /forums
+    - link [4] "Wiki":
+      - /url: /wiki
+  - searchbox [5] "Search query"
+  - list:
+    - link [6] "Notifications (0)":
+      - /url: /notifications
+      - img
+    - link [7] "Submit":
+      - /url: /submit/photoshopbattles
+      - img
+      - text: Submit
+    - button [8] "MarvelsGrantMan136":
+      - img
+      - strong: MarvelsGrantMan136
+- main:
+  - navigation:
+    - list:
+      - link [9] "/f/photoshopbattles":
+        - /url: /f/photoshopbattles
+        - img
+        - text: /f/
+        - strong: photoshopbattles
+  - article:
+    - "heading \"UK Prime Minister Rishi Sunak looking at a pothole\" [level=1]":
+      - link [10] "UK Prime Minister Rishi Sunak looking at a pothole":
+        - /url: "http://143.215.184.110:9999/submission_images/8afd562d3ea20ec1be6d3b110b8bb3f4114c7a31938c4ba09ae4563c139258db.jpg"
+    - paragraph:
+      - text: Submitted by
+      - link [11] "Proud_Idiot":
+        - /url: /user/Proud_Idiot
+        - strong: Proud_Idiot
+      - text: [t3_127l8qa]
+      - time: 3 years ago
+      - text: in
+      - link [12] "photoshopbattles":
+        - /url: /f/photoshopbattles
+        - strong: photoshopbattles
+    - link [13]:
+      - /url: "http://143.215.184.110:9999/submission_images/8afd562d3ea20ec1be6d3b110b8bb3f4114c7a31938c4ba09ae4563c139258db.jpg"
+    - navigation:
+      - list:
+        - link [14] "No comments":
+          - /url: /f/photoshopbattles/131461/uk-prime-minister-rishi-sunak-looking-at-a-pothole
+          - strong: No comments
+    - button [15] "Upvote"
+    - text: 2
+    - button [16] "Downvote"
+  - heading "Comments" [level=2]
+  - textbox [17] "Comment"
+  - checkbox [18] "Formatting help +"
+  - text: Markdown allowed. Formatting help +
+  - button [19] "Post"
+  - img "A tense emoji": (￣□￣;)
+  - text: There's nothing here…
+- complementary:
+  - paragraph:
+    - strong: 0 points
+    - text: (+0, −0)
+  - "heading \"Short URL:\" [level=4]"
+  - paragraph: "http://143.215.184.110:9999/131461"
+  - "heading \"photoshopbattles\" [level=1]":
+    - link [20] "photoshopbattles":
+      - /url: /f/photoshopbattles
+  - button [21] "Subscribe No subscribers": Subscribe 0
+  - paragraph: t5_2tecy
+  - separator
+  - list:
+    - text: Created
+    - time: 3 years ago
+    - link [22] "Subscribe via RSS":
+      - /url: /f/photoshopbattles/new.atom
+      - img
+      - text: Subscribe via RSS
+  - group [23]: Hide this forum
+  - heading "Toolbox" [level=1]
+  - list:
+    - link [24] "Bans":
+      - /url: /f/photoshopbattles/bans
+    - link [25] "Moderation log":
+      - /url: /f/photoshopbattles/moderation_log
+- contentinfo:
+  - paragraph:
+    - text: Running
+    - link [26] "Postmill":
+      - /url: "https://postmill.xyz/"

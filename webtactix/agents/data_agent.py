@@ -16,6 +16,7 @@ import subprocess
 
 # ── profiler ──────────────────────────────────────────────────────────────
 from webtactix.profiler import Profiler
+from browser_env.env_config import REDDIT, GITLAB, SHOPPING, SHOPPING_ADMIN
 # ─────────────────────────────────────────────────────────────────────────────
 
 
@@ -25,16 +26,16 @@ class DataExtractionAgentConfig:
     max_history_items: int = 20
     max_steps_per_round: int = 8
 
-external_knowledge = '''
+external_knowledge = f'''
 - Date format: **Month/Day/YYYY** (e.g., "1/31/2024").
 - Brand and product type can be infer from product name.
 - 0 or not found can also be a result.
 - The descending order for dates means that the earlier dates are located at the top, you must combined with the table to verify.\n
 - All task can ONLY operate under the website as follow. Following URL shows the homepage of these websites.
-  1 REDDIT: http://127.0.0.1:9999
-  2 GITLAB: http://127.0.0.1:8023
-  3 SHOPPING: http://127.0.0.1:7770
-  4 SHOPPING_ADMIN: http://127.0.0.1:7780
+  1 REDDIT: {REDDIT}
+  2 GITLAB: {GITLAB}
+  3 SHOPPING: {SHOPPING}
+  4 SHOPPING_ADMIN: {SHOPPING_ADMIN}
   5 OPENSTREETMAP: https://www.openstreetmap.org/ (For map task, you can use your external knowledge.)
 '''
 

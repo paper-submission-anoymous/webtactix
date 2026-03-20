@@ -1,0 +1,193 @@
+{
+  "time_utc": "2026-03-20T18:58:13.164621+00:00",
+  "t_end": 134.99396678060293,
+  "dataset": "webarena",
+  "task_id": "717",
+  "status": "finish",
+  "answer": "All top 4 posts have been downvoted.",
+  "final_node_id": null,
+  "reason": "finish",
+  "real_answer": {
+    "eval_types": [
+      "program_html"
+    ],
+    "reference_answers": {},
+    "reference_url": "",
+    "string_note": "",
+    "program_html": [
+      {
+        "url": "agentic-ai-reddit:9999/f/movies/86174/who-will-win-the-oscar-for-actress-in-a-supporting-role",
+        "locator": "document.querySelector('div.submission__vote').querySelector('form').getAttribute('class')",
+        "required_contents": {
+          "must_include": [
+            "vote vote--user-downvoted"
+          ]
+        }
+      },
+      {
+        "url": "agentic-ai-reddit:9999/f/movies/86029/who-will-win-the-oscar-for-film-editing",
+        "locator": "document.querySelector('div.submission__vote').querySelector('form').getAttribute('class')",
+        "required_contents": {
+          "must_include": [
+            "vote vote--user-downvoted"
+          ]
+        }
+      },
+      {
+        "url": "agentic-ai-reddit:9999/f/movies/86055/cindy-williams-dies-laverne-amp-shirley-star-who-appeared-in",
+        "locator": "document.querySelector('div.submission__vote').querySelector('form').getAttribute('class')",
+        "required_contents": {
+          "must_include": [
+            "vote vote--user-downvoted"
+          ]
+        }
+      },
+      {
+        "url": "agentic-ai-reddit:9999/f/movies/42682/michelle-yeoh-to-receive-palm-springs-film-festival-s",
+        "locator": "document.querySelector('div.submission__vote').querySelector('form').getAttribute('class')",
+        "required_contents": {
+          "must_include": [
+            "vote vote--user-downvoted"
+          ]
+        }
+      }
+    ],
+    "reference_answer_raw_annotation": "",
+    "raw": {
+      "eval_types": [
+        "program_html"
+      ],
+      "reference_answers": null,
+      "reference_url": "",
+      "program_html": [
+        {
+          "url": "agentic-ai-reddit:9999/f/movies/86174/who-will-win-the-oscar-for-actress-in-a-supporting-role",
+          "locator": "document.querySelector('div.submission__vote').querySelector('form').getAttribute('class')",
+          "required_contents": {
+            "must_include": [
+              "vote vote--user-downvoted"
+            ]
+          }
+        },
+        {
+          "url": "agentic-ai-reddit:9999/f/movies/86029/who-will-win-the-oscar-for-film-editing",
+          "locator": "document.querySelector('div.submission__vote').querySelector('form').getAttribute('class')",
+          "required_contents": {
+            "must_include": [
+              "vote vote--user-downvoted"
+            ]
+          }
+        },
+        {
+          "url": "agentic-ai-reddit:9999/f/movies/86055/cindy-williams-dies-laverne-amp-shirley-star-who-appeared-in",
+          "locator": "document.querySelector('div.submission__vote').querySelector('form').getAttribute('class')",
+          "required_contents": {
+            "must_include": [
+              "vote vote--user-downvoted"
+            ]
+          }
+        },
+        {
+          "url": "agentic-ai-reddit:9999/f/movies/42682/michelle-yeoh-to-receive-palm-springs-film-festival-s",
+          "locator": "document.querySelector('div.submission__vote').querySelector('form').getAttribute('class')",
+          "required_contents": {
+            "must_include": [
+              "vote vote--user-downvoted"
+            ]
+          }
+        }
+      ]
+    }
+  },
+  "eval_result": {
+    "ok": false,
+    "score": 0.0,
+    "reason": "failed",
+    "details": {
+      "per_type": [
+        {
+          "ok": false,
+          "score": 0.0,
+          "reason": "program_html_failed",
+          "details": {
+            "items": [
+              {
+                "idx": 0,
+                "target_url": "agentic-ai-reddit:9999/f/movies/86174/who-will-win-the-oscar-for-actress-in-a-supporting-role",
+                "locator": "document.querySelector('div.submission__vote').querySelector('form').getAttribute('class')",
+                "required_contents": {
+                  "must_include": [
+                    "vote vote--user-downvoted"
+                  ]
+                },
+                "resolved_url": "agentic-ai-reddit:9999/f/movies/86174/who-will-win-the-oscar-for-actress-in-a-supporting-role",
+                "error": "Error: Page.goto: net::ERR_ABORTED at agentic-ai-reddit:9999/f/movies/86174/who-will-win-the-oscar-for-actress-in-a-supporting-role\nCall log:\n  - navigating to \"agentic-ai-reddit:9999/f/movies/86174/who-will-win-the-oscar-for-actress-in-a-supporting-role\", waiting until \"domcontentloaded\"\n",
+                "ok": false
+              },
+              {
+                "idx": 1,
+                "target_url": "agentic-ai-reddit:9999/f/movies/86029/who-will-win-the-oscar-for-film-editing",
+                "locator": "document.querySelector('div.submission__vote').querySelector('form').getAttribute('class')",
+                "required_contents": {
+                  "must_include": [
+                    "vote vote--user-downvoted"
+                  ]
+                },
+                "resolved_url": "agentic-ai-reddit:9999/f/movies/86029/who-will-win-the-oscar-for-film-editing",
+                "error": "Error: Page.goto: net::ERR_ABORTED at agentic-ai-reddit:9999/f/movies/86029/who-will-win-the-oscar-for-film-editing\nCall log:\n  - navigating to \"agentic-ai-reddit:9999/f/movies/86029/who-will-win-the-oscar-for-film-editing\", waiting until \"domcontentloaded\"\n",
+                "ok": false
+              },
+              {
+                "idx": 2,
+                "target_url": "agentic-ai-reddit:9999/f/movies/86055/cindy-williams-dies-laverne-amp-shirley-star-who-appeared-in",
+                "locator": "document.querySelector('div.submission__vote').querySelector('form').getAttribute('class')",
+                "required_contents": {
+                  "must_include": [
+                    "vote vote--user-downvoted"
+                  ]
+                },
+                "resolved_url": "agentic-ai-reddit:9999/f/movies/86055/cindy-williams-dies-laverne-amp-shirley-star-who-appeared-in",
+                "error": "Error: Page.goto: net::ERR_ABORTED at agentic-ai-reddit:9999/f/movies/86055/cindy-williams-dies-laverne-amp-shirley-star-who-appeared-in\nCall log:\n  - navigating to \"agentic-ai-reddit:9999/f/movies/86055/cindy-williams-dies-laverne-amp-shirley-star-who-appeared-in\", waiting until \"domcontentloaded\"\n",
+                "ok": false
+              },
+              {
+                "idx": 3,
+                "target_url": "agentic-ai-reddit:9999/f/movies/42682/michelle-yeoh-to-receive-palm-springs-film-festival-s",
+                "locator": "document.querySelector('div.submission__vote').querySelector('form').getAttribute('class')",
+                "required_contents": {
+                  "must_include": [
+                    "vote vote--user-downvoted"
+                  ]
+                },
+                "resolved_url": "agentic-ai-reddit:9999/f/movies/42682/michelle-yeoh-to-receive-palm-springs-film-festival-s",
+                "error": "Error: Page.goto: net::ERR_ABORTED at agentic-ai-reddit:9999/f/movies/42682/michelle-yeoh-to-receive-palm-springs-film-festival-s\nCall log:\n  - navigating to \"agentic-ai-reddit:9999/f/movies/42682/michelle-yeoh-to-receive-palm-springs-film-festival-s\", waiting until \"domcontentloaded\"\n",
+                "ok": false
+              }
+            ]
+          }
+        }
+      ]
+    }
+  },
+  "summary": {
+    "total_tokens": 77509,
+    "total_prompt_tokens": 66873,
+    "total_completion_tokens": 10636,
+    "llm_calls": 14,
+    "estimated_calls": 0,
+    "planner_calls": 7,
+    "decision_calls": 7,
+    "total_rounds": 8,
+    "total_nodes": null,
+    "planner_frontier_sizes": {
+      "0": 0,
+      "1": 1,
+      "2": 1,
+      "3": 1,
+      "4": 1,
+      "5": 1,
+      "6": 1,
+      "7": 1
+    }
+  }
+}

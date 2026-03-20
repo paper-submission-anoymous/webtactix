@@ -1,0 +1,71 @@
+{
+  "task": {
+    "dataset": "webarena",
+    "task_id": 604,
+    "intent": "Post my question, \"what is the SOTA web navigation agent repo\", in a subreddit where I'm likely to get an answer",
+    "start_url": "http://143.215.184.110:9999",
+    "sites": [
+      "reddit"
+    ],
+    "require_login": true,
+    "storage_state_path": "./.auth/reddit_state.json",
+    "geolocation": null,
+    "require_reset": false,
+    "intent_template": "Post my question, \"{{question}}\", in a subreddit where I'm likely to get an answer",
+    "instantiation_dict": {
+      "question": "what is the SOTA web navigation agent repo"
+    },
+    "eval_spec": {
+      "eval_types": [
+        "url_match",
+        "program_html"
+      ],
+      "reference_answers": {},
+      "reference_url": "agentic-ai-reddit:9999/f/deeplearning |OR| agentic-ai-reddit:9999/f/MachineLearning |OR| agentic-ai-reddit:9999/f/singularity",
+      "string_note": "",
+      "program_html": [
+        {
+          "url": "func:reddit_get_post_url('__last_url__')",
+          "locator": "document.querySelector('.submission__inner').outerText",
+          "required_contents": {
+            "must_include": [
+              "what is the SOTA web navigation agent repo"
+            ]
+          }
+        }
+      ],
+      "reference_answer_raw_annotation": "",
+      "raw": {
+        "eval_types": [
+          "url_match",
+          "program_html"
+        ],
+        "reference_answers": null,
+        "reference_url": "agentic-ai-reddit:9999/f/deeplearning |OR| agentic-ai-reddit:9999/f/MachineLearning |OR| agentic-ai-reddit:9999/f/singularity",
+        "program_html": [
+          {
+            "url": "func:reddit_get_post_url('__last_url__')",
+            "locator": "document.querySelector('.submission__inner').outerText",
+            "required_contents": {
+              "must_include": [
+                "what is the SOTA web navigation agent repo"
+              ]
+            }
+          }
+        ],
+        "url_note": "GOLD in PRED"
+      }
+    },
+    "source_path": "/home/ivohra6/benchmarks/webarena/config_files/604.json"
+  },
+  "constraints": [
+    {
+      "text": "what is the SOTA web navigation agent repo",
+      "kind": "post_content"
+    },
+    {
+      "text": "subreddit where I'm likely to get an answer",
+      "kind": "subreddit"
+    }
+  ]
+}

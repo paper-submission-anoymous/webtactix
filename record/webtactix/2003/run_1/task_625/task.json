@@ -1,0 +1,77 @@
+{
+  "task": {
+    "dataset": "webarena",
+    "task_id": 625,
+    "intent": "Create a discussion post about \"the effectiveness of online learning\" in a relevant subreddit and ask users for their opinions with the simple prompt, \"your opinion\"",
+    "start_url": "http://143.215.184.110:9999",
+    "sites": [
+      "reddit"
+    ],
+    "require_login": true,
+    "storage_state_path": "./.auth/reddit_state.json",
+    "geolocation": null,
+    "require_reset": false,
+    "intent_template": "Create a discussion post about \"{{topic}}\" in a relevant subreddit and ask users for their opinions with the simple prompt, \"your opinion\"",
+    "instantiation_dict": {
+      "topic": "the effectiveness of online learning"
+    },
+    "eval_spec": {
+      "eval_types": [
+        "url_match",
+        "program_html"
+      ],
+      "reference_answers": {},
+      "reference_url": "agentic-ai-reddit:9999/f/machinelearning |OR| agentic-ai-reddit:9999/f/deeplearning",
+      "string_note": "",
+      "program_html": [
+        {
+          "url": "func:reddit_get_post_url('__last_url__')",
+          "locator": "document.querySelector('.submission__inner').outerText",
+          "required_contents": {
+            "must_include": [
+              "your opinion",
+              "the effectiveness of online learning"
+            ]
+          }
+        }
+      ],
+      "reference_answer_raw_annotation": "",
+      "raw": {
+        "eval_types": [
+          "url_match",
+          "program_html"
+        ],
+        "reference_answers": null,
+        "reference_url": "agentic-ai-reddit:9999/f/machinelearning |OR| agentic-ai-reddit:9999/f/deeplearning",
+        "program_html": [
+          {
+            "url": "func:reddit_get_post_url('__last_url__')",
+            "locator": "document.querySelector('.submission__inner').outerText",
+            "required_contents": {
+              "must_include": [
+                "your opinion",
+                "the effectiveness of online learning"
+              ]
+            }
+          }
+        ],
+        "url_note": "GOLD in PRED"
+      }
+    },
+    "source_path": "/home/ivohra6/benchmarks/webarena/config_files/625.json"
+  },
+  "constraints": [
+    {
+      "text": "the effectiveness of online learning",
+      "kind": "topic"
+    },
+    {
+      "text": "relevant subreddit",
+      "kind": "platform"
+    },
+    {
+      "text": "your opinion",
+      "kind": "prompt"
+    }
+  ]
+}

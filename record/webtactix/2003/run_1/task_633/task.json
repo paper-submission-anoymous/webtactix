@@ -1,0 +1,81 @@
+{
+  "task": {
+    "dataset": "webarena",
+    "task_id": 633,
+    "intent": "Ask for product recommendations for running pants within a budget of $500 in r/sports",
+    "start_url": "http://143.215.184.110:9999",
+    "sites": [
+      "reddit"
+    ],
+    "require_login": true,
+    "storage_state_path": "./.auth/reddit_state.json",
+    "geolocation": null,
+    "require_reset": false,
+    "intent_template": "Ask for product recommendations for {{category}} within a budget of {{price}} in {{subreddit}}",
+    "instantiation_dict": {
+      "category": "running pants",
+      "price": "$500",
+      "subreddit": "r/sports"
+    },
+    "eval_spec": {
+      "eval_types": [
+        "url_match",
+        "program_html"
+      ],
+      "reference_answers": {},
+      "reference_url": "agentic-ai-reddit:9999/f/sports",
+      "string_note": "",
+      "program_html": [
+        {
+          "url": "func:reddit_get_post_url('__last_url__')",
+          "locator": "document.querySelector('.submission__inner').outerText",
+          "required_contents": {
+            "must_include": [
+              "500",
+              "running",
+              "pants"
+            ]
+          }
+        }
+      ],
+      "reference_answer_raw_annotation": "",
+      "raw": {
+        "eval_types": [
+          "url_match",
+          "program_html"
+        ],
+        "reference_answers": null,
+        "reference_url": "agentic-ai-reddit:9999/f/sports",
+        "program_html": [
+          {
+            "url": "func:reddit_get_post_url('__last_url__')",
+            "locator": "document.querySelector('.submission__inner').outerText",
+            "required_contents": {
+              "must_include": [
+                "500",
+                "running",
+                "pants"
+              ]
+            }
+          }
+        ],
+        "url_note": "GOLD in PRED"
+      }
+    },
+    "source_path": "/home/ivohra6/benchmarks/webarena/config_files/633.json"
+  },
+  "constraints": [
+    {
+      "text": "running pants",
+      "kind": "product_type"
+    },
+    {
+      "text": "$500",
+      "kind": "budget"
+    },
+    {
+      "text": "r/sports",
+      "kind": "category"
+    }
+  ]
+}

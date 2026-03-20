@@ -1,0 +1,73 @@
+{
+  "task": {
+    "dataset": "webarena",
+    "task_id": 729,
+    "intent": "DisLike all submissions created by AdamCannon in subreddit UpliftingNews",
+    "start_url": "http://143.215.184.110:9999",
+    "sites": [
+      "reddit"
+    ],
+    "require_login": true,
+    "storage_state_path": "./.auth/reddit_state.json",
+    "geolocation": null,
+    "require_reset": false,
+    "intent_template": "DisLike all submissions created by {{user}} in subreddit {{subreddit}}",
+    "instantiation_dict": {
+      "user": "AdamCannon",
+      "subreddit": "UpliftingNews"
+    },
+    "eval_spec": {
+      "eval_types": [
+        "program_html"
+      ],
+      "reference_answers": {},
+      "reference_url": "",
+      "string_note": "",
+      "program_html": [
+        {
+          "url": "agentic-ai-reddit:9999/f/UpliftingNews/16087/same-sex-marriage-is-now-legal-in-all-of-mexico-s-states",
+          "locator": "document.querySelector('div.submission__vote').querySelector('form').getAttribute('class')",
+          "required_contents": {
+            "must_include": [
+              "vote vote--user-downvoted"
+            ]
+          }
+        }
+      ],
+      "reference_answer_raw_annotation": "",
+      "raw": {
+        "eval_types": [
+          "program_html"
+        ],
+        "reference_answers": null,
+        "reference_url": "",
+        "program_html": [
+          {
+            "url": "agentic-ai-reddit:9999/f/UpliftingNews/16087/same-sex-marriage-is-now-legal-in-all-of-mexico-s-states",
+            "locator": "document.querySelector('div.submission__vote').querySelector('form').getAttribute('class')",
+            "required_contents": {
+              "must_include": [
+                "vote vote--user-downvoted"
+              ]
+            }
+          }
+        ]
+      }
+    },
+    "source_path": "/home/ivohra6/benchmarks/webarena/config_files/729.json"
+  },
+  "constraints": [
+    {
+      "text": "DisLike",
+      "kind": "action"
+    },
+    {
+      "text": "AdamCannon",
+      "kind": "author"
+    },
+    {
+      "text": "UpliftingNews",
+      "kind": "subreddit"
+    }
+  ]
+}

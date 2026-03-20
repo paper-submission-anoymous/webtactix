@@ -1,0 +1,558 @@
+- navigation:
+  - link [0] "Jump to main content":
+    - /url: "#main"
+  - link [1] "Jump to sidebar":
+    - /url: "#sidebar"
+- navigation:
+  - link [2] "Home":
+    - /url: /
+    - text: Postmill
+  - list:
+    - link [3] "Forums":
+      - /url: /forums
+    - link [4] "Wiki":
+      - /url: /wiki
+  - searchbox [5] "Search query"
+  - list:
+    - link [6] "Notifications (0)":
+      - /url: /notifications
+      - img
+    - link [7] "Submit":
+      - /url: /submit/photoshopbattles
+      - img
+      - text: Submit
+    - button [8] "MarvelsGrantMan136":
+      - img
+      - strong: MarvelsGrantMan136
+- main:
+  - "heading \"/f/photoshopbattles\" [level=1]":
+    - text: /f/
+    - strong: photoshopbattles
+  - navigation:
+    - list:
+      - link [9] "Submissions":
+        - /url: /f/photoshopbattles
+      - link [10] "Comments":
+        - /url: /f/photoshopbattles/comments
+    - list:
+      - button [11] "Sort by: Hot" [expanded]:
+        - img
+        - text: Hot
+      - list:
+        - link [12] "• Hot":
+          - /url: /f/photoshopbattles/hot
+        - link [13] "New":
+          - /url: /f/photoshopbattles/new
+        - link [14] "Active":
+          - /url: /f/photoshopbattles/active
+        - link [15] "Top":
+          - /url: /f/photoshopbattles/top?t=day
+        - link [16] "Controversial":
+          - /url: /f/photoshopbattles/controversial?t=day
+        - link [17] "Most commented":
+          - /url: /f/photoshopbattles/most_commented?t=day
+  - article:
+    - "heading \"PsBattle: Halloween Costume\" [level=1]":
+      - link [18] "PsBattle: Halloween Costume":
+        - /url: "http://143.215.184.110:9999/submission_images/41fc79053c2b268370219c76c74625011785336453addf9ebdec0db40d5742b3.jpg"
+    - paragraph:
+      - text: Submitted by
+      - link [19] "OCDGaming":
+        - /url: /user/OCDGaming
+        - strong: OCDGaming
+      - text: [t3_ym3o3h]
+      - time: 3 years ago
+    - navigation:
+      - list:
+        - link [20] "180 comments":
+          - /url: /f/photoshopbattles/45340/psbattle-halloween-costume
+          - strong: 180 comments
+    - button [21] "Upvote"
+    - text: 34650
+    - button [22] "Downvote"
+  - article:
+    - "heading \"PsBattle: a drone show above Whitby Abbey\" [level=1]":
+      - link [23] "PsBattle: a drone show above Whitby Abbey":
+        - /url: "http://143.215.184.110:9999/submission_images/b2e0916617c7a1d931671ccc317d331bb6fd11d63a6b4e252230249b3acf292a.jpg"
+    - paragraph:
+      - text: Submitted by
+      - link [24] "SurprisedPotato":
+        - /url: /user/SurprisedPotato
+        - strong: SurprisedPotato
+      - text: [t3_yj2uzf]
+      - time: 3 years ago
+    - navigation:
+      - list:
+        - link [25] "127 comments":
+          - /url: /f/photoshopbattles/45315/psbattle-a-drone-show-above-whitby-abbey
+          - strong: 127 comments
+    - button [26] "Upvote"
+    - text: 27320
+    - button [27] "Downvote"
+  - article:
+    - "heading \"PsBattle: A heart shaped Antlers Stag in Bushy Park\" [level=1]":
+      - link [28] "PsBattle: A heart shaped Antlers Stag in Bushy Park":
+        - /url: "http://143.215.184.110:9999/submission_images/357871e914b653a3fb6322177542f8b6e3cf22a9e9b6512281a0852e1efa4a1b.jpg"
+    - paragraph:
+      - text: Submitted by
+      - link [29] "MuhammadFareedR":
+        - /url: /user/MuhammadFareedR
+        - strong: MuhammadFareedR
+      - text: [t3_113x5sq]
+      - time: 3 years ago
+    - navigation:
+      - list:
+        - link [30] "143 comments":
+          - /url: /f/photoshopbattles/110488/psbattle-a-heart-shaped-antlers-stag-in-bushy-park
+          - strong: 143 comments
+    - button [31] "Upvote"
+    - text: 19353
+    - button [32] "Downvote"
+  - article:
+    - "heading \"PsBattle: Puppy sitting on sand\" [level=1]":
+      - link [33] "PsBattle: Puppy sitting on sand":
+        - /url: "http://143.215.184.110:9999/submission_images/8b7e2239eba57070c358b4a5381882a979a778f5efbfa0f9e6fedcee96a6d045.jpg"
+    - paragraph:
+      - text: Submitted by
+      - link [34] "Call_Me_Jobb":
+        - /url: /user/Call_Me_Jobb
+        - strong: Call_Me_Jobb
+      - text: [t3_zzosl1]
+      - time: 3 years ago
+    - navigation:
+      - list:
+        - link [35] "91 comments":
+          - /url: /f/photoshopbattles/66941/psbattle-puppy-sitting-on-sand
+          - strong: 91 comments
+    - button [36] "Upvote"
+    - text: 18983
+    - button [37] "Downvote"
+  - article:
+    - "heading \"PsBattle: Dog charged with static electricity\" [level=1]":
+      - link [38] "PsBattle: Dog charged with static electricity":
+        - /url: "http://143.215.184.110:9999/submission_images/86efecbde164a215ec262ac0343a7d33f7971472720a269b5410e30b1a340be8.jpg"
+    - paragraph:
+      - text: Submitted by
+      - link [39] "hammadurb":
+        - /url: /user/hammadurb
+        - strong: hammadurb
+      - text: [t3_ztim3f]
+      - time: 3 years ago
+    - navigation:
+      - list:
+        - link [40] "143 comments":
+          - /url: /f/photoshopbattles/67033/psbattle-dog-charged-with-static-electricity
+          - strong: 143 comments
+    - button [41] "Upvote"
+    - text: 17978
+    - button [42] "Downvote"
+  - article:
+    - "heading \"PsBattle: This gorilla in a children’s chair\" [level=1]":
+      - link [43] "PsBattle: This gorilla in a children’s chair":
+        - /url: "http://143.215.184.110:9999/submission_images/b2fb0c35566e1daeb37401dd0e939d9524c92422d35e9f45bfacdd21df1e82fb.jpg"
+    - paragraph:
+      - text: Submitted by
+      - link [44] "TheJedibugs":
+        - /url: /user/TheJedibugs
+        - strong: TheJedibugs
+      - text: [t3_z1hmwy]
+      - time: 3 years ago
+    - navigation:
+      - list:
+        - link [45] "171 comments":
+          - /url: /f/photoshopbattles/45462/psbattle-this-gorilla-in-a-children-s-chair
+          - strong: 171 comments
+    - button [46] "Upvote"
+    - text: 17099
+    - button [47] "Downvote"
+  - article:
+    - "heading \"PsBattle: Giraffe drinking water\" [level=1]":
+      - link [48] "PsBattle: Giraffe drinking water":
+        - /url: "http://143.215.184.110:9999/submission_images/b6b055d0a87fdbd57dd20ebadbcd45e8313e93c0924ffeeb5998e9624dbbf75e.jpg"
+    - paragraph:
+      - text: Submitted by
+      - link [49] "RRT4444":
+        - /url: /user/RRT4444
+        - strong: RRT4444
+      - text: [t3_11f7w4v]
+      - time: 3 years ago
+    - navigation:
+      - list:
+        - link [50] "153 comments":
+          - /url: /f/photoshopbattles/131263/psbattle-giraffe-drinking-water
+          - strong: 153 comments
+    - button [51] "Upvote"
+    - text: 16637
+    - button [52] "Downvote"
+  - article:
+    - "heading \"PsBattle: 87 Y/O Man with Coronavirus Watches Sunset Outside For First Time In A Month (2020)\" [level=1]":
+      - link [53] "PsBattle: 87 Y/O Man with Coronavirus Watches Sunset Outside For First Time In A Month (2020)":
+        - /url: "http://143.215.184.110:9999/submission_images/f4e7c59be573f3ddd482934efcd8f10f331852d33ba7173df932770faeb0e23c.jpg"
+    - paragraph:
+      - text: Submitted by
+      - link [54] "CalmGameshow":
+        - /url: /user/CalmGameshow
+        - strong: CalmGameshow
+      - text: [t3_10z5tus]
+      - time: 3 years ago
+    - navigation:
+      - list:
+        - link [55] "185 comments":
+          - /url: /f/photoshopbattles/110445/psbattle-87-y-o-man-with-coronavirus-watches-sunset-outside
+          - strong: 185 comments
+    - button [56] "Upvote"
+    - text: 16088
+    - button [57] "Downvote"
+  - article:
+    - "heading \"PsBattle: Wolf in a car next to a guy\" [level=1]":
+      - link [58] "PsBattle: Wolf in a car next to a guy":
+        - /url: "http://143.215.184.110:9999/submission_images/b6461df9666aecb085f5eac674342c41bfce7a2f416449fb68e788b911935f18.jpg"
+    - paragraph:
+      - text: Submitted by
+      - link [59] "Zetheryian":
+        - /url: /user/Zetheryian
+        - strong: Zetheryian
+      - text: [t3_122rt74]
+      - time: 3 years ago
+    - navigation:
+      - list:
+        - link [60] "185 comments":
+          - /url: /f/photoshopbattles/131417/psbattle-wolf-in-a-car-next-to-a-guy
+          - strong: 185 comments
+    - button [61] "Upvote"
+    - text: 16010
+    - button [62] "Downvote"
+  - article:
+    - "heading \"PsBattle: cat behind a cat\" [level=1]":
+      - link [63] "PsBattle: cat behind a cat":
+        - /url: "http://143.215.184.110:9999/submission_images/592a05fe13159b9c8a109f8f9187b17912a6a8e37124a1af85b341564f5ad3c7.jpg"
+    - paragraph:
+      - text: Submitted by
+      - link [64] "Scaulbylausis":
+        - /url: /user/Scaulbylausis
+        - strong: Scaulbylausis
+      - text: [t3_z4fulf]
+      - time: 3 years ago
+    - navigation:
+      - list:
+        - link [65] "93 comments":
+          - /url: /f/photoshopbattles/45482/psbattle-cat-behind-a-cat
+          - strong: 93 comments
+    - button [66] "Upvote"
+    - text: 14792
+    - button [67] "Downvote"
+  - article:
+    - "heading \"PsBattle: Miss Ukraine at the Miss Universe pageant\" [level=1]":
+      - link [68] "PsBattle: Miss Ukraine at the Miss Universe pageant":
+        - /url: "http://143.215.184.110:9999/submission_images/174f61a90ac7bac86cb6ee4a89bac8f0ecbe5b7497f11c275a80d2712a8c5cef.jpg"
+    - paragraph:
+      - text: Submitted by
+      - link [69] "EmmaStonewallJackson":
+        - /url: /user/EmmaStonewallJackson
+        - strong: EmmaStonewallJackson
+      - text: [t3_zwstd0]
+      - time: 3 years ago
+    - navigation:
+      - list:
+        - link [70] "200 comments":
+          - /url: /f/photoshopbattles/66934/psbattle-miss-ukraine-at-the-miss-universe-pageant
+          - strong: 200 comments
+    - button [71] "Upvote"
+    - text: 14567
+    - button [72] "Downvote"
+  - article:
+    - "heading \"PsBattle: Peacocks fighting\" [level=1]":
+      - link [73] "PsBattle: Peacocks fighting":
+        - /url: "http://143.215.184.110:9999/submission_images/56d11475254d9838f7c9d268b40a3e94ea0a06f1495c524aaa550506aee9fb4f.jpg"
+    - paragraph:
+      - text: Submitted by
+      - link [74] "Pragalbhv":
+        - /url: /user/Pragalbhv
+        - strong: Pragalbhv
+      - text: [t3_yanrmv]
+      - time: 3 years ago
+    - navigation:
+      - list:
+        - link [75] "84 comments":
+          - /url: /f/photoshopbattles/24831/psbattle-peacocks-fighting
+          - strong: 84 comments
+    - button [76] "Upvote"
+    - text: 14140
+    - button [77] "Downvote"
+  - article:
+    - "heading \"PsBattle: Violet-backed Starling\" [level=1]":
+      - link [78] "PsBattle: Violet-backed Starling":
+        - /url: "http://143.215.184.110:9999/submission_images/ecb8c0b10b83ab4e1f831fe8efc40c66a6bac484b030fc967834fd1bc1caccb4.jpg"
+    - paragraph:
+      - text: Submitted by
+      - link [79] "stevepatail":
+        - /url: /user/stevepatail
+        - strong: stevepatail
+      - text: [t3_10vxrx3]
+      - time: 3 years ago
+    - navigation:
+      - list:
+        - link [80] "57 comments":
+          - /url: /f/photoshopbattles/110421/psbattle-violet-backed-starling
+          - strong: 57 comments
+    - button [81] "Upvote"
+    - text: 14138
+    - button [82] "Downvote"
+  - article:
+    - "heading \"PsBattle: This train surrounded by flooded lands\" [level=1]":
+      - link [83] "PsBattle: This train surrounded by flooded lands":
+        - /url: "http://143.215.184.110:9999/submission_images/1e0faec9ba54035f44b8bf60becad493b212f30f23abe9df9906ed761d6cc547.jpg"
+    - paragraph:
+      - text: Submitted by
+      - link [84] "C_Hawk14":
+        - /url: /user/C_Hawk14
+        - strong: C_Hawk14
+      - text: [t3_11zwai2]
+      - time: 3 years ago
+    - navigation:
+      - list:
+        - link [85] "141 comments":
+          - /url: /f/photoshopbattles/131404/psbattle-this-train-surrounded-by-flooded-lands
+          - strong: 141 comments
+    - button [86] "Upvote"
+    - text: 13976
+    - button [87] "Downvote"
+  - article:
+    - "heading \"PsBattle: This baby elephant\" [level=1]":
+      - link [88] "PsBattle: This baby elephant":
+        - /url: "http://143.215.184.110:9999/submission_images/189aec9da1ea779ea19390066c1af763ee939123fd1c9fed4740a12bff772ab8.jpg"
+    - paragraph:
+      - text: Submitted by
+      - link [89] "dukefaceb":
+        - /url: /user/dukefaceb
+        - strong: dukefaceb
+      - text: [t3_zdk2h4]
+      - time: 3 years ago
+    - navigation:
+      - list:
+        - link [90] "203 comments":
+          - /url: /f/photoshopbattles/66892/psbattle-this-baby-elephant
+          - strong: 203 comments
+    - button [91] "Upvote"
+    - text: 13477
+    - button [92] "Downvote"
+  - article:
+    - "heading \"PsBattle: A cat on snow\" [level=1]":
+      - link [93] "PsBattle: A cat on snow":
+        - /url: "http://143.215.184.110:9999/submission_images/0c3fd731a70868f5f1163100709af17fe9cf5ae5006ef7524b43a7547d736c17.png"
+    - paragraph:
+      - text: Submitted by
+      - link [94] "Earthnote":
+        - /url: /user/Earthnote
+        - strong: Earthnote
+      - text: [t3_y9lvor]
+      - time: 3 years ago
+    - navigation:
+      - list:
+        - link [95] "62 comments":
+          - /url: /f/photoshopbattles/24822/psbattle-a-cat-on-snow
+          - strong: 62 comments
+    - button [96] "Upvote"
+    - text: 13431
+    - button [97] "Downvote"
+  - article:
+    - "heading \"PsBattle: An expressive Dog\" [level=1]":
+      - link [98] "PsBattle: An expressive Dog":
+        - /url: "http://143.215.184.110:9999/submission_images/79057fb392e65a8b15c4c76ba55cb5af416972ac9f5699936c85e0d6b302f379.jpg"
+    - paragraph:
+      - text: Submitted by
+      - link [99] "Bozhark":
+        - /url: /user/Bozhark
+        - strong: Bozhark
+      - text: [t3_xykc29]
+      - time: 3 years ago
+    - navigation:
+      - list:
+        - link [100] "108 comments":
+          - /url: /f/photoshopbattles/24722/psbattle-an-expressive-dog
+          - strong: 108 comments
+    - button [101] "Upvote"
+    - text: 13213
+    - button [102] "Downvote"
+  - article:
+    - "heading \"PsBattle: Cat excited for food\" [level=1]":
+      - link [103] "PsBattle: Cat excited for food":
+        - /url: "http://143.215.184.110:9999/submission_images/c406f6fb9e6653f1f17e6cd2605bef56aecc4774d77859b511e3932e5767b8cb.jpg"
+    - paragraph:
+      - text: Submitted by
+      - link [104] "musicfromadventures":
+        - /url: /user/musicfromadventures
+        - strong: musicfromadventures
+      - text: [t3_11mkd3w]
+      - time: 3 years ago
+    - navigation:
+      - list:
+        - link [105] "76 comments":
+          - /url: /f/photoshopbattles/131315/psbattle-cat-excited-for-food
+          - strong: 76 comments
+    - button [106] "Upvote"
+    - text: 13023
+    - button [107] "Downvote"
+  - article:
+    - "heading \"PsBattle: Smiling Kitty\" [level=1]":
+      - link [108] "PsBattle: Smiling Kitty":
+        - /url: "http://143.215.184.110:9999/submission_images/c832ab96f6505742304a6bc508a5f8c0662896842bbf9b1dbbbaa92e3a196a07.jpg"
+    - paragraph:
+      - text: Submitted by
+      - link [109] "ohfez":
+        - /url: /user/ohfez
+        - strong: ohfez
+      - text: [t3_10jd84c]
+      - time: 3 years ago
+    - navigation:
+      - list:
+        - link [110] "85 comments":
+          - /url: /f/photoshopbattles/89211/psbattle-smiling-kitty
+          - strong: 85 comments
+    - button [111] "Upvote"
+    - text: 12666
+    - button [112] "Downvote"
+  - article:
+    - "heading \"PsBattle: giant Incan hamster statue\" [level=1]":
+      - link [113] "PsBattle: giant Incan hamster statue":
+        - /url: "http://143.215.184.110:9999/submission_images/cb7bfddf3d4de612c92dade33b064375c92350ec7e45414d564b1bcf10be120a.jpg"
+    - paragraph:
+      - text: Submitted by
+      - link [114] "Scaulbylausis":
+        - /url: /user/Scaulbylausis
+        - strong: Scaulbylausis
+      - text: [t3_y5sjml]
+      - time: 3 years ago
+    - navigation:
+      - list:
+        - link [115] "202 comments":
+          - /url: /f/photoshopbattles/24783/psbattle-giant-incan-hamster-statue
+          - strong: 202 comments
+    - button [116] "Upvote"
+    - text: 12524
+    - button [117] "Downvote"
+  - article:
+    - "heading \"PsBattle: This Praying Mantis\" [level=1]":
+      - link [118] "PsBattle: This Praying Mantis":
+        - /url: "http://143.215.184.110:9999/submission_images/c222d7e001b53c1a3cd238c541ae7e39b8e94ae687295328efbacc7a7cac9d0b.png"
+    - paragraph:
+      - text: Submitted by
+      - link [119] "RiddleTower":
+        - /url: /user/RiddleTower
+        - strong: RiddleTower
+      - text: [t3_zk9hyi]
+      - time: 3 years ago
+    - navigation:
+      - list:
+        - link [120] "200 comments":
+          - /url: /f/photoshopbattles/66947/psbattle-this-praying-mantis
+          - strong: 200 comments
+    - button [121] "Upvote"
+    - text: 12479
+    - button [122] "Downvote"
+  - article:
+    - "heading \"PsBattle: dog with bubbles over his eyes\" [level=1]":
+      - link [123] "PsBattle: dog with bubbles over his eyes":
+        - /url: "http://143.215.184.110:9999/submission_images/5d1cdd838f782a245145cdb13090aee7229ed3d564ffeb9d7f36232a39e06808.jpg"
+    - paragraph:
+      - text: Submitted by
+      - link [124] "smolprincess928":
+        - /url: /user/smolprincess928
+        - strong: smolprincess928
+      - text: [t3_ye358y]
+      - time: 3 years ago
+    - navigation:
+      - list:
+        - link [125] "69 comments":
+          - /url: /f/photoshopbattles/24862/psbattle-dog-with-bubbles-over-his-eyes
+          - strong: 69 comments
+    - button [126] "Upvote"
+    - text: 12357
+    - button [127] "Downvote"
+  - article:
+    - "heading \"PsBattle: Beaker Muppets congregating in a city at night\" [level=1]":
+      - link [128] "PsBattle: Beaker Muppets congregating in a city at night":
+        - /url: "http://143.215.184.110:9999/submission_images/6762a4d96120cd6895296f36f541c5512528dd65c5c84cde538f5e856e810b56.jpg"
+    - paragraph:
+      - text: Submitted by
+      - link [129] "rxdrug":
+        - /url: /user/rxdrug
+        - strong: rxdrug
+      - text: [t3_xwugv1]
+      - time: 3 years ago
+    - navigation:
+      - list:
+        - link [130] "112 comments":
+          - /url: /f/photoshopbattles/24708/psbattle-beaker-muppets-congregating-in-a-city-at-night
+          - strong: 112 comments
+    - button [131] "Upvote"
+    - text: 12344
+    - button [132] "Downvote"
+  - article:
+    - "heading \"PsBattle: Cardinal flying directly at camera\" [level=1]":
+      - link [133] "PsBattle: Cardinal flying directly at camera":
+        - /url: "http://143.215.184.110:9999/submission_images/44bf06a929115a8c155a3fa569114335070bff635d8492d317acaa4afdedbab9.jpg"
+    - paragraph:
+      - text: Submitted by
+      - link [134] "WowThatsRelevant":
+        - /url: /user/WowThatsRelevant
+        - strong: WowThatsRelevant
+      - text: [t3_106s9v3]
+      - time: 3 years ago
+    - navigation:
+      - list:
+        - link [135] "171 comments":
+          - /url: /f/photoshopbattles/89113/psbattle-cardinal-flying-directly-at-camera
+          - strong: 171 comments
+    - button [136] "Upvote"
+    - text: 12015
+    - button [137] "Downvote"
+  - article:
+    - "heading \"PsBattle: How a Mongolian dresses their child for the cold\" [level=1]":
+      - link [138] "PsBattle: How a Mongolian dresses their child for the cold":
+        - /url: "http://143.215.184.110:9999/submission_images/8f584bfe6322afb2eb3c185965cf3292298167c17de442e56a971e04d74a592c.jpg"
+    - paragraph:
+      - text: Submitted by
+      - link [139] "BipolarTaichiMaster":
+        - /url: /user/BipolarTaichiMaster
+        - strong: BipolarTaichiMaster
+      - text: [t3_11nock8]
+      - time: 3 years ago
+    - navigation:
+      - list:
+        - link [140] "159 comments":
+          - /url: /f/photoshopbattles/131323/psbattle-how-a-mongolian-dresses-their-child-for-the-cold
+          - strong: 159 comments
+    - button [141] "Upvote"
+    - text: 11888
+    - button [142] "Downvote"
+  - navigation:
+    - list:
+      - link [143] "More":
+        - /url: "http://143.215.184.110:9999/f/photoshopbattles?next%5Branking%5D=11827&next%5Bid%5D=66871"
+- complementary:
+  - "heading \"photoshopbattles\" [level=1]":
+    - link [144] "photoshopbattles":
+      - /url: /f/photoshopbattles
+  - button [145] "Subscribe No subscribers": Subscribe 0
+  - paragraph: t5_2tecy
+  - separator
+  - list:
+    - text: Created
+    - time: 3 years ago
+    - link [146] "Subscribe via RSS":
+      - /url: /f/photoshopbattles/new.atom
+      - img
+      - text: Subscribe via RSS
+  - group [147]: Hide this forum
+  - heading "Toolbox" [level=1]
+  - list:
+    - link [148] "Bans":
+      - /url: /f/photoshopbattles/bans
+    - link [149] "Moderation log":
+      - /url: /f/photoshopbattles/moderation_log
+- contentinfo:
+  - paragraph:
+    - text: Running
+    - link [150] "Postmill":
+      - /url: "https://postmill.xyz/"

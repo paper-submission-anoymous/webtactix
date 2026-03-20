@@ -1,0 +1,8 @@
+{
+  "node_id": "v2",
+  "goal": "Navigate to post \"I just finished reading The Hobbit to my 6 year old daughter, and she loved it!\" and extract author name and book name.",
+  "url": "http://143.215.184.110:9999/f/books?sort=top",
+  "time_utc": "2026-03-20T18:42:48.483006+00:00",
+  "t_start": 48.387296840548515,
+  "round": 2
+}

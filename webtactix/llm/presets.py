@@ -78,4 +78,4 @@ def preset_vllm(key_num: int = 0) -> OpenAICompatConfig:
     base_url = "http://localhost:8080/v1"
     api_key = "EMPTY"  # vLLM doesn't require a real API key, but the OpenAI SDK requires a non-empty string
     model = "openai/gpt-oss-20b" #TODO - change the model here
-    return VLLMConfig(base_url=base_url, api_key=api_key, model=model)
+    return VLLMConfig(base_url=base_url, api_key=api_key, model=model, temperature=0.0, seed = 42)

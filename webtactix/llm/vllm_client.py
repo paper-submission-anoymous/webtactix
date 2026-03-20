@@ -42,7 +42,7 @@ from __future__ import annotations
 import json
 import re
 from dataclasses import dataclass
-from typing import Any, AsyncIterator, Dict, Optional, Tuple, Union
+from typing import Any, AsyncIterator, Dict, Tuple, Union
 
 from openai import AsyncOpenAI, OpenAI
 
@@ -56,6 +56,7 @@ class VLLMConfig:
     temperature: float = 0.0
     max_tokens: int = 8192
     timeout_s: float = 120.0
+    seed: int = 42
     # vLLM doesn't require a real API key, but the OpenAI SDK requires a non-empty string
     api_key: str = "EMPTY"
 
@@ -104,17 +105,18 @@ class VLLMClient:
         *,
         system: str,
         user: str,
-        temperature: Optional[float] = None,
     ) -> Tuple[str, Dict[str, Any]]:
         """Return (raw_text, usage_dict)."""
-        temp = self.cfg.temperature if temperature is None else float(temperature)
-
+        print("VLLM is here")
         last_exc: Exception = RuntimeError("No attempts made")
         for attempt in range(3):
             try:
                 response = await self.async_client.chat.completions.create(
                     model=self.cfg.model,
-                    temperature=temp,
+                    temperature=0,
+                    seed=42,
+                    top_p=1.0,
+                    max_tokens=self.cfg.max_tokens,
                     messages=[
                         {"role": "system", "content": system},
                         {"role": "user",   "content": user},
@@ -149,11 +151,9 @@ class VLLMClient:
         *,
         system: str,
         user: str,
-        temperature: Optional[float] = None,
     ) -> Tuple[Union[Dict[str, Any], list], Dict[str, Any]]:
         """Return (parsed_json, usage_dict). Strips ```json fences and <think> blocks."""
-        text, usage = await self.chat_text(system=system, user=user, temperature=temperature)
-
+        text, usage = await self.chat_text(system=system, user=user)
         s = text.strip()
         print(s)
 
@@ -186,15 +186,14 @@ class VLLMClient:
         *,
         system: str,
         user: str,
-        temperature: Optional[float] = None,
     ) -> AsyncIterator[str]:
         """Yield text chunks as they stream in from vLLM."""
-        temp = self.cfg.temperature if temperature is None else float(temperature)
-
         async with await self.async_client.chat.completions.create(
             model=self.cfg.model,
-            temperature=temp,
+            temperature=0,
             max_tokens=self.cfg.max_tokens,
+            seed=42,
+            top_p=1.0,
             stream=True,
             messages=[
                 {"role": "system", "content": system},

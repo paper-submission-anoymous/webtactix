@@ -10,6 +10,7 @@ from webtactix.core.semantic_tree import SemanticTree
 from webtactix.core.schemas import NodeId
 from webtactix.agents.constraint_agent import Constraint
 from webtactix.runner.recorder import Recorder
+from browser_env.env_config import REDDIT, GITLAB, SHOPPING, SHOPPING_ADMIN, WIKIPEDIA
 
 # ── profiler ──────────────────────────────────────────────────────────────
 from webtactix.profiler import Profiler
@@ -18,25 +19,25 @@ from webtactix.profiler import Profiler
 _ALLOWED_PLAN_NAMES = {"web_operation", "data_extraction", "partially_done", "go_back", "finish"}
 _ALLOWED_ACTIONS = {"click", "input", "select", "press_enter", "goto"}
 
-TIPS = '''
+TIPS = f'''
 - Date format in shopping-admin: **Month/Day/YYYY** (e.g., "1/31/2024").\n
 - Date format in gitlab: **Year-Month-Day** (e.g., "2024-01-01").\n
 - All the data on shopping website falls within the time span from January 1, 2022 to December 31, 2023.\n
 - All task can ONLY operate under the website as follow. Following URL shows the homepage of these websites.\n
-  1 REDDIT: http://127.0.0.1:9999\n
-  2 GITLAB: http://127.0.0.1:8023\n
-  3 SHOPPING: http://127.0.0.1:7770\n
+  1 REDDIT: {REDDIT}\n
+  2 GITLAB: {GITLAB}\n
+  3 SHOPPING: {SHOPPING}\n
   SHOPPING ACCOUNT: \n
         "username": "emma.lopez@gmail.com",\n
         "password": "Password.123",\n
-  4 SHOPPING_ADMIN: http://127.0.0.1:7780/admin ("username": "admin", "password": "admin1234")\n
-  5 OPENSTREETMAP: https://127.0.0.1:3000 (For map task, you can use your external knowledge.)\n
-  6 wikipedia: http://127.0.0.1:8888/wikipedia_en_all_maxi_2022-05/A/User:The_other_Kiwix_guy/Landing\n
+  4 SHOPPING_ADMIN: {SHOPPING_ADMIN} ("username": "admin", "password": "admin1234")\n
+  5 OPENSTREETMAP: https://www.openstreetmap.org/ (For map task, you can use your external knowledge.)\n
+  6 wikipedia: {WIKIPEDIA}\n
 - Never click link or elements like <Download> or <Export> or <log out>, which will download sth on local that is forbid.\n
 - Brand and product type can be infer from product name. All reviews can be found under Marketing section.\n
 - The descending order(↓) for 'purchase dates' means that the earlier dates(oldest) are located at the top, newest at the bottom.\n
 - Ask for product recommendations, should posts new comments or submissions for the product\n
-- In GitLab, the edit page(including license) can be accessed via the URL pattern `http://127.0.0.1:8023/-/edit/master/<file>`)\n
+- In GitLab, the edit page(including license) can be accessed via the URL pattern `{GITLAB}/-/edit/master/<file>`)\n
 '''
 
 def _infer_type_from_name(name: str) -> str:

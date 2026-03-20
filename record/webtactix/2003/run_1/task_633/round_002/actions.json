@@ -1,0 +1,2 @@
+{"type": "exec_begin", "src": "v2", "action_sig": "goto http://127.0.0.1:9999/r/sports", "plan_name": "web_operation", "goal": "Navigate to the r/sports subreddit on the local Reddit instance.", "time_utc": "2026-03-20T18:31:44.166492+00:00", "t": 26.224628049880266, "round": 2}
+{"type": "exec_ok", "src": "v2", "dst": "v3", "action_sig": "goto http://127.0.0.1:9999/r/sports", "url_after": "http://127.0.0.1:9999/r/sports", "time_utc": "2026-03-20T18:31:45.465642+00:00", "t": 27.523784259334207, "round": 2}

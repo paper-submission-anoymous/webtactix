@@ -1,0 +1,2 @@
+{"type": "exec_begin", "src": "v5", "action_sig": "goto http://127.0.0.1:9999/", "plan_name": "web_operation", "goal": "Create a new post in r/sports asking for product recommendations for running pants under $500", "time_utc": "2026-03-20T18:32:19.801312+00:00", "t": 61.859450133517385, "round": 5}
+{"type": "exec_ok", "src": "v5", "dst": "v6", "action_sig": "goto http://127.0.0.1:9999/", "url_after": "http://127.0.0.1:9999/", "time_utc": "2026-03-20T18:32:21.989679+00:00", "t": 64.04782035946846, "round": 5}

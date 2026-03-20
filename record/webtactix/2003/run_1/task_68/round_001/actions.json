@@ -1,0 +1,2 @@
+{"type": "exec_begin", "src": "v1", "action_sig": "goto http://143.215.184.110:9999/f/books?sort=top", "plan_name": "web_operation", "goal": "Navigate to the books forum sorted by top posts", "time_utc": "2026-03-20T18:42:20.776166+00:00", "t": 20.680495537817478, "round": 1}
+{"type": "exec_ok", "src": "v1", "dst": "v2", "action_sig": "goto http://143.215.184.110:9999/f/books?sort=top", "url_after": "http://143.215.184.110:9999/f/books?sort=top", "time_utc": "2026-03-20T18:42:23.149604+00:00", "t": 23.053928025066853, "round": 1}

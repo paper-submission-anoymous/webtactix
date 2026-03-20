@@ -1,0 +1,3173 @@
+- navigation:
+  - link [0] "Jump to main content":
+    - /url: "#main"
+  - link [1] "Jump to sidebar":
+    - /url: "#sidebar"
+- navigation:
+  - link [2] "Home":
+    - /url: /
+    - text: Postmill
+  - list:
+    - link [3] "Forums":
+      - /url: /forums
+    - link [4] "Wiki":
+      - /url: /wiki
+  - searchbox [5] "Search query"
+  - list:
+    - link [6] "Notifications (0)":
+      - /url: /notifications
+      - img
+    - link [7] "Submit":
+      - /url: /submit/books
+      - img
+      - text: Submit
+    - button [8] "MarvelsGrantMan136":
+      - img
+      - strong: MarvelsGrantMan136
+- main:
+  - navigation:
+    - list:
+      - link [9] "/f/books":
+        - /url: /f/books
+        - img
+        - text: /f/
+        - strong: books
+  - article:
+    - "heading \"I just finished reading The Hobbit to my 6 year old daughter, and she loved it!\" [level=1]":
+      - link [10] "I just finished reading The Hobbit to my 6 year old daughter, and she loved it!":
+        - /url: /f/books/17445/i-just-finished-reading-the-hobbit-to-my-6-year-old-daughter
+    - paragraph:
+      - text: Submitted by
+      - link [11] "Shaosil":
+        - /url: /user/Shaosil
+        - strong: Shaosil
+      - text: [t3_ydeu5t]
+      - time: 3 years ago
+      - text: in
+      - link [12] "books":
+        - /url: /f/books
+        - strong: books
+    - paragraph: Some quick background - I've always been a Tolkien fan - read the main books, played the games, listened to the dramatizations and all that while I was growing up. Fast forward to now, Kiddos are around and my daughter absolutely loves to read. Proud parent sidenote, she's been reading by herself since 4, and is now at least at a 2nd grade level (she can read words like "enthusiastic" for example).
+    - paragraph: Anyway, I was at Sam's Club the other day and decided to buy The Hobbit since I've never actually owned a copy. I suggested reading it to her and she seemed interested enough, though I did tell her it wasn't really a kids book per se and she's welcome to stop listening if she got tired of it. 2 weeks later and we finished all 300 pages, with her laughing at Bilbo's goofiness, quoting random pieces of it through the day, and talking about it sometimes when she gets home from school. For me, it was an adventure as well. I don't read nearly as much as I did when I was younger, so it was pretty refreshing.
+    - paragraph: I did tell her about the Lord of the Rings book trilogy and mentioned how it might not be as interesting to her due to all the extra descriptions of armies, history, battle, and locations. But we'll see.
+    - paragraph: Now we're starting to watch the Hobbit movies made a few years back. I realize they don't stand up to the books so much, but in my opinion (I've watched them before), they're accurate enough except for some unnecessary added details, and it's great to be able to put faces to the names right?
+    - paragraph: "I'm sure I'm not alone in introducing that level or style/world to kids that age, but it was a nice milestone moment for us. :)"
+    - navigation:
+      - list:
+        - link [13] "138 comments":
+          - /url: /f/books/17445/i-just-finished-reading-the-hobbit-to-my-6-year-old-daughter
+          - strong: 138 comments
+    - button [14] "Upvote"
+    - text: 1423
+    - button [15] "Downvote"
+  - heading "Comments" [level=2]
+  - textbox [16] "Comment"
+  - checkbox [17] "Formatting help +"
+  - text: Markdown allowed. Formatting help +
+  - button [18] "Post"
+  - list:
+    - link [19] "Nested":
+      - /url: /f/books/17445/i-just-finished-reading-the-hobbit-to-my-6-year-old-daughter
+    - link [20] "Linear":
+      - /url: /f/books/17445/i-just-finished-reading-the-hobbit-to-my-6-year-old-daughter/linear
+  - article:
+    - checkbox [21] "Hide −" [checked]
+    - "heading \"Eirikur_da_Czech [t1_itrqlv7] wrote 3 years ago\" [level=1]":
+      - link [22] "Eirikur_da_Czech":
+        - /url: /user/Eirikur_da_Czech
+        - strong: Eirikur_da_Czech
+      - text: [t1_itrqlv7] wrote
+      - time: 3 years ago
+    - list:
+      - Hide −
+    - paragraph: The Hobbit is definitely a kid’s book. Tolkien wrote it to read to his kids at bedtime. Yeah they were a smidge older than 6 at the time, but not by much. Priscilla would have been 7 when it was published. He actually sent pre-published copies of the book out to children focus groups to get their feedback before he decided to publish it.
+    - navigation:
+      - list:
+        - link [23] "Reply":
+          - /url: /f/books/17445/-/comment/225970
+          - strong: Reply
+        - link [24] "Permalink":
+          - /url: /f/books/17445/-/comment/225970
+    - button [25] "Upvote"
+    - text: 285
+    - button [26] "Downvote"
+    - article:
+      - checkbox [27] "Hide −" [checked]
+      - "heading \"Shaosil Original poster [t1_itrrxgf] wrote 3 years ago\" [level=1]":
+        - link [28] "Shaosil":
+          - /url: /user/Shaosil
+          - strong: Shaosil
+        - text: [OP] [t1_itrrxgf] wrote
+        - time: 3 years ago
+      - list:
+        - Hide −
+      - paragraph: Good point! Sometimes I forget these type of books, with their expanded vocabulary and world building, can be targeted towards children. We have FAR too many "toddler" books in the house and this is so much different than those, haha
+      - navigation:
+        - list:
+          - link [29] "Reply":
+            - /url: /f/books/17445/-/comment/226139
+            - strong: Reply
+          - link [30] "Permalink":
+            - /url: /f/books/17445/-/comment/226139
+          - link [31] "Parent":
+            - /url: /f/books/17445/-/comment/225970
+      - button [32] "Upvote"
+      - text: 67
+      - button [33] "Downvote"
+      - article:
+        - checkbox [34] "Hide −" [checked]
+        - "heading \"youwantitwhen [t1_ituxmxz] wrote 3 years ago\" [level=1]":
+          - link [35] "youwantitwhen":
+            - /url: /user/youwantitwhen
+            - strong: youwantitwhen
+          - text: [t1_ituxmxz] wrote
+          - time: 3 years ago
+        - list:
+          - Hide −
+        - paragraph: Harry Potter books start simply and a 6 year old can read the first one.
+        - navigation:
+          - list:
+            - link [36] "Reply":
+              - /url: /f/books/17445/-/comment/237995
+              - strong: Reply
+            - link [37] "Permalink":
+              - /url: /f/books/17445/-/comment/237995
+            - link [38] "Parent":
+              - /url: /f/books/17445/-/comment/226139
+        - button [39] "Upvote"
+        - text: 6
+        - button [40] "Downvote"
+        - article:
+          - checkbox [41] "Hide −" [checked]
+          - "heading \"bamako45 [t1_iu202d2] wrote 3 years ago\" [level=1]":
+            - link [42] "bamako45":
+              - /url: /user/bamako45
+              - strong: bamako45
+            - text: [t1_iu202d2] wrote
+            - time: 3 years ago
+          - list:
+            - Hide −
+          - paragraph: Maybe even a 4 year old.
+          - navigation:
+            - list:
+              - link [43] "Reply":
+                - /url: /f/books/17445/-/comment/270838
+                - strong: Reply
+              - link [44] "Permalink":
+                - /url: /f/books/17445/-/comment/270838
+              - link [45] "Parent":
+                - /url: /f/books/17445/-/comment/237995
+          - button [46] "Upvote"
+          - text: 1
+          - button [47] "Downvote"
+    - article:
+      - checkbox [48] "Hide −" [checked]
+      - "heading \"timetrigger [t1_itt0eq6] wrote 3 years ago\" [level=1]":
+        - link [49] "timetrigger":
+          - /url: /user/timetrigger
+          - strong: timetrigger
+        - text: [t1_itt0eq6] wrote
+        - time: 3 years ago
+      - list:
+        - Hide −
+      - paragraph: The Hobbit was the first non-picture book my dad got me. I was 7 and read the entire book at that age. I still have that old paper back copy. It has its wear and tear but its in decent enough shape for a paperback book that has been many times over the past 25 years.
+      - paragraph: I think its awesome the OP read the book to their daughter. Ive always read ahead of my peers for my age as a kid, so I know I probably read it on my own earlier than normal, but regardless of how it's read it is such a delightful book for children IMO.
+      - navigation:
+        - list:
+          - link [50] "Reply":
+            - /url: /f/books/17445/-/comment/231347
+            - strong: Reply
+          - link [51] "Permalink":
+            - /url: /f/books/17445/-/comment/231347
+          - link [52] "Parent":
+            - /url: /f/books/17445/-/comment/225970
+      - button [53] "Upvote"
+      - text: 39
+      - button [54] "Downvote"
+      - article:
+        - checkbox [55] "Hide −" [checked]
+        - "heading \"Eirikur_da_Czech [t1_itt1at5] wrote 3 years ago\" [level=1]":
+          - link [56] "Eirikur_da_Czech":
+            - /url: /user/Eirikur_da_Czech
+            - strong: Eirikur_da_Czech
+          - text: [t1_itt1at5] wrote
+          - time: 3 years ago
+        - list:
+          - Hide −
+        - paragraph: I was 9 when I saw it on my dad’s bookshelf. The title and picture on the front made me curious so I asked my dad what it was about. He told me to read it and find out lol. I did, and it shaped my life.
+        - navigation:
+          - list:
+            - link [57] "Reply":
+              - /url: /f/books/17445/-/comment/231459
+              - strong: Reply
+            - link [58] "Permalink":
+              - /url: /f/books/17445/-/comment/231459
+            - link [59] "Parent":
+              - /url: /f/books/17445/-/comment/231347
+        - button [60] "Upvote"
+        - text: 22
+        - button [61] "Downvote"
+      - article:
+        - checkbox [62] "Hide −" [checked]
+        - "heading \"bamako45 [t1_iu1zxv0] wrote 3 years ago\" [level=1]":
+          - link [63] "bamako45":
+            - /url: /user/bamako45
+            - strong: bamako45
+          - text: [t1_iu1zxv0] wrote
+          - time: 3 years ago
+        - list:
+          - Hide −
+        - paragraph: One thing I remember my father reading to me, as a bedtime story was Poe’s The Raven. I loved the story that makes up this poem. Another Poe poem he read to me now and then was his beautiful, haunting elegy for his Annabel Lee (sp? -1 word?), one of my favorite poems of Poe’s, apart from the great stories he wrote.
+        - navigation:
+          - list:
+            - link [64] "Reply":
+              - /url: /f/books/17445/-/comment/270815
+              - strong: Reply
+            - link [65] "Permalink":
+              - /url: /f/books/17445/-/comment/270815
+            - link [66] "Parent":
+              - /url: /f/books/17445/-/comment/231347
+        - button [67] "Upvote"
+        - text: 1
+        - button [68] "Downvote"
+    - article:
+      - checkbox [69] "Hide −" [checked]
+      - "heading \"[deleted] [t1_its1nf0] wrote 3 years ago\" [level=1]":
+        - link [70] "[deleted]":
+          - /url: /user/%5Bdeleted%5D
+          - strong: [deleted]
+        - text: [t1_its1nf0] wrote
+        - time: 3 years ago
+      - list:
+        - Hide −
+      - paragraph: [removed]
+      - navigation:
+        - list:
+          - link [71] "Reply":
+            - /url: /f/books/17445/-/comment/227210
+            - strong: Reply
+          - link [72] "Permalink":
+            - /url: /f/books/17445/-/comment/227210
+          - link [73] "Parent":
+            - /url: /f/books/17445/-/comment/225970
+      - button [74] "Upvote"
+      - text: 17
+      - button [75] "Downvote"
+      - article:
+        - checkbox [76] "Hide −" [checked]
+        - "heading \"Eirikur_da_Czech [t1_its1ttm] wrote 3 years ago\" [level=1]":
+          - link [77] "Eirikur_da_Czech":
+            - /url: /user/Eirikur_da_Czech
+            - strong: Eirikur_da_Czech
+          - text: [t1_its1ttm] wrote
+          - time: 3 years ago
+        - list:
+          - Hide −
+        - paragraph: Good teaching moment
+        - navigation:
+          - list:
+            - link [78] "Reply":
+              - /url: /f/books/17445/-/comment/227226
+              - strong: Reply
+            - link [79] "Permalink":
+              - /url: /f/books/17445/-/comment/227226
+            - link [80] "Parent":
+              - /url: /f/books/17445/-/comment/227210
+        - button [81] "Upvote"
+        - text: 26
+        - button [82] "Downvote"
+        - article:
+          - checkbox [83] "Hide −" [checked]
+          - "heading \"dancin-weasel [t1_ittongl] wrote 3 years ago\" [level=1]":
+            - link [84] "dancin-weasel":
+              - /url: /user/dancin-weasel
+              - strong: dancin-weasel
+            - text: [t1_ittongl] wrote
+            - time: 3 years ago
+          - list:
+            - Hide −
+          - paragraph: “See son? See what happens when you don’t listen? Ya. You don’t want to get shot with arrows do you? Ok then. Best listen. Love you son. “
+          - navigation:
+            - list:
+              - link [85] "Reply":
+                - /url: /f/books/17445/-/comment/233705
+                - strong: Reply
+              - link [86] "Permalink":
+                - /url: /f/books/17445/-/comment/233705
+              - link [87] "Parent":
+                - /url: /f/books/17445/-/comment/227226
+          - button [88] "Upvote"
+          - text: 6
+          - button [89] "Downvote"
+      - article:
+        - checkbox [90] "Hide −" [checked]
+        - "heading \"Sprungjeezy [t1_ittoe2t] wrote 3 years ago\" [level=1]":
+          - link [91] "Sprungjeezy":
+            - /url: /user/Sprungjeezy
+            - strong: Sprungjeezy
+          - text: [t1_ittoe2t] wrote
+          - time: 3 years ago
+        - list:
+          - Hide −
+        - paragraph: Doesn't make it not a kids story, have you heard of The Lion King?
+        - navigation:
+          - list:
+            - link [92] "Reply":
+              - /url: /f/books/17445/-/comment/233689
+              - strong: Reply
+            - link [93] "Permalink":
+              - /url: /f/books/17445/-/comment/233689
+            - link [94] "Parent":
+              - /url: /f/books/17445/-/comment/227210
+        - button [95] "Upvote"
+        - text: 9
+        - button [96] "Downvote"
+        - article:
+          - checkbox [97] "Hide −" [checked]
+          - "heading \"[deleted] [t1_ittxijk] wrote 3 years ago\" [level=1]":
+            - link [98] "[deleted]":
+              - /url: /user/%5Bdeleted%5D
+              - strong: [deleted]
+            - text: [t1_ittxijk] wrote
+            - time: 3 years ago
+          - list:
+            - Hide −
+          - paragraph: [deleted]
+          - navigation:
+            - list:
+              - link [99] "Reply":
+                - /url: /f/books/17445/-/comment/234394
+                - strong: Reply
+              - link [100] "Permalink":
+                - /url: /f/books/17445/-/comment/234394
+              - link [101] "Parent":
+                - /url: /f/books/17445/-/comment/233689
+          - button [102] "Upvote"
+          - text: 5
+          - button [103] "Downvote"
+      - article:
+        - checkbox [104] "Hide −" [checked]
+        - "heading \"sweetspringchild [t1_itty5el] wrote 3 years ago\" [level=1]":
+          - link [105] "sweetspringchild":
+            - /url: /user/sweetspringchild
+            - strong: sweetspringchild
+          - text: [t1_itty5el] wrote
+          - time: 3 years ago
+        - list:
+          - Hide −
+        - paragraph: > >!One thing, though. A major character for the good guys (Thorin) dies, as do Fili and Kili. That’s something kids might or might not handle well.!<
+        - paragraph:
+          - deletion: You should mark this with spoilers.
+        - paragraph: "As for the death, A LOT of children's books, especially those written more than a few decades ago, have characters dying:"
+        - paragraph: >!Charlotte’s Web, Bambi, a Life in the Woods, Harry Potter, Percy Jackson series, The Lion, the Witch, and the Wardrobe, The Giving Tree, Old Yeller, Bridge to Terabithia, Little Women, Esperanza Rising,...!<
+        - paragraph: And yeah, I bawled at some of them. Still remember.
+        - navigation:
+          - list:
+            - link [106] "Reply":
+              - /url: /f/books/17445/-/comment/234460
+              - strong: Reply
+            - link [107] "Permalink":
+              - /url: /f/books/17445/-/comment/234460
+            - link [108] "Parent":
+              - /url: /f/books/17445/-/comment/227210
+        - button [109] "Upvote"
+        - text: 6
+        - button [110] "Downvote"
+        - article:
+          - checkbox [111] "Hide −" [checked]
+          - "heading \"daiLlafyn [t1_itu1uad] wrote 3 years ago\" [level=1]":
+            - link [112] "daiLlafyn":
+              - /url: /user/daiLlafyn
+              - strong: daiLlafyn
+            - text: [t1_itu1uad] wrote
+            - time: 3 years ago
+          - list:
+            - Hide −
+          - paragraph: Can you edit your comment now?
+          - navigation:
+            - list:
+              - link [113] "Reply":
+                - /url: /f/books/17445/-/comment/234754
+                - strong: Reply
+              - link [114] "Permalink":
+                - /url: /f/books/17445/-/comment/234754
+              - link [115] "Parent":
+                - /url: /f/books/17445/-/comment/234460
+          - button [116] "Upvote"
+          - text: 1
+          - button [117] "Downvote"
+          - article:
+            - checkbox [118] "Hide −" [checked]
+            - "heading \"sweetspringchild [t1_itucsvv] wrote 3 years ago\" [level=1]":
+              - link [119] "sweetspringchild":
+                - /url: /user/sweetspringchild
+                - strong: sweetspringchild
+              - text: [t1_itucsvv] wrote
+              - time: 3 years ago
+            - list:
+              - Hide −
+            - paragraph: Yes, of course. Done.
+            - navigation:
+              - list:
+                - link [120] "Reply":
+                  - /url: /f/books/17445/-/comment/235614
+                  - strong: Reply
+                - link [121] "Permalink":
+                  - /url: /f/books/17445/-/comment/235614
+                - link [122] "Parent":
+                  - /url: /f/books/17445/-/comment/234754
+            - button [123] "Upvote"
+            - text: 2
+            - button [124] "Downvote"
+            - article:
+              - checkbox [125] "Hide −" [checked]
+              - "heading \"daiLlafyn [t1_itvkijs] wrote 3 years ago\" [level=1]":
+                - link [126] "daiLlafyn":
+                  - /url: /user/daiLlafyn
+                  - strong: daiLlafyn
+                - text: [t1_itvkijs] wrote
+                - time: 3 years ago
+              - list:
+                - Hide −
+              - paragraph: Cheers.
+              - navigation:
+                - list:
+                  - link [127] "Reply":
+                    - /url: /f/books/17445/-/comment/240838
+                    - strong: Reply
+                  - link [128] "Permalink":
+                    - /url: /f/books/17445/-/comment/240838
+                  - link [129] "Parent":
+                    - /url: /f/books/17445/-/comment/235614
+              - button [130] "Upvote"
+              - text: 1
+              - button [131] "Downvote"
+      - article:
+        - checkbox [132] "Hide −" [checked]
+        - "heading \"books-ModTeam [t1_ittzz0y] wrote 3 years ago\" [level=1]":
+          - link [133] "books-ModTeam":
+            - /url: /user/books-ModTeam
+            - strong: books-ModTeam
+          - text: [t1_ittzz0y] wrote
+          - time: 3 years ago
+        - list:
+          - Hide −
+        - paragraph: "Please use spoiler tags. Spoiler tags in markdown are done as follows:"
+        - code: "\&gt;!Spoiler content here!&lt; which results in:"
+        - paragraph: >!Spoiler content here!<.
+        - paragraph: Or apply the built-in spoiler tags when using the redesign.
+        - paragraph:
+          - text: Send a
+          - link [134] "modmail":
+            - /url: "https://www.reddit.com/message/compose/?to=/r/books"
+          - text: when you have updated and we'll reapprove it.
+        - navigation:
+          - list:
+            - link [135] "Reply":
+              - /url: /f/books/17445/-/comment/234603
+              - strong: Reply
+            - link [136] "Permalink":
+              - /url: /f/books/17445/-/comment/234603
+            - link [137] "Parent":
+              - /url: /f/books/17445/-/comment/227210
+        - button [138] "Upvote"
+        - text: 0
+        - button [139] "Downvote"
+    - article:
+      - checkbox [140] "Hide −" [checked]
+      - "heading \"pierzstyx [t1_itur7yp] wrote 3 years ago\" [level=1]":
+        - link [141] "pierzstyx":
+          - /url: /user/pierzstyx
+          - strong: pierzstyx
+        - text: [t1_itur7yp] wrote
+        - time: 3 years ago
+      - list:
+        - Hide −
+      - paragraph: > Tolkien wrote it to read to his kids at bedtime.
+      - paragraph: The core story of the book developed from stories Tolkien told his children at bedtime. As he was writing it down he bean to include more and more references to his Middle-Earth works until finally the book was full-fledged Middle-Earth story.
+      - navigation:
+        - list:
+          - link [142] "Reply":
+            - /url: /f/books/17445/-/comment/237281
+            - strong: Reply
+          - link [143] "Permalink":
+            - /url: /f/books/17445/-/comment/237281
+          - link [144] "Parent":
+            - /url: /f/books/17445/-/comment/225970
+      - button [145] "Upvote"
+      - text: 2
+      - button [146] "Downvote"
+      - article:
+        - checkbox [147] "Hide −" [checked]
+        - "heading \"Eirikur_da_Czech [t1_ituw3kt] wrote 3 years ago\" [level=1]":
+          - link [148] "Eirikur_da_Czech":
+            - /url: /user/Eirikur_da_Czech
+            - strong: Eirikur_da_Czech
+          - text: [t1_ituw3kt] wrote
+          - time: 3 years ago
+        - list:
+          - Hide −
+        - paragraph: Correct
+        - navigation:
+          - list:
+            - link [149] "Reply":
+              - /url: /f/books/17445/-/comment/237855
+              - strong: Reply
+            - link [150] "Permalink":
+              - /url: /f/books/17445/-/comment/237855
+            - link [151] "Parent":
+              - /url: /f/books/17445/-/comment/237281
+        - button [152] "Upvote"
+        - text: 1
+        - button [153] "Downvote"
+    - article:
+      - checkbox [154] "Hide −" [checked]
+      - "heading \"bamako45 [t1_iu1zf9m] wrote 3 years ago\" [level=1]":
+        - link [155] "bamako45":
+          - /url: /user/bamako45
+          - strong: bamako45
+        - text: [t1_iu1zf9m] wrote
+        - time: 3 years ago
+      - list:
+        - Hide −
+      - paragraph: Well, for a “children’s book”, The Hobbit is certainly, at least one of the best examples of a book written to, for or towards children; not unlike the beautiful language that Lewis Carroll (ne Charles L. Dodge, a mathematics “lecturer” at Christ Church, Oxford, London). His two “Alice” stories were written, also, in a way that never talked down to children.
+      - navigation:
+        - list:
+          - link [156] "Reply":
+            - /url: /f/books/17445/-/comment/270720
+            - strong: Reply
+          - link [157] "Permalink":
+            - /url: /f/books/17445/-/comment/270720
+          - link [158] "Parent":
+            - /url: /f/books/17445/-/comment/225970
+      - button [159] "Upvote"
+      - text: 2
+      - button [160] "Downvote"
+  - article:
+    - checkbox [161] "Hide −" [checked]
+    - "heading \"TheBatsAndTheBees [t1_itrqr0g] wrote 3 years ago\" [level=1]":
+      - link [162] "TheBatsAndTheBees":
+        - /url: /user/TheBatsAndTheBees
+        - strong: TheBatsAndTheBees
+      - text: [t1_itrqr0g] wrote
+      - time: 3 years ago
+    - list:
+      - Hide −
+    - paragraph: My dad did the same thing when I was young. He would read a few pages each night before bed to me and my brother. Its one of my fondest memories of him and something i still remember now. Fast forward many years I'm now 30 and about 6 months pregnant and I already can't wait to be able to do the same when he gets old enough. I hope your daughter has as many fond memories of you reading it with her and I do with my dad!
+    - navigation:
+      - list:
+        - link [163] "Reply":
+          - /url: /f/books/17445/-/comment/225988
+          - strong: Reply
+        - link [164] "Permalink":
+          - /url: /f/books/17445/-/comment/225988
+    - button [165] "Upvote"
+    - text: 71
+    - button [166] "Downvote"
+    - article:
+      - checkbox [167] "Hide −" [checked]
+      - "heading \"Shaosil Original poster [t1_itrs0fv] wrote 3 years ago\" [level=1]":
+        - link [168] "Shaosil":
+          - /url: /user/Shaosil
+          - strong: Shaosil
+        - text: [OP] [t1_itrs0fv] wrote
+        - time: 3 years ago
+      - list:
+        - Hide −
+      - paragraph: Aw that's great! I hope so too.
+      - navigation:
+        - list:
+          - link [169] "Reply":
+            - /url: /f/books/17445/-/comment/226150
+            - strong: Reply
+          - link [170] "Permalink":
+            - /url: /f/books/17445/-/comment/226150
+          - link [171] "Parent":
+            - /url: /f/books/17445/-/comment/225988
+      - button [172] "Upvote"
+      - text: 9
+      - button [173] "Downvote"
+    - article:
+      - checkbox [174] "Hide −" [checked]
+      - "heading \"circus_circuitry [t1_itulwns] wrote 3 years ago\" [level=1]":
+        - link [175] "circus_circuitry":
+          - /url: /user/circus_circuitry
+          - strong: circus_circuitry
+        - text: [t1_itulwns] wrote
+        - time: 3 years ago
+      - list:
+        - Hide −
+      - paragraph: Pick a couple of little books right now, and start reading them to your baby NOW! You'll be wonderfully awed by your child's attentiveness to those particular stories when they're born.
+      - paragraph: My kids are 15 months apart. The oldest spent several months in the NICU and at some point I took in a cd player & at night I played the first Jewel album of lullabies, on repeat. I did that to create an ambient sound that we could take home because the only ambient sounds he would have heard are the monitors and machines and people. It was a lifesaver. Fast forward to my second child being born & that same music was equally effective for settling her at bedtime having "heard" it all through her gestation. Same for the books we read over and over.
+      - paragraph: Reading to my kids is one of the things in motherhood that is purely good and joyful that I still love doing although they're 11 & 12 now so it's getting to be a thing I have to convince them is great!
+      - navigation:
+        - list:
+          - link [176] "Reply":
+            - /url: /f/books/17445/-/comment/236657
+            - strong: Reply
+          - link [177] "Permalink":
+            - /url: /f/books/17445/-/comment/236657
+          - link [178] "Parent":
+            - /url: /f/books/17445/-/comment/225988
+      - button [179] "Upvote"
+      - text: 3
+      - button [180] "Downvote"
+      - article:
+        - checkbox [181] "Hide −" [checked]
+        - "heading \"bamako45 [t1_iu210j4] wrote 3 years ago\" [level=1]":
+          - link [182] "bamako45":
+            - /url: /user/bamako45
+            - strong: bamako45
+          - text: [t1_iu210j4] wrote
+          - time: 3 years ago
+        - list:
+          - Hide −
+        - paragraph: Maybe one should play Wagner’s Der Ring der Nibelungen (Ring Cycle - a series of, like, 4-6 great operas, performed, one after the other, on my 13 CD copy, I have the whole Ring Cycle (Die Walkure, Lohengrin, Gotterdammerung and, about 3 others). That would be a good way to give your infant some culture, even though the baby doesn’t know WTF “culture” means (or how to say it)! But it could set the stage for a possible, if this went the way one hoped, appreciation for music.
+        - navigation:
+          - list:
+            - link [183] "Reply":
+              - /url: /f/books/17445/-/comment/270988
+              - strong: Reply
+            - link [184] "Permalink":
+              - /url: /f/books/17445/-/comment/270988
+            - link [185] "Parent":
+              - /url: /f/books/17445/-/comment/236657
+        - button [186] "Upvote"
+        - text: 1
+        - button [187] "Downvote"
+    - article:
+      - checkbox [188] "Hide −" [checked]
+      - "heading \"Boom_doggle [t1_itu4fcz] wrote 3 years ago\" [level=1]":
+        - link [189] "Boom_doggle":
+          - /url: /user/Boom_doggle
+          - strong: Boom_doggle
+        - text: [t1_itu4fcz] wrote
+        - time: 3 years ago
+      - list:
+        - Hide −
+      - paragraph: As is well known, the Hobbit was written from the stories that Tolkien told to his kids. The pacing of the story reflects that. While each chapter contributes in some way to the overall narrative of getting to (or in, or out) of the lonely mountain, the book is constantly filled with little climaxes for each chapter as each substory (or night's reading) comes to an end. Think the encounter with the trolls, or when they're capture by goblins etc.
+      - navigation:
+        - list:
+          - link [190] "Reply":
+            - /url: /f/books/17445/-/comment/234944
+            - strong: Reply
+          - link [191] "Permalink":
+            - /url: /f/books/17445/-/comment/234944
+          - link [192] "Parent":
+            - /url: /f/books/17445/-/comment/225988
+      - button [193] "Upvote"
+      - text: 2
+      - button [194] "Downvote"
+    - article:
+      - checkbox [195] "Hide −" [checked]
+      - "heading \"kelryngrey [t1_ituge5y] wrote 3 years ago\" [level=1]":
+        - link [196] "kelryngrey":
+          - /url: /user/kelryngrey
+          - strong: kelryngrey
+        - text: [t1_ituge5y] wrote
+        - time: 3 years ago
+      - list:
+        - Hide −
+      - paragraph: This is the same thing my father did with my sister and I. I had heard all of the Hobbit and the Lord of the Rings before I started kindergarten. The rather southern teacher was terribly offended that I had been read such things.
+      - navigation:
+        - list:
+          - link [197] "Reply":
+            - /url: /f/books/17445/-/comment/235979
+            - strong: Reply
+          - link [198] "Permalink":
+            - /url: /f/books/17445/-/comment/235979
+          - link [199] "Parent":
+            - /url: /f/books/17445/-/comment/225988
+      - button [200] "Upvote"
+      - text: 2
+      - button [201] "Downvote"
+  - article:
+    - checkbox [202] "Hide −" [checked]
+    - "heading \"Krabbi [t1_itrszdy] wrote 3 years ago\" [level=1]":
+      - link [203] "Krabbi":
+        - /url: /user/Krabbi
+        - strong: Krabbi
+      - text: [t1_itrszdy] wrote
+      - time: 3 years ago
+    - list:
+      - Hide −
+    - paragraph: Try The Lion, The Witch and The Wardrobe next. My fourth grade teacher read it to us. Loved it.
+    - navigation:
+      - list:
+        - link [204] "Reply":
+          - /url: /f/books/17445/-/comment/226266
+          - strong: Reply
+        - link [205] "Permalink":
+          - /url: /f/books/17445/-/comment/226266
+    - button [206] "Upvote"
+    - text: 57
+    - button [207] "Downvote"
+    - article:
+      - checkbox [208] "Hide −" [checked]
+      - "heading \"Shaosil Original poster [t1_itrtjlc] wrote 3 years ago\" [level=1]":
+        - link [209] "Shaosil":
+          - /url: /user/Shaosil
+          - strong: Shaosil
+        - text: [OP] [t1_itrtjlc] wrote
+        - time: 3 years ago
+      - list:
+        - Hide −
+      - paragraph: We actually listened to the audio dramas of the first 6 books a year or two ago, each time we were in the car. She seemed to like it but I'd be surprised if she remembered much about it at this point. If I come across the books someday I may pick those up as well.
+      - navigation:
+        - list:
+          - link [210] "Reply":
+            - /url: /f/books/17445/-/comment/226328
+            - strong: Reply
+          - link [211] "Permalink":
+            - /url: /f/books/17445/-/comment/226328
+          - link [212] "Parent":
+            - /url: /f/books/17445/-/comment/226266
+      - button [213] "Upvote"
+      - text: 15
+      - button [214] "Downvote"
+      - article:
+        - checkbox [215] "Hide −" [checked]
+        - "heading \"daiLlafyn [t1_itrwvil] wrote 3 years ago\" [level=1]":
+          - link [216] "daiLlafyn":
+            - /url: /user/daiLlafyn
+            - strong: daiLlafyn
+          - text: [t1_itrwvil] wrote
+          - time: 3 years ago
+        - list:
+          - Hide −
+        - paragraph: I did the Hobbit, 5/6 Narnia and Watership Down with my kids. Hobbit, Silver Chair and WD were the best.
+        - navigation:
+          - list:
+            - link [217] "Reply":
+              - /url: /f/books/17445/-/comment/226683
+              - strong: Reply
+            - link [218] "Permalink":
+              - /url: /f/books/17445/-/comment/226683
+            - link [219] "Parent":
+              - /url: /f/books/17445/-/comment/226328
+        - button [220] "Upvote"
+        - text: 3
+        - button [221] "Downvote"
+        - article:
+          - checkbox [222] "Hide −" [checked]
+          - "heading \"HervPrometheus [t1_itryge9] wrote 3 years ago\" [level=1]":
+            - link [223] "HervPrometheus":
+              - /url: /user/HervPrometheus
+              - strong: HervPrometheus
+            - text: [t1_itryge9] wrote
+            - time: 3 years ago
+          - list:
+            - Hide −
+          - paragraph: The WD animated movie is nightmare fuel if I am remembering correctly.. is the book any better for children?
+          - navigation:
+            - list:
+              - link [224] "Reply":
+                - /url: /f/books/17445/-/comment/226866
+                - strong: Reply
+              - link [225] "Permalink":
+                - /url: /f/books/17445/-/comment/226866
+              - link [226] "Parent":
+                - /url: /f/books/17445/-/comment/226683
+          - button [227] "Upvote"
+          - text: 6
+          - button [228] "Downvote"
+          - article:
+            - checkbox [229] "Hide −" [checked]
+            - "heading \"daiLlafyn [t1_its4kig] wrote 3 years ago\" [level=1]":
+              - link [230] "daiLlafyn":
+                - /url: /user/daiLlafyn
+                - strong: daiLlafyn
+              - text: [t1_its4kig] wrote
+              - time: 3 years ago
+            - list:
+              - Hide −
+            - paragraph: Not so graphic - naturally. I read it at about 12-13, read it to my boy at about 10. And yes, there's some difficult stuff in there. Just because it's a cartoon about rabbits doesn't make it easy - but hearing it read to you by a trusted adult over a good few nights is a lot easier. You can stop and discuss... And it's brilliant. A rabbit language, mythology/religion/folklore, political systems, enemies, predators, humour, love, care, bravery, sacrifice... Man. But she's six. So not yet.
+            - navigation:
+              - list:
+                - link [231] "Reply":
+                  - /url: /f/books/17445/-/comment/227507
+                  - strong: Reply
+                - link [232] "Permalink":
+                  - /url: /f/books/17445/-/comment/227507
+                - link [233] "Parent":
+                  - /url: /f/books/17445/-/comment/226866
+            - button [234] "Upvote"
+            - text: 11
+            - button [235] "Downvote"
+            - article:
+              - checkbox [236] "Hide −" [checked]
+              - "heading \"Wolfysmith69 [t1_ittzi7j] wrote 3 years ago\" [level=1]":
+                - link [237] "Wolfysmith69":
+                  - /url: /user/Wolfysmith69
+                  - strong: Wolfysmith69
+                - text: [t1_ittzi7j] wrote
+                - time: 3 years ago
+              - list:
+                - Hide −
+              - paragraph: Wonderful comment.
+              - navigation:
+                - list:
+                  - link [238] "Reply":
+                    - /url: /f/books/17445/-/comment/234562
+                    - strong: Reply
+                  - link [239] "Permalink":
+                    - /url: /f/books/17445/-/comment/234562
+                  - link [240] "Parent":
+                    - /url: /f/books/17445/-/comment/227507
+              - button [241] "Upvote"
+              - text: 2
+              - button [242] "Downvote"
+          - article:
+            - checkbox [243] "Hide −" [checked]
+            - "heading \"SaltyShawarma [t1_ittf9hb] wrote 3 years ago\" [level=1]":
+              - link [244] "SaltyShawarma":
+                - /url: /user/SaltyShawarma
+                - strong: SaltyShawarma
+              - text: [t1_ittf9hb] wrote
+              - time: 3 years ago
+            - list:
+              - Hide −
+            - paragraph: Animated nightmare fuel?
+            - paragraph: You mean "Wizards"....
+            - navigation:
+              - list:
+                - link [245] "Reply":
+                  - /url: /f/books/17445/-/comment/232974
+                  - strong: Reply
+                - link [246] "Permalink":
+                  - /url: /f/books/17445/-/comment/232974
+                - link [247] "Parent":
+                  - /url: /f/books/17445/-/comment/226866
+            - button [248] "Upvote"
+            - text: 1
+            - button [249] "Downvote"
+            - article:
+              - checkbox [250] "Hide −" [checked]
+              - "heading \"McFeely_Smackup [t1_ittj0o3] wrote 3 years ago\" [level=1]":
+                - link [251] "McFeely_Smackup":
+                  - /url: /user/McFeely_Smackup
+                  - strong: McFeely_Smackup
+                - text: [t1_ittj0o3] wrote
+                - time: 3 years ago
+              - list:
+                - Hide −
+              - paragraph: That's my all time favorite "wizard battle" at the end.
+              - navigation:
+                - list:
+                  - link [252] "Reply":
+                    - /url: /f/books/17445/-/comment/233259
+                    - strong: Reply
+                  - link [253] "Permalink":
+                    - /url: /f/books/17445/-/comment/233259
+                  - link [254] "Parent":
+                    - /url: /f/books/17445/-/comment/232974
+              - button [255] "Upvote"
+              - text: 1
+              - button [256] "Downvote"
+          - article:
+            - checkbox [257] "Hide −" [checked]
+            - "heading \"Wolfysmith69 [t1_ittzgl0] wrote 3 years ago\" [level=1]":
+              - link [258] "Wolfysmith69":
+                - /url: /user/Wolfysmith69
+                - strong: Wolfysmith69
+              - text: [t1_ittzgl0] wrote
+              - time: 3 years ago
+            - list:
+              - Hide −
+            - paragraph: The book is fantastic for children. As a kid I read it three times. There are some dark passages but nothing that is going to scar you. Duncton wood is another good book. That is centred on moles, not rabbits.
+            - navigation:
+              - list:
+                - link [259] "Reply":
+                  - /url: /f/books/17445/-/comment/234556
+                  - strong: Reply
+                - link [260] "Permalink":
+                  - /url: /f/books/17445/-/comment/234556
+                - link [261] "Parent":
+                  - /url: /f/books/17445/-/comment/226866
+            - button [262] "Upvote"
+            - text: 1
+            - button [263] "Downvote"
+          - article:
+            - checkbox [264] "Hide −" [checked]
+            - "heading \"pierzstyx [t1_iturgd8] wrote 3 years ago\" [level=1]":
+              - link [265] "pierzstyx":
+                - /url: /user/pierzstyx
+                - strong: pierzstyx
+              - text: [t1_iturgd8] wrote
+              - time: 3 years ago
+            - list:
+              - Hide −
+            - paragraph: If you want to understand Fallout, watch Watership Down.
+            - navigation:
+              - list:
+                - link [266] "Reply":
+                  - /url: /f/books/17445/-/comment/237314
+                  - strong: Reply
+                - link [267] "Permalink":
+                  - /url: /f/books/17445/-/comment/237314
+                - link [268] "Parent":
+                  - /url: /f/books/17445/-/comment/226866
+            - button [269] "Upvote"
+            - text: 1
+            - button [270] "Downvote"
+    - article:
+      - checkbox [271] "Hide −" [checked]
+      - "heading \"apresskidougal [t1_itsnv48] wrote 3 years ago\" [level=1]":
+        - link [272] "apresskidougal":
+          - /url: /user/apresskidougal
+          - strong: apresskidougal
+        - text: [t1_itsnv48] wrote
+        - time: 3 years ago
+      - list:
+        - Hide −
+      - paragraph: This was great I actually got it as an audiobook so we could all listen to it in the car.
+      - navigation:
+        - list:
+          - link [273] "Reply":
+            - /url: /f/books/17445/-/comment/229810
+            - strong: Reply
+          - link [274] "Permalink":
+            - /url: /f/books/17445/-/comment/229810
+          - link [275] "Parent":
+            - /url: /f/books/17445/-/comment/226266
+      - button [276] "Upvote"
+      - text: 1
+      - button [277] "Downvote"
+  - article:
+    - checkbox [278] "Hide −" [checked]
+    - "heading \"SadCryBear [t1_its0m3w] wrote 3 years ago\" [level=1]":
+      - link [279] "SadCryBear":
+        - /url: /user/SadCryBear
+        - strong: SadCryBear
+      - text: [t1_its0m3w] wrote
+      - time: 3 years ago
+    - list:
+      - Hide −
+    - paragraph: My dad read The Hobbit to me when I was 6. It is one of my core childhood memories.
+    - paragraph: I later read the same tattered paperback copy many times growing up.
+    - paragraph: As an adult, my girlfriend (now wife), brought that tattered paperback to a book restorer and had it restored and bound. It is one of my most cherished possessions.
+    - paragraph: I am anxiously awaiting the time I get to read it to my son.
+    - navigation:
+      - list:
+        - link [280] "Reply":
+          - /url: /f/books/17445/-/comment/227106
+          - strong: Reply
+        - link [281] "Permalink":
+          - /url: /f/books/17445/-/comment/227106
+    - button [282] "Upvote"
+    - text: 34
+    - button [283] "Downvote"
+  - article:
+    - checkbox [284] "Hide −" [checked]
+    - "heading \"Gooberbone [t1_itrwu4j] wrote 3 years ago\" [level=1]":
+      - link [285] "Gooberbone":
+        - /url: /user/Gooberbone
+        - strong: Gooberbone
+      - text: [t1_itrwu4j] wrote
+      - time: 3 years ago
+    - list:
+      - Hide −
+    - paragraph: I read this book to our kids during a cross country road trip. I tried to do different voices for all the characters as well as singing the songs.
+    - paragraph: I got in over my head pretty quickly when the number of characters far outpaced the number of voices I could do. And we would get back into the car after a break, and my kids would be all like, “that that’s not the right voice for him.”
+    - navigation:
+      - list:
+        - link [286] "Reply":
+          - /url: /f/books/17445/-/comment/226680
+          - strong: Reply
+        - link [287] "Permalink":
+          - /url: /f/books/17445/-/comment/226680
+    - button [288] "Upvote"
+    - text: 33
+    - button [289] "Downvote"
+    - article:
+      - checkbox [290] "Hide −" [checked]
+      - "heading \"Rattimus [t1_itrxq2q] wrote 3 years ago\" [level=1]":
+        - link [291] "Rattimus":
+          - /url: /user/Rattimus
+          - strong: Rattimus
+        - text: [t1_itrxq2q] wrote
+        - time: 3 years ago
+      - list:
+        - Hide −
+      - paragraph: LOL. You could be me. My kids say the same thing, "that isn't your wizard voice!!".... ok, alright, daddy isn't a voice actor lol, just back off you jackals.
+      - navigation:
+        - list:
+          - link [292] "Reply":
+            - /url: /f/books/17445/-/comment/226779
+            - strong: Reply
+          - link [293] "Permalink":
+            - /url: /f/books/17445/-/comment/226779
+          - link [294] "Parent":
+            - /url: /f/books/17445/-/comment/226680
+      - button [295] "Upvote"
+      - text: 31
+      - button [296] "Downvote"
+      - article:
+        - checkbox [297] "Hide −" [checked]
+        - "heading \"Gooberbone [t1_itry5p7] wrote 3 years ago\" [level=1]":
+          - link [298] "Gooberbone":
+            - /url: /user/Gooberbone
+            - strong: Gooberbone
+          - text: [t1_itry5p7] wrote
+          - time: 3 years ago
+        - list:
+          - Hide −
+        - paragraph: Dude, there’s like 13 dwarves!
+        - navigation:
+          - list:
+            - link [299] "Reply":
+              - /url: /f/books/17445/-/comment/226834
+              - strong: Reply
+            - link [300] "Permalink":
+              - /url: /f/books/17445/-/comment/226834
+            - link [301] "Parent":
+              - /url: /f/books/17445/-/comment/226779
+        - button [302] "Upvote"
+        - text: 19
+        - button [303] "Downvote"
+        - article:
+          - checkbox [304] "Hide −" [checked]
+          - "heading \"Rattimus [t1_its6vl0] wrote 3 years ago\" [level=1]":
+            - link [305] "Rattimus":
+              - /url: /user/Rattimus
+              - strong: Rattimus
+            - text: [t1_its6vl0] wrote
+            - time: 3 years ago
+          - list:
+            - Hide −
+          - paragraph: Ha, right! Fortunately many of them have only a few lines and my kids didn't complain when I used my "dwarf voice" for most of them. Thorin had his own voice, and Balin as well.
+          - navigation:
+            - list:
+              - link [306] "Reply":
+                - /url: /f/books/17445/-/comment/227761
+                - strong: Reply
+              - link [307] "Permalink":
+                - /url: /f/books/17445/-/comment/227761
+              - link [308] "Parent":
+                - /url: /f/books/17445/-/comment/226834
+          - button [309] "Upvote"
+          - text: 9
+          - button [310] "Downvote"
+  - article:
+    - checkbox [311] "Hide −" [checked]
+    - "heading \"st-julien [t1_itrqhbk] wrote 3 years ago\" [level=1]":
+      - link [312] "st-julien":
+        - /url: /user/st-julien
+        - strong: st-julien
+      - text: [t1_itrqhbk] wrote
+      - time: 3 years ago
+    - list:
+      - Hide −
+    - paragraph: I love the writing style of The Hobbit and its humor makes me actually laugh out loud. One of the only books that does that for me. I loved the movies too, despite how bloated they are. There are a few scenes that I loved seeing in film, including the barrel ride down the river (even though a lot of extras were added there), and really any scene with Smaug. Benedict Cumberbatch was perfect as Smaug's voice as well.
+    - navigation:
+      - list:
+        - link [313] "Reply":
+          - /url: /f/books/17445/-/comment/225956
+          - strong: Reply
+        - link [314] "Permalink":
+          - /url: /f/books/17445/-/comment/225956
+    - button [315] "Upvote"
+    - text: 13
+    - button [316] "Downvote"
+    - article:
+      - checkbox [317] "Hide −" [checked]
+      - "heading \"OhSoManyQuestions [t1_itu75hz] wrote 3 years ago\" [level=1]":
+        - link [318] "OhSoManyQuestions":
+          - /url: /user/OhSoManyQuestions
+          - strong: OhSoManyQuestions
+        - text: [t1_itu75hz] wrote
+        - time: 3 years ago
+      - list:
+        - Hide −
+      - paragraph:
+        - text: I really enjoyed the films too! Were they a bloated mess with depressingly bad CGI gold? Sure! Was I glued to the screen for every single second, enjoying the heck out of my life and the world of Middle Earth and being pleased that at least Radagast the Brown appeared
+        - emphasis: somewhere
+        - text: in film form? Most definitely.
+      - navigation:
+        - list:
+          - link [319] "Reply":
+            - /url: /f/books/17445/-/comment/235135
+            - strong: Reply
+          - link [320] "Permalink":
+            - /url: /f/books/17445/-/comment/235135
+          - link [321] "Parent":
+            - /url: /f/books/17445/-/comment/225956
+      - button [322] "Upvote"
+      - text: 3
+      - button [323] "Downvote"
+      - article:
+        - checkbox [324] "Hide −" [checked]
+        - "heading \"st-julien [t1_ituvd8p] wrote 3 years ago\" [level=1]":
+          - link [325] "st-julien":
+            - /url: /user/st-julien
+            - strong: st-julien
+          - text: [t1_ituvd8p] wrote
+          - time: 3 years ago
+        - list:
+          - Hide −
+        - paragraph: Radagast is my favorite! Sylvester McCoy did a great job. I would have loved more scenes with him and Gandalf.
+        - navigation:
+          - list:
+            - link [326] "Reply":
+              - /url: /f/books/17445/-/comment/237768
+              - strong: Reply
+            - link [327] "Permalink":
+              - /url: /f/books/17445/-/comment/237768
+            - link [328] "Parent":
+              - /url: /f/books/17445/-/comment/235135
+        - button [329] "Upvote"
+        - text: 1
+        - button [330] "Downvote"
+  - article:
+    - checkbox [331] "Hide −" [checked]
+    - "heading \"buckmulligan61 [t1_its43vz] wrote 3 years ago\" [level=1]":
+      - link [332] "buckmulligan61":
+        - /url: /user/buckmulligan61
+        - strong: buckmulligan61
+      - text: [t1_its43vz] wrote
+      - time: 3 years ago
+    - list:
+      - Hide −
+    - paragraph: Good work. Narnia is next.
+    - paragraph: That's all.
+    - navigation:
+      - list:
+        - link [333] "Reply":
+          - /url: /f/books/17445/-/comment/227458
+          - strong: Reply
+        - link [334] "Permalink":
+          - /url: /f/books/17445/-/comment/227458
+    - button [335] "Upvote"
+    - text: 10
+    - button [336] "Downvote"
+  - article:
+    - checkbox [337] "Hide −" [checked]
+    - "heading \"Expired_Arugala [t1_itsfrlx] wrote 3 years ago\" [level=1]":
+      - link [338] "Expired_Arugala":
+        - /url: /user/Expired_Arugala
+        - strong: Expired_Arugala
+      - text: [t1_itsfrlx] wrote
+      - time: 3 years ago
+    - list:
+      - Hide −
+    - paragraph: Glad your kid loved it. I’m 28 now and one of my happiest memories is my mom reading it to my brother and I on our bunk beds every night before we went to sleep. I hope your daughter has the same found memories of her time with you.
+    - navigation:
+      - list:
+        - link [339] "Reply":
+          - /url: /f/books/17445/-/comment/228857
+          - strong: Reply
+        - link [340] "Permalink":
+          - /url: /f/books/17445/-/comment/228857
+    - button [341] "Upvote"
+    - text: 10
+    - button [342] "Downvote"
+  - article:
+    - checkbox [343] "Hide −" [checked]
+    - "heading \"thesedevices [t1_itswmaz] wrote 3 years ago\" [level=1]":
+      - link [344] "thesedevices":
+        - /url: /user/thesedevices
+        - strong: thesedevices
+      - text: [t1_itswmaz] wrote
+      - time: 3 years ago
+    - list:
+      - Hide −
+    - paragraph: Nice! I finished it with my two girls (9 and 7) earlier this year. My 9 year old is going as Kili for Halloween. We read every night and usually books that have movies so we can do both. First two Harry Potter books, Matilda, Because of Winn Dixie, Charlie and the Chocolate Factory, and a few others I can’t remember. I’ll keep doing it for as long as they let me. I love every minute of it.
+    - navigation:
+      - list:
+        - link [345] "Reply":
+          - /url: /f/books/17445/-/comment/230905
+          - strong: Reply
+        - link [346] "Permalink":
+          - /url: /f/books/17445/-/comment/230905
+    - button [347] "Upvote"
+    - text: 9
+    - button [348] "Downvote"
+  - article:
+    - checkbox [349] "Hide −" [checked]
+    - "heading \"thedreadcat666 [t1_itrvv19] wrote 3 years ago\" [level=1]":
+      - link [350] "thedreadcat666":
+        - /url: /user/thedreadcat666
+        - strong: thedreadcat666
+      - text: [t1_itrvv19] wrote
+      - time: 3 years ago
+    - list:
+      - Hide −
+    - paragraph: This made me smile. My dad read the hobbit to me when I was 5 or 6 and I've been a fantasy nerd ever since.
+    - navigation:
+      - list:
+        - link [351] "Reply":
+          - /url: /f/books/17445/-/comment/226579
+          - strong: Reply
+        - link [352] "Permalink":
+          - /url: /f/books/17445/-/comment/226579
+    - button [353] "Upvote"
+    - text: 6
+    - button [354] "Downvote"
+  - article:
+    - checkbox [355] "Hide −" [checked]
+    - "heading \"entropynchaos [t1_itscy4x] wrote 3 years ago\" [level=1]":
+      - link [356] "entropynchaos":
+        - /url: /user/entropynchaos
+        - strong: entropynchaos
+      - text: [t1_itscy4x] wrote
+      - time: 3 years ago
+    - list:
+      - Hide −
+    - paragraph: I read the whole Lord of the Rings trilogy to my oldest (I honestly forget if I started with the Hobbit) when they were three. They loved it.
+    - navigation:
+      - list:
+        - link [357] "Reply":
+          - /url: /f/books/17445/-/comment/228447
+          - strong: Reply
+        - link [358] "Permalink":
+          - /url: /f/books/17445/-/comment/228447
+    - button [359] "Upvote"
+    - text: 6
+    - button [360] "Downvote"
+  - article:
+    - checkbox [361] "Hide −" [checked]
+    - "heading \"newtbob [t1_itsl1jr] wrote 3 years ago\" [level=1]":
+      - link [362] "newtbob":
+        - /url: /user/newtbob
+        - strong: newtbob
+      - text: [t1_itsl1jr] wrote
+      - time: 3 years ago
+    - list:
+      - Hide −
+    - paragraph: Doesn’t matter. The Hobbit is the Tolkien gateway drug.
+    - navigation:
+      - list:
+        - link [363] "Reply":
+          - /url: /f/books/17445/-/comment/229472
+          - strong: Reply
+        - link [364] "Permalink":
+          - /url: /f/books/17445/-/comment/229472
+    - button [365] "Upvote"
+    - text: 6
+    - button [366] "Downvote"
+  - article:
+    - checkbox [367] "Hide −" [checked]
+    - "heading \"Tinybuttcheeks [t1_itt0ivz] wrote 3 years ago\" [level=1]":
+      - link [368] "Tinybuttcheeks":
+        - /url: /user/Tinybuttcheeks
+        - strong: Tinybuttcheeks
+      - text: [t1_itt0ivz] wrote
+      - time: 3 years ago
+    - list:
+      - Hide −
+    - paragraph: I read the Hobbit 57 years ago as a kid. I’m dyslexic and have reading retention issues.
+    - paragraph: The was the first book to help me overcome dyslexic concerns
+    - navigation:
+      - list:
+        - link [369] "Reply":
+          - /url: /f/books/17445/-/comment/231359
+          - strong: Reply
+        - link [370] "Permalink":
+          - /url: /f/books/17445/-/comment/231359
+    - button [371] "Upvote"
+    - text: 6
+    - button [372] "Downvote"
+    - article:
+      - checkbox [373] "Hide −" [checked]
+      - "heading \"Wolfysmith69 [t1_ittzvwi] wrote 3 years ago\" [level=1]":
+        - link [374] "Wolfysmith69":
+          - /url: /user/Wolfysmith69
+          - strong: Wolfysmith69
+        - text: [t1_ittzvwi] wrote
+        - time: 3 years ago
+      - list:
+        - Hide −
+      - paragraph: That is wonderful. You must have got right into the world of it and let that bypass your reading disadvantage.
+      - navigation:
+        - list:
+          - link [375] "Reply":
+            - /url: /f/books/17445/-/comment/234594
+            - strong: Reply
+          - link [376] "Permalink":
+            - /url: /f/books/17445/-/comment/234594
+          - link [377] "Parent":
+            - /url: /f/books/17445/-/comment/231359
+      - button [378] "Upvote"
+      - text: 3
+      - button [379] "Downvote"
+      - article:
+        - checkbox [380] "Hide −" [checked]
+        - "heading \"Tinybuttcheeks [t1_itu0adv] wrote 3 years ago\" [level=1]":
+          - link [381] "Tinybuttcheeks":
+            - /url: /user/Tinybuttcheeks
+            - strong: Tinybuttcheeks
+          - text: [t1_itu0adv] wrote
+          - time: 3 years ago
+        - list:
+          - Hide −
+        - paragraph: I have recently learned that audio books are very helpful for people like me. My brain processes lecture material better than written content. Science backs this as well
+        - paragraph: My dad was in the military when I was a kid in Naples Italy. I would listen to the armed forces radio network at night before bed. I let my imagination run wild as I listened to the actors using props to make various sounds. It was magical to me.
+        - paragraph: The Hobbit books opened my eyes to the mystical world Tolkien painted. It was wonderful as well. Reading retention with fiction was less of a problem.
+        - paragraph: Today I read to my grand kids every chance I have.
+        - paragraph: Helping kids and some adults like me read books at public libraries has been a joy
+        - navigation:
+          - list:
+            - link [382] "Reply":
+              - /url: /f/books/17445/-/comment/234634
+              - strong: Reply
+            - link [383] "Permalink":
+              - /url: /f/books/17445/-/comment/234634
+            - link [384] "Parent":
+              - /url: /f/books/17445/-/comment/234594
+        - button [385] "Upvote"
+        - text: 2
+        - button [386] "Downvote"
+  - article:
+    - checkbox [387] "Hide −" [checked]
+    - "heading \"jvin248 [t1_itsa2z4] wrote 3 years ago\" [level=1]":
+      - link [388] "jvin248":
+        - /url: /user/jvin248
+        - strong: jvin248
+      - text: [t1_itsa2z4] wrote
+      - time: 3 years ago
+    - list:
+      - Hide −
+    - paragraph: "Not Hobbit related, but kid and book related: make sure you check out Project Gutenberg and Librevox. A lot of content. Sure, some browsing/wading but there are gems."
+    - paragraph: We had Thornton Burgess (Mother West Wind's Children) when I was about the age as yours. Later with my own young kids I used Burgess audio tapes for a long car journey and I think that was from Librevox.
+    - paragraph: The Hobbit was one of the first big books I read on my own as a kid though.
+    - navigation:
+      - list:
+        - link [389] "Reply":
+          - /url: /f/books/17445/-/comment/228133
+          - strong: Reply
+        - link [390] "Permalink":
+          - /url: /f/books/17445/-/comment/228133
+    - button [391] "Upvote"
+    - text: 4
+    - button [392] "Downvote"
+  - article:
+    - checkbox [393] "Hide −" [checked]
+    - "heading \"garbagebailkid [t1_itsbctm] wrote 3 years ago\" [level=1]":
+      - link [394] "garbagebailkid":
+        - /url: /user/garbagebailkid
+        - strong: garbagebailkid
+      - text: [t1_itsbctm] wrote
+      - time: 3 years ago
+    - list:
+      - Hide −
+    - paragraph: Consider me inspired. Gonna get a copy asap
+    - navigation:
+      - list:
+        - link [395] "Reply":
+          - /url: /f/books/17445/-/comment/228270
+          - strong: Reply
+        - link [396] "Permalink":
+          - /url: /f/books/17445/-/comment/228270
+    - button [397] "Upvote"
+    - text: 4
+    - button [398] "Downvote"
+  - article:
+    - checkbox [399] "Hide −" [checked]
+    - "heading \"monkeyhind [t1_itsi1fi] wrote 3 years ago\" [level=1]":
+      - link [400] "monkeyhind":
+        - /url: /user/monkeyhind
+        - strong: monkeyhind
+      - text: [t1_itsi1fi] wrote
+      - time: 3 years ago
+    - list:
+      - Hide −
+    - paragraph: It's too bad you can't scrub the movie images from your minds. Cool that she enjoyed the book!
+    - navigation:
+      - list:
+        - link [401] "Reply":
+          - /url: /f/books/17445/-/comment/229122
+          - strong: Reply
+        - link [402] "Permalink":
+          - /url: /f/books/17445/-/comment/229122
+    - button [403] "Upvote"
+    - text: 4
+    - button [404] "Downvote"
+  - article:
+    - checkbox [405] "Hide −" [checked]
+    - "heading \"Throwaway_In_Action [t1_itskn6f] wrote 3 years ago\" [level=1]":
+      - link [406] "Throwaway_In_Action":
+        - /url: /user/Throwaway_In_Action
+        - strong: Throwaway_In_Action
+      - text: [t1_itskn6f] wrote
+      - time: 3 years ago
+    - list:
+      - Hide −
+    - paragraph: My mom did this for me when I was a kid, and while there were some parts 7 year old me got bored with, we kept through it and I loved it. She tried to do little voices and everything for the characters, and I can't imagine how tiring that must have been! But I think that, coupled with the fact my mom also took me to the library once a week, really hooked me on reading, forever.
+    - navigation:
+      - list:
+        - link [407] "Reply":
+          - /url: /f/books/17445/-/comment/229423
+          - strong: Reply
+        - link [408] "Permalink":
+          - /url: /f/books/17445/-/comment/229423
+    - button [409] "Upvote"
+    - text: 4
+    - button [410] "Downvote"
+  - article:
+    - checkbox [411] "Hide −" [checked]
+    - "heading \"diluvsbks [t1_itt6tb9] wrote 3 years ago\" [level=1]":
+      - link [412] "diluvsbks":
+        - /url: /user/diluvsbks
+        - strong: diluvsbks
+      - text: [t1_itt6tb9] wrote
+      - time: 3 years ago
+    - list:
+      - Hide −
+    - paragraph: Awww....this brings back wonderful memories of me and my Dad! He read "The Hobbit" to me when I was 6 years old too. Throughout my early childhood he read "All Creatures Great and Small", "Jonathan Livingston Seagull", "Watership Down", and other great books. He instilled a love of books and reading for a lifetime. I passed this gift on to both of my sons. As my Dad was passing away, I made sure to thank him for this love of words. I hope it helped give him some peace 🕊️❤️.
+    - navigation:
+      - list:
+        - link [413] "Reply":
+          - /url: /f/books/17445/-/comment/232092
+          - strong: Reply
+        - link [414] "Permalink":
+          - /url: /f/books/17445/-/comment/232092
+    - button [415] "Upvote"
+    - text: 4
+    - button [416] "Downvote"
+  - article:
+    - checkbox [417] "Hide −" [checked]
+    - "heading \"hngdog [t1_itsl6l7] wrote 3 years ago\" [level=1]":
+      - link [418] "hngdog":
+        - /url: /user/hngdog
+        - strong: hngdog
+      - text: [t1_itsl6l7] wrote
+      - time: 3 years ago
+    - list:
+      - Hide −
+    - paragraph: There are fan edits of the Hobbit movie(s) that eliminate the fluff and get it closer to the book.
+    - navigation:
+      - list:
+        - link [419] "Reply":
+          - /url: /f/books/17445/-/comment/229486
+          - strong: Reply
+        - link [420] "Permalink":
+          - /url: /f/books/17445/-/comment/229486
+    - button [421] "Upvote"
+    - text: 3
+    - button [422] "Downvote"
+    - article:
+      - checkbox [423] "Hide −" [checked]
+      - "heading \"Adept-X [t1_itt5r9f] wrote 3 years ago\" [level=1]":
+        - link [424] "Adept-X":
+          - /url: /user/Adept-X
+          - strong: Adept-X
+        - text: [t1_itt5r9f] wrote
+        - time: 3 years ago
+      - list:
+        - Hide −
+      - paragraph: Nah, the Rankin/Bass animated version from 1977 is far superior. Way better for kids.
+      - navigation:
+        - list:
+          - link [425] "Reply":
+            - /url: /f/books/17445/-/comment/231978
+            - strong: Reply
+          - link [426] "Permalink":
+            - /url: /f/books/17445/-/comment/231978
+          - link [427] "Parent":
+            - /url: /f/books/17445/-/comment/229486
+      - button [428] "Upvote"
+      - text: 4
+      - button [429] "Downvote"
+      - article:
+        - checkbox [430] "Hide −" [checked]
+        - "heading \"heapsp [t1_ittqtih] wrote 3 years ago\" [level=1]":
+          - link [431] "heapsp":
+            - /url: /user/heapsp
+            - strong: heapsp
+          - text: [t1_ittqtih] wrote
+          - time: 3 years ago
+        - list:
+          - Hide −
+        - paragraph: I saw this when I was very little and it changed my life. The animation style, the music, it is one of only a few movies that I can remember vividly from before I was 8
+        - navigation:
+          - list:
+            - link [432] "Reply":
+              - /url: /f/books/17445/-/comment/233883
+              - strong: Reply
+            - link [433] "Permalink":
+              - /url: /f/books/17445/-/comment/233883
+            - link [434] "Parent":
+              - /url: /f/books/17445/-/comment/231978
+        - button [435] "Upvote"
+        - text: 3
+        - button [436] "Downvote"
+  - article:
+    - checkbox [437] "Hide −" [checked]
+    - "heading \"Go-Brit [t1_itt2895] wrote 3 years ago\" [level=1]":
+      - link [438] "Go-Brit":
+        - /url: /user/Go-Brit
+        - strong: Go-Brit
+      - text: [t1_itt2895] wrote
+      - time: 3 years ago
+    - list:
+      - Hide −
+    - paragraph: Joining the "book was better" club at the tender age of six hahaha.
+    - paragraph: This is great. I hope this will be my experience with my son too. He's still just a baby but we read his board books every day and he really loves it so far so I'm hopeful.
+    - navigation:
+      - list:
+        - link [439] "Reply":
+          - /url: /f/books/17445/-/comment/231547
+          - strong: Reply
+        - link [440] "Permalink":
+          - /url: /f/books/17445/-/comment/231547
+    - button [441] "Upvote"
+    - text: 3
+    - button [442] "Downvote"
+  - article:
+    - checkbox [443] "Hide −" [checked]
+    - "heading \"ElmoProjector [t1_itt520s] wrote 3 years ago\" [level=1]":
+      - link [444] "ElmoProjector":
+        - /url: /user/ElmoProjector
+        - strong: ElmoProjector
+      - text: [t1_itt520s] wrote
+      - time: 3 years ago
+    - list:
+      - Hide −
+    - paragraph: I read The Hobbit to my son and daughter at 6. It was outstanding. My son is almost 8 now and Sam just glimpsed Mount Doom for the first time tonight. It has been a slow but very fun read. Don't be afraid to read above their age level, defining words as you go and helping with comprehension.
+    - paragraph: Someone in the thread said this was a core memory for them as a kid. This is a core memory for me as an adult.
+    - navigation:
+      - list:
+        - link [445] "Reply":
+          - /url: /f/books/17445/-/comment/231891
+          - strong: Reply
+        - link [446] "Permalink":
+          - /url: /f/books/17445/-/comment/231891
+    - button [447] "Upvote"
+    - text: 3
+    - button [448] "Downvote"
+  - article:
+    - checkbox [449] "Hide −" [checked]
+    - "heading \"RagingAardvark [t1_itt6ho0] wrote 3 years ago\" [level=1]":
+      - link [450] "RagingAardvark":
+        - /url: /user/RagingAardvark
+        - strong: RagingAardvark
+      - text: [t1_itt6ho0] wrote
+      - time: 3 years ago
+    - list:
+      - Hide −
+    - paragraph: My husband read the Hobbit to all of our kids, and LOTR to the older ones (now 11 and 9; our youngest is 6). It's been their "thing" and they loved it. He watched the movies with our oldest as they finished the books.
+    - paragraph: My own ritual with them has been reading the Harry Potter books; we've been discussing starting with the youngest soon.
+    - navigation:
+      - list:
+        - link [451] "Reply":
+          - /url: /f/books/17445/-/comment/232052
+          - strong: Reply
+        - link [452] "Permalink":
+          - /url: /f/books/17445/-/comment/232052
+    - button [453] "Upvote"
+    - text: 3
+    - button [454] "Downvote"
+  - article:
+    - checkbox [455] "Hide −" [checked]
+    - "heading \"PocketDog [t1_ittvyqn] wrote 3 years ago\" [level=1]":
+      - link [456] "PocketDog":
+        - /url: /user/PocketDog
+        - strong: PocketDog
+      - text: [t1_ittvyqn] wrote
+      - time: 3 years ago
+    - list:
+      - Hide −
+    - paragraph: My son and I are nearly through it. We were so glad the barrel ride was only a few pages and not spread across several months as the film seems to be.
+    - paragraph: Also, I've had great fun reading Gandalf in a really thick North Yorkshire accent. "I can't believe yer left Bilboo wi' goblins". Difficult to put on a page, that.
+    - navigation:
+      - list:
+        - link [457] "Reply":
+          - /url: /f/books/17445/-/comment/234278
+          - strong: Reply
+        - link [458] "Permalink":
+          - /url: /f/books/17445/-/comment/234278
+    - button [459] "Upvote"
+    - text: 3
+    - button [460] "Downvote"
+  - article:
+    - checkbox [461] "Hide −" [checked]
+    - "heading \"Son_of_Atreus [t1_itty3ow] wrote 3 years ago\" [level=1]":
+      - link [462] "Son_of_Atreus":
+        - /url: /user/Son_of_Atreus
+        - strong: Son_of_Atreus
+      - text: [t1_itty3ow] wrote
+      - time: 3 years ago
+    - list:
+      - Hide −
+    - paragraph: I am reading through this to my 7yo. She is loving it, and after the slow opening she is totally engaged with the narrative and fun characters. Chapter 5, I think (the cave and ring) was a huge stand out. I have been waiting years to read this with her and have been loving it.
+    - paragraph: Oh side note. I have two copies of the text, a large copy with illustrations and old basic text one. She loves to read the small, old text along with me and she will read lines, songs or other parts as I read the main narrative. She is a very strong reader and has loved being part of the storytelling.
+    - navigation:
+      - list:
+        - link [463] "Reply":
+          - /url: /f/books/17445/-/comment/234454
+          - strong: Reply
+        - link [464] "Permalink":
+          - /url: /f/books/17445/-/comment/234454
+    - button [465] "Upvote"
+    - text: 3
+    - button [466] "Downvote"
+  - article:
+    - checkbox [467] "Hide −" [checked]
+    - "heading \"AuctorLibri [t1_itun4bb] wrote 3 years ago\" [level=1]":
+      - link [468] "AuctorLibri":
+        - /url: /user/AuctorLibri
+        - strong: AuctorLibri
+      - text: [t1_itun4bb] wrote
+      - time: 3 years ago
+    - list:
+      - Hide −
+    - paragraph:
+      - text: My dad read my brother and I
+      - emphasis: The Hobbit
+      - text: on a camping trip.
+    - paragraph: The flickering light of the campfire set the mood perfectly. He had fun doing the different voices, giving homage to the lyrical whimsy in the prose, when it surfaced.
+    - paragraph: My mom gave us mugs of hot apple cider as we listened to this charming adventure, one dotted with terrors made all the more real by the surrounding dark, and the night sounds of nature.
+    - paragraph:
+      - text: It become a thing; each trip he'd read another part until we got through
+      - emphasis: The Lord of the Rings
+      - text: .
+    - paragraph: A lovely memory that my brother and I will always treasure.
+    - navigation:
+      - list:
+        - link [469] "Reply":
+          - /url: /f/books/17445/-/comment/236770
+          - strong: Reply
+        - link [470] "Permalink":
+          - /url: /f/books/17445/-/comment/236770
+    - button [471] "Upvote"
+    - text: 3
+    - button [472] "Downvote"
+    - article:
+      - checkbox [473] "Hide −" [checked]
+      - "heading \"Shaosil Original poster [t1_ituqnm6] wrote 3 years ago\" [level=1]":
+        - link [474] "Shaosil":
+          - /url: /user/Shaosil
+          - strong: Shaosil
+        - text: [OP] [t1_ituqnm6] wrote
+        - time: 3 years ago
+      - list:
+        - Hide −
+      - paragraph: I love that, sounds like the perfect atmosphere for the book.
+      - navigation:
+        - list:
+          - link [475] "Reply":
+            - /url: /f/books/17445/-/comment/237208
+            - strong: Reply
+          - link [476] "Permalink":
+            - /url: /f/books/17445/-/comment/237208
+          - link [477] "Parent":
+            - /url: /f/books/17445/-/comment/236770
+      - button [478] "Upvote"
+      - text: 3
+      - button [479] "Downvote"
+  - article:
+    - checkbox [480] "Hide −" [checked]
+    - "heading \"Jamaqius [t1_itsobx5] wrote 3 years ago\" [level=1]":
+      - link [481] "Jamaqius":
+        - /url: /user/Jamaqius
+        - strong: Jamaqius
+      - text: [t1_itsobx5] wrote
+      - time: 3 years ago
+    - list:
+      - Hide −
+    - paragraph: Oh this takes me back. My dad read my brother & I The Hobbit when we were kids & we’d do a couple chapters a night & rotate whose room we’d do it in. So nostalgic
+    - navigation:
+      - list:
+        - link [482] "Reply":
+          - /url: /f/books/17445/-/comment/229881
+          - strong: Reply
+        - link [483] "Permalink":
+          - /url: /f/books/17445/-/comment/229881
+    - button [484] "Upvote"
+    - text: 2
+    - button [485] "Downvote"
+  - article:
+    - checkbox [486] "Hide −" [checked]
+    - "heading \"EdgarBopp [t1_itsqets] wrote 3 years ago\" [level=1]":
+      - link [487] "EdgarBopp":
+        - /url: /user/EdgarBopp
+        - strong: EdgarBopp
+      - text: [t1_itsqets] wrote
+      - time: 3 years ago
+    - list:
+      - Hide −
+    - paragraph: My 8yo loved it too. We read it twice.
+    - navigation:
+      - list:
+        - link [488] "Reply":
+          - /url: /f/books/17445/-/comment/230148
+          - strong: Reply
+        - link [489] "Permalink":
+          - /url: /f/books/17445/-/comment/230148
+    - button [490] "Upvote"
+    - text: 2
+    - button [491] "Downvote"
+  - article:
+    - checkbox [492] "Hide −" [checked]
+    - "heading \"cathylm91 [t1_itsqtgh] wrote 3 years ago\" [level=1]":
+      - link [493] "cathylm91":
+        - /url: /user/cathylm91
+        - strong: cathylm91
+      - text: [t1_itsqtgh] wrote
+      - time: 3 years ago
+    - list:
+      - Hide −
+    - paragraph: Ahh I appreciate this so much, what a smart kiddo. I am a huge Tolkien/LOTR fan and I hope to share this experience with my son. Thanks for sharing ✌️❤️
+    - navigation:
+      - list:
+        - link [494] "Reply":
+          - /url: /f/books/17445/-/comment/230196
+          - strong: Reply
+        - link [495] "Permalink":
+          - /url: /f/books/17445/-/comment/230196
+    - button [496] "Upvote"
+    - text: 2
+    - button [497] "Downvote"
+  - article:
+    - checkbox [498] "Hide −" [checked]
+    - "heading \"Tesseract257 [t1_itssuws] wrote 3 years ago\" [level=1]":
+      - link [499] "Tesseract257":
+        - /url: /user/Tesseract257
+        - strong: Tesseract257
+      - text: [t1_itssuws] wrote
+      - time: 3 years ago
+    - list:
+      - Hide −
+    - paragraph:
+      - text: Over 40 years ago my parents had me read The Hobbit, it was the first book I read by myself.. Then we saw the 1977 broadcast of
+      - link [500] "The Hobbit movie":
+        - /url: "https://www.youtube.com/watch?v=o5fwixXmUlE"
+      - text: , which although it was a children's movie, it was amazingly faithful to the book. It was not till 10 years later I started reading the LOTR books!
+    - navigation:
+      - list:
+        - link [501] "Reply":
+          - /url: /f/books/17445/-/comment/230437
+          - strong: Reply
+        - link [502] "Permalink":
+          - /url: /f/books/17445/-/comment/230437
+    - button [503] "Upvote"
+    - text: 2
+    - button [504] "Downvote"
+  - article:
+    - checkbox [505] "Hide −" [checked]
+    - "heading \"Historical-Author-49 [t1_itsuo6u] wrote 3 years ago\" [level=1]":
+      - link [506] "Historical-Author-49":
+        - /url: /user/Historical-Author-49
+        - strong: Historical-Author-49
+      - text: [t1_itsuo6u] wrote
+      - time: 3 years ago
+    - list:
+      - Hide −
+    - paragraph: That's about the age I was when my dad read The Hobbit to me, and then the Lord of the Rings trilogy. He did voices for all the characters. I think it definitely inspired me to be a reader as a kid
+    - navigation:
+      - list:
+        - link [507] "Reply":
+          - /url: /f/books/17445/-/comment/230641
+          - strong: Reply
+        - link [508] "Permalink":
+          - /url: /f/books/17445/-/comment/230641
+    - button [509] "Upvote"
+    - text: 2
+    - button [510] "Downvote"
+  - article:
+    - checkbox [511] "Hide −" [checked]
+    - "heading \"Terminus1066 [t1_itsvu2s] wrote 3 years ago\" [level=1]":
+      - link [512] "Terminus1066":
+        - /url: /user/Terminus1066
+        - strong: Terminus1066
+      - text: [t1_itsvu2s] wrote
+      - time: 3 years ago
+    - list:
+      - Hide −
+    - paragraph: I read The Hobbit to my son last year (he was 7), and he was really into it. A classic, lots of exciting escapes.
+    - navigation:
+      - list:
+        - link [513] "Reply":
+          - /url: /f/books/17445/-/comment/230814
+          - strong: Reply
+        - link [514] "Permalink":
+          - /url: /f/books/17445/-/comment/230814
+    - button [515] "Upvote"
+    - text: 2
+    - button [516] "Downvote"
+  - article:
+    - checkbox [517] "Hide −" [checked]
+    - "heading \"LucidNightmares5 [t1_itsxzp7] wrote 3 years ago\" [level=1]":
+      - link [518] "LucidNightmares5":
+        - /url: /user/LucidNightmares5
+        - strong: LucidNightmares5
+      - text: [t1_itsxzp7] wrote
+      - time: 3 years ago
+    - list:
+      - Hide −
+    - paragraph: "For all you parents whose kids love it when you read to them: record yourself reading their favorite book. After they grow up, they’ll still have not just the memory, but the experience. I neant to do this for my kids but you know, I’m busy today/I’ll do it later/one day/someday etc."
+    - navigation:
+      - list:
+        - link [519] "Reply":
+          - /url: /f/books/17445/-/comment/231045
+          - strong: Reply
+        - link [520] "Permalink":
+          - /url: /f/books/17445/-/comment/231045
+    - button [521] "Upvote"
+    - text: 2
+    - button [522] "Downvote"
+  - article:
+    - checkbox [523] "Hide −" [checked]
+    - "heading \"LadyPeterWimsey [t1_itt0qae] wrote 3 years ago\" [level=1]":
+      - link [524] "LadyPeterWimsey":
+        - /url: /user/LadyPeterWimsey
+        - strong: LadyPeterWimsey
+      - text: [t1_itt0qae] wrote
+      - time: 3 years ago
+    - list:
+      - Hide −
+    - paragraph: My dad read me this before I could read myself. I learned to read because I wanted to read the Hobbit.
+    - paragraph: Also, we started LoTR but quit at Weathertop because I was too scared of the black riders at age 4-5 lol.
+    - paragraph: But I am so happy she loves it! Chronicles of Narnia are good ones for that age too and maybe she could even get to Harry Potter soon.
+    - paragraph: "Some of the best memories I share with my dad are his sharing his love of Tolkien and CS Lewis with me as a child. :)"
+    - navigation:
+      - list:
+        - link [525] "Reply":
+          - /url: /f/books/17445/-/comment/231388
+          - strong: Reply
+        - link [526] "Permalink":
+          - /url: /f/books/17445/-/comment/231388
+    - button [527] "Upvote"
+    - text: 2
+    - button [528] "Downvote"
+  - article:
+    - checkbox [529] "Hide −" [checked]
+    - "heading \"jasmine91610 [t1_itt1d4b] wrote 3 years ago\" [level=1]":
+      - link [530] "jasmine91610":
+        - /url: /user/jasmine91610
+        - strong: jasmine91610
+      - text: [t1_itt1d4b] wrote
+      - time: 3 years ago
+    - list:
+      - Hide −
+    - paragraph: I read The Hobbit to my older kids right before the movie came out. I think they were about 8 and 6. I took them to the movie without even really checking the rating. We all felt the movie was much more violent and intense than what we pictured when reading! I had a more animated version in my head. That's Hollywood I guess.
+    - navigation:
+      - list:
+        - link [531] "Reply":
+          - /url: /f/books/17445/-/comment/231464
+          - strong: Reply
+        - link [532] "Permalink":
+          - /url: /f/books/17445/-/comment/231464
+    - button [533] "Upvote"
+    - text: 2
+    - button [534] "Downvote"
+    - article:
+      - checkbox [535] "Hide −" [checked]
+      - "heading \"ILikeItBumpy [t1_itt5516] wrote 3 years ago\" [level=1]":
+        - link [536] "ILikeItBumpy":
+          - /url: /user/ILikeItBumpy
+          - strong: ILikeItBumpy
+        - text: [t1_itt5516] wrote
+        - time: 3 years ago
+      - list:
+        - Hide −
+      - paragraph: It was kinda intense
+      - navigation:
+        - list:
+          - link [537] "Reply":
+            - /url: /f/books/17445/-/comment/231900
+            - strong: Reply
+          - link [538] "Permalink":
+            - /url: /f/books/17445/-/comment/231900
+          - link [539] "Parent":
+            - /url: /f/books/17445/-/comment/231464
+      - button [540] "Upvote"
+      - text: 2
+      - button [541] "Downvote"
+  - article:
+    - checkbox [542] "Hide −" [checked]
+    - "heading \"iheartdev247 [t1_itt30km] wrote 3 years ago\" [level=1]":
+      - link [543] "iheartdev247":
+        - /url: /user/iheartdev247
+        - strong: iheartdev247
+      - text: [t1_itt30km] wrote
+      - time: 3 years ago
+    - list:
+      - Hide −
+    - paragraph: Good for you. You win the parent award, gold star. You’re doing it right!
+    - navigation:
+      - list:
+        - link [544] "Reply":
+          - /url: /f/books/17445/-/comment/231635
+          - strong: Reply
+        - link [545] "Permalink":
+          - /url: /f/books/17445/-/comment/231635
+    - button [546] "Upvote"
+    - text: 2
+    - button [547] "Downvote"
+  - article:
+    - checkbox [548] "Hide −" [checked]
+    - "heading \"randomisedjew [t1_itt67yi] wrote 3 years ago\" [level=1]":
+      - link [549] "randomisedjew":
+        - /url: /user/randomisedjew
+        - strong: randomisedjew
+      - text: [t1_itt67yi] wrote
+      - time: 3 years ago
+    - list:
+      - Hide −
+    - paragraph: Imo the hobbit is a better book overall than Lord of the rings enjoyment wise. While I appreciate the Lord of the rings for its heavier focus on its themes, the hobbit is such a simple, yet complex story that is so beautifully told
+    - navigation:
+      - list:
+        - link [550] "Reply":
+          - /url: /f/books/17445/-/comment/232015
+          - strong: Reply
+        - link [551] "Permalink":
+          - /url: /f/books/17445/-/comment/232015
+    - button [552] "Upvote"
+    - text: 2
+    - button [553] "Downvote"
+  - article:
+    - checkbox [554] "Hide −" [checked]
+    - "heading \"Marowski [t1_itt78r8] wrote 3 years ago\" [level=1]":
+      - link [555] "Marowski":
+        - /url: /user/Marowski
+        - strong: Marowski
+      - text: [t1_itt78r8] wrote
+      - time: 3 years ago
+    - list:
+      - Hide −
+    - paragraph: This was how my parents introduced me to the fantasy genre and then later D&D. Same age too!
+    - navigation:
+      - list:
+        - link [556] "Reply":
+          - /url: /f/books/17445/-/comment/232124
+          - strong: Reply
+        - link [557] "Permalink":
+          - /url: /f/books/17445/-/comment/232124
+    - button [558] "Upvote"
+    - text: 2
+    - button [559] "Downvote"
+  - article:
+    - checkbox [560] "Hide −" [checked]
+    - "heading \"notme9990 [t1_itt79d6] wrote 3 years ago\" [level=1]":
+      - link [561] "notme9990":
+        - /url: /user/notme9990
+        - strong: notme9990
+      - text: [t1_itt79d6] wrote
+      - time: 3 years ago
+    - list:
+      - Hide −
+    - paragraph: "My dad read the hobbit to me too :) i dont remember exactly what age I was but probably around 6. Special memories!"
+    - navigation:
+      - list:
+        - link [562] "Reply":
+          - /url: /f/books/17445/-/comment/232128
+          - strong: Reply
+        - link [563] "Permalink":
+          - /url: /f/books/17445/-/comment/232128
+    - button [564] "Upvote"
+    - text: 2
+    - button [565] "Downvote"
+  - article:
+    - checkbox [566] "Hide −" [checked]
+    - "heading \"DocPeacock [t1_ittbj6b] wrote 3 years ago\" [level=1]":
+      - link [567] "DocPeacock":
+        - /url: /user/DocPeacock
+        - strong: DocPeacock
+      - text: [t1_ittbj6b] wrote
+      - time: 3 years ago
+    - list:
+      - Hide −
+    - paragraph: The Hobbit is so great. A perfect book to read aloud.
+    - paragraph: Also when I most recently reread it I realized how much of a badass Bilbo is and how lame the dwarves are, for most of it.
+    - navigation:
+      - list:
+        - link [568] "Reply":
+          - /url: /f/books/17445/-/comment/232589
+          - strong: Reply
+        - link [569] "Permalink":
+          - /url: /f/books/17445/-/comment/232589
+    - button [570] "Upvote"
+    - text: 2
+    - button [571] "Downvote"
+    - article:
+      - checkbox [572] "Hide −" [checked]
+      - "heading \"Shaosil Original poster [t1_ittm1r0] wrote 3 years ago\" [level=1]":
+        - link [573] "Shaosil":
+          - /url: /user/Shaosil
+          - strong: Shaosil
+        - text: [OP] [t1_ittm1r0] wrote
+        - time: 3 years ago
+      - list:
+        - Hide −
+      - paragraph: Lol right? I love those dwarves but man... even Gandalf can't bear them too long. Stubborn little dudes, and so moody! Worshipping the ground Bilbo walks on one day, and ready to cast him over a cliff the next.
+      - navigation:
+        - list:
+          - link [574] "Reply":
+            - /url: /f/books/17445/-/comment/233503
+            - strong: Reply
+          - link [575] "Permalink":
+            - /url: /f/books/17445/-/comment/233503
+          - link [576] "Parent":
+            - /url: /f/books/17445/-/comment/232589
+      - button [577] "Upvote"
+      - text: 2
+      - button [578] "Downvote"
+  - article:
+    - checkbox [579] "Hide −" [checked]
+    - "heading \"e12532 [t1_ittkeih] wrote 3 years ago\" [level=1]":
+      - link [580] "e12532":
+        - /url: /user/e12532
+        - strong: e12532
+      - text: [t1_ittkeih] wrote
+      - time: 3 years ago
+    - list:
+      - Hide −
+    - paragraph: "I was incredibly fortunate that my first exposure to fantasy was The Hobbit, read aloud by a rather large fellow who would come to our classroom, sit on the floor in a beanbag chair he brought with him, and read to us for an hour a few times a week. I was hooked and looked forward to story time each week. :)"
+    - navigation:
+      - list:
+        - link [581] "Reply":
+          - /url: /f/books/17445/-/comment/233366
+          - strong: Reply
+        - link [582] "Permalink":
+          - /url: /f/books/17445/-/comment/233366
+    - button [583] "Upvote"
+    - text: 2
+    - button [584] "Downvote"
+  - article:
+    - checkbox [585] "Hide −" [checked]
+    - "heading \"Brother_of_gudrun [t1_ittlt11] wrote 3 years ago\" [level=1]":
+      - link [586] "Brother_of_gudrun":
+        - /url: /user/Brother_of_gudrun
+        - strong: Brother_of_gudrun
+      - text: [t1_ittlt11] wrote
+      - time: 3 years ago
+    - list:
+      - Hide −
+    - paragraph: If one day i have a Child, i will do that too
+    - navigation:
+      - list:
+        - link [587] "Reply":
+          - /url: /f/books/17445/-/comment/233480
+          - strong: Reply
+        - link [588] "Permalink":
+          - /url: /f/books/17445/-/comment/233480
+    - button [589] "Upvote"
+    - text: 2
+    - button [590] "Downvote"
+  - article:
+    - checkbox [591] "Hide −" [checked]
+    - "heading \"DandidyDan [t1_ittnxcw] wrote 3 years ago\" [level=1]":
+      - link [592] "DandidyDan":
+        - /url: /user/DandidyDan
+        - strong: DandidyDan
+      - text: [t1_ittnxcw] wrote
+      - time: 3 years ago
+    - list:
+      - Hide −
+    - paragraph: That was my favorite book growing up! I literally had to tape mine back together I read it to many times.
+    - navigation:
+      - list:
+        - link [593] "Reply":
+          - /url: /f/books/17445/-/comment/233659
+          - strong: Reply
+        - link [594] "Permalink":
+          - /url: /f/books/17445/-/comment/233659
+    - button [595] "Upvote"
+    - text: 2
+    - button [596] "Downvote"
+  - article:
+    - checkbox [597] "Hide −" [checked]
+    - "heading \"getyerhandoffit [t1_ittqqn3] wrote 3 years ago\" [level=1]":
+      - link [598] "getyerhandoffit":
+        - /url: /user/getyerhandoffit
+        - strong: getyerhandoffit
+      - text: [t1_ittqqn3] wrote
+      - time: 3 years ago
+    - list:
+      - Hide −
+    - paragraph: I just started reading to my 6 year old this week, he’s hooked.
+    - navigation:
+      - list:
+        - link [599] "Reply":
+          - /url: /f/books/17445/-/comment/233870
+          - strong: Reply
+        - link [600] "Permalink":
+          - /url: /f/books/17445/-/comment/233870
+    - button [601] "Upvote"
+    - text: 2
+    - button [602] "Downvote"
+  - article:
+    - checkbox [603] "Hide −" [checked]
+    - "heading \"robopies [t1_ittwzix] wrote 3 years ago\" [level=1]":
+      - link [604] "robopies":
+        - /url: /user/robopies
+        - strong: robopies
+      - text: [t1_ittwzix] wrote
+      - time: 3 years ago
+    - list:
+      - Hide −
+    - paragraph: "I'm reading it to mine 6yo daughter and she like it a lot as well :)"
+    - navigation:
+      - list:
+        - link [605] "Reply":
+          - /url: /f/books/17445/-/comment/234357
+          - strong: Reply
+        - link [606] "Permalink":
+          - /url: /f/books/17445/-/comment/234357
+    - button [607] "Upvote"
+    - text: 2
+    - button [608] "Downvote"
+  - article:
+    - checkbox [609] "Hide −" [checked]
+    - "heading \"heardbutnotseen2 [t1_ittylda] wrote 3 years ago\" [level=1]":
+      - link [610] "heardbutnotseen2":
+        - /url: /user/heardbutnotseen2
+        - strong: heardbutnotseen2
+      - text: [t1_ittylda] wrote
+      - time: 3 years ago
+    - list:
+      - Hide −
+    - paragraph: The Hobbit is an incredibly fun book to read.
+    - navigation:
+      - list:
+        - link [611] "Reply":
+          - /url: /f/books/17445/-/comment/234493
+          - strong: Reply
+        - link [612] "Permalink":
+          - /url: /f/books/17445/-/comment/234493
+    - button [613] "Upvote"
+    - text: 2
+    - button [614] "Downvote"
+  - article:
+    - checkbox [615] "Hide −" [checked]
+    - "heading \"frencherman [t1_ittysgu] wrote 3 years ago\" [level=1]":
+      - link [616] "frencherman":
+        - /url: /user/frencherman
+        - strong: frencherman
+      - text: [t1_ittysgu] wrote
+      - time: 3 years ago
+    - list:
+      - Hide −
+    - paragraph: Did you voice characters and sing the songs? That’s the real fun part of the Hobbit book
+    - navigation:
+      - list:
+        - link [617] "Reply":
+          - /url: /f/books/17445/-/comment/234511
+          - strong: Reply
+        - link [618] "Permalink":
+          - /url: /f/books/17445/-/comment/234511
+    - button [619] "Upvote"
+    - text: 2
+    - button [620] "Downvote"
+  - article:
+    - checkbox [621] "Hide −" [checked]
+    - "heading \"gijoe011 [t1_itu0uve] wrote 3 years ago\" [level=1]":
+      - link [622] "gijoe011":
+        - /url: /user/gijoe011
+        - strong: gijoe011
+      - text: [t1_itu0uve] wrote
+      - time: 3 years ago
+    - list:
+      - Hide −
+    - paragraph: It’s awesome that this is shared by so many parents to their children. I think that would warm Tolkien’s heart. My mother also read it it to me and me siblings when we were young. It’s my favorite book. My wife and I just finished the audiobook read by Andy Serkis while we were on a road trip.
+    - navigation:
+      - list:
+        - link [623] "Reply":
+          - /url: /f/books/17445/-/comment/234675
+          - strong: Reply
+        - link [624] "Permalink":
+          - /url: /f/books/17445/-/comment/234675
+    - button [625] "Upvote"
+    - text: 2
+    - button [626] "Downvote"
+  - article:
+    - checkbox [627] "Hide −" [checked]
+    - "heading \"feizhai [t1_itu5lm8] wrote 3 years ago\" [level=1]":
+      - link [628] "feizhai":
+        - /url: /user/feizhai
+        - strong: feizhai
+      - text: [t1_itu5lm8] wrote
+      - time: 3 years ago
+    - list:
+      - Hide −
+    - paragraph: she might love the songs in LOTR - i always wondered why tolkien included pages of them in his magnum opus
+    - navigation:
+      - list:
+        - link [629] "Reply":
+          - /url: /f/books/17445/-/comment/235028
+          - strong: Reply
+        - link [630] "Permalink":
+          - /url: /f/books/17445/-/comment/235028
+    - button [631] "Upvote"
+    - text: 2
+    - button [632] "Downvote"
+  - article:
+    - checkbox [633] "Hide −" [checked]
+    - "heading \"Tanadaram [t1_itudchc] wrote 3 years ago\" [level=1]":
+      - link [634] "Tanadaram":
+        - /url: /user/Tanadaram
+        - strong: Tanadaram
+      - text: [t1_itudchc] wrote
+      - time: 3 years ago
+    - list:
+      - Hide −
+    - paragraph: How the hell did you read that in 2 weeks, took me months with my son a few years back, each chapter seems to last forever. Enjoyed it though and started with my daughter last night.
+    - navigation:
+      - list:
+        - link [635] "Reply":
+          - /url: /f/books/17445/-/comment/235658
+          - strong: Reply
+        - link [636] "Permalink":
+          - /url: /f/books/17445/-/comment/235658
+    - button [637] "Upvote"
+    - text: 2
+    - button [638] "Downvote"
+  - article:
+    - checkbox [639] "Hide −" [checked]
+    - "heading \"BattleDadPrime [t1_ituf8hb] wrote 3 years ago\" [level=1]":
+      - link [640] "BattleDadPrime":
+        - /url: /user/BattleDadPrime
+        - strong: BattleDadPrime
+      - text: [t1_ituf8hb] wrote
+      - time: 3 years ago
+    - list:
+      - Hide −
+    - paragraph: I tried this with my son when he was 6. No dice. Tried again at 7. Not interested.
+    - paragraph: At 8 and a big half years old he picked it up and read all himself and then we watched the films. It was fantastic to see him experiencing that transition from text to screen for the first time.
+    - navigation:
+      - list:
+        - link [641] "Reply":
+          - /url: /f/books/17445/-/comment/235840
+          - strong: Reply
+        - link [642] "Permalink":
+          - /url: /f/books/17445/-/comment/235840
+    - button [643] "Upvote"
+    - text: 2
+    - button [644] "Downvote"
+  - article:
+    - checkbox [645] "Hide −" [checked]
+    - "heading \"NotUpInHurr [t1_ituj265] wrote 3 years ago\" [level=1]":
+      - link [646] "NotUpInHurr":
+        - /url: /user/NotUpInHurr
+        - strong: NotUpInHurr
+      - text: [t1_ituj265] wrote
+      - time: 3 years ago
+    - list:
+      - Hide −
+    - paragraph: Excellent. Excellent. Tolkien claims another.
+    - navigation:
+      - list:
+        - link [647] "Reply":
+          - /url: /f/books/17445/-/comment/236335
+          - strong: Reply
+        - link [648] "Permalink":
+          - /url: /f/books/17445/-/comment/236335
+    - button [649] "Upvote"
+    - text: 2
+    - button [650] "Downvote"
+  - article:
+    - checkbox [651] "Hide −" [checked]
+    - "heading \"OkEstablishment7827 [t1_ituj44f] wrote 3 years ago\" [level=1]":
+      - link [652] "OkEstablishment7827":
+        - /url: /user/OkEstablishment7827
+        - strong: OkEstablishment7827
+      - text: [t1_ituj44f] wrote
+      - time: 3 years ago
+    - list:
+      - Hide −
+    - paragraph: I am reading it too.. again!
+    - navigation:
+      - list:
+        - link [653] "Reply":
+          - /url: /f/books/17445/-/comment/236340
+          - strong: Reply
+        - link [654] "Permalink":
+          - /url: /f/books/17445/-/comment/236340
+    - button [655] "Upvote"
+    - text: 2
+    - button [656] "Downvote"
+  - article:
+    - checkbox [657] "Hide −" [checked]
+    - "heading \"mockablekaty [t1_itujs4r] wrote 3 years ago\" [level=1]":
+      - link [658] "mockablekaty":
+        - /url: /user/mockablekaty
+        - strong: mockablekaty
+      - text: [t1_itujs4r] wrote
+      - time: 3 years ago
+    - list:
+      - Hide −
+    - paragraph: My father read the Hobbit to me at about that age - absolutely my fondest childhood memory of him. Not related, but The Phantom Tollbooth is another great read-aloud book.
+    - navigation:
+      - list:
+        - link [659] "Reply":
+          - /url: /f/books/17445/-/comment/236418
+          - strong: Reply
+        - link [660] "Permalink":
+          - /url: /f/books/17445/-/comment/236418
+    - button [661] "Upvote"
+    - text: 2
+    - button [662] "Downvote"
+    - article:
+      - checkbox [663] "Hide −" [checked]
+      - "heading \"Shaosil Original poster [t1_itum3gw] wrote 3 years ago\" [level=1]":
+        - link [664] "Shaosil":
+          - /url: /user/Shaosil
+          - strong: Shaosil
+        - text: [OP] [t1_itum3gw] wrote
+        - time: 3 years ago
+      - list:
+        - Hide −
+      - paragraph: I looove the Phantom Tollbooth, my mom read that to me several times when I was growing up, and I read it to my daughter last year I believe. Such a great story with so many fun language pieces.
+      - navigation:
+        - list:
+          - link [665] "Reply":
+            - /url: /f/books/17445/-/comment/236665
+            - strong: Reply
+          - link [666] "Permalink":
+            - /url: /f/books/17445/-/comment/236665
+          - link [667] "Parent":
+            - /url: /f/books/17445/-/comment/236418
+      - button [668] "Upvote"
+      - text: 1
+      - button [669] "Downvote"
+  - article:
+    - checkbox [670] "Hide −" [checked]
+    - "heading \"skwirlio [t1_itul9qd] wrote 3 years ago\" [level=1]":
+      - link [671] "skwirlio":
+        - /url: /user/skwirlio
+        - strong: skwirlio
+      - text: [t1_itul9qd] wrote
+      - time: 3 years ago
+    - list:
+      - Hide −
+    - paragraph: My daughters are 7 and 5 and I literally finished the book with them last night. You’re not alone!
+    - navigation:
+      - list:
+        - link [672] "Reply":
+          - /url: /f/books/17445/-/comment/236584
+          - strong: Reply
+        - link [673] "Permalink":
+          - /url: /f/books/17445/-/comment/236584
+    - button [674] "Upvote"
+    - text: 2
+    - button [675] "Downvote"
+  - article:
+    - checkbox [676] "Hide −" [checked]
+    - "heading \"StarWaas [t1_itulvhq] wrote 3 years ago\" [level=1]":
+      - link [677] "StarWaas":
+        - /url: /user/StarWaas
+        - strong: StarWaas
+      - text: [t1_itulvhq] wrote
+      - time: 3 years ago
+    - list:
+      - Hide −
+    - paragraph: I think I was about six when my dad checked out an illustrated copy of the Hobbit from the library. It had still images from the Rankin Bass 70s cartoon. That version is out of print now so it's difficult and expensive to come by, but I'm hoping to find another illustrated version to read to my kid soon as she is almost six herself. I think that book is a big part of why I still love reading fantasy, it's just such a wonderful story.
+    - navigation:
+      - list:
+        - link [678] "Reply":
+          - /url: /f/books/17445/-/comment/236652
+          - strong: Reply
+        - link [679] "Permalink":
+          - /url: /f/books/17445/-/comment/236652
+    - button [680] "Upvote"
+    - text: 2
+    - button [681] "Downvote"
+  - article:
+    - checkbox [682] "Hide −" [checked]
+    - "heading \"vBricks [t1_ituowqh] wrote 3 years ago\" [level=1]":
+      - link [683] "vBricks":
+        - /url: /user/vBricks
+        - strong: vBricks
+      - text: [t1_ituowqh] wrote
+      - time: 3 years ago
+    - list:
+      - Hide −
+    - paragraph: That's wild. We just finished reading it to my 5 yo son this past weekend. He got misty eyed toward the end when the party went their separate ways. We might just move on to Fellowship. He knows that it's not really a book for kids, but he loves the characters and the setting. You could really see his imagination at work while we were reading it.
+    - navigation:
+      - list:
+        - link [684] "Reply":
+          - /url: /f/books/17445/-/comment/236993
+          - strong: Reply
+        - link [685] "Permalink":
+          - /url: /f/books/17445/-/comment/236993
+    - button [686] "Upvote"
+    - text: 2
+    - button [687] "Downvote"
+  - article:
+    - checkbox [688] "Hide −" [checked]
+    - "heading \"MattMurdock30 [t1_ituutb8] wrote 3 years ago\" [level=1]":
+      - link [689] "MattMurdock30":
+        - /url: /user/MattMurdock30
+        - strong: MattMurdock30
+      - text: [t1_ituutb8] wrote
+      - time: 3 years ago
+    - list:
+      - Hide −
+    - paragraph: parent of the year right here. I have like a thousand memories of my parents reading aloud to me, especially the Chronicles of Narnia, and the Little House on the Prairie series. Keep reading to her, it's a special bond. When she reads the Hobbit herself she will hear it in your voice.
+    - navigation:
+      - list:
+        - link [690] "Reply":
+          - /url: /f/books/17445/-/comment/237707
+          - strong: Reply
+        - link [691] "Permalink":
+          - /url: /f/books/17445/-/comment/237707
+    - button [692] "Upvote"
+    - text: 2
+    - button [693] "Downvote"
+  - article:
+    - checkbox [694] "Hide −" [checked]
+    - "heading \"Lia-Huren [t1_ituxe7r] wrote 3 years ago\" [level=1]":
+      - link [695] "Lia-Huren":
+        - /url: /user/Lia-Huren
+        - strong: Lia-Huren
+      - text: [t1_ituxe7r] wrote
+      - time: 3 years ago
+    - list:
+      - Hide −
+    - paragraph: Kudos have a up vote 100 out of 10 parenting
+    - navigation:
+      - list:
+        - link [696] "Reply":
+          - /url: /f/books/17445/-/comment/237977
+          - strong: Reply
+        - link [697] "Permalink":
+          - /url: /f/books/17445/-/comment/237977
+    - button [698] "Upvote"
+    - text: 2
+    - button [699] "Downvote"
+  - article:
+    - checkbox [700] "Hide −" [checked]
+    - "heading \"bustofhomer [t1_itv3nef] wrote 3 years ago\" [level=1]":
+      - link [701] "bustofhomer":
+        - /url: /user/bustofhomer
+        - strong: bustofhomer
+      - text: [t1_itv3nef] wrote
+      - time: 3 years ago
+    - list:
+      - Hide −
+    - paragraph: I read the Hobbit to my two kids when they were about 5 and 7. I had read it a couple of times previously, but I was struck by how effective it is as a story when read out loud. It was definitely one of their favorite books during that age of their childhood.
+    - navigation:
+      - list:
+        - link [702] "Reply":
+          - /url: /f/books/17445/-/comment/238706
+          - strong: Reply
+        - link [703] "Permalink":
+          - /url: /f/books/17445/-/comment/238706
+    - button [704] "Upvote"
+    - text: 2
+    - button [705] "Downvote"
+  - article:
+    - checkbox [706] "Hide −" [checked]
+    - "heading \"RainMH11 [t1_itv6wce] wrote 3 years ago\" [level=1]":
+      - link [707] "RainMH11":
+        - /url: /user/RainMH11
+        - strong: RainMH11
+      - text: [t1_itv6wce] wrote
+      - time: 3 years ago
+    - list:
+      - Hide −
+    - paragraph: My parents read the Hobbit to me around that age as a bedtime story, and we moved on to The Lord of the Rings a few years later I think. Cue lifelong love 😂 I was in my teens when the movies came out and I was so stinkin' excited, I remember it vividly.
+    - navigation:
+      - list:
+        - link [708] "Reply":
+          - /url: /f/books/17445/-/comment/239098
+          - strong: Reply
+        - link [709] "Permalink":
+          - /url: /f/books/17445/-/comment/239098
+    - button [710] "Upvote"
+    - text: 2
+    - button [711] "Downvote"
+  - article:
+    - checkbox [712] "Hide −" [checked]
+    - "heading \"[deleted] [t1_itrrtlu] wrote 3 years ago\" [level=1]":
+      - link [713] "[deleted]":
+        - /url: /user/%5Bdeleted%5D
+        - strong: [deleted]
+      - text: [t1_itrrtlu] wrote
+      - time: 3 years ago
+    - list:
+      - Hide −
+    - paragraph: [deleted]
+    - navigation:
+      - list:
+        - link [714] "Reply":
+          - /url: /f/books/17445/-/comment/226122
+          - strong: Reply
+        - link [715] "Permalink":
+          - /url: /f/books/17445/-/comment/226122
+    - button [716] "Upvote"
+    - text: 1
+    - button [717] "Downvote"
+  - article:
+    - checkbox [718] "Hide −" [checked]
+    - "heading \"redgumdrop [t1_itrtlpa] wrote 3 years ago\" [level=1]":
+      - link [719] "redgumdrop":
+        - /url: /user/redgumdrop
+        - strong: redgumdrop
+      - text: [t1_itrtlpa] wrote
+      - time: 3 years ago
+    - list:
+      - Hide −
+    - paragraph: Try Roverandom next!
+    - navigation:
+      - list:
+        - link [720] "Reply":
+          - /url: /f/books/17445/-/comment/226338
+          - strong: Reply
+        - link [721] "Permalink":
+          - /url: /f/books/17445/-/comment/226338
+    - button [722] "Upvote"
+    - text: 1
+    - button [723] "Downvote"
+    - article:
+      - checkbox [724] "Hide −" [checked]
+      - "heading \"Shaosil Original poster [t1_itrum9e] wrote 3 years ago\" [level=1]":
+        - link [725] "Shaosil":
+          - /url: /user/Shaosil
+          - strong: Shaosil
+        - text: [OP] [t1_itrum9e] wrote
+        - time: 3 years ago
+      - list:
+        - Hide −
+      - paragraph: I didn't realize that existed, thanks for the recommendation!
+      - navigation:
+        - list:
+          - link [726] "Reply":
+            - /url: /f/books/17445/-/comment/226455
+            - strong: Reply
+          - link [727] "Permalink":
+            - /url: /f/books/17445/-/comment/226455
+          - link [728] "Parent":
+            - /url: /f/books/17445/-/comment/226338
+      - button [729] "Upvote"
+      - text: 2
+      - button [730] "Downvote"
+      - article:
+        - checkbox [731] "Hide −" [checked]
+        - "heading \"redgumdrop [t1_ittvwri] wrote 3 years ago\" [level=1]":
+          - link [732] "redgumdrop":
+            - /url: /user/redgumdrop
+            - strong: redgumdrop
+          - text: [t1_ittvwri] wrote
+          - time: 3 years ago
+        - list:
+          - Hide −
+        - paragraph: It's great and it's for kids and it's super cute! I bought it on random, didn't even knew it was kids book but I love it!
+        - navigation:
+          - list:
+            - link [733] "Reply":
+              - /url: /f/books/17445/-/comment/234269
+              - strong: Reply
+            - link [734] "Permalink":
+              - /url: /f/books/17445/-/comment/234269
+            - link [735] "Parent":
+              - /url: /f/books/17445/-/comment/226455
+        - button [736] "Upvote"
+        - text: 1
+        - button [737] "Downvote"
+  - article:
+    - checkbox [738] "Hide −" [checked]
+    - "heading \"Antdawg2400 [t1_itssysb] wrote 3 years ago\" [level=1]":
+      - link [739] "Antdawg2400":
+        - /url: /user/Antdawg2400
+        - strong: Antdawg2400
+      - text: [t1_itssysb] wrote
+      - time: 3 years ago
+    - list:
+      - Hide −
+    - paragraph: That's amazing she has the attention to lock in for so long. I can't even finish reading a thin traditional kids book before my daughter is over it and tells me to read a different one, now this one, ok this one. And she's 5. I think she has ADD or just likes bossing me tf around.
+    - navigation:
+      - list:
+        - link [740] "Reply":
+          - /url: /f/books/17445/-/comment/230446
+          - strong: Reply
+        - link [741] "Permalink":
+          - /url: /f/books/17445/-/comment/230446
+    - button [742] "Upvote"
+    - text: 1
+    - button [743] "Downvote"
+  - article:
+    - checkbox [744] "Hide −" [checked]
+    - "heading \"zombivish [t1_itt5cfx] wrote 3 years ago\" [level=1]":
+      - link [745] "zombivish":
+        - /url: /user/zombivish
+        - strong: zombivish
+      - text: [t1_itt5cfx] wrote
+      - time: 3 years ago
+    - list:
+      - Hide −
+    - paragraph: Awesome! I tried reading the hobbit to my 6 year old and he had a hard time staying interested (the opening was a huge struggle)
+    - navigation:
+      - list:
+        - link [746] "Reply":
+          - /url: /f/books/17445/-/comment/231926
+          - strong: Reply
+        - link [747] "Permalink":
+          - /url: /f/books/17445/-/comment/231926
+    - button [748] "Upvote"
+    - text: 1
+    - button [749] "Downvote"
+  - article:
+    - checkbox [750] "Hide −" [checked]
+    - "heading \"rhamled [t1_itt8eti] wrote 3 years ago\" [level=1]":
+      - link [751] "rhamled":
+        - /url: /user/rhamled
+        - strong: rhamled
+      - text: [t1_itt8eti] wrote
+      - time: 3 years ago
+    - list:
+      - Hide −
+    - paragraph: Thanks for sharing, OP!
+    - navigation:
+      - list:
+        - link [752] "Reply":
+          - /url: /f/books/17445/-/comment/232259
+          - strong: Reply
+        - link [753] "Permalink":
+          - /url: /f/books/17445/-/comment/232259
+    - button [754] "Upvote"
+    - text: 1
+    - button [755] "Downvote"
+  - article:
+    - checkbox [756] "Hide −" [checked]
+    - "heading \"bigfatbeard [t1_itt9dak] wrote 3 years ago\" [level=1]":
+      - link [757] "bigfatbeard":
+        - /url: /user/bigfatbeard
+        - strong: bigfatbeard
+      - text: [t1_itt9dak] wrote
+      - time: 3 years ago
+    - list:
+      - Hide −
+    - paragraph: I am reading this to my 6 year old too! I have notes throughout the book to remind what voice each character is. My daughter loves it that I have a voice for everyone and it’s made reading this such a challenge but motivating to continue bc she loves my impressions.
+    - navigation:
+      - list:
+        - link [758] "Reply":
+          - /url: /f/books/17445/-/comment/232362
+          - strong: Reply
+        - link [759] "Permalink":
+          - /url: /f/books/17445/-/comment/232362
+    - button [760] "Upvote"
+    - text: 1
+    - button [761] "Downvote"
+  - article:
+    - checkbox [762] "Hide −" [checked]
+    - "heading \"PhysicistInTheGarden [t1_ittbtgv] wrote 3 years ago\" [level=1]":
+      - link [763] "PhysicistInTheGarden":
+        - /url: /user/PhysicistInTheGarden
+        - strong: PhysicistInTheGarden
+      - text: [t1_ittbtgv] wrote
+      - time: 3 years ago
+    - list:
+      - Hide −
+    - paragraph: Yup, I read The Hobbit to my kids at 6 & 8, they loved it. They were less interested in the movies.
+    - navigation:
+      - list:
+        - link [764] "Reply":
+          - /url: /f/books/17445/-/comment/232625
+          - strong: Reply
+        - link [765] "Permalink":
+          - /url: /f/books/17445/-/comment/232625
+    - button [766] "Upvote"
+    - text: 1
+    - button [767] "Downvote"
+  - article:
+    - checkbox [768] "Hide −" [checked]
+    - "heading \"MightyAntiquarian [t1_ittdp4a] wrote 3 years ago\" [level=1]":
+      - link [769] "MightyAntiquarian":
+        - /url: /user/MightyAntiquarian
+        - strong: MightyAntiquarian
+      - text: [t1_ittdp4a] wrote
+      - time: 3 years ago
+    - list:
+      - Hide −
+    - paragraph: I have very fond memories of my dad reading the hobbit to me as a kid. Glad to hear you had a great time reading it to yours!
+    - navigation:
+      - list:
+        - link [770] "Reply":
+          - /url: /f/books/17445/-/comment/232811
+          - strong: Reply
+        - link [771] "Permalink":
+          - /url: /f/books/17445/-/comment/232811
+    - button [772] "Upvote"
+    - text: 1
+    - button [773] "Downvote"
+  - article:
+    - checkbox [774] "Hide −" [checked]
+    - "heading \"Terralia [t1_ittejbn] wrote 3 years ago\" [level=1]":
+      - link [775] "Terralia":
+        - /url: /user/Terralia
+        - strong: Terralia
+      - text: [t1_ittejbn] wrote
+      - time: 3 years ago
+    - list:
+      - Hide −
+    - paragraph: I was a seven year old ESL kid when I read The Hobbit for the first time. It's still one of my favourites - I worked out the runic alphabet from the map at the beginning of the book and every few years or so, start transcribing the Hobbit in Dwarf runes for fun.
+    - paragraph: So lovely to hear your daughter loves it as part of the next generation!
+    - navigation:
+      - list:
+        - link [776] "Reply":
+          - /url: /f/books/17445/-/comment/232889
+          - strong: Reply
+        - link [777] "Permalink":
+          - /url: /f/books/17445/-/comment/232889
+    - button [778] "Upvote"
+    - text: 1
+    - button [779] "Downvote"
+  - article:
+    - checkbox [780] "Hide −" [checked]
+    - "heading \"morosis1982 [t1_ittf5ng] wrote 3 years ago\" [level=1]":
+      - link [781] "morosis1982":
+        - /url: /user/morosis1982
+        - strong: morosis1982
+      - text: [t1_ittf5ng] wrote
+      - time: 3 years ago
+    - list:
+      - Hide −
+    - paragraph: I have a copy somewhere, it's illustrated and all, but damned if I can find it.
+    - paragraph: Going to have to buy a new copy I think, my kids would enjoy it.
+    - navigation:
+      - list:
+        - link [782] "Reply":
+          - /url: /f/books/17445/-/comment/232962
+          - strong: Reply
+        - link [783] "Permalink":
+          - /url: /f/books/17445/-/comment/232962
+    - button [784] "Upvote"
+    - text: 1
+    - button [785] "Downvote"
+  - article:
+    - checkbox [786] "Hide −" [checked]
+    - "heading \"CaregiverSea8451 [t1_ittl1bi] wrote 3 years ago\" [level=1]":
+      - link [787] "CaregiverSea8451":
+        - /url: /user/CaregiverSea8451
+        - strong: CaregiverSea8451
+      - text: [t1_ittl1bi] wrote
+      - time: 3 years ago
+    - list:
+      - Hide −
+    - paragraph: Thwre is an old early 89s animated book that follows the original film....its awesome. Beautifully done. You can buy it on eBay. Was my favorite book as a child....who read very very early.
+    - navigation:
+      - list:
+        - link [788] "Reply":
+          - /url: /f/books/17445/-/comment/233417
+          - strong: Reply
+        - link [789] "Permalink":
+          - /url: /f/books/17445/-/comment/233417
+    - button [790] "Upvote"
+    - text: 1
+    - button [791] "Downvote"
+  - article:
+    - checkbox [792] "Hide −" [checked]
+    - "heading \"the_unexpected_nil [t1_itts3yl] wrote 3 years ago\" [level=1]":
+      - link [793] "the_unexpected_nil":
+        - /url: /user/the_unexpected_nil
+        - strong: the_unexpected_nil
+      - text: [t1_itts3yl] wrote
+      - time: 3 years ago
+    - list:
+      - Hide −
+    - paragraph: If you are looking for somewhat similar books, I recall enjoying The Chronicles of Prydain books by Lloyd Alexander when I was young.
+    - navigation:
+      - list:
+        - link [794] "Reply":
+          - /url: /f/books/17445/-/comment/233977
+          - strong: Reply
+        - link [795] "Permalink":
+          - /url: /f/books/17445/-/comment/233977
+    - button [796] "Upvote"
+    - text: 1
+    - button [797] "Downvote"
+  - article:
+    - checkbox [798] "Hide −" [checked]
+    - "heading \"maddie_sc [t1_itttqep] wrote 3 years ago\" [level=1]":
+      - link [799] "maddie_sc":
+        - /url: /user/maddie_sc
+        - strong: maddie_sc
+      - text: [t1_itttqep] wrote
+      - time: 3 years ago
+    - list:
+      - Hide −
+    - paragraph:
+      - emphasis: core memory unlocked!
+    - navigation:
+      - list:
+        - link [800] "Reply":
+          - /url: /f/books/17445/-/comment/234088
+          - strong: Reply
+        - link [801] "Permalink":
+          - /url: /f/books/17445/-/comment/234088
+    - button [802] "Upvote"
+    - text: 1
+    - button [803] "Downvote"
+  - article:
+    - checkbox [804] "Hide −" [checked]
+    - "heading \"oceanbreze [t1_ittu9zx] wrote 3 years ago\" [level=1]":
+      - link [805] "oceanbreze":
+        - /url: /user/oceanbreze
+        - strong: oceanbreze
+      - text: [t1_ittu9zx] wrote
+      - time: 3 years ago
+    - list:
+      - Hide −
+    - paragraph: My brother began reading the Harry Potter books to his daughter when she was 5yo and continued as they were published.
+    - paragraph: She was a December baby, so had to go to Transitional Kindergarden. Midway, she taught herself to read by Kindergarden and just kept going.
+    - paragraph: Brother discovered her reading ahead of him much to his afmuration and chagrin. Lol.
+    - navigation:
+      - list:
+        - link [806] "Reply":
+          - /url: /f/books/17445/-/comment/234140
+          - strong: Reply
+        - link [807] "Permalink":
+          - /url: /f/books/17445/-/comment/234140
+    - button [808] "Upvote"
+    - text: 1
+    - button [809] "Downvote"
+  - article:
+    - checkbox [810] "Hide −" [checked]
+    - "heading \"DampBritches [t1_ittvana] wrote 3 years ago\" [level=1]":
+      - link [811] "DampBritches":
+        - /url: /user/DampBritches
+        - strong: DampBritches
+      - text: [t1_ittvana] wrote
+      - time: 3 years ago
+    - list:
+      - Hide −
+    - paragraph: Maybe try watching The Hobbit animation from 1977.
+    - paragraph: It's by the Rudolph the red nosed reindeer people
+    - navigation:
+      - list:
+        - link [812] "Reply":
+          - /url: /f/books/17445/-/comment/234214
+          - strong: Reply
+        - link [813] "Permalink":
+          - /url: /f/books/17445/-/comment/234214
+    - button [814] "Upvote"
+    - text: 1
+    - button [815] "Downvote"
+  - article:
+    - checkbox [816] "Hide −" [checked]
+    - "heading \"[deleted] [t1_ittvhcc] wrote 3 years ago\" [level=1]":
+      - link [817] "[deleted]":
+        - /url: /user/%5Bdeleted%5D
+        - strong: [deleted]
+      - text: [t1_ittvhcc] wrote
+      - time: 3 years ago
+    - list:
+      - Hide −
+    - paragraph: [removed]
+    - navigation:
+      - list:
+        - link [818] "Reply":
+          - /url: /f/books/17445/-/comment/234232
+          - strong: Reply
+        - link [819] "Permalink":
+          - /url: /f/books/17445/-/comment/234232
+    - button [820] "Upvote"
+    - text: 1
+    - button [821] "Downvote"
+  - article:
+    - checkbox [822] "Hide −" [checked]
+    - "heading \"VelaryonPotter [t1_ittzr9b] wrote 3 years ago\" [level=1]":
+      - link [823] "VelaryonPotter":
+        - /url: /user/VelaryonPotter
+        - strong: VelaryonPotter
+      - text: [t1_ittzr9b] wrote
+      - time: 3 years ago
+    - list:
+      - Hide −
+    - paragraph: My mom did this for me too when i was about that age. Loved it!
+    - navigation:
+      - list:
+        - link [824] "Reply":
+          - /url: /f/books/17445/-/comment/234585
+          - strong: Reply
+        - link [825] "Permalink":
+          - /url: /f/books/17445/-/comment/234585
+    - button [826] "Upvote"
+    - text: 1
+    - button [827] "Downvote"
+  - article:
+    - checkbox [828] "Hide −" [checked]
+    - "heading \"Mkwdr [t1_itu5v6k] wrote 3 years ago\" [level=1]":
+      - link [829] "Mkwdr":
+        - /url: /user/Mkwdr
+        - strong: Mkwdr
+      - text: [t1_itu5v6k] wrote
+      - time: 3 years ago
+    - list:
+      - Hide −
+    - paragraph: The Hobbit is a great parents/kids book ( shame they didn’t do that with the films). You might want to see if she is ready for the wonderful Northern Lights next. And something to perhaps work towards is the Skullduggery Pleasant series - great books and great female lead character if that is of interest. Also see the Song of the Lioness/Protector of the Small author Tamora Pierce.
+    - navigation:
+      - list:
+        - link [830] "Reply":
+          - /url: /f/books/17445/-/comment/235043
+          - strong: Reply
+        - link [831] "Permalink":
+          - /url: /f/books/17445/-/comment/235043
+    - button [832] "Upvote"
+    - text: 1
+    - button [833] "Downvote"
+  - article:
+    - checkbox [834] "Hide −" [checked]
+    - "heading \"mazikeen70 [t1_itufpnh] wrote 3 years ago\" [level=1]":
+      - link [835] "mazikeen70":
+        - /url: /user/mazikeen70
+        - strong: mazikeen70
+      - text: [t1_itufpnh] wrote
+      - time: 3 years ago
+    - list:
+      - Hide −
+    - paragraph: The Hobbit is great for kids but LOTR really isn't . I know someone abridged it unofficially for a younger audience ,which cut out a lot of the fat and made it slightly more Hobbit like apparently
+    - navigation:
+      - list:
+        - link [836] "Reply":
+          - /url: /f/books/17445/-/comment/235891
+          - strong: Reply
+        - link [837] "Permalink":
+          - /url: /f/books/17445/-/comment/235891
+    - button [838] "Upvote"
+    - text: 1
+    - button [839] "Downvote"
+  - article:
+    - checkbox [840] "Hide −" [checked]
+    - "heading \"hungrykitteh57 [t1_ituh2t1] wrote 3 years ago\" [level=1]":
+      - link [841] "hungrykitteh57":
+        - /url: /user/hungrykitteh57
+        - strong: hungrykitteh57
+      - text: [t1_ituh2t1] wrote
+      - time: 3 years ago
+    - list:
+      - Hide −
+    - paragraph: >Now we're starting to watch the Hobbit movies made a few years back.
+    - paragraph:
+      - text: Please, the
+      - link [842] "Rankin/Bass Hobbit movie":
+        - /url: "https://www.imdb.com/title/tt0077687/"
+      - text: is superior. It's even a cartoon, so it may appeal to your child more.
+    - navigation:
+      - list:
+        - link [843] "Reply":
+          - /url: /f/books/17445/-/comment/236064
+          - strong: Reply
+        - link [844] "Permalink":
+          - /url: /f/books/17445/-/comment/236064
+    - button [845] "Upvote"
+    - text: 1
+    - button [846] "Downvote"
+  - article:
+    - checkbox [847] "Hide −" [checked]
+    - "heading \"lallen [t1_itukssi] wrote 3 years ago\" [level=1]":
+      - link [848] "lallen":
+        - /url: /user/lallen
+        - strong: lallen
+      - text: [t1_itukssi] wrote
+      - time: 3 years ago
+    - list:
+      - Hide −
+    - paragraph: BUT you haven't been enough of a fan to notice how to spell Tolkien
+    - navigation:
+      - list:
+        - link [849] "Reply":
+          - /url: /f/books/17445/-/comment/236528
+          - strong: Reply
+        - link [850] "Permalink":
+          - /url: /f/books/17445/-/comment/236528
+    - button [851] "Upvote"
+    - text: 1
+    - button [852] "Downvote"
+    - article:
+      - checkbox [853] "Hide −" [checked]
+      - "heading \"Shaosil Original poster [t1_itumkb8] wrote 3 years ago\" [level=1]":
+        - link [854] "Shaosil":
+          - /url: /user/Shaosil
+          - strong: Shaosil
+        - text: [OP] [t1_itumkb8] wrote
+        - time: 3 years ago
+      - list:
+        - Hide −
+      - paragraph: Oof, caught and called out! Fixed it.
+      - navigation:
+        - list:
+          - link [855] "Reply":
+            - /url: /f/books/17445/-/comment/236715
+            - strong: Reply
+          - link [856] "Permalink":
+            - /url: /f/books/17445/-/comment/236715
+          - link [857] "Parent":
+            - /url: /f/books/17445/-/comment/236528
+      - button [858] "Upvote"
+      - text: 1
+      - button [859] "Downvote"
+  - article:
+    - checkbox [860] "Hide −" [checked]
+    - "heading \"[deleted] [t1_itutewh] wrote 3 years ago\" [level=1]":
+      - link [861] "[deleted]":
+        - /url: /user/%5Bdeleted%5D
+        - strong: [deleted]
+      - text: [t1_itutewh] wrote
+      - time: 3 years ago
+    - list:
+      - Hide −
+    - paragraph: [removed]
+    - navigation:
+      - list:
+        - link [862] "Reply":
+          - /url: /f/books/17445/-/comment/237547
+          - strong: Reply
+        - link [863] "Permalink":
+          - /url: /f/books/17445/-/comment/237547
+    - button [864] "Upvote"
+    - text: 1
+    - button [865] "Downvote"
+  - article:
+    - checkbox [866] "Hide −" [checked]
+    - "heading \"TaliesinMerlin [t1_ituuh4p] wrote 3 years ago\" [level=1]":
+      - link [867] "TaliesinMerlin":
+        - /url: /user/TaliesinMerlin
+        - strong: TaliesinMerlin
+      - text: [t1_ituuh4p] wrote
+      - time: 3 years ago
+    - list:
+      - Hide −
+    - paragraph:
+      - text: You know, The Hobbit films are no Lord of the Rings, but they are good popcorn flicks, and what the films get right (Bilbo, Smaug, Gollum, some of the setpiece scenes like the dwarven singing and Beorn) they get very right. If those films pass your violence check for your daughter (I mean, at 6 I watched and loved
+      - emphasis: Raiders of the Lost Ark
+      - text: ), they'd be fine to watch.
+    - navigation:
+      - list:
+        - link [868] "Reply":
+          - /url: /f/books/17445/-/comment/237668
+          - strong: Reply
+        - link [869] "Permalink":
+          - /url: /f/books/17445/-/comment/237668
+    - button [870] "Upvote"
+    - text: 1
+    - button [871] "Downvote"
+  - article:
+    - checkbox [872] "Hide −" [checked]
+    - "heading \"PlanBuildBreak [t1_ituvrv6] wrote 3 years ago\" [level=1]":
+      - link [873] "PlanBuildBreak":
+        - /url: /user/PlanBuildBreak
+        - strong: PlanBuildBreak
+      - text: [t1_ituvrv6] wrote
+      - time: 3 years ago
+    - list:
+      - Hide −
+    - paragraph: You should check out the Wings of Fire series for her.
+    - navigation:
+      - list:
+        - link [874] "Reply":
+          - /url: /f/books/17445/-/comment/237815
+          - strong: Reply
+        - link [875] "Permalink":
+          - /url: /f/books/17445/-/comment/237815
+    - button [876] "Upvote"
+    - text: 1
+    - button [877] "Downvote"
+  - article:
+    - checkbox [878] "Hide −" [checked]
+    - "heading \"Minter_moon [t1_itvfkou] wrote 3 years ago\" [level=1]":
+      - link [879] "Minter_moon":
+        - /url: /user/Minter_moon
+        - strong: Minter_moon
+      - text: [t1_itvfkou] wrote
+      - time: 3 years ago
+    - list:
+      - Hide −
+    - paragraph: My 6 year old loves LOTR too! Granted we've only watched the movies together. The Hobbit is one of my favorite books of all time though and I'm hoping once he starts reading proficiently he'll want to read it. I bought a cute illustrated version just for that purpose, it's sitting in a special spot and whenever he's ready I hope he'll pick it up.
+    - navigation:
+      - list:
+        - link [880] "Reply":
+          - /url: /f/books/17445/-/comment/240230
+          - strong: Reply
+        - link [881] "Permalink":
+          - /url: /f/books/17445/-/comment/240230
+    - button [882] "Upvote"
+    - text: 1
+    - button [883] "Downvote"
+  - article:
+    - checkbox [884] "Hide −" [checked]
+    - "heading \"Lost_in_the_Library [t1_itvrflt] wrote 3 years ago\" [level=1]":
+      - link [885] "Lost_in_the_Library":
+        - /url: /user/Lost_in_the_Library
+        - strong: Lost_in_the_Library
+      - text: [t1_itvrflt] wrote
+      - time: 3 years ago
+    - list:
+      - Hide −
+    - paragraph: I was 8 years old when my grade 3 teacher recommended The Hobbit to me and even lent me a copy to read. I had been a voracious reader since before school and she was like “you’ll like this book - trust me.”
+    - paragraph: She wasn’t wrong. It’s a great book for all ages.
+    - navigation:
+      - list:
+        - link [886] "Reply":
+          - /url: /f/books/17445/-/comment/241675
+          - strong: Reply
+        - link [887] "Permalink":
+          - /url: /f/books/17445/-/comment/241675
+    - button [888] "Upvote"
+    - text: 1
+    - button [889] "Downvote"
+  - article:
+    - checkbox [890] "Hide −" [checked]
+    - "heading \"narvuntien [t1_itvstmc] wrote 3 years ago\" [level=1]":
+      - link [891] "narvuntien":
+        - /url: /user/narvuntien
+        - strong: narvuntien
+      - text: [t1_itvstmc] wrote
+      - time: 3 years ago
+    - list:
+      - Hide −
+    - paragraph: If you are looking for more fantasy kids books I recommend Dianne Wynne Jones's work, she is the author of "howl's moving castle".
+    - navigation:
+      - list:
+        - link [892] "Reply":
+          - /url: /f/books/17445/-/comment/241838
+          - strong: Reply
+        - link [893] "Permalink":
+          - /url: /f/books/17445/-/comment/241838
+    - button [894] "Upvote"
+    - text: 1
+    - button [895] "Downvote"
+  - article:
+    - checkbox [896] "Hide −" [checked]
+    - "heading \"bamako45 [t1_iu1xk2y] wrote 3 years ago\" [level=1]":
+      - link [897] "bamako45":
+        - /url: /user/bamako45
+        - strong: bamako45
+      - text: [t1_iu1xk2y] wrote
+      - time: 3 years ago
+    - list:
+      - Hide −
+    - paragraph: I remember reading The Hobbit at quite a young age. I know I saw the animated TV version of The Hobbit (yeah, it was The Hobbit, not Lord of the Rings). It’s a fantastic story for readers of all ages!
+    - navigation:
+      - list:
+        - link [898] "Reply":
+          - /url: /f/books/17445/-/comment/270418
+          - strong: Reply
+        - link [899] "Permalink":
+          - /url: /f/books/17445/-/comment/270418
+    - button [900] "Upvote"
+    - text: 1
+    - button [901] "Downvote"
+- complementary:
+  - paragraph:
+    - strong: 0 points
+    - text: (+0, −0)
+  - "heading \"Short URL:\" [level=4]"
+  - paragraph: "http://143.215.184.110:9999/17445"
+  - "heading \"books\" [level=1]":
+    - link [902] "books":
+      - /url: /f/books
+  - button [903] "Unsubscribe 1 subscriber": Unsubscribe 1
+  - paragraph: t5_2qh4i
+  - separator
+  - list:
+    - text: Created
+    - time: 3 years ago
+    - link [904] "Subscribe via RSS":
+      - /url: /f/books/new.atom
+      - img
+      - text: Subscribe via RSS
+  - group [905]: Hide this forum
+  - heading "Toolbox" [level=1]
+  - list:
+    - link [906] "Bans":
+      - /url: /f/books/bans
+    - link [907] "Moderation log":
+      - /url: /f/books/moderation_log
+- contentinfo:
+  - paragraph:
+    - text: Running
+    - link [908] "Postmill":
+      - /url: "https://postmill.xyz/"

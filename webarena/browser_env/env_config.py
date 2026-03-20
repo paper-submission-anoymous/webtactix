@@ -1,13 +1,13 @@
 # websites domain
 import os
 
-REDDIT = "http://127.0.0.1:9999"
-SHOPPING = "http://127.0.0.1:7770"
-SHOPPING_ADMIN = "http://127.0.0.1:7780/admin"
-GITLAB = "http://127.0.0.1:8023"
-WIKIPEDIA = "http://127.0.0.1:8888/wikipedia_en_all_maxi_2022-05/A/User:The_other_Kiwix_guy/Landing"
-MAP = "https://www.openstreetmap.org/"
-HOMEPAGE = "http://127.0.0.1:4399"
+REDDIT = os.environ.get("REDDIT", "http://143.215.184.110:9999").rstrip("/")
+SHOPPING = os.environ.get("SHOPPING", "http://127.0.0.1:7770").rstrip("/")
+SHOPPING_ADMIN = os.environ.get("SHOPPING_ADMIN", "http://127.0.0.1:7780/admin").rstrip("/")
+GITLAB = os.environ.get("GITLAB", "http://127.0.0.1:8023").rstrip("/")
+WIKIPEDIA = os.environ.get("WIKIPEDIA", "http://127.0.0.1:8888/wikipedia_en_all_maxi_2022-05/A/User:The_other_Kiwix_guy/Landing").rstrip("/")
+MAP = os.environ.get("MAP", "https://www.openstreetmap.org/").rstrip("/")
+HOMEPAGE = os.environ.get("HOMEPAGE", "http://127.0.0.1:4399").rstrip("/")
 
 assert (
     REDDIT
