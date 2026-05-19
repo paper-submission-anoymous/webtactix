@@ -1,0 +1,49 @@
+- navigation:
+  - link [0] "Jump to main content":
+    - /url: "#main"
+  - link [1] "Jump to sidebar":
+    - /url: "#sidebar"
+- navigation:
+  - link [2] "Home":
+    - /url: /
+    - text: Postmill
+  - list:
+    - link [3] "Forums":
+      - /url: /forums
+    - link [4] "Wiki":
+      - /url: /wiki
+  - searchbox [5] "Search query"
+  - list:
+    - link [6] "Notifications (0)":
+      - /url: /notifications
+      - img
+    - link [7] "Submit":
+      - /url: /submit
+      - img
+      - text: Submit
+    - button [8] "MarvelsGrantMan136":
+      - img
+      - strong: MarvelsGrantMan136
+- main:
+  - heading "Create new forum" [level=1]
+  - text: Name *
+  - textbox [9] "Name This field is required."
+  - text: Title *
+  - textbox [10] "Title This field is required."
+  - text: Description *
+  - textbox [11] "Description This field is required."
+  - paragraph: A short description of the forum. Search engines will present this description in their results.
+  - text: Sidebar *
+  - textbox [12] "Sidebar This field is required."
+  - checkbox [13] "Formatting help +"
+  - text: Markdown allowed. Formatting help + Tags
+  - textbox [14] "Tags"
+  - paragraph:
+    - link [15] "See the full list of tags":
+      - /url: /tags
+  - button [16] "Create forum"
+- contentinfo:
+  - paragraph:
+    - text: Running
+    - link [17] "Postmill":
+      - /url: "https://postmill.xyz/"

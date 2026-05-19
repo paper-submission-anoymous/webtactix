@@ -1,0 +1,2 @@
+{"type": "exec_begin", "src": "v1", "action_sig": "click(link consoles)", "plan_name": "web_operation", "goal": "Navigate to consoles forum", "time_utc": "2026-04-16T23:12:36.921694+00:00", "t": 37.68616302125156, "round": 1}
+{"type": "exec_ok", "src": "v1", "dst": "v2", "action_sig": "click(link consoles)", "url_after": "http://143.215.184.110:9999/f/consoles", "time_utc": "2026-04-16T23:12:49.329738+00:00", "t": 50.0941984243691, "round": 1}

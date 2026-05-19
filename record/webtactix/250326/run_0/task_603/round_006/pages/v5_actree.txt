@@ -1,0 +1,98 @@
+- navigation:
+  - link [0] "Jump to main content":
+    - /url: "#main"
+  - link [1] "Jump to sidebar":
+    - /url: "#sidebar"
+- navigation:
+  - link [2] "Home":
+    - /url: /
+    - text: Postmill
+  - list:
+    - link [3] "Forums":
+      - /url: /forums
+    - link [4] "Wiki":
+      - /url: /wiki
+  - searchbox [5] "Search query"
+  - list:
+    - link [6] "Notifications (0)":
+      - /url: /notifications
+      - img
+    - link [7] "Submit":
+      - /url: /submit/nyc
+      - img
+      - text: Submit
+    - button [8] "MarvelsGrantMan136":
+      - img
+      - strong: MarvelsGrantMan136
+- main:
+  - navigation:
+    - list:
+      - link [9] "/f/nyc":
+        - /url: /f/nyc
+        - img
+        - text: /f/
+        - strong: nyc
+  - article:
+    - "heading \"safe and budge apartment to live in nyc\" [level=1]":
+      - link [10] "safe and budge apartment to live in nyc":
+        - /url: /f/nyc/35/safe-and-budge-apartment-to-live-in-nyc
+    - paragraph:
+      - text: Submitted by
+      - link [11] "MarvelsGrantMan136":
+        - /url: /user/MarvelsGrantMan136
+        - strong: MarvelsGrantMan136
+      - time: 0 seconds ago
+      - text: in
+      - link [12] "nyc":
+        - /url: /f/nyc
+        - strong: nyc
+    - paragraph: safe and budge apartment to live in nyc
+    - navigation:
+      - list:
+        - link [13] "No comments":
+          - /url: /f/nyc/35/safe-and-budge-apartment-to-live-in-nyc
+          - strong: No comments
+        - link [14] "Edit":
+          - /url: /f/nyc/35/-/edit
+        - button [15] "Delete"
+    - button [16] "Retract upvote"
+    - text: 1
+    - button [17] "Downvote"
+  - heading "Comments" [level=2]
+  - textbox [18] "Comment"
+  - checkbox [19] "Formatting help +"
+  - text: Markdown allowed. Formatting help +
+  - button [20] "Post"
+  - img "A tense emoji": (._.)
+  - text: There's nothing here…
+- complementary:
+  - paragraph:
+    - strong: 1 point
+    - text: (+1, −0)
+  - "heading \"Short URL:\" [level=4]"
+  - paragraph: "http://143.215.184.110:9999/35"
+  - "heading \"nyc\" [level=1]":
+    - link [21] "nyc":
+      - /url: /f/nyc
+  - button [22] "Subscribe No subscribers": Subscribe 0
+  - paragraph: t5_2qhu2
+  - separator
+  - list:
+    - text: Created
+    - time: 3 years ago
+    - link [23] "Subscribe via RSS":
+      - /url: /f/nyc/new.atom
+      - img
+      - text: Subscribe via RSS
+  - group [24]: Hide this forum
+  - heading "Toolbox" [level=1]
+  - list:
+    - link [25] "Bans":
+      - /url: /f/nyc/bans
+    - link [26] "Moderation log":
+      - /url: /f/nyc/moderation_log
+- contentinfo:
+  - paragraph:
+    - text: Running
+    - link [27] "Postmill":
+      - /url: "https://postmill.xyz/"

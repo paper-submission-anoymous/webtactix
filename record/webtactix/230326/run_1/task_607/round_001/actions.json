@@ -1,0 +1,2 @@
+{"type": "exec_begin", "src": "v1", "action_sig": "goto http://143.215.184.110:9999/f/Pittsburgh", "plan_name": "web_operation", "goal": "Navigate to the Pittsburgh subreddit", "time_utc": "2026-03-24T01:12:45.362264+00:00", "t": 12.446962732821703, "round": 1}
+{"type": "exec_ok", "src": "v1", "dst": "v2", "action_sig": "goto http://143.215.184.110:9999/f/Pittsburgh", "url_after": "http://143.215.184.110:9999/f/pittsburgh", "time_utc": "2026-03-24T01:12:56.670826+00:00", "t": 23.755530674010515, "round": 1}

@@ -1,0 +1,3867 @@
+- navigation:
+  - link [0] "Jump to main content":
+    - /url: "#main"
+  - link [1] "Jump to sidebar":
+    - /url: "#sidebar"
+- navigation:
+  - link [2] "Home":
+    - /url: /
+    - text: Postmill
+  - list:
+    - link [3] "Forums":
+      - /url: /forums
+    - link [4] "Wiki":
+      - /url: /wiki
+  - searchbox [5] "Search query"
+  - list:
+    - link [6] "Notifications (0)":
+      - /url: /notifications
+      - img
+    - link [7] "Submit":
+      - /url: /submit/DIY
+      - img
+      - text: Submit
+    - button [8] "MarvelsGrantMan136":
+      - img
+      - strong: MarvelsGrantMan136
+- main:
+  - navigation:
+    - list:
+      - link [9] "/f/DIY":
+        - /url: /f/DIY
+        - img
+        - text: /f/
+        - strong: DIY
+  - article:
+    - "heading \"I made a makeup table for my girlfriend's birthday out of an old bar cabinet\" [level=1]":
+      - link [10] "I made a makeup table for my girlfriend's birthday out of an old bar cabinet":
+        - /url: "https://imgur.com/a/5aSTETX"
+    - link [11] "imgur.com":
+      - /url: /search?q=imgur.com
+    - paragraph:
+      - text: Submitted by
+      - link [12] "Sorkill":
+        - /url: /user/Sorkill
+        - strong: Sorkill
+      - text: [t3_10aqhun]
+      - time: 3 years ago
+      - text: in
+      - link [13] "DIY":
+        - /url: /f/DIY
+        - strong: DIY
+    - navigation:
+      - list:
+        - link [14] "173 comments":
+          - /url: /f/DIY/76184/i-made-a-makeup-table-for-my-girlfriend-s-birthday-out-of-an
+          - strong: 173 comments
+    - button [15] "Upvote"
+    - text: 5649
+    - button [16] "Downvote"
+  - heading "Comments" [level=2]
+  - textbox [17] "Comment"
+  - checkbox [18] "Formatting help +"
+  - text: Markdown allowed. Formatting help +
+  - button [19] "Post"
+  - list:
+    - link [20] "Nested":
+      - /url: /f/DIY/76184/i-made-a-makeup-table-for-my-girlfriend-s-birthday-out-of-an
+    - link [21] "Linear":
+      - /url: /f/DIY/76184/i-made-a-makeup-table-for-my-girlfriend-s-birthday-out-of-an/linear
+  - article:
+    - checkbox [22] "Hide −" [checked]
+    - "heading \"AintAintAWord [t1_j46gocf] wrote 3 years ago\" [level=1]":
+      - link [23] "AintAintAWord":
+        - /url: /user/AintAintAWord
+        - strong: AintAintAWord
+      - text: [t1_j46gocf] wrote
+      - time: 3 years ago
+    - list:
+      - Hide −
+    - paragraph: Posts like these are why my wife CANNOT find out about this sub.
+    - paragraph: Fantastic job.
+    - navigation:
+      - list:
+        - link [24] "Reply":
+          - /url: /f/DIY/76184/-/comment/1350323
+          - strong: Reply
+        - link [25] "Permalink":
+          - /url: /f/DIY/76184/-/comment/1350323
+    - button [26] "Upvote"
+    - text: 633
+    - button [27] "Downvote"
+    - article:
+      - checkbox [28] "Hide −" [checked]
+      - "heading \"RealStumbleweed [t1_j46opnv] wrote 3 years ago\" [level=1]":
+        - link [29] "RealStumbleweed":
+          - /url: /user/RealStumbleweed
+          - strong: RealStumbleweed
+        - text: [t1_j46opnv] wrote
+        - time: 3 years ago
+      - list:
+        - Hide −
+      - paragraph:
+        - text: Tagging
+        - link [30] "u/MrsAintAWord":
+          - /url: /user/MrsAintAWord
+        - text: !!!
+      - navigation:
+        - list:
+          - link [31] "Reply":
+            - /url: /f/DIY/76184/-/comment/1350845
+            - strong: Reply
+          - link [32] "Permalink":
+            - /url: /f/DIY/76184/-/comment/1350845
+          - link [33] "Parent":
+            - /url: /f/DIY/76184/-/comment/1350323
+      - button [34] "Upvote"
+      - text: 83
+      - button [35] "Downvote"
+      - article:
+        - checkbox [36] "Hide −" [checked]
+        - "heading \"AintAintAWord [t1_j47dda2] wrote 3 years ago\" [level=1]":
+          - link [37] "AintAintAWord":
+            - /url: /user/AintAintAWord
+            - strong: AintAintAWord
+          - text: [t1_j47dda2] wrote
+          - time: 3 years ago
+        - list:
+          - Hide −
+        - paragraph:
+          - link [38] "https://imgur.com/7bsJ2Nt.gifv":
+            - /url: "https://imgur.com/7bsJ2Nt.gifv"
+        - navigation:
+          - list:
+            - link [39] "Reply":
+              - /url: /f/DIY/76184/-/comment/1352510
+              - strong: Reply
+            - link [40] "Permalink":
+              - /url: /f/DIY/76184/-/comment/1352510
+            - link [41] "Parent":
+              - /url: /f/DIY/76184/-/comment/1350845
+        - button [42] "Upvote"
+        - text: 60
+        - button [43] "Downvote"
+        - article:
+          - checkbox [44] "Hide −" [checked]
+          - "heading \"Entire-Ambition1410 [t1_j47n4eh] wrote 3 years ago\" [level=1]":
+            - link [45] "Entire-Ambition1410":
+              - /url: /user/Entire-Ambition1410
+              - strong: Entire-Ambition1410
+            - text: [t1_j47n4eh] wrote
+            - time: 3 years ago
+          - list:
+            - Hide −
+          - paragraph: "Practice makes perfect, Mr. DIY :P"
+          - navigation:
+            - list:
+              - link [46] "Reply":
+                - /url: /f/DIY/76184/-/comment/1353129
+                - strong: Reply
+              - link [47] "Permalink":
+                - /url: /f/DIY/76184/-/comment/1353129
+              - link [48] "Parent":
+                - /url: /f/DIY/76184/-/comment/1352510
+          - button [49] "Upvote"
+          - text: 8
+          - button [50] "Downvote"
+        - article:
+          - checkbox [51] "Hide −" [checked]
+          - "heading \"RealStumbleweed [t1_j49rk4u] wrote 3 years ago\" [level=1]":
+            - link [52] "RealStumbleweed":
+              - /url: /user/RealStumbleweed
+              - strong: RealStumbleweed
+            - text: [t1_j49rk4u] wrote
+            - time: 3 years ago
+          - list:
+            - Hide −
+          - paragraph: This is perfect.
+          - navigation:
+            - list:
+              - link [53] "Reply":
+                - /url: /f/DIY/76184/-/comment/1357357
+                - strong: Reply
+              - link [54] "Permalink":
+                - /url: /f/DIY/76184/-/comment/1357357
+              - link [55] "Parent":
+                - /url: /f/DIY/76184/-/comment/1352510
+          - button [56] "Upvote"
+          - text: 2
+          - button [57] "Downvote"
+    - article:
+      - checkbox [58] "Hide −" [checked]
+      - "heading \"SurroundingAMeadow [t1_j47os2u] wrote 3 years ago\" [level=1]":
+        - link [59] "SurroundingAMeadow":
+          - /url: /user/SurroundingAMeadow
+          - strong: SurroundingAMeadow
+        - text: [t1_j47os2u] wrote
+        - time: 3 years ago
+      - list:
+        - Hide −
+      - paragraph: The problem with demonstrating a basic competence of a skill is that others who do not have even that much expect you to do things for them far beyond your competence level. Carpentry, photography, cooking... doesn't matter.
+      - navigation:
+        - list:
+          - link [60] "Reply":
+            - /url: /f/DIY/76184/-/comment/1353217
+            - strong: Reply
+          - link [61] "Permalink":
+            - /url: /f/DIY/76184/-/comment/1353217
+          - link [62] "Parent":
+            - /url: /f/DIY/76184/-/comment/1350323
+      - button [63] "Upvote"
+      - text: 33
+      - button [64] "Downvote"
+      - article:
+        - checkbox [65] "Hide −" [checked]
+        - "heading \"John_Hunyadi [t1_j4akiqt] wrote 3 years ago\" [level=1]":
+          - link [66] "John_Hunyadi":
+            - /url: /user/John_Hunyadi
+            - strong: John_Hunyadi
+          - text: [t1_j4akiqt] wrote
+          - time: 3 years ago
+        - list:
+          - Hide −
+        - paragraph: The basic competency of ‘owning a truck’….
+        - navigation:
+          - list:
+            - link [67] "Reply":
+              - /url: /f/DIY/76184/-/comment/1358698
+              - strong: Reply
+            - link [68] "Permalink":
+              - /url: /f/DIY/76184/-/comment/1358698
+            - link [69] "Parent":
+              - /url: /f/DIY/76184/-/comment/1353217
+        - button [70] "Upvote"
+        - text: 3
+        - button [71] "Downvote"
+    - article:
+      - checkbox [72] "Hide −" [checked]
+      - "heading \"No-Hunt-7796 [t1_j48hr5r] wrote 3 years ago\" [level=1]":
+        - link [73] "No-Hunt-7796":
+          - /url: /user/No-Hunt-7796
+          - strong: No-Hunt-7796
+        - text: [t1_j48hr5r] wrote
+        - time: 3 years ago
+      - list:
+        - Hide −
+      - paragraph: Hahhahhha 🤣 Sounds like you are about to get Creative!
+      - navigation:
+        - list:
+          - link [74] "Reply":
+            - /url: /f/DIY/76184/-/comment/1354803
+            - strong: Reply
+          - link [75] "Permalink":
+            - /url: /f/DIY/76184/-/comment/1354803
+          - link [76] "Parent":
+            - /url: /f/DIY/76184/-/comment/1350323
+      - button [77] "Upvote"
+      - text: 3
+      - button [78] "Downvote"
+    - article:
+      - checkbox [79] "Hide −" [checked]
+      - "heading \"daworstredditor [t1_j47c1xu] wrote 3 years ago\" [level=1]":
+        - link [80] "daworstredditor":
+          - /url: /user/daworstredditor
+          - strong: daworstredditor
+        - text: [t1_j47c1xu] wrote
+        - time: 3 years ago
+      - list:
+        - Hide −
+      - paragraph: My questions are. Why doesn't she just learn to do this stuff herself?
+      - paragraph: Or if she does know how. Why stop her from doing something like this?
+      - navigation:
+        - list:
+          - link [81] "Reply":
+            - /url: /f/DIY/76184/-/comment/1352417
+            - strong: Reply
+          - link [82] "Permalink":
+            - /url: /f/DIY/76184/-/comment/1352417
+          - link [83] "Parent":
+            - /url: /f/DIY/76184/-/comment/1350323
+      - button [84] "Upvote"
+      - text: −36
+      - button [85] "Downvote"
+      - article:
+        - checkbox [86] "Hide −" [checked]
+        - "heading \"AintAintAWord [t1_j47egxv] wrote 3 years ago\" [level=1]":
+          - link [87] "AintAintAWord":
+            - /url: /user/AintAintAWord
+            - strong: AintAintAWord
+          - text: [t1_j47egxv] wrote
+          - time: 3 years ago
+        - list:
+          - Hide −
+        - paragraph: >Why doesn't she just learn to do this stuff herself?
+        - paragraph: She's a full-time student working a full-time job while raising a toddler. We're both already pretty busy folks.
+        - paragraph: "Edit: I'm DIY/carpentry and she's landscaping/flower beds"
+        - navigation:
+          - list:
+            - link [88] "Reply":
+              - /url: /f/DIY/76184/-/comment/1352575
+              - strong: Reply
+            - link [89] "Permalink":
+              - /url: /f/DIY/76184/-/comment/1352575
+            - link [90] "Parent":
+              - /url: /f/DIY/76184/-/comment/1352417
+        - button [91] "Upvote"
+        - text: 37
+        - button [92] "Downvote"
+      - article:
+        - checkbox [93] "Hide −" [checked]
+        - "heading \"VodkaandDrinkPackets [t1_j47lhmg] wrote 3 years ago\" [level=1]":
+          - link [94] "VodkaandDrinkPackets":
+            - /url: /user/VodkaandDrinkPackets
+            - strong: VodkaandDrinkPackets
+          - text: [t1_j47lhmg] wrote
+          - time: 3 years ago
+        - list:
+          - Hide −
+        - paragraph: What a weird comment.
+        - navigation:
+          - list:
+            - link [95] "Reply":
+              - /url: /f/DIY/76184/-/comment/1353010
+              - strong: Reply
+            - link [96] "Permalink":
+              - /url: /f/DIY/76184/-/comment/1353010
+            - link [97] "Parent":
+              - /url: /f/DIY/76184/-/comment/1352417
+        - button [98] "Upvote"
+        - text: 20
+        - button [99] "Downvote"
+      - article:
+        - checkbox [100] "Hide −" [checked]
+        - "heading \"h03rnch3n [t1_j47fkxb] wrote 3 years ago\" [level=1]":
+          - link [101] "h03rnch3n":
+            - /url: /user/h03rnch3n
+            - strong: h03rnch3n
+          - text: [t1_j47fkxb] wrote
+          - time: 3 years ago
+        - list:
+          - Hide −
+        - paragraph: Only in the least cases its actually because of laziness and lack of drive. Most of the time, I feel, its because people are too wrapped up in their everydaylife
+        - navigation:
+          - list:
+            - link [102] "Reply":
+              - /url: /f/DIY/76184/-/comment/1352656
+              - strong: Reply
+            - link [103] "Permalink":
+              - /url: /f/DIY/76184/-/comment/1352656
+            - link [104] "Parent":
+              - /url: /f/DIY/76184/-/comment/1352417
+        - button [105] "Upvote"
+        - text: 13
+        - button [106] "Downvote"
+      - article:
+        - checkbox [107] "Hide −" [checked]
+        - "heading \"[deleted] [t1_j47dpf2] wrote 3 years ago\" [level=1]":
+          - link [108] "[deleted]":
+            - /url: /user/%5Bdeleted%5D
+            - strong: [deleted]
+          - text: [t1_j47dpf2] wrote
+          - time: 3 years ago
+        - list:
+          - Hide −
+        - paragraph: [deleted]
+        - navigation:
+          - list:
+            - link [109] "Reply":
+              - /url: /f/DIY/76184/-/comment/1352539
+              - strong: Reply
+            - link [110] "Permalink":
+              - /url: /f/DIY/76184/-/comment/1352539
+            - link [111] "Parent":
+              - /url: /f/DIY/76184/-/comment/1352417
+        - button [112] "Upvote"
+        - text: 1
+        - button [113] "Downvote"
+  - article:
+    - checkbox [114] "Hide −" [checked]
+    - "heading \"veryverymango [t1_j46bb9z] wrote 3 years ago\" [level=1]":
+      - link [115] "veryverymango":
+        - /url: /user/veryverymango
+        - strong: veryverymango
+      - text: [t1_j46bb9z] wrote
+      - time: 3 years ago
+    - list:
+      - Hide −
+    - paragraph: I'd cry if someone gave me one like this 🥺
+    - navigation:
+      - list:
+        - link [116] "Reply":
+          - /url: /f/DIY/76184/-/comment/1349988
+          - strong: Reply
+        - link [117] "Permalink":
+          - /url: /f/DIY/76184/-/comment/1349988
+    - button [118] "Upvote"
+    - text: 290
+    - button [119] "Downvote"
+    - article:
+      - checkbox [120] "Hide −" [checked]
+      - "heading \"Sorkill Original poster [t1_j46zmzc] wrote 3 years ago\" [level=1]":
+        - link [121] "Sorkill":
+          - /url: /user/Sorkill
+          - strong: Sorkill
+        - text: [OP] [t1_j46zmzc] wrote
+        - time: 3 years ago
+      - list:
+        - Hide −
+      - paragraph: I almost cried a bit when she got it and when i saw her genuine reaction. At that moment i got it that all the time and effort i put in it was really worth it!
+      - navigation:
+        - list:
+          - link [122] "Reply":
+            - /url: /f/DIY/76184/-/comment/1351571
+            - strong: Reply
+          - link [123] "Permalink":
+            - /url: /f/DIY/76184/-/comment/1351571
+          - link [124] "Parent":
+            - /url: /f/DIY/76184/-/comment/1349988
+      - button [125] "Upvote"
+      - text: 281
+      - button [126] "Downvote"
+    - article:
+      - checkbox [127] "Hide −" [checked]
+      - "heading \"xX420GanjaWarlordXx [t1_j48g0yi] wrote 3 years ago\" [level=1]":
+        - link [128] "xX420GanjaWarlordXx":
+          - /url: /user/xX420GanjaWarlordXx
+          - strong: xX420GanjaWarlordXx
+        - text: [t1_j48g0yi] wrote
+        - time: 3 years ago
+      - list:
+        - Hide −
+      - paragraph: Seriously, it is so gorgeous. She is a lucky woman.
+      - navigation:
+        - list:
+          - link [129] "Reply":
+            - /url: /f/DIY/76184/-/comment/1354711
+            - strong: Reply
+          - link [130] "Permalink":
+            - /url: /f/DIY/76184/-/comment/1354711
+          - link [131] "Parent":
+            - /url: /f/DIY/76184/-/comment/1349988
+      - button [132] "Upvote"
+      - text: 53
+      - button [133] "Downvote"
+    - article:
+      - checkbox [134] "Hide −" [checked]
+      - "heading \"coconow [t1_j4en3vk] wrote 3 years ago\" [level=1]":
+        - link [135] "coconow":
+          - /url: /user/coconow
+          - strong: coconow
+        - text: [t1_j4en3vk] wrote
+        - time: 3 years ago
+      - list:
+        - Hide −
+      - paragraph: Me too. What a great boyfriend.
+      - navigation:
+        - list:
+          - link [136] "Reply":
+            - /url: /f/DIY/76184/-/comment/1365345
+            - strong: Reply
+          - link [137] "Permalink":
+            - /url: /f/DIY/76184/-/comment/1365345
+          - link [138] "Parent":
+            - /url: /f/DIY/76184/-/comment/1349988
+      - button [139] "Upvote"
+      - text: 1
+      - button [140] "Downvote"
+  - article:
+    - checkbox [141] "Hide −" [checked]
+    - "heading \"hecatonchires266 [t1_j45oii7] wrote 3 years ago\" [level=1]":
+      - link [142] "hecatonchires266":
+        - /url: /user/hecatonchires266
+        - strong: hecatonchires266
+      - text: [t1_j45oii7] wrote
+      - time: 3 years ago
+    - list:
+      - Hide −
+    - paragraph: You did good mate.
+    - navigation:
+      - list:
+        - link [143] "Reply":
+          - /url: /f/DIY/76184/-/comment/1348861
+          - strong: Reply
+        - link [144] "Permalink":
+          - /url: /f/DIY/76184/-/comment/1348861
+    - button [145] "Upvote"
+    - text: 174
+    - button [146] "Downvote"
+  - article:
+    - checkbox [147] "Hide −" [checked]
+    - "heading \"lulufalulu [t1_j45s7m4] wrote 3 years ago\" [level=1]":
+      - link [148] "lulufalulu":
+        - /url: /user/lulufalulu
+        - strong: lulufalulu
+      - text: [t1_j45s7m4] wrote
+      - time: 3 years ago
+    - list:
+      - Hide −
+    - paragraph: That is amazing, what a great find and even better recycle, great present.
+    - navigation:
+      - list:
+        - link [149] "Reply":
+          - /url: /f/DIY/76184/-/comment/1349008
+          - strong: Reply
+        - link [150] "Permalink":
+          - /url: /f/DIY/76184/-/comment/1349008
+    - button [151] "Upvote"
+    - text: 149
+    - button [152] "Downvote"
+    - article:
+      - checkbox [153] "Hide −" [checked]
+      - "heading \"[deleted] [t1_j46nrd0] wrote 3 years ago\" [level=1]":
+        - link [154] "[deleted]":
+          - /url: /user/%5Bdeleted%5D
+          - strong: [deleted]
+        - text: [t1_j46nrd0] wrote
+        - time: 3 years ago
+      - list:
+        - Hide −
+      - paragraph: [deleted]
+      - navigation:
+        - list:
+          - link [155] "Reply":
+            - /url: /f/DIY/76184/-/comment/1350781
+            - strong: Reply
+          - link [156] "Permalink":
+            - /url: /f/DIY/76184/-/comment/1350781
+          - link [157] "Parent":
+            - /url: /f/DIY/76184/-/comment/1349008
+      - button [158] "Upvote"
+      - text: 53
+      - button [159] "Downvote"
+  - article:
+    - checkbox [160] "Hide −" [checked]
+    - "heading \"Xterra50 [t1_j45rl4y] wrote 3 years ago\" [level=1]":
+      - link [161] "Xterra50":
+        - /url: /user/Xterra50
+        - strong: Xterra50
+      - text: [t1_j45rl4y] wrote
+      - time: 3 years ago
+    - list:
+      - Hide −
+    - paragraph: Phenomenal work. Oh, to have such skills!
+    - navigation:
+      - list:
+        - link [162] "Reply":
+          - /url: /f/DIY/76184/-/comment/1348974
+          - strong: Reply
+        - link [163] "Permalink":
+          - /url: /f/DIY/76184/-/comment/1348974
+    - button [164] "Upvote"
+    - text: 92
+    - button [165] "Downvote"
+    - article:
+      - checkbox [166] "Hide −" [checked]
+      - "heading \"Islanduniverse [t1_j46ipg6] wrote 3 years ago\" [level=1]":
+        - link [167] "Islanduniverse":
+          - /url: /user/Islanduniverse
+          - strong: Islanduniverse
+        - text: [t1_j46ipg6] wrote
+        - time: 3 years ago
+      - list:
+        - Hide −
+      - paragraph: It’s a refurbish, you could do it too!
+      - paragraph: Not that it isn’t great, but you would be surprised by the skills required, and the skills you have.
+      - navigation:
+        - list:
+          - link [168] "Reply":
+            - /url: /f/DIY/76184/-/comment/1350439
+            - strong: Reply
+          - link [169] "Permalink":
+            - /url: /f/DIY/76184/-/comment/1350439
+          - link [170] "Parent":
+            - /url: /f/DIY/76184/-/comment/1348974
+      - button [171] "Upvote"
+      - text: 31
+      - button [172] "Downvote"
+      - article:
+        - checkbox [173] "Hide −" [checked]
+        - "heading \"OiGuvnuh [t1_j46vbxr] wrote 3 years ago\" [level=1]":
+          - link [174] "OiGuvnuh":
+            - /url: /user/OiGuvnuh
+            - strong: OiGuvnuh
+          - text: [t1_j46vbxr] wrote
+          - time: 3 years ago
+        - list:
+          - Hide −
+        - paragraph: If you’re a first timer you’re not likely to get those replaced legs looking so seamless and natural. This project took a good amount of prior experience too.
+        - navigation:
+          - list:
+            - link [175] "Reply":
+              - /url: /f/DIY/76184/-/comment/1351269
+              - strong: Reply
+            - link [176] "Permalink":
+              - /url: /f/DIY/76184/-/comment/1351269
+            - link [177] "Parent":
+              - /url: /f/DIY/76184/-/comment/1350439
+        - button [178] "Upvote"
+        - text: 13
+        - button [179] "Downvote"
+      - article:
+        - checkbox [180] "Hide −" [checked]
+        - "heading \"Shotgun5250 [t1_j471pgr] wrote 3 years ago\" [level=1]":
+          - link [181] "Shotgun5250":
+            - /url: /user/Shotgun5250
+            - strong: Shotgun5250
+          - text: [t1_j471pgr] wrote
+          - time: 3 years ago
+        - list:
+          - Hide −
+        - paragraph: If I had a workshop and work table like that I would spend every free minute in there doing stuff like this
+        - navigation:
+          - list:
+            - link [182] "Reply":
+              - /url: /f/DIY/76184/-/comment/1351697
+              - strong: Reply
+            - link [183] "Permalink":
+              - /url: /f/DIY/76184/-/comment/1351697
+            - link [184] "Parent":
+              - /url: /f/DIY/76184/-/comment/1350439
+        - button [185] "Upvote"
+        - text: 8
+        - button [186] "Downvote"
+        - article:
+          - checkbox [187] "Hide −" [checked]
+          - "heading \"Islanduniverse [t1_j472u5y] wrote 3 years ago\" [level=1]":
+            - link [188] "Islanduniverse":
+              - /url: /user/Islanduniverse
+              - strong: Islanduniverse
+            - text: [t1_j472u5y] wrote
+            - time: 3 years ago
+          - list:
+            - Hide −
+          - paragraph: For real. OP is very lucky to have such a cool space to work!
+          - navigation:
+            - list:
+              - link [189] "Reply":
+                - /url: /f/DIY/76184/-/comment/1351768
+                - strong: Reply
+              - link [190] "Permalink":
+                - /url: /f/DIY/76184/-/comment/1351768
+              - link [191] "Parent":
+                - /url: /f/DIY/76184/-/comment/1351697
+          - button [192] "Upvote"
+          - text: 6
+          - button [193] "Downvote"
+      - article:
+        - checkbox [194] "Hide −" [checked]
+        - "heading \"S_204 [t1_j48q73n] wrote 3 years ago\" [level=1]":
+          - link [195] "S_204":
+            - /url: /user/S_204
+            - strong: S_204
+          - text: [t1_j48q73n] wrote
+          - time: 3 years ago
+        - list:
+          - Hide −
+        - paragraph: That he's got access to a track saw shown there makes me think he's quite familiar with carpentry. This isn't some beginner DIY....
+        - navigation:
+          - list:
+            - link [196] "Reply":
+              - /url: /f/DIY/76184/-/comment/1355253
+              - strong: Reply
+            - link [197] "Permalink":
+              - /url: /f/DIY/76184/-/comment/1355253
+            - link [198] "Parent":
+              - /url: /f/DIY/76184/-/comment/1350439
+        - button [199] "Upvote"
+        - text: 2
+        - button [200] "Downvote"
+        - article:
+          - checkbox [201] "Hide −" [checked]
+          - "heading \"Islanduniverse [t1_j48ryr9] wrote 3 years ago\" [level=1]":
+            - link [202] "Islanduniverse":
+              - /url: /user/Islanduniverse
+              - strong: Islanduniverse
+            - text: [t1_j48ryr9] wrote
+            - time: 3 years ago
+          - list:
+            - Hide −
+          - paragraph: Having the tools doesn’t mean they are needed for every job. And he absolutely did not need a track saw for that cut. Sure, it made it easier, but there are other ways to do it that don’t require any expensive tools.
+          - paragraph: The finished product looks amazing, but I 100% disagree that a newbie couldn’t do this.
+          - navigation:
+            - list:
+              - link [203] "Reply":
+                - /url: /f/DIY/76184/-/comment/1355330
+                - strong: Reply
+              - link [204] "Permalink":
+                - /url: /f/DIY/76184/-/comment/1355330
+              - link [205] "Parent":
+                - /url: /f/DIY/76184/-/comment/1355253
+          - button [206] "Upvote"
+          - text: −1
+          - button [207] "Downvote"
+          - article:
+            - checkbox [208] "Hide −" [checked]
+            - "heading \"S_204 [t1_j48y38v] wrote 3 years ago\" [level=1]":
+              - link [209] "S_204":
+                - /url: /user/S_204
+                - strong: S_204
+              - text: [t1_j48y38v] wrote
+              - time: 3 years ago
+            - list:
+              - Hide −
+            - paragraph: The fact he pulled out a track saw when it's not needed is what shows he's far better equipped than your average DIY guy.
+            - navigation:
+              - list:
+                - link [210] "Reply":
+                  - /url: /f/DIY/76184/-/comment/1355634
+                  - strong: Reply
+                - link [211] "Permalink":
+                  - /url: /f/DIY/76184/-/comment/1355634
+                - link [212] "Parent":
+                  - /url: /f/DIY/76184/-/comment/1355330
+            - button [213] "Upvote"
+            - text: 3
+            - button [214] "Downvote"
+  - article:
+    - checkbox [215] "Hide −" [checked]
+    - "heading \"Flip86 [t1_j45sy6v] wrote 3 years ago\" [level=1]":
+      - link [216] "Flip86":
+        - /url: /user/Flip86
+        - strong: Flip86
+      - text: [t1_j45sy6v] wrote
+      - time: 3 years ago
+    - list:
+      - Hide −
+    - paragraph: "AKA: A vanity."
+    - navigation:
+      - list:
+        - link [217] "Reply":
+          - /url: /f/DIY/76184/-/comment/1349044
+          - strong: Reply
+        - link [218] "Permalink":
+          - /url: /f/DIY/76184/-/comment/1349044
+    - button [219] "Upvote"
+    - text: 56
+    - button [220] "Downvote"
+    - article:
+      - checkbox [221] "Hide −" [checked]
+      - "heading \"iamrealz [t1_j46ghsq] wrote 3 years ago\" [level=1]":
+        - link [222] "iamrealz":
+          - /url: /user/iamrealz
+          - strong: iamrealz
+        - text: [t1_j46ghsq] wrote
+        - time: 3 years ago
+      - list:
+        - Hide −
+      - paragraph: A vanity project if you will
+      - navigation:
+        - list:
+          - link [223] "Reply":
+            - /url: /f/DIY/76184/-/comment/1350314
+            - strong: Reply
+          - link [224] "Permalink":
+            - /url: /f/DIY/76184/-/comment/1350314
+          - link [225] "Parent":
+            - /url: /f/DIY/76184/-/comment/1349044
+      - button [226] "Upvote"
+      - text: 36
+      - button [227] "Downvote"
+    - article:
+      - checkbox [228] "Hide −" [checked]
+      - "heading \"Sorkill Original poster [t1_j46zqez] wrote 3 years ago\" [level=1]":
+        - link [229] "Sorkill":
+          - /url: /user/Sorkill
+          - strong: Sorkill
+        - text: [OP] [t1_j46zqez] wrote
+        - time: 3 years ago
+      - list:
+        - Hide −
+      - paragraph: TIL
+      - navigation:
+        - list:
+          - link [230] "Reply":
+            - /url: /f/DIY/76184/-/comment/1351576
+            - strong: Reply
+          - link [231] "Permalink":
+            - /url: /f/DIY/76184/-/comment/1351576
+          - link [232] "Parent":
+            - /url: /f/DIY/76184/-/comment/1349044
+      - button [233] "Upvote"
+      - text: 12
+      - button [234] "Downvote"
+  - article:
+    - checkbox [235] "Hide −" [checked]
+    - "heading \"redrubynail [t1_j46vdz4] wrote 3 years ago\" [level=1]":
+      - link [236] "redrubynail":
+        - /url: /user/redrubynail
+        - strong: redrubynail
+      - text: [t1_j46vdz4] wrote
+      - time: 3 years ago
+    - list:
+      - Hide −
+    - paragraph: I can't believe you painted it. The wood was so beautiful 😭
+    - navigation:
+      - list:
+        - link [237] "Reply":
+          - /url: /f/DIY/76184/-/comment/1351273
+          - strong: Reply
+        - link [238] "Permalink":
+          - /url: /f/DIY/76184/-/comment/1351273
+    - button [239] "Upvote"
+    - text: 38
+    - button [240] "Downvote"
+    - article:
+      - checkbox [241] "Hide −" [checked]
+      - "heading \"too_too2 [t1_j47vfof] wrote 3 years ago\" [level=1]":
+        - link [242] "too_too2":
+          - /url: /user/too_too2
+          - strong: too_too2
+        - text: [t1_j47vfof] wrote
+        - time: 3 years ago
+      - list:
+        - Hide −
+      - paragraph: But the woods didn’t match? I like the white a lot.
+      - navigation:
+        - list:
+          - link [243] "Reply":
+            - /url: /f/DIY/76184/-/comment/1353594
+            - strong: Reply
+          - link [244] "Permalink":
+            - /url: /f/DIY/76184/-/comment/1353594
+          - link [245] "Parent":
+            - /url: /f/DIY/76184/-/comment/1351273
+      - button [246] "Upvote"
+      - text: 43
+      - button [247] "Downvote"
+      - article:
+        - checkbox [248] "Hide −" [checked]
+        - "heading \"throwstuffok [t1_j48f36q] wrote 3 years ago\" [level=1]":
+          - link [249] "throwstuffok":
+            - /url: /user/throwstuffok
+            - strong: throwstuffok
+          - text: [t1_j48f36q] wrote
+          - time: 3 years ago
+        - list:
+          - Hide −
+        - paragraph: Yeah it was either paint it or half the wood was just going to look really shitty in comparison to the other half. I think it looks pretty good.
+        - navigation:
+          - list:
+            - link [250] "Reply":
+              - /url: /f/DIY/76184/-/comment/1354672
+              - strong: Reply
+            - link [251] "Permalink":
+              - /url: /f/DIY/76184/-/comment/1354672
+            - link [252] "Parent":
+              - /url: /f/DIY/76184/-/comment/1353594
+        - button [253] "Upvote"
+        - text: 8
+        - button [254] "Downvote"
+    - article:
+      - checkbox [255] "Hide −" [checked]
+      - "heading \"coddywhompus [t1_j46xa1h] wrote 3 years ago\" [level=1]":
+        - link [256] "coddywhompus":
+          - /url: /user/coddywhompus
+          - strong: coddywhompus
+        - text: [t1_j46xa1h] wrote
+        - time: 3 years ago
+      - list:
+        - Hide −
+      - paragraph: I was looking for this comment. OP did a nice job, but painting that beautiful old oak was criminal.
+      - navigation:
+        - list:
+          - link [257] "Reply":
+            - /url: /f/DIY/76184/-/comment/1351391
+            - strong: Reply
+          - link [258] "Permalink":
+            - /url: /f/DIY/76184/-/comment/1351391
+          - link [259] "Parent":
+            - /url: /f/DIY/76184/-/comment/1351273
+      - button [260] "Upvote"
+      - text: 26
+      - button [261] "Downvote"
+      - article:
+        - checkbox [262] "Hide −" [checked]
+        - "heading \"Nugginz [t1_j47aoqb] wrote 3 years ago\" [level=1]":
+          - link [263] "Nugginz":
+            - /url: /user/Nugginz
+            - strong: Nugginz
+          - text: [t1_j47aoqb] wrote
+          - time: 3 years ago
+        - list:
+          - Hide −
+        - paragraph: I had to look at the pictures in reverse order just for the eye wash.
+        - navigation:
+          - list:
+            - link [264] "Reply":
+              - /url: /f/DIY/76184/-/comment/1352330
+              - strong: Reply
+            - link [265] "Permalink":
+              - /url: /f/DIY/76184/-/comment/1352330
+            - link [266] "Parent":
+              - /url: /f/DIY/76184/-/comment/1351391
+        - button [267] "Upvote"
+        - text: 8
+        - button [268] "Downvote"
+  - article:
+    - checkbox [269] "Hide −" [checked]
+    - "heading \"newocean [t1_j466iqq] wrote 3 years ago\" [level=1]":
+      - link [270] "newocean":
+        - /url: /user/newocean
+        - strong: newocean
+      - text: [t1_j466iqq] wrote
+      - time: 3 years ago
+    - list:
+      - Hide −
+    - paragraph: Where the hell is she supposed to stash her booze now?
+    - navigation:
+      - list:
+        - link [271] "Reply":
+          - /url: /f/DIY/76184/-/comment/1349702
+          - strong: Reply
+        - link [272] "Permalink":
+          - /url: /f/DIY/76184/-/comment/1349702
+    - button [273] "Upvote"
+    - text: 29
+    - button [274] "Downvote"
+  - article:
+    - checkbox [275] "Hide −" [checked]
+    - "heading \"agent_kater [t1_j45tf84] wrote 3 years ago\" [level=1]":
+      - link [276] "agent_kater":
+        - /url: /user/agent_kater
+        - strong: agent_kater
+      - text: [t1_j45tf84] wrote
+      - time: 3 years ago
+    - list:
+      - Hide −
+    - paragraph: My wife occasionally complains that we don't have enough light around the mirror so that the look changes when she goes out into the sun. Yours looks relatively dim as well.
+    - navigation:
+      - list:
+        - link [277] "Reply":
+          - /url: /f/DIY/76184/-/comment/1349067
+          - strong: Reply
+        - link [278] "Permalink":
+          - /url: /f/DIY/76184/-/comment/1349067
+    - button [279] "Upvote"
+    - text: 26
+    - button [280] "Downvote"
+    - article:
+      - checkbox [281] "Hide −" [checked]
+      - "heading \"awnman1 [t1_j4612cg] wrote 3 years ago\" [level=1]":
+        - link [282] "awnman1":
+          - /url: /user/awnman1
+          - strong: awnman1
+        - text: [t1_j4612cg] wrote
+        - time: 3 years ago
+      - list:
+        - Hide −
+      - paragraph: It can also be the light. If it’s a cooler CCT which people tend to use it will mute a lot of colors pretty bad. Wanna go warmer about 4000-5000k. Using high CRI helps as well. OP’s looks cooler than I would have gone.
+      - paragraph: It’ll be more like being in a jewelry store. They have great lighting if you have ever noticed. I believe even the nicer make up places do this as well. Could be wrong.
+      - paragraph: "TLDR: could be color temp of light and not the light being too dim."
+      - navigation:
+        - list:
+          - link [283] "Reply":
+            - /url: /f/DIY/76184/-/comment/1349441
+            - strong: Reply
+          - link [284] "Permalink":
+            - /url: /f/DIY/76184/-/comment/1349441
+          - link [285] "Parent":
+            - /url: /f/DIY/76184/-/comment/1349067
+      - button [286] "Upvote"
+      - text: 28
+      - button [287] "Downvote"
+      - article:
+        - checkbox [288] "Hide −" [checked]
+        - "heading \"agent_kater [t1_j4904xo] wrote 3 years ago\" [level=1]":
+          - link [289] "agent_kater":
+            - /url: /user/agent_kater
+            - strong: agent_kater
+          - text: [t1_j4904xo] wrote
+          - time: 3 years ago
+        - list:
+          - Hide −
+        - paragraph: >Wanna go warmer about 4000-5000k.
+        - paragraph:
+          - text: That's pretty cold light IMO. Lost in translation maybe? We say "warmer" light when the color temperature goes
+          - emphasis: down
+          - text: .
+        - paragraph: (Etymologically I think it's because of the color of a fireplace.)
+        - navigation:
+          - list:
+            - link [290] "Reply":
+              - /url: /f/DIY/76184/-/comment/1355755
+              - strong: Reply
+            - link [291] "Permalink":
+              - /url: /f/DIY/76184/-/comment/1355755
+            - link [292] "Parent":
+              - /url: /f/DIY/76184/-/comment/1349441
+        - button [293] "Upvote"
+        - text: 2
+        - button [294] "Downvote"
+    - article:
+      - checkbox [295] "Hide −" [checked]
+      - "heading \"Sorkill Original poster [t1_j470t4a] wrote 3 years ago\" [level=1]":
+        - link [296] "Sorkill":
+          - /url: /user/Sorkill
+          - strong: Sorkill
+        - text: [OP] [t1_j470t4a] wrote
+        - time: 3 years ago
+      - list:
+        - Hide −
+      - paragraph: It is also a concern for me. But the top led strip also reflects in the mirror so it gives direct light to the face. I hope that will be enough. If it is not enough i have wound extra lights specialy made for makeup around the mirror.
+      - navigation:
+        - list:
+          - link [297] "Reply":
+            - /url: /f/DIY/76184/-/comment/1351635
+            - strong: Reply
+          - link [298] "Permalink":
+            - /url: /f/DIY/76184/-/comment/1351635
+          - link [299] "Parent":
+            - /url: /f/DIY/76184/-/comment/1349067
+      - button [300] "Upvote"
+      - text: 13
+      - button [301] "Downvote"
+    - article:
+      - checkbox [302] "Hide −" [checked]
+      - "heading \"dariamorgenderper [t1_j45ziyg] wrote 3 years ago\" [level=1]":
+        - link [303] "dariamorgenderper":
+          - /url: /user/dariamorgenderper
+          - strong: dariamorgenderper
+        - text: [t1_j45ziyg] wrote
+        - time: 3 years ago
+      - list:
+        - Hide −
+      - paragraph: It may be brighter when seated; it looks like the table top is nicely lit. She may also have a table-top mirror with lighting.
+      - navigation:
+        - list:
+          - link [304] "Reply":
+            - /url: /f/DIY/76184/-/comment/1349361
+            - strong: Reply
+          - link [305] "Permalink":
+            - /url: /f/DIY/76184/-/comment/1349361
+          - link [306] "Parent":
+            - /url: /f/DIY/76184/-/comment/1349067
+      - button [307] "Upvote"
+      - text: 10
+      - button [308] "Downvote"
+      - article:
+        - checkbox [309] "Hide −" [checked]
+        - "heading \"Sorkill Original poster [t1_j470yjt] wrote 3 years ago\" [level=1]":
+          - link [310] "Sorkill":
+            - /url: /user/Sorkill
+            - strong: Sorkill
+          - text: [OP] [t1_j470yjt] wrote
+          - time: 3 years ago
+        - list:
+          - Hide −
+        - paragraph: Indeed, when seated the top led strip also reflects in the mirror so it gives direct light to the face.
+        - navigation:
+          - list:
+            - link [311] "Reply":
+              - /url: /f/DIY/76184/-/comment/1351643
+              - strong: Reply
+            - link [312] "Permalink":
+              - /url: /f/DIY/76184/-/comment/1351643
+            - link [313] "Parent":
+              - /url: /f/DIY/76184/-/comment/1349361
+        - button [314] "Upvote"
+        - text: 7
+        - button [315] "Downvote"
+    - article:
+      - checkbox [316] "Hide −" [checked]
+      - "heading \"firebyfloyd [t1_j4725zg] wrote 3 years ago\" [level=1]":
+        - link [317] "firebyfloyd":
+          - /url: /user/firebyfloyd
+          - strong: firebyfloyd
+        - text: [t1_j4725zg] wrote
+        - time: 3 years ago
+      - list:
+        - Hide −
+      - paragraph: Add to that the shelf space inviting even more light blockage from everything that will be placed there.
+      - navigation:
+        - list:
+          - link [318] "Reply":
+            - /url: /f/DIY/76184/-/comment/1351726
+            - strong: Reply
+          - link [319] "Permalink":
+            - /url: /f/DIY/76184/-/comment/1351726
+          - link [320] "Parent":
+            - /url: /f/DIY/76184/-/comment/1349067
+      - button [321] "Upvote"
+      - text: −1
+      - button [322] "Downvote"
+  - article:
+    - checkbox [323] "Hide −" [checked]
+    - "heading \"[deleted] [t1_j45ygdf] wrote 3 years ago\" [level=1]":
+      - link [324] "[deleted]":
+        - /url: /user/%5Bdeleted%5D
+        - strong: [deleted]
+      - text: [t1_j45ygdf] wrote
+      - time: 3 years ago
+    - list:
+      - Hide −
+    - paragraph: [removed]
+    - navigation:
+      - list:
+        - link [325] "Reply":
+          - /url: /f/DIY/76184/-/comment/1349305
+          - strong: Reply
+        - link [326] "Permalink":
+          - /url: /f/DIY/76184/-/comment/1349305
+    - button [327] "Upvote"
+    - text: 21
+    - button [328] "Downvote"
+    - article:
+      - checkbox [329] "Hide −" [checked]
+      - "heading \"[deleted] [t1_j465tqo] wrote 3 years ago\" [level=1]":
+        - link [330] "[deleted]":
+          - /url: /user/%5Bdeleted%5D
+          - strong: [deleted]
+        - text: [t1_j465tqo] wrote
+        - time: 3 years ago
+      - list:
+        - Hide −
+      - paragraph: [removed]
+      - navigation:
+        - list:
+          - link [331] "Reply":
+            - /url: /f/DIY/76184/-/comment/1349669
+            - strong: Reply
+          - link [332] "Permalink":
+            - /url: /f/DIY/76184/-/comment/1349669
+          - link [333] "Parent":
+            - /url: /f/DIY/76184/-/comment/1349305
+      - button [334] "Upvote"
+      - text: 14
+      - button [335] "Downvote"
+      - article:
+        - checkbox [336] "Hide −" [checked]
+        - "heading \"[deleted] [t1_j468s58] wrote 3 years ago\" [level=1]":
+          - link [337] "[deleted]":
+            - /url: /user/%5Bdeleted%5D
+            - strong: [deleted]
+          - text: [t1_j468s58] wrote
+          - time: 3 years ago
+        - list:
+          - Hide −
+        - paragraph: [removed]
+        - navigation:
+          - list:
+            - link [338] "Reply":
+              - /url: /f/DIY/76184/-/comment/1349829
+              - strong: Reply
+            - link [339] "Permalink":
+              - /url: /f/DIY/76184/-/comment/1349829
+            - link [340] "Parent":
+              - /url: /f/DIY/76184/-/comment/1349669
+        - button [341] "Upvote"
+        - text: 12
+        - button [342] "Downvote"
+        - article:
+          - checkbox [343] "Hide −" [checked]
+          - "heading \"[deleted] [t1_j478wkg] wrote 3 years ago\" [level=1]":
+            - link [344] "[deleted]":
+              - /url: /user/%5Bdeleted%5D
+              - strong: [deleted]
+            - text: [t1_j478wkg] wrote
+            - time: 3 years ago
+          - list:
+            - Hide −
+          - paragraph: [removed]
+          - navigation:
+            - list:
+              - link [345] "Reply":
+                - /url: /f/DIY/76184/-/comment/1352197
+                - strong: Reply
+              - link [346] "Permalink":
+                - /url: /f/DIY/76184/-/comment/1352197
+              - link [347] "Parent":
+                - /url: /f/DIY/76184/-/comment/1349829
+          - button [348] "Upvote"
+          - text: 2
+          - button [349] "Downvote"
+  - article:
+    - checkbox [350] "Hide −" [checked]
+    - "heading \"[deleted] [t1_j46kenq] wrote 3 years ago\" [level=1]":
+      - link [351] "[deleted]":
+        - /url: /user/%5Bdeleted%5D
+        - strong: [deleted]
+      - text: [t1_j46kenq] wrote
+      - time: 3 years ago
+    - list:
+      - Hide −
+    - paragraph: [removed]
+    - navigation:
+      - list:
+        - link [352] "Reply":
+          - /url: /f/DIY/76184/-/comment/1350558
+          - strong: Reply
+        - link [353] "Permalink":
+          - /url: /f/DIY/76184/-/comment/1350558
+    - button [354] "Upvote"
+    - text: 16
+    - button [355] "Downvote"
+  - article:
+    - checkbox [356] "Hide −" [checked]
+    - "heading \"fkenthrowaway [t1_j46jk27] wrote 3 years ago\" [level=1]":
+      - link [357] "fkenthrowaway":
+        - /url: /user/fkenthrowaway
+        - strong: fkenthrowaway
+      - text: [t1_j46jk27] wrote
+      - time: 3 years ago
+    - list:
+      - Hide −
+    - paragraph: Im a bro and I think its beautiful. Wow.
+    - navigation:
+      - list:
+        - link [358] "Reply":
+          - /url: /f/DIY/76184/-/comment/1350500
+          - strong: Reply
+        - link [359] "Permalink":
+          - /url: /f/DIY/76184/-/comment/1350500
+    - button [360] "Upvote"
+    - text: 14
+    - button [361] "Downvote"
+    - article:
+      - checkbox [362] "Hide −" [checked]
+      - "heading \"[deleted] [t1_j48i0b9] wrote 3 years ago\" [level=1]":
+        - link [363] "[deleted]":
+          - /url: /user/%5Bdeleted%5D
+          - strong: [deleted]
+        - text: [t1_j48i0b9] wrote
+        - time: 3 years ago
+      - list:
+        - Hide −
+      - paragraph: [deleted]
+      - navigation:
+        - list:
+          - link [364] "Reply":
+            - /url: /f/DIY/76184/-/comment/1354813
+            - strong: Reply
+          - link [365] "Permalink":
+            - /url: /f/DIY/76184/-/comment/1354813
+          - link [366] "Parent":
+            - /url: /f/DIY/76184/-/comment/1350500
+      - button [367] "Upvote"
+      - text: 7
+      - button [368] "Downvote"
+  - article:
+    - checkbox [369] "Hide −" [checked]
+    - "heading \"walkingoffthebuz [t1_j45wa05] wrote 3 years ago\" [level=1]":
+      - link [370] "walkingoffthebuz":
+        - /url: /user/walkingoffthebuz
+        - strong: walkingoffthebuz
+      - text: [t1_j45wa05] wrote
+      - time: 3 years ago
+    - list:
+      - Hide −
+    - paragraph: This is lovely and thoughtful. Awesome job OP!
+    - navigation:
+      - list:
+        - link [371] "Reply":
+          - /url: /f/DIY/76184/-/comment/1349191
+          - strong: Reply
+        - link [372] "Permalink":
+          - /url: /f/DIY/76184/-/comment/1349191
+    - button [373] "Upvote"
+    - text: 13
+    - button [374] "Downvote"
+  - article:
+    - checkbox [375] "Hide −" [checked]
+    - "heading \"No-Hunt-7796 [t1_j46raaf] wrote 3 years ago\" [level=1]":
+      - link [376] "No-Hunt-7796":
+        - /url: /user/No-Hunt-7796
+        - strong: No-Hunt-7796
+      - text: [t1_j46raaf] wrote
+      - time: 3 years ago
+    - list:
+      - Hide −
+    - paragraph: Beautiful 😍 What did you do with the carved wooden center piece?
+    - navigation:
+      - list:
+        - link [377] "Reply":
+          - /url: /f/DIY/76184/-/comment/1351008
+          - strong: Reply
+        - link [378] "Permalink":
+          - /url: /f/DIY/76184/-/comment/1351008
+    - button [379] "Upvote"
+    - text: 9
+    - button [380] "Downvote"
+    - article:
+      - checkbox [381] "Hide −" [checked]
+      - "heading \"Sorkill Original poster [t1_j471xde] wrote 3 years ago\" [level=1]":
+        - link [382] "Sorkill":
+          - /url: /user/Sorkill
+          - strong: Sorkill
+        - text: [OP] [t1_j471xde] wrote
+        - time: 3 years ago
+      - list:
+        - Hide −
+      - paragraph: Kept it to use later. Didn't have a good way to integrade in this piece.
+      - paragraph: It was also split in the original bar cabinet so will have to glue it.
+      - navigation:
+        - list:
+          - link [383] "Reply":
+            - /url: /f/DIY/76184/-/comment/1351711
+            - strong: Reply
+          - link [384] "Permalink":
+            - /url: /f/DIY/76184/-/comment/1351711
+          - link [385] "Parent":
+            - /url: /f/DIY/76184/-/comment/1351008
+      - button [386] "Upvote"
+      - text: 6
+      - button [387] "Downvote"
+  - article:
+    - checkbox [388] "Hide −" [checked]
+    - "heading \"poretabletti [t1_j45ztpl] wrote 3 years ago\" [level=1]":
+      - link [389] "poretabletti":
+        - /url: /user/poretabletti
+        - strong: poretabletti
+      - text: [t1_j45ztpl] wrote
+      - time: 3 years ago
+    - list:
+      - Hide −
+    - paragraph: Oh my god, that is so cute! What did she say??
+    - navigation:
+      - list:
+        - link [390] "Reply":
+          - /url: /f/DIY/76184/-/comment/1349384
+          - strong: Reply
+        - link [391] "Permalink":
+          - /url: /f/DIY/76184/-/comment/1349384
+    - button [392] "Upvote"
+    - text: 6
+    - button [393] "Downvote"
+    - article:
+      - checkbox [394] "Hide −" [checked]
+      - "heading \"Sorkill Original poster [t1_j4725ic] wrote 3 years ago\" [level=1]":
+        - link [395] "Sorkill":
+          - /url: /user/Sorkill
+          - strong: Sorkill
+        - text: [OP] [t1_j4725ic] wrote
+        - time: 3 years ago
+      - list:
+        - Hide −
+      - paragraph: Her reaction was very cute, a bit flabbergasted in the beginning. She really loves it. Makes all the effort worth it.
+      - navigation:
+        - list:
+          - link [396] "Reply":
+            - /url: /f/DIY/76184/-/comment/1351725
+            - strong: Reply
+          - link [397] "Permalink":
+            - /url: /f/DIY/76184/-/comment/1351725
+          - link [398] "Parent":
+            - /url: /f/DIY/76184/-/comment/1349384
+      - button [399] "Upvote"
+      - text: 16
+      - button [400] "Downvote"
+      - article:
+        - checkbox [401] "Hide −" [checked]
+        - "heading \"poretabletti [t1_j47frwz] wrote 3 years ago\" [level=1]":
+          - link [402] "poretabletti":
+            - /url: /user/poretabletti
+            - strong: poretabletti
+          - text: [t1_j47frwz] wrote
+          - time: 3 years ago
+        - list:
+          - Hide −
+        - paragraph: Aww, so sweet! ♥
+        - navigation:
+          - list:
+            - link [403] "Reply":
+              - /url: /f/DIY/76184/-/comment/1352669
+              - strong: Reply
+            - link [404] "Permalink":
+              - /url: /f/DIY/76184/-/comment/1352669
+            - link [405] "Parent":
+              - /url: /f/DIY/76184/-/comment/1351725
+        - button [406] "Upvote"
+        - text: 1
+        - button [407] "Downvote"
+  - article:
+    - checkbox [408] "Hide −" [checked]
+    - "heading \"Kumimono [t1_j46ksgh] wrote 3 years ago\" [level=1]":
+      - link [409] "Kumimono":
+        - /url: /user/Kumimono
+        - strong: Kumimono
+      - text: [t1_j46ksgh] wrote
+      - time: 3 years ago
+    - list:
+      - Hide −
+    - paragraph: And that old bar cabinet? It was made from an even older make-up table. True story.
+    - paragraph: Lovely work. 👍🏻
+    - navigation:
+      - list:
+        - link [410] "Reply":
+          - /url: /f/DIY/76184/-/comment/1350582
+          - strong: Reply
+        - link [411] "Permalink":
+          - /url: /f/DIY/76184/-/comment/1350582
+    - button [412] "Upvote"
+    - text: 5
+    - button [413] "Downvote"
+  - article:
+    - checkbox [414] "Hide −" [checked]
+    - "heading \"halica84 [t1_j45qwuq] wrote 3 years ago\" [level=1]":
+      - link [415] "halica84":
+        - /url: /user/halica84
+        - strong: halica84
+      - text: [t1_j45qwuq] wrote
+      - time: 3 years ago
+    - list:
+      - Hide −
+    - paragraph: Turned out beautifully.
+    - navigation:
+      - list:
+        - link [416] "Reply":
+          - /url: /f/DIY/76184/-/comment/1348958
+          - strong: Reply
+        - link [417] "Permalink":
+          - /url: /f/DIY/76184/-/comment/1348958
+    - button [418] "Upvote"
+    - text: 3
+    - button [419] "Downvote"
+  - article:
+    - checkbox [420] "Hide −" [checked]
+    - "heading \"Apasyhl [t1_j464c10] wrote 3 years ago\" [level=1]":
+      - link [421] "Apasyhl":
+        - /url: /user/Apasyhl
+        - strong: Apasyhl
+      - text: [t1_j464c10] wrote
+      - time: 3 years ago
+    - list:
+      - Hide −
+    - paragraph: This is Amazing ! I want the same ! Haha
+    - navigation:
+      - list:
+        - link [422] "Reply":
+          - /url: /f/DIY/76184/-/comment/1349594
+          - strong: Reply
+        - link [423] "Permalink":
+          - /url: /f/DIY/76184/-/comment/1349594
+    - button [424] "Upvote"
+    - text: 3
+    - button [425] "Downvote"
+  - article:
+    - checkbox [426] "Hide −" [checked]
+    - "heading \"ssm392 [t1_j467wlc] wrote 3 years ago\" [level=1]":
+      - link [427] "ssm392":
+        - /url: /user/ssm392
+        - strong: ssm392
+      - text: [t1_j467wlc] wrote
+      - time: 3 years ago
+    - list:
+      - Hide −
+    - paragraph: And now we will all know how your girlfriend became your wife 😂
+    - navigation:
+      - list:
+        - link [428] "Reply":
+          - /url: /f/DIY/76184/-/comment/1349782
+          - strong: Reply
+        - link [429] "Permalink":
+          - /url: /f/DIY/76184/-/comment/1349782
+    - button [430] "Upvote"
+    - text: 3
+    - button [431] "Downvote"
+    - article:
+      - checkbox [432] "Hide −" [checked]
+      - "heading \"rea1l1 [t1_j47j4r7] wrote 3 years ago\" [level=1]":
+        - link [433] "rea1l1":
+          - /url: /user/rea1l1
+          - strong: rea1l1
+        - text: [t1_j47j4r7] wrote
+        - time: 3 years ago
+      - list:
+        - Hide −
+      - paragraph: Lots of makeup?
+      - paragraph: (PLEASE FORGIVE ME)
+      - navigation:
+        - list:
+          - link [434] "Reply":
+            - /url: /f/DIY/76184/-/comment/1352871
+            - strong: Reply
+          - link [435] "Permalink":
+            - /url: /f/DIY/76184/-/comment/1352871
+          - link [436] "Parent":
+            - /url: /f/DIY/76184/-/comment/1349782
+      - button [437] "Upvote"
+      - text: 3
+      - button [438] "Downvote"
+  - article:
+    - checkbox [439] "Hide −" [checked]
+    - "heading \"rBowman- [t1_j46yqvr] wrote 3 years ago\" [level=1]":
+      - link [440] "rBowman-":
+        - /url: /user/rBowman-
+        - strong: rBowman-
+      - text: [t1_j46yqvr] wrote
+      - time: 3 years ago
+    - list:
+      - Hide −
+    - paragraph: Really quite a nice gift. Making the rest of us look like goobers...
+    - navigation:
+      - list:
+        - link [441] "Reply":
+          - /url: /f/DIY/76184/-/comment/1351501
+          - strong: Reply
+        - link [442] "Permalink":
+          - /url: /f/DIY/76184/-/comment/1351501
+    - button [443] "Upvote"
+    - text: 3
+    - button [444] "Downvote"
+  - article:
+    - checkbox [445] "Hide −" [checked]
+    - "heading \"WithMyOwnStar [t1_j469dj1] wrote 3 years ago\" [level=1]":
+      - link [446] "WithMyOwnStar":
+        - /url: /user/WithMyOwnStar
+        - strong: WithMyOwnStar
+      - text: [t1_j469dj1] wrote
+      - time: 3 years ago
+    - list:
+      - Hide −
+    - paragraph: That's beautiful! Love the way you did the lights up for it, too.
+    - navigation:
+      - list:
+        - link [447] "Reply":
+          - /url: /f/DIY/76184/-/comment/1349871
+          - strong: Reply
+        - link [448] "Permalink":
+          - /url: /f/DIY/76184/-/comment/1349871
+    - button [449] "Upvote"
+    - text: 2
+    - button [450] "Downvote"
+  - article:
+    - checkbox [451] "Hide −" [checked]
+    - "heading \"Adaptacije78 [t1_j46dd7e] wrote 3 years ago\" [level=1]":
+      - link [452] "Adaptacije78":
+        - /url: /user/Adaptacije78
+        - strong: Adaptacije78
+      - text: [t1_j46dd7e] wrote
+      - time: 3 years ago
+    - list:
+      - Hide −
+    - paragraph: This gift is so nice and thoughtful that you have essentially ruined the rest of her dating life.
+    - paragraph: Do you know how hard will it be to measure up to this? She will have this piece for the rest of her life, no way she replace it.
+    - navigation:
+      - list:
+        - link [453] "Reply":
+          - /url: /f/DIY/76184/-/comment/1350107
+          - strong: Reply
+        - link [454] "Permalink":
+          - /url: /f/DIY/76184/-/comment/1350107
+    - button [455] "Upvote"
+    - text: 2
+    - button [456] "Downvote"
+  - article:
+    - checkbox [457] "Hide −" [checked]
+    - "heading \"SamfromRI [t1_j46elqy] wrote 3 years ago\" [level=1]":
+      - link [458] "SamfromRI":
+        - /url: /user/SamfromRI
+        - strong: SamfromRI
+      - text: [t1_j46elqy] wrote
+      - time: 3 years ago
+    - list:
+      - Hide −
+    - paragraph: Excellent work. How often does the power bank require charging?
+    - navigation:
+      - list:
+        - link [459] "Reply":
+          - /url: /f/DIY/76184/-/comment/1350192
+          - strong: Reply
+        - link [460] "Permalink":
+          - /url: /f/DIY/76184/-/comment/1350192
+    - button [461] "Upvote"
+    - text: 2
+    - button [462] "Downvote"
+    - article:
+      - checkbox [463] "Hide −" [checked]
+      - "heading \"Sorkill Original poster [t1_j471o6n] wrote 3 years ago\" [level=1]":
+        - link [464] "Sorkill":
+          - /url: /user/Sorkill
+          - strong: Sorkill
+        - text: [OP] [t1_j471o6n] wrote
+        - time: 3 years ago
+      - list:
+        - Hide −
+      - paragraph: No idea yet. I should test it sometime. For now, with limited use the power bank still indicates a full charge.
+      - navigation:
+        - list:
+          - link [465] "Reply":
+            - /url: /f/DIY/76184/-/comment/1351693
+            - strong: Reply
+          - link [466] "Permalink":
+            - /url: /f/DIY/76184/-/comment/1351693
+          - link [467] "Parent":
+            - /url: /f/DIY/76184/-/comment/1350192
+      - button [468] "Upvote"
+      - text: 4
+      - button [469] "Downvote"
+      - article:
+        - checkbox [470] "Hide −" [checked]
+        - "heading \"SamfromRI [t1_j489lt8] wrote 3 years ago\" [level=1]":
+          - link [471] "SamfromRI":
+            - /url: /user/SamfromRI
+            - strong: SamfromRI
+          - text: [t1_j489lt8] wrote
+          - time: 3 years ago
+        - list:
+          - Hide −
+        - paragraph: That’s great! It’s a clever solution, and I would think it would last a pretty long while. In my experience those LED strips don’t take that much juice.
+        - navigation:
+          - list:
+            - link [472] "Reply":
+              - /url: /f/DIY/76184/-/comment/1354402
+              - strong: Reply
+            - link [473] "Permalink":
+              - /url: /f/DIY/76184/-/comment/1354402
+            - link [474] "Parent":
+              - /url: /f/DIY/76184/-/comment/1351693
+        - button [475] "Upvote"
+        - text: 1
+        - button [476] "Downvote"
+  - article:
+    - checkbox [477] "Hide −" [checked]
+    - "heading \"championgoober [t1_j46xuxk] wrote 3 years ago\" [level=1]":
+      - link [478] "championgoober":
+        - /url: /user/championgoober
+        - strong: championgoober
+      - text: [t1_j46xuxk] wrote
+      - time: 3 years ago
+    - list:
+      - Hide −
+    - paragraph: Good bf/gf. Very nice. I would love this given to me. So thoughtful
+    - navigation:
+      - list:
+        - link [479] "Reply":
+          - /url: /f/DIY/76184/-/comment/1351437
+          - strong: Reply
+        - link [480] "Permalink":
+          - /url: /f/DIY/76184/-/comment/1351437
+    - button [481] "Upvote"
+    - text: 2
+    - button [482] "Downvote"
+  - article:
+    - checkbox [483] "Hide −" [checked]
+    - "heading \"OneWorldMouse [t1_j479euu] wrote 3 years ago\" [level=1]":
+      - link [484] "OneWorldMouse":
+        - /url: /user/OneWorldMouse
+        - strong: OneWorldMouse
+      - text: [t1_j479euu] wrote
+      - time: 3 years ago
+    - list:
+      - Hide −
+    - paragraph: "A little make-up wouldn't hurt" birthday present lol
+    - navigation:
+      - list:
+        - link [485] "Reply":
+          - /url: /f/DIY/76184/-/comment/1352234
+          - strong: Reply
+        - link [486] "Permalink":
+          - /url: /f/DIY/76184/-/comment/1352234
+    - button [487] "Upvote"
+    - text: 2
+    - button [488] "Downvote"
+  - article:
+    - checkbox [489] "Hide −" [checked]
+    - "heading \"gaddabout [t1_j47nxds] wrote 3 years ago\" [level=1]":
+      - link [490] "gaddabout":
+        - /url: /user/gaddabout
+        - strong: gaddabout
+      - text: [t1_j47nxds] wrote
+      - time: 3 years ago
+    - list:
+      - Hide −
+    - paragraph: You stole my Grandma's couch material!
+    - navigation:
+      - list:
+        - link [491] "Reply":
+          - /url: /f/DIY/76184/-/comment/1353161
+          - strong: Reply
+        - link [492] "Permalink":
+          - /url: /f/DIY/76184/-/comment/1353161
+    - button [493] "Upvote"
+    - text: 2
+    - button [494] "Downvote"
+    - article:
+      - checkbox [495] "Hide −" [checked]
+      - "heading \"AAMUA [t1_j47pqte] wrote 3 years ago\" [level=1]":
+        - link [496] "AAMUA":
+          - /url: /user/AAMUA
+          - strong: AAMUA
+        - text: [t1_j47pqte] wrote
+        - time: 3 years ago
+      - list:
+        - Hide −
+      - paragraph: My mom 100% had this as a couch in the 90s
+      - navigation:
+        - list:
+          - link [497] "Reply":
+            - /url: /f/DIY/76184/-/comment/1353262
+            - strong: Reply
+          - link [498] "Permalink":
+            - /url: /f/DIY/76184/-/comment/1353262
+          - link [499] "Parent":
+            - /url: /f/DIY/76184/-/comment/1353161
+      - button [500] "Upvote"
+      - text: 1
+      - button [501] "Downvote"
+  - article:
+    - checkbox [502] "Hide −" [checked]
+    - "heading \"TheLadyButtPimple [t1_j47wdg0] wrote 3 years ago\" [level=1]":
+      - link [503] "TheLadyButtPimple":
+        - /url: /user/TheLadyButtPimple
+        - strong: TheLadyButtPimple
+      - text: [t1_j47wdg0] wrote
+      - time: 3 years ago
+    - list:
+      - Hide −
+    - paragraph: Do you need another girlfriend?
+    - navigation:
+      - list:
+        - link [504] "Reply":
+          - /url: /f/DIY/76184/-/comment/1353649
+          - strong: Reply
+        - link [505] "Permalink":
+          - /url: /f/DIY/76184/-/comment/1353649
+    - button [506] "Upvote"
+    - text: 2
+    - button [507] "Downvote"
+  - article:
+    - checkbox [508] "Hide −" [checked]
+    - "heading \"Exotic-Scallion4475 [t1_j4byxas] wrote 3 years ago\" [level=1]":
+      - link [509] "Exotic-Scallion4475":
+        - /url: /user/Exotic-Scallion4475
+        - strong: Exotic-Scallion4475
+      - text: [t1_j4byxas] wrote
+      - time: 3 years ago
+    - list:
+      - Hide −
+    - paragraph: This is amazing work!! Did you treat the fabric on the stool and shelves with something like never wet (I’ve heard you can iron plastic bags onto fabric too) so oils and makeup won’t stain it?
+    - navigation:
+      - list:
+        - link [510] "Reply":
+          - /url: /f/DIY/76184/-/comment/1361005
+          - strong: Reply
+        - link [511] "Permalink":
+          - /url: /f/DIY/76184/-/comment/1361005
+    - button [512] "Upvote"
+    - text: 2
+    - button [513] "Downvote"
+  - article:
+    - checkbox [514] "Hide −" [checked]
+    - "heading \"[deleted] [t1_j45vhsj] wrote 3 years ago\" [level=1]":
+      - link [515] "[deleted]":
+        - /url: /user/%5Bdeleted%5D
+        - strong: [deleted]
+      - text: [t1_j45vhsj] wrote
+      - time: 3 years ago
+    - list:
+      - Hide −
+    - paragraph: [removed]
+    - navigation:
+      - list:
+        - link [516] "Reply":
+          - /url: /f/DIY/76184/-/comment/1349148
+          - strong: Reply
+        - link [517] "Permalink":
+          - /url: /f/DIY/76184/-/comment/1349148
+    - button [518] "Upvote"
+    - text: 1
+    - button [519] "Downvote"
+  - article:
+    - checkbox [520] "Hide −" [checked]
+    - "heading \"Ok-Cat-7043 [t1_j45zt9y] wrote 3 years ago\" [level=1]":
+      - link [521] "Ok-Cat-7043":
+        - /url: /user/Ok-Cat-7043
+        - strong: Ok-Cat-7043
+      - text: [t1_j45zt9y] wrote
+      - time: 3 years ago
+    - list:
+      - Hide −
+    - paragraph: Amazing 👏
+    - navigation:
+      - list:
+        - link [522] "Reply":
+          - /url: /f/DIY/76184/-/comment/1349383
+          - strong: Reply
+        - link [523] "Permalink":
+          - /url: /f/DIY/76184/-/comment/1349383
+    - button [524] "Upvote"
+    - text: 1
+    - button [525] "Downvote"
+  - article:
+    - checkbox [526] "Hide −" [checked]
+    - "heading \"HighEngin33r [t1_j461k42] wrote 3 years ago\" [level=1]":
+      - link [527] "HighEngin33r":
+        - /url: /user/HighEngin33r
+        - strong: HighEngin33r
+      - text: [t1_j461k42] wrote
+      - time: 3 years ago
+    - list:
+      - Hide −
+    - paragraph: Don’t normally comment on this sub but this is amazing!
+    - navigation:
+      - list:
+        - link [528] "Reply":
+          - /url: /f/DIY/76184/-/comment/1349463
+          - strong: Reply
+        - link [529] "Permalink":
+          - /url: /f/DIY/76184/-/comment/1349463
+    - button [530] "Upvote"
+    - text: 1
+    - button [531] "Downvote"
+  - article:
+    - checkbox [532] "Hide −" [checked]
+    - "heading \"iperblaster [t1_j461k9f] wrote 3 years ago\" [level=1]":
+      - link [533] "iperblaster":
+        - /url: /user/iperblaster
+        - strong: iperblaster
+      - text: [t1_j461k9f] wrote
+      - time: 3 years ago
+    - list:
+      - Hide −
+    - paragraph: You should marry this guy
+    - navigation:
+      - list:
+        - link [534] "Reply":
+          - /url: /f/DIY/76184/-/comment/1349464
+          - strong: Reply
+        - link [535] "Permalink":
+          - /url: /f/DIY/76184/-/comment/1349464
+    - button [536] "Upvote"
+    - text: 1
+    - button [537] "Downvote"
+  - article:
+    - checkbox [538] "Hide −" [checked]
+    - "heading \"Crafty-Anywhere1733 [t1_j4636g2] wrote 3 years ago\" [level=1]":
+      - link [539] "Crafty-Anywhere1733":
+        - /url: /user/Crafty-Anywhere1733
+        - strong: Crafty-Anywhere1733
+      - text: [t1_j4636g2] wrote
+      - time: 3 years ago
+    - list:
+      - Hide −
+    - paragraph: Fantastishen zieben.
+    - navigation:
+      - list:
+        - link [540] "Reply":
+          - /url: /f/DIY/76184/-/comment/1349541
+          - strong: Reply
+        - link [541] "Permalink":
+          - /url: /f/DIY/76184/-/comment/1349541
+    - button [542] "Upvote"
+    - text: 1
+    - button [543] "Downvote"
+  - article:
+    - checkbox [544] "Hide −" [checked]
+    - "heading \"Kimolainen83 [t1_j464cmg] wrote 3 years ago\" [level=1]":
+      - link [545] "Kimolainen83":
+        - /url: /user/Kimolainen83
+        - strong: Kimolainen83
+      - text: [t1_j464cmg] wrote
+      - time: 3 years ago
+    - list:
+      - Hide −
+    - paragraph: Looks gorgeous very well done
+    - navigation:
+      - list:
+        - link [546] "Reply":
+          - /url: /f/DIY/76184/-/comment/1349595
+          - strong: Reply
+        - link [547] "Permalink":
+          - /url: /f/DIY/76184/-/comment/1349595
+    - button [548] "Upvote"
+    - text: 1
+    - button [549] "Downvote"
+  - article:
+    - checkbox [550] "Hide −" [checked]
+    - "heading \"Easywintergardening [t1_j464xtp] wrote 3 years ago\" [level=1]":
+      - link [551] "Easywintergardening":
+        - /url: /user/Easywintergardening
+        - strong: Easywintergardening
+      - text: [t1_j464xtp] wrote
+      - time: 3 years ago
+    - list:
+      - Hide −
+    - paragraph: So sweet
+    - navigation:
+      - list:
+        - link [552] "Reply":
+          - /url: /f/DIY/76184/-/comment/1349622
+          - strong: Reply
+        - link [553] "Permalink":
+          - /url: /f/DIY/76184/-/comment/1349622
+    - button [554] "Upvote"
+    - text: 1
+    - button [555] "Downvote"
+  - article:
+    - checkbox [556] "Hide −" [checked]
+    - "heading \"GrenadineOnTheRocks [t1_j4651yv] wrote 3 years ago\" [level=1]":
+      - link [557] "GrenadineOnTheRocks":
+        - /url: /user/GrenadineOnTheRocks
+        - strong: GrenadineOnTheRocks
+      - text: [t1_j4651yv] wrote
+      - time: 3 years ago
+    - list:
+      - Hide −
+    - paragraph: Whoa, she’s going to LOVE this. It’s beautiful!
+    - navigation:
+      - list:
+        - link [558] "Reply":
+          - /url: /f/DIY/76184/-/comment/1349626
+          - strong: Reply
+        - link [559] "Permalink":
+          - /url: /f/DIY/76184/-/comment/1349626
+    - button [560] "Upvote"
+    - text: 1
+    - button [561] "Downvote"
+  - article:
+    - checkbox [562] "Hide −" [checked]
+    - "heading \"BowsettesRevenge [t1_j46aott] wrote 3 years ago\" [level=1]":
+      - link [563] "BowsettesRevenge":
+        - /url: /user/BowsettesRevenge
+        - strong: BowsettesRevenge
+      - text: [t1_j46aott] wrote
+      - time: 3 years ago
+    - list:
+      - Hide −
+    - paragraph: Stunning. 👍
+    - navigation:
+      - list:
+        - link [564] "Reply":
+          - /url: /f/DIY/76184/-/comment/1349953
+          - strong: Reply
+        - link [565] "Permalink":
+          - /url: /f/DIY/76184/-/comment/1349953
+    - button [566] "Upvote"
+    - text: 1
+    - button [567] "Downvote"
+  - article:
+    - checkbox [568] "Hide −" [checked]
+    - "heading \"EcoFriendlySize [t1_j46ebgm] wrote 3 years ago\" [level=1]":
+      - link [569] "EcoFriendlySize":
+        - /url: /user/EcoFriendlySize
+        - strong: EcoFriendlySize
+      - text: [t1_j46ebgm] wrote
+      - time: 3 years ago
+    - list:
+      - Hide −
+    - paragraph: That is super pretty. I'd love it.
+    - navigation:
+      - list:
+        - link [570] "Reply":
+          - /url: /f/DIY/76184/-/comment/1350171
+          - strong: Reply
+        - link [571] "Permalink":
+          - /url: /f/DIY/76184/-/comment/1350171
+    - button [572] "Upvote"
+    - text: 1
+    - button [573] "Downvote"
+  - article:
+    - checkbox [574] "Hide −" [checked]
+    - "heading \"felzz [t1_j46f1jq] wrote 3 years ago\" [level=1]":
+      - link [575] "felzz":
+        - /url: /user/felzz
+        - strong: felzz
+      - text: [t1_j46f1jq] wrote
+      - time: 3 years ago
+    - list:
+      - Hide −
+    - paragraph: Wow! This is actually beautiful. Great work!
+    - navigation:
+      - list:
+        - link [576] "Reply":
+          - /url: /f/DIY/76184/-/comment/1350225
+          - strong: Reply
+        - link [577] "Permalink":
+          - /url: /f/DIY/76184/-/comment/1350225
+    - button [578] "Upvote"
+    - text: 1
+    - button [579] "Downvote"
+  - article:
+    - checkbox [580] "Hide −" [checked]
+    - "heading \"Alarming-Shoulder-20 [t1_j46f2g9] wrote 3 years ago\" [level=1]":
+      - link [581] "Alarming-Shoulder-20":
+        - /url: /user/Alarming-Shoulder-20
+        - strong: Alarming-Shoulder-20
+      - text: [t1_j46f2g9] wrote
+      - time: 3 years ago
+    - list:
+      - Hide −
+    - paragraph: Very nice and sweet of you
+    - navigation:
+      - list:
+        - link [582] "Reply":
+          - /url: /f/DIY/76184/-/comment/1350228
+          - strong: Reply
+        - link [583] "Permalink":
+          - /url: /f/DIY/76184/-/comment/1350228
+    - button [584] "Upvote"
+    - text: 1
+    - button [585] "Downvote"
+  - article:
+    - checkbox [586] "Hide −" [checked]
+    - "heading \"allbright1111 [t1_j46i3o8] wrote 3 years ago\" [level=1]":
+      - link [587] "allbright1111":
+        - /url: /user/allbright1111
+        - strong: allbright1111
+      - text: [t1_j46i3o8] wrote
+      - time: 3 years ago
+    - list:
+      - Hide −
+    - paragraph: Oh wow, that’s beautiful! I hope she loves it!
+    - navigation:
+      - list:
+        - link [588] "Reply":
+          - /url: /f/DIY/76184/-/comment/1350404
+          - strong: Reply
+        - link [589] "Permalink":
+          - /url: /f/DIY/76184/-/comment/1350404
+    - button [590] "Upvote"
+    - text: 1
+    - button [591] "Downvote"
+  - article:
+    - checkbox [592] "Hide −" [checked]
+    - "heading \"Wonderful_Strain5195 [t1_j46ll7q] wrote 3 years ago\" [level=1]":
+      - link [593] "Wonderful_Strain5195":
+        - /url: /user/Wonderful_Strain5195
+        - strong: Wonderful_Strain5195
+      - text: [t1_j46ll7q] wrote
+      - time: 3 years ago
+    - list:
+      - Hide −
+    - paragraph: This is awesome
+    - navigation:
+      - list:
+        - link [594] "Reply":
+          - /url: /f/DIY/76184/-/comment/1350640
+          - strong: Reply
+        - link [595] "Permalink":
+          - /url: /f/DIY/76184/-/comment/1350640
+    - button [596] "Upvote"
+    - text: 1
+    - button [597] "Downvote"
+  - article:
+    - checkbox [598] "Hide −" [checked]
+    - "heading \"RealStumbleweed [t1_j46ok0m] wrote 3 years ago\" [level=1]":
+      - link [599] "RealStumbleweed":
+        - /url: /user/RealStumbleweed
+        - strong: RealStumbleweed
+      - text: [t1_j46ok0m] wrote
+      - time: 3 years ago
+    - list:
+      - Hide −
+    - paragraph: Beautiful, and so nicely done!
+    - navigation:
+      - list:
+        - link [600] "Reply":
+          - /url: /f/DIY/76184/-/comment/1350830
+          - strong: Reply
+        - link [601] "Permalink":
+          - /url: /f/DIY/76184/-/comment/1350830
+    - button [602] "Upvote"
+    - text: 1
+    - button [603] "Downvote"
+  - article:
+    - checkbox [604] "Hide −" [checked]
+    - "heading \"[deleted] [t1_j46qamv] wrote 3 years ago\" [level=1]":
+      - link [605] "[deleted]":
+        - /url: /user/%5Bdeleted%5D
+        - strong: [deleted]
+      - text: [t1_j46qamv] wrote
+      - time: 3 years ago
+    - list:
+      - Hide −
+    - paragraph: [removed]
+    - navigation:
+      - list:
+        - link [606] "Reply":
+          - /url: /f/DIY/76184/-/comment/1350959
+          - strong: Reply
+        - link [607] "Permalink":
+          - /url: /f/DIY/76184/-/comment/1350959
+    - button [608] "Upvote"
+    - text: 1
+    - button [609] "Downvote"
+  - article:
+    - checkbox [610] "Hide −" [checked]
+    - "heading \"[deleted] [t1_j46qkxx] wrote 3 years ago\" [level=1]":
+      - link [611] "[deleted]":
+        - /url: /user/%5Bdeleted%5D
+        - strong: [deleted]
+      - text: [t1_j46qkxx] wrote
+      - time: 3 years ago
+    - list:
+      - Hide −
+    - paragraph: Wow this is amazing! She is going to love it!
+    - navigation:
+      - list:
+        - link [612] "Reply":
+          - /url: /f/DIY/76184/-/comment/1350972
+          - strong: Reply
+        - link [613] "Permalink":
+          - /url: /f/DIY/76184/-/comment/1350972
+    - button [614] "Upvote"
+    - text: 1
+    - button [615] "Downvote"
+  - article:
+    - checkbox [616] "Hide −" [checked]
+    - "heading \"[deleted] [t1_j46rwgo] wrote 3 years ago\" [level=1]":
+      - link [617] "[deleted]":
+        - /url: /user/%5Bdeleted%5D
+        - strong: [deleted]
+      - text: [t1_j46rwgo] wrote
+      - time: 3 years ago
+    - list:
+      - Hide −
+    - paragraph: [removed]
+    - navigation:
+      - list:
+        - link [618] "Reply":
+          - /url: /f/DIY/76184/-/comment/1351051
+          - strong: Reply
+        - link [619] "Permalink":
+          - /url: /f/DIY/76184/-/comment/1351051
+    - button [620] "Upvote"
+    - text: 1
+    - button [621] "Downvote"
+  - article:
+    - checkbox [622] "Hide −" [checked]
+    - "heading \"SweetDove [t1_j46rz5g] wrote 3 years ago\" [level=1]":
+      - link [623] "SweetDove":
+        - /url: /user/SweetDove
+        - strong: SweetDove
+      - text: [t1_j46rz5g] wrote
+      - time: 3 years ago
+    - list:
+      - Hide −
+    - paragraph: Dude, this is solid, amazing, and so full of love. Anyways, count me jealous.
+    - navigation:
+      - list:
+        - link [624] "Reply":
+          - /url: /f/DIY/76184/-/comment/1351062
+          - strong: Reply
+        - link [625] "Permalink":
+          - /url: /f/DIY/76184/-/comment/1351062
+    - button [626] "Upvote"
+    - text: 1
+    - button [627] "Downvote"
+  - article:
+    - checkbox [628] "Hide −" [checked]
+    - "heading \"asleepydrake [t1_j46w76g] wrote 3 years ago\" [level=1]":
+      - link [629] "asleepydrake":
+        - /url: /user/asleepydrake
+        - strong: asleepydrake
+      - text: [t1_j46w76g] wrote
+      - time: 3 years ago
+    - list:
+      - Hide −
+    - paragraph: Soooooo nice. The matching fabric from the chair and near the mirror purple the piece together like nothing else.
+    - navigation:
+      - list:
+        - link [630] "Reply":
+          - /url: /f/DIY/76184/-/comment/1351319
+          - strong: Reply
+        - link [631] "Permalink":
+          - /url: /f/DIY/76184/-/comment/1351319
+    - button [632] "Upvote"
+    - text: 1
+    - button [633] "Downvote"
+  - article:
+    - checkbox [634] "Hide −" [checked]
+    - "heading \"run_uz [t1_j46wczc] wrote 3 years ago\" [level=1]":
+      - link [635] "run_uz":
+        - /url: /user/run_uz
+        - strong: run_uz
+      - text: [t1_j46wczc] wrote
+      - time: 3 years ago
+    - list:
+      - Hide −
+    - paragraph: She's going to melt
+    - navigation:
+      - list:
+        - link [636] "Reply":
+          - /url: /f/DIY/76184/-/comment/1351330
+          - strong: Reply
+        - link [637] "Permalink":
+          - /url: /f/DIY/76184/-/comment/1351330
+    - button [638] "Upvote"
+    - text: 1
+    - button [639] "Downvote"
+  - article:
+    - checkbox [640] "Hide −" [checked]
+    - "heading \"[deleted] [t1_j471oiz] wrote 3 years ago\" [level=1]":
+      - link [641] "[deleted]":
+        - /url: /user/%5Bdeleted%5D
+        - strong: [deleted]
+      - text: [t1_j471oiz] wrote
+      - time: 3 years ago
+    - list:
+      - Hide −
+    - paragraph: [removed]
+    - navigation:
+      - list:
+        - link [642] "Reply":
+          - /url: /f/DIY/76184/-/comment/1351694
+          - strong: Reply
+        - link [643] "Permalink":
+          - /url: /f/DIY/76184/-/comment/1351694
+    - button [644] "Upvote"
+    - text: 1
+    - button [645] "Downvote"
+  - article:
+    - checkbox [646] "Hide −" [checked]
+    - "heading \"epicmenio [t1_j4736wt] wrote 3 years ago\" [level=1]":
+      - link [647] "epicmenio":
+        - /url: /user/epicmenio
+        - strong: epicmenio
+      - text: [t1_j4736wt] wrote
+      - time: 3 years ago
+    - list:
+      - Hide −
+    - paragraph: Awesome.
+    - navigation:
+      - list:
+        - link [648] "Reply":
+          - /url: /f/DIY/76184/-/comment/1351798
+          - strong: Reply
+        - link [649] "Permalink":
+          - /url: /f/DIY/76184/-/comment/1351798
+    - button [650] "Upvote"
+    - text: 1
+    - button [651] "Downvote"
+  - article:
+    - checkbox [652] "Hide −" [checked]
+    - "heading \"plazagirl [t1_j475nqb] wrote 3 years ago\" [level=1]":
+      - link [653] "plazagirl":
+        - /url: /user/plazagirl
+        - strong: plazagirl
+      - text: [t1_j475nqb] wrote
+      - time: 3 years ago
+    - list:
+      - Hide −
+    - paragraph: Very cool! Your wife is lucky!
+    - navigation:
+      - list:
+        - link [654] "Reply":
+          - /url: /f/DIY/76184/-/comment/1351964
+          - strong: Reply
+        - link [655] "Permalink":
+          - /url: /f/DIY/76184/-/comment/1351964
+    - button [656] "Upvote"
+    - text: 1
+    - button [657] "Downvote"
+  - article:
+    - checkbox [658] "Hide −" [checked]
+    - "heading \"longpigcumseasily [t1_j475oz6] wrote 3 years ago\" [level=1]":
+      - link [659] "longpigcumseasily":
+        - /url: /user/longpigcumseasily
+        - strong: longpigcumseasily
+      - text: [t1_j475oz6] wrote
+      - time: 3 years ago
+    - list:
+      - Hide −
+    - paragraph: That is truly beautiful.
+    - navigation:
+      - list:
+        - link [660] "Reply":
+          - /url: /f/DIY/76184/-/comment/1351967
+          - strong: Reply
+        - link [661] "Permalink":
+          - /url: /f/DIY/76184/-/comment/1351967
+    - button [662] "Upvote"
+    - text: 1
+    - button [663] "Downvote"
+  - article:
+    - checkbox [664] "Hide −" [checked]
+    - "heading \"naks2002 [t1_j478uiy] wrote 3 years ago\" [level=1]":
+      - link [665] "naks2002":
+        - /url: /user/naks2002
+        - strong: naks2002
+      - text: [t1_j478uiy] wrote
+      - time: 3 years ago
+    - list:
+      - Hide −
+    - paragraph: Impressive
+    - navigation:
+      - list:
+        - link [666] "Reply":
+          - /url: /f/DIY/76184/-/comment/1352194
+          - strong: Reply
+        - link [667] "Permalink":
+          - /url: /f/DIY/76184/-/comment/1352194
+    - button [668] "Upvote"
+    - text: 1
+    - button [669] "Downvote"
+  - article:
+    - checkbox [670] "Hide −" [checked]
+    - "heading \"Freesailer919 [t1_j47ad1y] wrote 3 years ago\" [level=1]":
+      - link [671] "Freesailer919":
+        - /url: /user/Freesailer919
+        - strong: Freesailer919
+      - text: [t1_j47ad1y] wrote
+      - time: 3 years ago
+    - list:
+      - Hide −
+    - paragraph: Dude that’s awesome! Wish I had the vision to find and repurpose stuff like that, great work and helps combat single use items!
+    - paragraph: Hope it serves y’all well for years to come!
+    - navigation:
+      - list:
+        - link [672] "Reply":
+          - /url: /f/DIY/76184/-/comment/1352302
+          - strong: Reply
+        - link [673] "Permalink":
+          - /url: /f/DIY/76184/-/comment/1352302
+    - button [674] "Upvote"
+    - text: 1
+    - button [675] "Downvote"
+  - article:
+    - checkbox [676] "Hide −" [checked]
+    - "heading \"AngelBalls [t1_j47cw1d] wrote 3 years ago\" [level=1]":
+      - link [677] "AngelBalls":
+        - /url: /user/AngelBalls
+        - strong: AngelBalls
+      - text: [t1_j47cw1d] wrote
+      - time: 3 years ago
+    - list:
+      - Hide −
+    - paragraph: Wow! That's a very sweet and thoughtful gift.
+    - navigation:
+      - list:
+        - link [678] "Reply":
+          - /url: /f/DIY/76184/-/comment/1352475
+          - strong: Reply
+        - link [679] "Permalink":
+          - /url: /f/DIY/76184/-/comment/1352475
+    - button [680] "Upvote"
+    - text: 1
+    - button [681] "Downvote"
+  - article:
+    - checkbox [682] "Hide −" [checked]
+    - "heading \"fiesty-cookie [t1_j47d2hl] wrote 3 years ago\" [level=1]":
+      - link [683] "fiesty-cookie":
+        - /url: /user/fiesty-cookie
+        - strong: fiesty-cookie
+      - text: [t1_j47d2hl] wrote
+      - time: 3 years ago
+    - list:
+      - Hide −
+    - paragraph: this is so cute and thoughtful!!!! And it came out incredible has a delicate, warm and feminine vibe. Amazing job!
+    - navigation:
+      - list:
+        - link [684] "Reply":
+          - /url: /f/DIY/76184/-/comment/1352491
+          - strong: Reply
+        - link [685] "Permalink":
+          - /url: /f/DIY/76184/-/comment/1352491
+    - button [686] "Upvote"
+    - text: 1
+    - button [687] "Downvote"
+  - article:
+    - checkbox [688] "Hide −" [checked]
+    - "heading \"servingupshade [t1_j47e6zf] wrote 3 years ago\" [level=1]":
+      - link [689] "servingupshade":
+        - /url: /user/servingupshade
+        - strong: servingupshade
+      - text: [t1_j47e6zf] wrote
+      - time: 3 years ago
+    - list:
+      - Hide −
+    - paragraph: This is gorgeous.
+    - navigation:
+      - list:
+        - link [690] "Reply":
+          - /url: /f/DIY/76184/-/comment/1352563
+          - strong: Reply
+        - link [691] "Permalink":
+          - /url: /f/DIY/76184/-/comment/1352563
+    - button [692] "Upvote"
+    - text: 1
+    - button [693] "Downvote"
+  - article:
+    - checkbox [694] "Hide −" [checked]
+    - "heading \"SugarWorth2887 [t1_j47e7wy] wrote 3 years ago\" [level=1]":
+      - link [695] "SugarWorth2887":
+        - /url: /user/SugarWorth2887
+        - strong: SugarWorth2887
+      - text: [t1_j47e7wy] wrote
+      - time: 3 years ago
+    - list:
+      - Hide −
+    - paragraph: Looks great!
+    - navigation:
+      - list:
+        - link [696] "Reply":
+          - /url: /f/DIY/76184/-/comment/1352565
+          - strong: Reply
+        - link [697] "Permalink":
+          - /url: /f/DIY/76184/-/comment/1352565
+    - button [698] "Upvote"
+    - text: 1
+    - button [699] "Downvote"
+  - article:
+    - checkbox [700] "Hide −" [checked]
+    - "heading \"TW1TCHYGAM3R [t1_j47eneu] wrote 3 years ago\" [level=1]":
+      - link [701] "TW1TCHYGAM3R":
+        - /url: /user/TW1TCHYGAM3R
+        - strong: TW1TCHYGAM3R
+      - text: [t1_j47eneu] wrote
+      - time: 3 years ago
+    - list:
+      - Hide −
+    - paragraph: Wow fantastic work!
+    - paragraph: You did a good job on the cabinet legs and the white (I'm assuming is chalk paint) really wraps everying up.
+    - navigation:
+      - list:
+        - link [702] "Reply":
+          - /url: /f/DIY/76184/-/comment/1352589
+          - strong: Reply
+        - link [703] "Permalink":
+          - /url: /f/DIY/76184/-/comment/1352589
+    - button [704] "Upvote"
+    - text: 1
+    - button [705] "Downvote"
+  - article:
+    - checkbox [706] "Hide −" [checked]
+    - "heading \"[deleted] [t1_j47fxc3] wrote 3 years ago\" [level=1]":
+      - link [707] "[deleted]":
+        - /url: /user/%5Bdeleted%5D
+        - strong: [deleted]
+      - text: [t1_j47fxc3] wrote
+      - time: 3 years ago
+    - list:
+      - Hide −
+    - paragraph: [removed]
+    - navigation:
+      - list:
+        - link [708] "Reply":
+          - /url: /f/DIY/76184/-/comment/1352678
+          - strong: Reply
+        - link [709] "Permalink":
+          - /url: /f/DIY/76184/-/comment/1352678
+    - button [710] "Upvote"
+    - text: 1
+    - button [711] "Downvote"
+  - article:
+    - checkbox [712] "Hide −" [checked]
+    - "heading \"CarrieBitach [t1_j47gk5r] wrote 3 years ago\" [level=1]":
+      - link [713] "CarrieBitach":
+        - /url: /user/CarrieBitach
+        - strong: CarrieBitach
+      - text: [t1_j47gk5r] wrote
+      - time: 3 years ago
+    - list:
+      - Hide −
+    - paragraph: Just marry him 👍🏻
+    - navigation:
+      - list:
+        - link [714] "Reply":
+          - /url: /f/DIY/76184/-/comment/1352721
+          - strong: Reply
+        - link [715] "Permalink":
+          - /url: /f/DIY/76184/-/comment/1352721
+    - button [716] "Upvote"
+    - text: 1
+    - button [717] "Downvote"
+  - article:
+    - checkbox [718] "Hide −" [checked]
+    - "heading \"Ready_Instruction822 [t1_j47guk7] wrote 3 years ago\" [level=1]":
+      - link [719] "Ready_Instruction822":
+        - /url: /user/Ready_Instruction822
+        - strong: Ready_Instruction822
+      - text: [t1_j47guk7] wrote
+      - time: 3 years ago
+    - list:
+      - Hide −
+    - paragraph: She’s lucky to have you
+    - navigation:
+      - list:
+        - link [720] "Reply":
+          - /url: /f/DIY/76184/-/comment/1352734
+          - strong: Reply
+        - link [721] "Permalink":
+          - /url: /f/DIY/76184/-/comment/1352734
+    - button [722] "Upvote"
+    - text: 1
+    - button [723] "Downvote"
+  - article:
+    - checkbox [724] "Hide −" [checked]
+    - "heading \"blacksmithysmith [t1_j47iq79] wrote 3 years ago\" [level=1]":
+      - link [725] "blacksmithysmith":
+        - /url: /user/blacksmithysmith
+        - strong: blacksmithysmith
+      - text: [t1_j47iq79] wrote
+      - time: 3 years ago
+    - list:
+      - Hide −
+    - paragraph: This is really good. Repurposed stuff can be really beautiful.
+    - navigation:
+      - list:
+        - link [726] "Reply":
+          - /url: /f/DIY/76184/-/comment/1352854
+          - strong: Reply
+        - link [727] "Permalink":
+          - /url: /f/DIY/76184/-/comment/1352854
+    - button [728] "Upvote"
+    - text: 1
+    - button [729] "Downvote"
+  - article:
+    - checkbox [730] "Hide −" [checked]
+    - "heading \"SilverSister22 [t1_j47jvdq] wrote 3 years ago\" [level=1]":
+      - link [731] "SilverSister22":
+        - /url: /user/SilverSister22
+        - strong: SilverSister22
+      - text: [t1_j47jvdq] wrote
+      - time: 3 years ago
+    - list:
+      - Hide −
+    - paragraph: "It’s beautiful and you did a great job. Although you have set the bar for future presents very high indeed. :)"
+    - navigation:
+      - list:
+        - link [732] "Reply":
+          - /url: /f/DIY/76184/-/comment/1352925
+          - strong: Reply
+        - link [733] "Permalink":
+          - /url: /f/DIY/76184/-/comment/1352925
+    - button [734] "Upvote"
+    - text: 1
+    - button [735] "Downvote"
+  - article:
+    - checkbox [736] "Hide −" [checked]
+    - "heading \"Mamawolf922 [t1_j47kjvi] wrote 3 years ago\" [level=1]":
+      - link [737] "Mamawolf922":
+        - /url: /user/Mamawolf922
+        - strong: Mamawolf922
+      - text: [t1_j47kjvi] wrote
+      - time: 3 years ago
+    - list:
+      - Hide −
+    - paragraph: This is gorgeous. Lucky lady
+    - navigation:
+      - list:
+        - link [738] "Reply":
+          - /url: /f/DIY/76184/-/comment/1352957
+          - strong: Reply
+        - link [739] "Permalink":
+          - /url: /f/DIY/76184/-/comment/1352957
+    - button [740] "Upvote"
+    - text: 1
+    - button [741] "Downvote"
+  - article:
+    - checkbox [742] "Hide −" [checked]
+    - "heading \"Ganthritor [t1_j47kxco] wrote 3 years ago\" [level=1]":
+      - link [743] "Ganthritor":
+        - /url: /user/Ganthritor
+        - strong: Ganthritor
+      - text: [t1_j47kxco] wrote
+      - time: 3 years ago
+    - list:
+      - Hide −
+    - paragraph: "Plot twist: OP's girlfriend doesn't usually wear makeup and this is a hint."
+    - navigation:
+      - list:
+        - link [744] "Reply":
+          - /url: /f/DIY/76184/-/comment/1352975
+          - strong: Reply
+        - link [745] "Permalink":
+          - /url: /f/DIY/76184/-/comment/1352975
+    - button [746] "Upvote"
+    - text: 1
+    - button [747] "Downvote"
+  - article:
+    - checkbox [748] "Hide −" [checked]
+    - "heading \"These_Lingonberry635 [t1_j47mt6k] wrote 3 years ago\" [level=1]":
+      - link [749] "These_Lingonberry635":
+        - /url: /user/These_Lingonberry635
+        - strong: These_Lingonberry635
+      - text: [t1_j47mt6k] wrote
+      - time: 3 years ago
+    - list:
+      - Hide −
+    - paragraph: That’s BEAUTIFUL! Nice job 👍🏼
+    - navigation:
+      - list:
+        - link [750] "Reply":
+          - /url: /f/DIY/76184/-/comment/1353103
+          - strong: Reply
+        - link [751] "Permalink":
+          - /url: /f/DIY/76184/-/comment/1353103
+    - button [752] "Upvote"
+    - text: 1
+    - button [753] "Downvote"
+  - article:
+    - checkbox [754] "Hide −" [checked]
+    - "heading \"blueskysahead [t1_j47oooz] wrote 3 years ago\" [level=1]":
+      - link [755] "blueskysahead":
+        - /url: /user/blueskysahead
+        - strong: blueskysahead
+      - text: [t1_j47oooz] wrote
+      - time: 3 years ago
+    - list:
+      - Hide −
+    - paragraph: Wow,that's is actually a piece you keep with you for life! Well done
+    - navigation:
+      - list:
+        - link [756] "Reply":
+          - /url: /f/DIY/76184/-/comment/1353209
+          - strong: Reply
+        - link [757] "Permalink":
+          - /url: /f/DIY/76184/-/comment/1353209
+    - button [758] "Upvote"
+    - text: 1
+    - button [759] "Downvote"
+  - article:
+    - checkbox [760] "Hide −" [checked]
+    - "heading \"rosewesteros [t1_j47pv9p] wrote 3 years ago\" [level=1]":
+      - link [761] "rosewesteros":
+        - /url: /user/rosewesteros
+        - strong: rosewesteros
+      - text: [t1_j47pv9p] wrote
+      - time: 3 years ago
+    - list:
+      - Hide −
+    - paragraph: Amazing!
+    - navigation:
+      - list:
+        - link [762] "Reply":
+          - /url: /f/DIY/76184/-/comment/1353272
+          - strong: Reply
+        - link [763] "Permalink":
+          - /url: /f/DIY/76184/-/comment/1353272
+    - button [764] "Upvote"
+    - text: 1
+    - button [765] "Downvote"
+  - article:
+    - checkbox [766] "Hide −" [checked]
+    - "heading \"daylight8 [t1_j47q8qp] wrote 3 years ago\" [level=1]":
+      - link [767] "daylight8":
+        - /url: /user/daylight8
+        - strong: daylight8
+      - text: [t1_j47q8qp] wrote
+      - time: 3 years ago
+    - list:
+      - Hide −
+    - paragraph: Nice job! The final result is very pretty and feminine.
+    - navigation:
+      - list:
+        - link [768] "Reply":
+          - /url: /f/DIY/76184/-/comment/1353292
+          - strong: Reply
+        - link [769] "Permalink":
+          - /url: /f/DIY/76184/-/comment/1353292
+    - button [770] "Upvote"
+    - text: 1
+    - button [771] "Downvote"
+  - article:
+    - checkbox [772] "Hide −" [checked]
+    - "heading \"Kccokt [t1_j47wn6b] wrote 3 years ago\" [level=1]":
+      - link [773] "Kccokt":
+        - /url: /user/Kccokt
+        - strong: Kccokt
+      - text: [t1_j47wn6b] wrote
+      - time: 3 years ago
+    - list:
+      - Hide −
+    - paragraph: Holy shit this is perfection
+    - navigation:
+      - list:
+        - link [774] "Reply":
+          - /url: /f/DIY/76184/-/comment/1353663
+          - strong: Reply
+        - link [775] "Permalink":
+          - /url: /f/DIY/76184/-/comment/1353663
+    - button [776] "Upvote"
+    - text: 1
+    - button [777] "Downvote"
+  - article:
+    - checkbox [778] "Hide −" [checked]
+    - "heading \"greenglass8 [t1_j47xk5s] wrote 3 years ago\" [level=1]":
+      - link [779] "greenglass8":
+        - /url: /user/greenglass8
+        - strong: greenglass8
+      - text: [t1_j47xk5s] wrote
+      - time: 3 years ago
+    - list:
+      - Hide −
+    - paragraph: Great job! Normally, I would cringe at painting oak wood, but this looks so good white. I'll say it again, Great job!
+    - navigation:
+      - list:
+        - link [780] "Reply":
+          - /url: /f/DIY/76184/-/comment/1353710
+          - strong: Reply
+        - link [781] "Permalink":
+          - /url: /f/DIY/76184/-/comment/1353710
+    - button [782] "Upvote"
+    - text: 1
+    - button [783] "Downvote"
+  - article:
+    - checkbox [784] "Hide −" [checked]
+    - "heading \"[deleted] [t1_j47yj3f] wrote 3 years ago\" [level=1]":
+      - link [785] "[deleted]":
+        - /url: /user/%5Bdeleted%5D
+        - strong: [deleted]
+      - text: [t1_j47yj3f] wrote
+      - time: 3 years ago
+    - list:
+      - Hide −
+    - paragraph: [removed]
+    - navigation:
+      - list:
+        - link [786] "Reply":
+          - /url: /f/DIY/76184/-/comment/1353761
+          - strong: Reply
+        - link [787] "Permalink":
+          - /url: /f/DIY/76184/-/comment/1353761
+    - button [788] "Upvote"
+    - text: 1
+    - button [789] "Downvote"
+  - article:
+    - checkbox [790] "Hide −" [checked]
+    - "heading \"DConstructed [t1_j480529] wrote 3 years ago\" [level=1]":
+      - link [791] "DConstructed":
+        - /url: /user/DConstructed
+        - strong: DConstructed
+      - text: [t1_j480529] wrote
+      - time: 3 years ago
+    - list:
+      - Hide −
+    - paragraph: Very cool idea.
+    - navigation:
+      - list:
+        - link [792] "Reply":
+          - /url: /f/DIY/76184/-/comment/1353840
+          - strong: Reply
+        - link [793] "Permalink":
+          - /url: /f/DIY/76184/-/comment/1353840
+    - button [794] "Upvote"
+    - text: 1
+    - button [795] "Downvote"
+  - article:
+    - checkbox [796] "Hide −" [checked]
+    - "heading \"katarh [t1_j48e45i] wrote 3 years ago\" [level=1]":
+      - link [797] "katarh":
+        - /url: /user/katarh
+        - strong: katarh
+      - text: [t1_j48e45i] wrote
+      - time: 3 years ago
+    - list:
+      - Hide −
+    - paragraph: Absolutely gorgeous. What a wonderful example of upcycling! I love how you reused the legs for the stool. And I agree, the fabric choice was perfect.
+    - navigation:
+      - list:
+        - link [798] "Reply":
+          - /url: /f/DIY/76184/-/comment/1354611
+          - strong: Reply
+        - link [799] "Permalink":
+          - /url: /f/DIY/76184/-/comment/1354611
+    - button [800] "Upvote"
+    - text: 1
+    - button [801] "Downvote"
+  - article:
+    - checkbox [802] "Hide −" [checked]
+    - "heading \"pinkdazy [t1_j48fr5e] wrote 3 years ago\" [level=1]":
+      - link [803] "pinkdazy":
+        - /url: /user/pinkdazy
+        - strong: pinkdazy
+      - text: [t1_j48fr5e] wrote
+      - time: 3 years ago
+    - list:
+      - Hide −
+    - paragraph: You are very talented! It's amazing!!!
+    - navigation:
+      - list:
+        - link [804] "Reply":
+          - /url: /f/DIY/76184/-/comment/1354700
+          - strong: Reply
+        - link [805] "Permalink":
+          - /url: /f/DIY/76184/-/comment/1354700
+    - button [806] "Upvote"
+    - text: 1
+    - button [807] "Downvote"
+  - article:
+    - checkbox [808] "Hide −" [checked]
+    - "heading \"luostab [t1_j48gz6t] wrote 3 years ago\" [level=1]":
+      - link [809] "luostab":
+        - /url: /user/luostab
+        - strong: luostab
+      - text: [t1_j48gz6t] wrote
+      - time: 3 years ago
+    - list:
+      - Hide −
+    - paragraph: This is soooo cute 🥺🤩 I love the built in lighting it's so perfect
+    - navigation:
+      - list:
+        - link [810] "Reply":
+          - /url: /f/DIY/76184/-/comment/1354760
+          - strong: Reply
+        - link [811] "Permalink":
+          - /url: /f/DIY/76184/-/comment/1354760
+    - button [812] "Upvote"
+    - text: 1
+    - button [813] "Downvote"
+  - article:
+    - checkbox [814] "Hide −" [checked]
+    - "heading \"Danny_Inglewood [t1_j48iixd] wrote 3 years ago\" [level=1]":
+      - link [815] "Danny_Inglewood":
+        - /url: /user/Danny_Inglewood
+        - strong: Danny_Inglewood
+      - text: [t1_j48iixd] wrote
+      - time: 3 years ago
+    - list:
+      - Hide −
+    - paragraph: This is some of the nicest feel-good DIY I have ever come across. Great work, man.
+    - navigation:
+      - list:
+        - link [816] "Reply":
+          - /url: /f/DIY/76184/-/comment/1354835
+          - strong: Reply
+        - link [817] "Permalink":
+          - /url: /f/DIY/76184/-/comment/1354835
+    - button [818] "Upvote"
+    - text: 1
+    - button [819] "Downvote"
+  - article:
+    - checkbox [820] "Hide −" [checked]
+    - "heading \"jmc510 [t1_j48ikvt] wrote 3 years ago\" [level=1]":
+      - link [821] "jmc510":
+        - /url: /user/jmc510
+        - strong: jmc510
+      - text: [t1_j48ikvt] wrote
+      - time: 3 years ago
+    - list:
+      - Hide −
+    - paragraph: Wow, this is beautiful! Nice work OP
+    - navigation:
+      - list:
+        - link [822] "Reply":
+          - /url: /f/DIY/76184/-/comment/1354838
+          - strong: Reply
+        - link [823] "Permalink":
+          - /url: /f/DIY/76184/-/comment/1354838
+    - button [824] "Upvote"
+    - text: 1
+    - button [825] "Downvote"
+  - article:
+    - checkbox [826] "Hide −" [checked]
+    - "heading \"HaveASeatChrisHansen [t1_j48j7ru] wrote 3 years ago\" [level=1]":
+      - link [827] "HaveASeatChrisHansen":
+        - /url: /user/HaveASeatChrisHansen
+        - strong: HaveASeatChrisHansen
+      - text: [t1_j48j7ru] wrote
+      - time: 3 years ago
+    - list:
+      - Hide −
+    - paragraph: Will the way the lights are framed still work correctly for doing makeup? Since they're hooded it seems like they might not give the amount of lighting. Just wondering but it's absolutely beautiful.
+    - navigation:
+      - list:
+        - link [828] "Reply":
+          - /url: /f/DIY/76184/-/comment/1354867
+          - strong: Reply
+        - link [829] "Permalink":
+          - /url: /f/DIY/76184/-/comment/1354867
+    - button [830] "Upvote"
+    - text: 1
+    - button [831] "Downvote"
+    - article:
+      - checkbox [832] "Hide −" [checked]
+      - "heading \"Sorkill Original poster [t1_j4afntv] wrote 3 years ago\" [level=1]":
+        - link [833] "Sorkill":
+          - /url: /user/Sorkill
+          - strong: Sorkill
+        - text: [OP] [t1_j4afntv] wrote
+        - time: 3 years ago
+      - list:
+        - Hide −
+      - paragraph: If you're seated and a bit closer to the mirror the top led strip reflects in the mirror so it gives direct light. My gf says its enough light so ill trust her on that. In any case its more light than we have in the bathroom so i think it is sufficient.
+      - navigation:
+        - list:
+          - link [834] "Reply":
+            - /url: /f/DIY/76184/-/comment/1358504
+            - strong: Reply
+          - link [835] "Permalink":
+            - /url: /f/DIY/76184/-/comment/1358504
+          - link [836] "Parent":
+            - /url: /f/DIY/76184/-/comment/1354867
+      - button [837] "Upvote"
+      - text: 1
+      - button [838] "Downvote"
+  - article:
+    - checkbox [839] "Hide −" [checked]
+    - "heading \"qjb020 [t1_j48otz9] wrote 3 years ago\" [level=1]":
+      - link [840] "qjb020":
+        - /url: /user/qjb020
+        - strong: qjb020
+      - text: [t1_j48otz9] wrote
+      - time: 3 years ago
+    - list:
+      - Hide −
+    - paragraph: Can i be your girlfriend for my birthday?
+    - navigation:
+      - list:
+        - link [841] "Reply":
+          - /url: /f/DIY/76184/-/comment/1355192
+          - strong: Reply
+        - link [842] "Permalink":
+          - /url: /f/DIY/76184/-/comment/1355192
+    - button [843] "Upvote"
+    - text: 1
+    - button [844] "Downvote"
+  - article:
+    - checkbox [845] "Hide −" [checked]
+    - "heading \"Stickyfynger [t1_j48rf81] wrote 3 years ago\" [level=1]":
+      - link [846] "Stickyfynger":
+        - /url: /user/Stickyfynger
+        - strong: Stickyfynger
+      - text: [t1_j48rf81] wrote
+      - time: 3 years ago
+    - list:
+      - Hide −
+    - paragraph: It’s absolutely beautiful and so are you.
+    - navigation:
+      - list:
+        - link [847] "Reply":
+          - /url: /f/DIY/76184/-/comment/1355310
+          - strong: Reply
+        - link [848] "Permalink":
+          - /url: /f/DIY/76184/-/comment/1355310
+    - button [849] "Upvote"
+    - text: 1
+    - button [850] "Downvote"
+  - article:
+    - checkbox [851] "Hide −" [checked]
+    - "heading \"missmurderous [t1_j48tk3j] wrote 3 years ago\" [level=1]":
+      - link [852] "missmurderous":
+        - /url: /user/missmurderous
+        - strong: missmurderous
+      - text: [t1_j48tk3j] wrote
+      - time: 3 years ago
+    - list:
+      - Hide −
+    - paragraph: This is beautiful!!! And so thoughtful. Great job, OP!
+    - navigation:
+      - list:
+        - link [853] "Reply":
+          - /url: /f/DIY/76184/-/comment/1355402
+          - strong: Reply
+        - link [854] "Permalink":
+          - /url: /f/DIY/76184/-/comment/1355402
+    - button [855] "Upvote"
+    - text: 1
+    - button [856] "Downvote"
+  - article:
+    - checkbox [857] "Hide −" [checked]
+    - "heading \"KonaGirl_1960 [t1_j48v5it] wrote 3 years ago\" [level=1]":
+      - link [858] "KonaGirl_1960":
+        - /url: /user/KonaGirl_1960
+        - strong: KonaGirl_1960
+      - text: [t1_j48v5it] wrote
+      - time: 3 years ago
+    - list:
+      - Hide −
+    - paragraph: What a nice boyfriend! As my dear departed Nana used to say” You’re a keeper”! 💕
+    - navigation:
+      - list:
+        - link [859] "Reply":
+          - /url: /f/DIY/76184/-/comment/1355476
+          - strong: Reply
+        - link [860] "Permalink":
+          - /url: /f/DIY/76184/-/comment/1355476
+    - button [861] "Upvote"
+    - text: 1
+    - button [862] "Downvote"
+  - article:
+    - checkbox [863] "Hide −" [checked]
+    - "heading \"[deleted] [t1_j490xns] wrote 3 years ago\" [level=1]":
+      - link [864] "[deleted]":
+        - /url: /user/%5Bdeleted%5D
+        - strong: [deleted]
+      - text: [t1_j490xns] wrote
+      - time: 3 years ago
+    - list:
+      - Hide −
+    - paragraph: [removed]
+    - navigation:
+      - list:
+        - link [865] "Reply":
+          - /url: /f/DIY/76184/-/comment/1355802
+          - strong: Reply
+        - link [866] "Permalink":
+          - /url: /f/DIY/76184/-/comment/1355802
+    - button [867] "Upvote"
+    - text: 1
+    - button [868] "Downvote"
+  - article:
+    - checkbox [869] "Hide −" [checked]
+    - "heading \"Originality8 [t1_j491lyg] wrote 3 years ago\" [level=1]":
+      - link [870] "Originality8":
+        - /url: /user/Originality8
+        - strong: Originality8
+      - text: [t1_j491lyg] wrote
+      - time: 3 years ago
+    - list:
+      - Hide −
+    - paragraph: I gasped. This is amazing.
+    - navigation:
+      - list:
+        - link [871] "Reply":
+          - /url: /f/DIY/76184/-/comment/1355842
+          - strong: Reply
+        - link [872] "Permalink":
+          - /url: /f/DIY/76184/-/comment/1355842
+    - button [873] "Upvote"
+    - text: 1
+    - button [874] "Downvote"
+  - article:
+    - checkbox [875] "Hide −" [checked]
+    - "heading \"jon-marston [t1_j496b2w] wrote 3 years ago\" [level=1]":
+      - link [876] "jon-marston":
+        - /url: /user/jon-marston
+        - strong: jon-marston
+      - text: [t1_j496b2w] wrote
+      - time: 3 years ago
+    - list:
+      - Hide −
+    - paragraph: That is beautiful & beautifully done. Great execution!! And super sweet!
+    - navigation:
+      - list:
+        - link [877] "Reply":
+          - /url: /f/DIY/76184/-/comment/1356173
+          - strong: Reply
+        - link [878] "Permalink":
+          - /url: /f/DIY/76184/-/comment/1356173
+    - button [879] "Upvote"
+    - text: 1
+    - button [880] "Downvote"
+  - article:
+    - checkbox [881] "Hide −" [checked]
+    - "heading \"the_senat0r [t1_j49eg9v] wrote 3 years ago\" [level=1]":
+      - link [882] "the_senat0r":
+        - /url: /user/the_senat0r
+        - strong: the_senat0r
+      - text: [t1_j49eg9v] wrote
+      - time: 3 years ago
+    - list:
+      - Hide −
+    - paragraph: What a thoughtful gift! I had to do a double take, because I thought this was in r/MakeupOrganization—they’d love this over there.
+    - navigation:
+      - list:
+        - link [883] "Reply":
+          - /url: /f/DIY/76184/-/comment/1356619
+          - strong: Reply
+        - link [884] "Permalink":
+          - /url: /f/DIY/76184/-/comment/1356619
+    - button [885] "Upvote"
+    - text: 1
+    - button [886] "Downvote"
+  - article:
+    - checkbox [887] "Hide −" [checked]
+    - "heading \"jessie_boomboom [t1_j49gyo6] wrote 3 years ago\" [level=1]":
+      - link [888] "jessie_boomboom":
+        - /url: /user/jessie_boomboom
+        - strong: jessie_boomboom
+      - text: [t1_j49gyo6] wrote
+      - time: 3 years ago
+    - list:
+      - Hide −
+    - paragraph: That's beautiful
+    - navigation:
+      - list:
+        - link [889] "Reply":
+          - /url: /f/DIY/76184/-/comment/1356762
+          - strong: Reply
+        - link [890] "Permalink":
+          - /url: /f/DIY/76184/-/comment/1356762
+    - button [891] "Upvote"
+    - text: 1
+    - button [892] "Downvote"
+  - article:
+    - checkbox [893] "Hide −" [checked]
+    - "heading \"SueZbell [t1_j49j9gu] wrote 3 years ago\" [level=1]":
+      - link [894] "SueZbell":
+        - /url: /user/SueZbell
+        - strong: SueZbell
+      - text: [t1_j49j9gu] wrote
+      - time: 3 years ago
+    - list:
+      - Hide −
+    - paragraph: Well done.
+    - navigation:
+      - list:
+        - link [895] "Reply":
+          - /url: /f/DIY/76184/-/comment/1356854
+          - strong: Reply
+        - link [896] "Permalink":
+          - /url: /f/DIY/76184/-/comment/1356854
+    - button [897] "Upvote"
+    - text: 1
+    - button [898] "Downvote"
+  - article:
+    - checkbox [899] "Hide −" [checked]
+    - "heading \"jenpt006 [t1_j49jibk] wrote 3 years ago\" [level=1]":
+      - link [900] "jenpt006":
+        - /url: /user/jenpt006
+        - strong: jenpt006
+      - text: [t1_j49jibk] wrote
+      - time: 3 years ago
+    - list:
+      - Hide −
+    - paragraph: So beautiful!
+    - navigation:
+      - list:
+        - link [901] "Reply":
+          - /url: /f/DIY/76184/-/comment/1356869
+          - strong: Reply
+        - link [902] "Permalink":
+          - /url: /f/DIY/76184/-/comment/1356869
+    - button [903] "Upvote"
+    - text: 1
+    - button [904] "Downvote"
+  - article:
+    - checkbox [905] "Hide −" [checked]
+    - "heading \"absoluteAbandon [t1_j49mr8l] wrote 3 years ago\" [level=1]":
+      - link [906] "absoluteAbandon":
+        - /url: /user/absoluteAbandon
+        - strong: absoluteAbandon
+      - text: [t1_j49mr8l] wrote
+      - time: 3 years ago
+    - list:
+      - Hide −
+    - paragraph: Jesus. Nice work. She must really love it. You can almost see it was made with love.
+    - navigation:
+      - list:
+        - link [907] "Reply":
+          - /url: /f/DIY/76184/-/comment/1357083
+          - strong: Reply
+        - link [908] "Permalink":
+          - /url: /f/DIY/76184/-/comment/1357083
+    - button [909] "Upvote"
+    - text: 1
+    - button [910] "Downvote"
+  - article:
+    - checkbox [911] "Hide −" [checked]
+    - "heading \"Wickersaltlamp [t1_j49myfr] wrote 3 years ago\" [level=1]":
+      - link [912] "Wickersaltlamp":
+        - /url: /user/Wickersaltlamp
+        - strong: Wickersaltlamp
+      - text: [t1_j49myfr] wrote
+      - time: 3 years ago
+    - list:
+      - Hide −
+    - paragraph: If only we all could afford and have the space and skills to have a wood shop. Our girlfriends would be so happy
+    - navigation:
+      - list:
+        - link [913] "Reply":
+          - /url: /f/DIY/76184/-/comment/1357093
+          - strong: Reply
+        - link [914] "Permalink":
+          - /url: /f/DIY/76184/-/comment/1357093
+    - button [915] "Upvote"
+    - text: 1
+    - button [916] "Downvote"
+  - article:
+    - checkbox [917] "Hide −" [checked]
+    - "heading \"tjlaa [t1_j49of71] wrote 3 years ago\" [level=1]":
+      - link [918] "tjlaa":
+        - /url: /user/tjlaa
+        - strong: tjlaa
+      - text: [t1_j49of71] wrote
+      - time: 3 years ago
+    - list:
+      - Hide −
+    - paragraph: It looks like Swedish neoclassical Gustavian style!
+    - navigation:
+      - list:
+        - link [919] "Reply":
+          - /url: /f/DIY/76184/-/comment/1357176
+          - strong: Reply
+        - link [920] "Permalink":
+          - /url: /f/DIY/76184/-/comment/1357176
+    - button [921] "Upvote"
+    - text: 1
+    - button [922] "Downvote"
+  - article:
+    - checkbox [923] "Hide −" [checked]
+    - "heading \"travis_1982 [t1_j49p0bu] wrote 3 years ago\" [level=1]":
+      - link [924] "travis_1982":
+        - /url: /user/travis_1982
+        - strong: travis_1982
+      - text: [t1_j49p0bu] wrote
+      - time: 3 years ago
+    - list:
+      - Hide −
+    - paragraph: Fantastic!
+    - navigation:
+      - list:
+        - link [925] "Reply":
+          - /url: /f/DIY/76184/-/comment/1357211
+          - strong: Reply
+        - link [926] "Permalink":
+          - /url: /f/DIY/76184/-/comment/1357211
+    - button [927] "Upvote"
+    - text: 1
+    - button [928] "Downvote"
+  - article:
+    - checkbox [929] "Hide −" [checked]
+    - "heading \"olycreates [t1_j49p5f4] wrote 3 years ago\" [level=1]":
+      - link [930] "olycreates":
+        - /url: /user/olycreates
+        - strong: olycreates
+      - text: [t1_j49p5f4] wrote
+      - time: 3 years ago
+    - list:
+      - Hide −
+    - paragraph: That came out really nice! Good job
+    - navigation:
+      - list:
+        - link [931] "Reply":
+          - /url: /f/DIY/76184/-/comment/1357217
+          - strong: Reply
+        - link [932] "Permalink":
+          - /url: /f/DIY/76184/-/comment/1357217
+    - button [933] "Upvote"
+    - text: 1
+    - button [934] "Downvote"
+  - article:
+    - checkbox [935] "Hide −" [checked]
+    - "heading \"DaddyCatALSO [t1_j49sm7b] wrote 3 years ago\" [level=1]":
+      - link [936] "DaddyCatALSO":
+        - /url: /user/DaddyCatALSO
+        - strong: DaddyCatALSO
+      - text: [t1_j49sm7b] wrote
+      - time: 3 years ago
+    - list:
+      - Hide −
+    - paragraph: "Vanity! *All* is vanity!"
+    - navigation:
+      - list:
+        - link [937] "Reply":
+          - /url: /f/DIY/76184/-/comment/1357430
+          - strong: Reply
+        - link [938] "Permalink":
+          - /url: /f/DIY/76184/-/comment/1357430
+    - button [939] "Upvote"
+    - text: 1
+    - button [940] "Downvote"
+  - article:
+    - checkbox [941] "Hide −" [checked]
+    - "heading \"almostadaddy [t1_j49to4l] wrote 3 years ago\" [level=1]":
+      - link [942] "almostadaddy":
+        - /url: /user/almostadaddy
+        - strong: almostadaddy
+      - text: [t1_j49to4l] wrote
+      - time: 3 years ago
+    - list:
+      - Hide −
+    - paragraph: If the sexes were reversed, she'd be thinking about buying you an engagement ring over this.
+    - navigation:
+      - list:
+        - link [943] "Reply":
+          - /url: /f/DIY/76184/-/comment/1357490
+          - strong: Reply
+        - link [944] "Permalink":
+          - /url: /f/DIY/76184/-/comment/1357490
+    - button [945] "Upvote"
+    - text: 1
+    - button [946] "Downvote"
+  - article:
+    - checkbox [947] "Hide −" [checked]
+    - "heading \"Glum_Childhood2946 [t1_j49vjfk] wrote 3 years ago\" [level=1]":
+      - link [948] "Glum_Childhood2946":
+        - /url: /user/Glum_Childhood2946
+        - strong: Glum_Childhood2946
+      - text: [t1_j49vjfk] wrote
+      - time: 3 years ago
+    - list:
+      - Hide −
+    - paragraph: You’re a good man for this
+    - navigation:
+      - list:
+        - link [949] "Reply":
+          - /url: /f/DIY/76184/-/comment/1357586
+          - strong: Reply
+        - link [950] "Permalink":
+          - /url: /f/DIY/76184/-/comment/1357586
+    - button [951] "Upvote"
+    - text: 1
+    - button [952] "Downvote"
+  - article:
+    - checkbox [953] "Hide −" [checked]
+    - "heading \"cuzisaidit [t1_j49x697] wrote 3 years ago\" [level=1]":
+      - link [954] "cuzisaidit":
+        - /url: /user/cuzisaidit
+        - strong: cuzisaidit
+      - text: [t1_j49x697] wrote
+      - time: 3 years ago
+    - list:
+      - Hide −
+    - paragraph: Bro, that's really nice
+    - navigation:
+      - list:
+        - link [955] "Reply":
+          - /url: /f/DIY/76184/-/comment/1357693
+          - strong: Reply
+        - link [956] "Permalink":
+          - /url: /f/DIY/76184/-/comment/1357693
+    - button [957] "Upvote"
+    - text: 1
+    - button [958] "Downvote"
+  - article:
+    - checkbox [959] "Hide −" [checked]
+    - "heading \"fuzz_ball [t1_j4a03b4] wrote 3 years ago\" [level=1]":
+      - link [960] "fuzz_ball":
+        - /url: /user/fuzz_ball
+        - strong: fuzz_ball
+      - text: [t1_j4a03b4] wrote
+      - time: 3 years ago
+    - list:
+      - Hide −
+    - paragraph: Sorry OP to inform you
+    - paragraph: It’s unlikely you’ll be able to escape without marriage
+    - navigation:
+      - list:
+        - link [961] "Reply":
+          - /url: /f/DIY/76184/-/comment/1357819
+          - strong: Reply
+        - link [962] "Permalink":
+          - /url: /f/DIY/76184/-/comment/1357819
+    - button [963] "Upvote"
+    - text: 1
+    - button [964] "Downvote"
+  - article:
+    - checkbox [965] "Hide −" [checked]
+    - "heading \"naenkaos [t1_j4a15u4] wrote 3 years ago\" [level=1]":
+      - link [966] "naenkaos":
+        - /url: /user/naenkaos
+        - strong: naenkaos
+      - text: [t1_j4a15u4] wrote
+      - time: 3 years ago
+    - list:
+      - Hide −
+    - paragraph: Holy sheet this is beautiful! You’ve done an excellent job!
+    - navigation:
+      - list:
+        - link [967] "Reply":
+          - /url: /f/DIY/76184/-/comment/1357881
+          - strong: Reply
+        - link [968] "Permalink":
+          - /url: /f/DIY/76184/-/comment/1357881
+    - button [969] "Upvote"
+    - text: 1
+    - button [970] "Downvote"
+  - article:
+    - checkbox [971] "Hide −" [checked]
+    - "heading \"annabananag [t1_j4a2jhv] wrote 3 years ago\" [level=1]":
+      - link [972] "annabananag":
+        - /url: /user/annabananag
+        - strong: annabananag
+      - text: [t1_j4a2jhv] wrote
+      - time: 3 years ago
+    - list:
+      - Hide −
+    - paragraph: Bless you
+    - navigation:
+      - list:
+        - link [973] "Reply":
+          - /url: /f/DIY/76184/-/comment/1357961
+          - strong: Reply
+        - link [974] "Permalink":
+          - /url: /f/DIY/76184/-/comment/1357961
+    - button [975] "Upvote"
+    - text: 1
+    - button [976] "Downvote"
+  - article:
+    - checkbox [977] "Hide −" [checked]
+    - "heading \"Somerset76 [t1_j4abk3d] wrote 3 years ago\" [level=1]":
+      - link [978] "Somerset76":
+        - /url: /user/Somerset76
+        - strong: Somerset76
+      - text: [t1_j4abk3d] wrote
+      - time: 3 years ago
+    - list:
+      - Hide −
+    - paragraph: That is so beautiful! Great job!
+    - navigation:
+      - list:
+        - link [979] "Reply":
+          - /url: /f/DIY/76184/-/comment/1358355
+          - strong: Reply
+        - link [980] "Permalink":
+          - /url: /f/DIY/76184/-/comment/1358355
+    - button [981] "Upvote"
+    - text: 1
+    - button [982] "Downvote"
+  - article:
+    - checkbox [983] "Hide −" [checked]
+    - "heading \"val319 [t1_j4advhf] wrote 3 years ago\" [level=1]":
+      - link [984] "val319":
+        - /url: /user/val319
+        - strong: val319
+      - text: [t1_j4advhf] wrote
+      - time: 3 years ago
+    - list:
+      - Hide −
+    - paragraph: I just spent months looking. Found something that would work. You did amazing! Great job!
+    - navigation:
+      - list:
+        - link [985] "Reply":
+          - /url: /f/DIY/76184/-/comment/1358445
+          - strong: Reply
+        - link [986] "Permalink":
+          - /url: /f/DIY/76184/-/comment/1358445
+    - button [987] "Upvote"
+    - text: 1
+    - button [988] "Downvote"
+  - article:
+    - checkbox [989] "Hide −" [checked]
+    - "heading \"[deleted] [t1_j4aegsf] wrote 3 years ago\" [level=1]":
+      - link [990] "[deleted]":
+        - /url: /user/%5Bdeleted%5D
+        - strong: [deleted]
+      - text: [t1_j4aegsf] wrote
+      - time: 3 years ago
+    - list:
+      - Hide −
+    - paragraph: [removed]
+    - navigation:
+      - list:
+        - link [991] "Reply":
+          - /url: /f/DIY/76184/-/comment/1358463
+          - strong: Reply
+        - link [992] "Permalink":
+          - /url: /f/DIY/76184/-/comment/1358463
+    - button [993] "Upvote"
+    - text: 1
+    - button [994] "Downvote"
+  - article:
+    - checkbox [995] "Hide −" [checked]
+    - "heading \"InternalEffective420 [t1_j4ai6i0] wrote 3 years ago\" [level=1]":
+      - link [996] "InternalEffective420":
+        - /url: /user/InternalEffective420
+        - strong: InternalEffective420
+      - text: [t1_j4ai6i0] wrote
+      - time: 3 years ago
+    - list:
+      - Hide −
+    - paragraph: Very impressive & kind 🌿
+    - navigation:
+      - list:
+        - link [997] "Reply":
+          - /url: /f/DIY/76184/-/comment/1358606
+          - strong: Reply
+        - link [998] "Permalink":
+          - /url: /f/DIY/76184/-/comment/1358606
+    - button [999] "Upvote"
+    - text: 1
+    - button [1000] "Downvote"
+  - article:
+    - checkbox [1001] "Hide −" [checked]
+    - "heading \"shadow_pico [t1_j4ajxp0] wrote 3 years ago\" [level=1]":
+      - link [1002] "shadow_pico":
+        - /url: /user/shadow_pico
+        - strong: shadow_pico
+      - text: [t1_j4ajxp0] wrote
+      - time: 3 years ago
+    - list:
+      - Hide −
+    - paragraph: This is gorgeous!
+    - navigation:
+      - list:
+        - link [1003] "Reply":
+          - /url: /f/DIY/76184/-/comment/1358675
+          - strong: Reply
+        - link [1004] "Permalink":
+          - /url: /f/DIY/76184/-/comment/1358675
+    - button [1005] "Upvote"
+    - text: 1
+    - button [1006] "Downvote"
+  - article:
+    - checkbox [1007] "Hide −" [checked]
+    - "heading \"malfoy_potter [t1_j4akn0b] wrote 3 years ago\" [level=1]":
+      - link [1008] "malfoy_potter":
+        - /url: /user/malfoy_potter
+        - strong: malfoy_potter
+      - text: [t1_j4akn0b] wrote
+      - time: 3 years ago
+    - list:
+      - Hide −
+    - paragraph: Amazing!!! Great gift.
+    - navigation:
+      - list:
+        - link [1009] "Reply":
+          - /url: /f/DIY/76184/-/comment/1358702
+          - strong: Reply
+        - link [1010] "Permalink":
+          - /url: /f/DIY/76184/-/comment/1358702
+    - button [1011] "Upvote"
+    - text: 1
+    - button [1012] "Downvote"
+  - article:
+    - checkbox [1013] "Hide −" [checked]
+    - "heading \"WindigoMac [t1_j4bf14y] wrote 3 years ago\" [level=1]":
+      - link [1014] "WindigoMac":
+        - /url: /user/WindigoMac
+        - strong: WindigoMac
+      - text: [t1_j4bf14y] wrote
+      - time: 3 years ago
+    - list:
+      - Hide −
+    - paragraph: You’re making the rest of us look bad bro
+    - navigation:
+      - list:
+        - link [1015] "Reply":
+          - /url: /f/DIY/76184/-/comment/1360050
+          - strong: Reply
+        - link [1016] "Permalink":
+          - /url: /f/DIY/76184/-/comment/1360050
+    - button [1017] "Upvote"
+    - text: 1
+    - button [1018] "Downvote"
+  - article:
+    - checkbox [1019] "Hide −" [checked]
+    - "heading \"firsthand_residency [t1_j4bjy2w] wrote 3 years ago\" [level=1]":
+      - link [1020] "firsthand_residency":
+        - /url: /user/firsthand_residency
+        - strong: firsthand_residency
+      - text: [t1_j4bjy2w] wrote
+      - time: 3 years ago
+    - list:
+      - Hide −
+    - paragraph: okay wholesome thing I've seen today.. cool effort u got
+    - navigation:
+      - list:
+        - link [1021] "Reply":
+          - /url: /f/DIY/76184/-/comment/1360297
+          - strong: Reply
+        - link [1022] "Permalink":
+          - /url: /f/DIY/76184/-/comment/1360297
+    - button [1023] "Upvote"
+    - text: 1
+    - button [1024] "Downvote"
+  - article:
+    - checkbox [1025] "Hide −" [checked]
+    - "heading \"[deleted] [t1_j4e82i5] wrote 3 years ago\" [level=1]":
+      - link [1026] "[deleted]":
+        - /url: /user/%5Bdeleted%5D
+        - strong: [deleted]
+      - text: [t1_j4e82i5] wrote
+      - time: 3 years ago
+    - list:
+      - Hide −
+    - paragraph: [removed]
+    - navigation:
+      - list:
+        - link [1027] "Reply":
+          - /url: /f/DIY/76184/-/comment/1364753
+          - strong: Reply
+        - link [1028] "Permalink":
+          - /url: /f/DIY/76184/-/comment/1364753
+    - button [1029] "Upvote"
+    - text: 1
+    - button [1030] "Downvote"
+  - article:
+    - checkbox [1031] "Hide −" [checked]
+    - "heading \"elevatedmongoose [t1_j4f66fb] wrote 3 years ago\" [level=1]":
+      - link [1032] "elevatedmongoose":
+        - /url: /user/elevatedmongoose
+        - strong: elevatedmongoose
+      - text: [t1_j4f66fb] wrote
+      - time: 3 years ago
+    - list:
+      - Hide −
+    - paragraph: If things don't work out for you two, call me
+    - navigation:
+      - list:
+        - link [1033] "Reply":
+          - /url: /f/DIY/76184/-/comment/1366160
+          - strong: Reply
+        - link [1034] "Permalink":
+          - /url: /f/DIY/76184/-/comment/1366160
+    - button [1035] "Upvote"
+    - text: 1
+    - button [1036] "Downvote"
+  - article:
+    - checkbox [1037] "Hide −" [checked]
+    - "heading \"Longjumping_Tip_4025 [t1_j4lwf61] wrote 3 years ago\" [level=1]":
+      - link [1038] "Longjumping_Tip_4025":
+        - /url: /user/Longjumping_Tip_4025
+        - strong: Longjumping_Tip_4025
+      - text: [t1_j4lwf61] wrote
+      - time: 3 years ago
+    - list:
+      - Hide −
+    - paragraph: Looks amazing!!
+    - navigation:
+      - list:
+        - link [1039] "Reply":
+          - /url: /f/DIY/76184/-/comment/1377485
+          - strong: Reply
+        - link [1040] "Permalink":
+          - /url: /f/DIY/76184/-/comment/1377485
+    - button [1041] "Upvote"
+    - text: 1
+    - button [1042] "Downvote"
+  - article:
+    - checkbox [1043] "Hide −" [checked]
+    - "heading \"cbolser [t1_j4s57ar] wrote 3 years ago\" [level=1]":
+      - link [1044] "cbolser":
+        - /url: /user/cbolser
+        - strong: cbolser
+      - text: [t1_j4s57ar] wrote
+      - time: 3 years ago
+    - list:
+      - Hide −
+    - paragraph: Wow. We’ll done. Original idea or something you saw somewhere?
+    - navigation:
+      - list:
+        - link [1045] "Reply":
+          - /url: /f/DIY/76184/-/comment/1389694
+          - strong: Reply
+        - link [1046] "Permalink":
+          - /url: /f/DIY/76184/-/comment/1389694
+    - button [1047] "Upvote"
+    - text: 1
+    - button [1048] "Downvote"
+  - article:
+    - checkbox [1049] "Hide −" [checked]
+    - "heading \"dkwidh [t1_j5ak9zz] wrote 3 years ago\" [level=1]":
+      - link [1050] "dkwidh":
+        - /url: /user/dkwidh
+        - strong: dkwidh
+      - text: [t1_j5ak9zz] wrote
+      - time: 3 years ago
+    - list:
+      - Hide −
+    - paragraph: this is amazing! funny enough it’s the exact type of vanity i’ve been looking for. should i switch to looking for a boyfriend instead?
+    - navigation:
+      - list:
+        - link [1051] "Reply":
+          - /url: /f/DIY/76184/-/comment/1427672
+          - strong: Reply
+        - link [1052] "Permalink":
+          - /url: /f/DIY/76184/-/comment/1427672
+    - button [1053] "Upvote"
+    - text: 1
+    - button [1054] "Downvote"
+  - article:
+    - checkbox [1055] "Hide −" [checked]
+    - "heading \"diyjunkiehq [t1_j63qtyp] wrote 3 years ago\" [level=1]":
+      - link [1056] "diyjunkiehq":
+        - /url: /user/diyjunkiehq
+        - strong: diyjunkiehq
+      - text: [t1_j63qtyp] wrote
+      - time: 3 years ago
+    - list:
+      - Hide −
+    - paragraph: you are a very devoted man!
+    - navigation:
+      - list:
+        - link [1057] "Reply":
+          - /url: /f/DIY/76184/-/comment/1528234
+          - strong: Reply
+        - link [1058] "Permalink":
+          - /url: /f/DIY/76184/-/comment/1528234
+    - button [1059] "Upvote"
+    - text: 1
+    - button [1060] "Downvote"
+  - article:
+    - checkbox [1061] "Hide −" [checked]
+    - "heading \"[deleted] [t1_j46gzwn] wrote 3 years ago\" [level=1]":
+      - link [1062] "[deleted]":
+        - /url: /user/%5Bdeleted%5D
+        - strong: [deleted]
+      - text: [t1_j46gzwn] wrote
+      - time: 3 years ago
+    - list:
+      - Hide −
+    - paragraph: [removed]
+    - navigation:
+      - list:
+        - link [1063] "Reply":
+          - /url: /f/DIY/76184/-/comment/1350335
+          - strong: Reply
+        - link [1064] "Permalink":
+          - /url: /f/DIY/76184/-/comment/1350335
+    - button [1065] "Upvote"
+    - text: 0
+    - button [1066] "Downvote"
+  - article:
+    - checkbox [1067] "Hide −" [checked]
+    - "heading \"AdequateSteve [t1_j462ed4] wrote 3 years ago\" [level=1]":
+      - link [1068] "AdequateSteve":
+        - /url: /user/AdequateSteve
+        - strong: AdequateSteve
+      - text: [t1_j462ed4] wrote
+      - time: 3 years ago
+    - list:
+      - Hide −
+    - paragraph: Cross this to /r/woodworking if you haven’t already!
+    - navigation:
+      - list:
+        - link [1069] "Reply":
+          - /url: /f/DIY/76184/-/comment/1349503
+          - strong: Reply
+        - link [1070] "Permalink":
+          - /url: /f/DIY/76184/-/comment/1349503
+    - button [1071] "Upvote"
+    - text: −1
+    - button [1072] "Downvote"
+    - article:
+      - checkbox [1073] "Hide −" [checked]
+      - "heading \"data_ferret [t1_j4649n2] wrote 3 years ago\" [level=1]":
+        - link [1074] "data_ferret":
+          - /url: /user/data_ferret
+          - strong: data_ferret
+        - text: [t1_j4649n2] wrote
+        - time: 3 years ago
+      - list:
+        - Hide −
+      - paragraph: Only if you really want to hear the genuine agony when folks realize he took a nice piece of solid oak furniture and painted it.
+      - navigation:
+        - list:
+          - link [1075] "Reply":
+            - /url: /f/DIY/76184/-/comment/1349589
+            - strong: Reply
+          - link [1076] "Permalink":
+            - /url: /f/DIY/76184/-/comment/1349589
+          - link [1077] "Parent":
+            - /url: /f/DIY/76184/-/comment/1349503
+      - button [1078] "Upvote"
+      - text: 45
+      - button [1079] "Downvote"
+      - article:
+        - checkbox [1080] "Hide −" [checked]
+        - "heading \"BrainScrambled [t1_j46ckdo] wrote 3 years ago\" [level=1]":
+          - link [1081] "BrainScrambled":
+            - /url: /user/BrainScrambled
+            - strong: BrainScrambled
+          - text: [t1_j46ckdo] wrote
+          - time: 3 years ago
+        - list:
+          - Hide −
+        - paragraph: That's where I thought I was at first and was genuinely confused by the warm reception. It's beautiful work, but it also hurts a little lol.
+        - navigation:
+          - list:
+            - link [1082] "Reply":
+              - /url: /f/DIY/76184/-/comment/1350066
+              - strong: Reply
+            - link [1083] "Permalink":
+              - /url: /f/DIY/76184/-/comment/1350066
+            - link [1084] "Parent":
+              - /url: /f/DIY/76184/-/comment/1349589
+        - button [1085] "Upvote"
+        - text: 18
+        - button [1086] "Downvote"
+        - article:
+          - checkbox [1087] "Hide −" [checked]
+          - "heading \"HephaestusHarper [t1_j46sfjs] wrote 3 years ago\" [level=1]":
+            - link [1088] "HephaestusHarper":
+              - /url: /user/HephaestusHarper
+              - strong: HephaestusHarper
+            - text: [t1_j46sfjs] wrote
+            - time: 3 years ago
+          - list:
+            - Hide −
+          - paragraph: Oh ffs. It was a kind of ugly, clearly-not-antique cabinet, and now it's a lovely piece of furniture that will get used. Folks who worship at the altar of WOOD™ drive me nuts. He didn't chalk-paint a Georgian antique.
+          - navigation:
+            - list:
+              - link [1089] "Reply":
+                - /url: /f/DIY/76184/-/comment/1351091
+                - strong: Reply
+              - link [1090] "Permalink":
+                - /url: /f/DIY/76184/-/comment/1351091
+              - link [1091] "Parent":
+                - /url: /f/DIY/76184/-/comment/1350066
+          - button [1092] "Upvote"
+          - text: 23
+          - button [1093] "Downvote"
+          - article:
+            - checkbox [1094] "Hide −" [checked]
+            - "heading \"AdequateSteve [t1_j48oi9s] wrote 3 years ago\" [level=1]":
+              - link [1095] "AdequateSteve":
+                - /url: /user/AdequateSteve
+                - strong: AdequateSteve
+              - text: [t1_j48oi9s] wrote
+              - time: 3 years ago
+            - list:
+              - Hide −
+            - paragraph: "Thank you! I hate the “natural wood” worship. Yeah, I love the natural look, but not everything needs it. Perfect example of over doing it: Scott Philips. Love his work, love his skill, hate his taste. The dude’s house and shop look like a lumberjack’s whorehouse."
+            - navigation:
+              - list:
+                - link [1096] "Reply":
+                  - /url: /f/DIY/76184/-/comment/1355170
+                  - strong: Reply
+                - link [1097] "Permalink":
+                  - /url: /f/DIY/76184/-/comment/1355170
+                - link [1098] "Parent":
+                  - /url: /f/DIY/76184/-/comment/1351091
+            - button [1099] "Upvote"
+            - text: 4
+            - button [1100] "Downvote"
+          - article:
+            - checkbox [1101] "Hide −" [checked]
+            - "heading \"[deleted] [t1_j46x04p] wrote 3 years ago\" [level=1]":
+              - link [1102] "[deleted]":
+                - /url: /user/%5Bdeleted%5D
+                - strong: [deleted]
+              - text: [t1_j46x04p] wrote
+              - time: 3 years ago
+            - list:
+              - Hide −
+            - paragraph: [removed]
+            - navigation:
+              - list:
+                - link [1103] "Reply":
+                  - /url: /f/DIY/76184/-/comment/1351376
+                  - strong: Reply
+                - link [1104] "Permalink":
+                  - /url: /f/DIY/76184/-/comment/1351376
+                - link [1105] "Parent":
+                  - /url: /f/DIY/76184/-/comment/1351091
+            - button [1106] "Upvote"
+            - text: 1
+            - button [1107] "Downvote"
+      - article:
+        - checkbox [1108] "Hide −" [checked]
+        - "heading \"KakariBlue [t1_j46614b] wrote 3 years ago\" [level=1]":
+          - link [1109] "KakariBlue":
+            - /url: /user/KakariBlue
+            - strong: KakariBlue
+          - text: [t1_j46614b] wrote
+          - time: 3 years ago
+        - list:
+          - Hide −
+        - paragraph: That hurt for sure but the work that was put in seems good and the recipient is happy.
+        - paragraph: Aside from the paint I also had some misgivings about dismantling the original piece but I got over them a few pictures in because it means a piece that clearly wasn't working for someone in its original form now gets a new life. If it were an antique Chippendale that's a different story, not sure I could've let the paint go 😉.
+        - paragraph: Good job to OP.
+        - navigation:
+          - list:
+            - link [1110] "Reply":
+              - /url: /f/DIY/76184/-/comment/1349682
+              - strong: Reply
+            - link [1111] "Permalink":
+              - /url: /f/DIY/76184/-/comment/1349682
+            - link [1112] "Parent":
+              - /url: /f/DIY/76184/-/comment/1349589
+        - button [1113] "Upvote"
+        - text: 13
+        - button [1114] "Downvote"
+- complementary:
+  - paragraph:
+    - strong: 0 points
+    - text: (+0, −0)
+  - "heading \"Short URL:\" [level=4]"
+  - paragraph: "http://143.215.184.110:9999/76184"
+  - "heading \"DIY\" [level=1]":
+    - link [1115] "DIY":
+      - /url: /f/DIY
+  - button [1116] "Subscribe No subscribers": Subscribe 0
+  - paragraph: t5_2qh7d
+  - separator
+  - list:
+    - text: Created
+    - time: 4 years ago
+    - link [1117] "Subscribe via RSS":
+      - /url: /f/DIY/new.atom
+      - img
+      - text: Subscribe via RSS
+  - group [1118]: Hide this forum
+  - heading "Toolbox" [level=1]
+  - list:
+    - link [1119] "Bans":
+      - /url: /f/DIY/bans
+    - link [1120] "Moderation log":
+      - /url: /f/DIY/moderation_log
+- contentinfo:
+  - paragraph:
+    - text: Running
+    - link [1121] "Postmill":
+      - /url: "https://postmill.xyz/"

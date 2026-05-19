@@ -39,11 +39,13 @@ models    = await llm.async_client.models.list()
 """
 from __future__ import annotations
 
+import asyncio
 import json
 import re
 from dataclasses import dataclass
 from typing import Any, AsyncIterator, Dict, Tuple, Union
 
+import requests
 from openai import AsyncOpenAI, OpenAI
 
 _VLLM_BASE_URL = "http://localhost:8080/v1"
@@ -51,7 +53,7 @@ _VLLM_BASE_URL = "http://localhost:8080/v1"
 
 @dataclass(frozen=True)
 class VLLMConfig:
-    model: str = "Qwen/Qwen3.5-0.8B"
+    model: str = "openai/gpt-oss-20b"
     base_url: str = _VLLM_BASE_URL
     temperature: float = 0.0
     max_tokens: int = 8192
@@ -113,9 +115,7 @@ class VLLMClient:
             try:
                 response = await self.async_client.chat.completions.create(
                     model=self.cfg.model,
-                    temperature=0,
-                    seed=42,
-                    top_p=1.0,
+                    temperature=0.0,
                     max_tokens=self.cfg.max_tokens,
                     messages=[
                         {"role": "system", "content": system},
@@ -157,9 +157,6 @@ class VLLMClient:
         s = text.strip()
         print(s)
 
-        # strip <think>...</think> blocks (reasoning models like DeepSeek R1)
-        s = re.sub(r"<think>.*?</think>", "", s, flags=re.DOTALL).strip()
-
         # strip ``` fences  (```json ... ``` or ``` ... ```)
         if s.startswith("```"):
             lines = s.splitlines()
@@ -174,7 +171,7 @@ class VLLMClient:
                 f"LLM returned an empty response (model={self.cfg.model!r}). "
                 "Check that the vLLM server is running and the model is loaded."
             )
-
+        #print(s)
         obj = json.loads(s)
         if not isinstance(obj, (dict, list)):
             raise ValueError(f"JSON root must be dict or list, got {type(obj)}")
@@ -190,10 +187,8 @@ class VLLMClient:
         """Yield text chunks as they stream in from vLLM."""
         async with await self.async_client.chat.completions.create(
             model=self.cfg.model,
-            temperature=0,
+            temperature=0.0,
             max_tokens=self.cfg.max_tokens,
-            seed=42,
-            top_p=1.0,
             stream=True,
             messages=[
                 {"role": "system", "content": system},

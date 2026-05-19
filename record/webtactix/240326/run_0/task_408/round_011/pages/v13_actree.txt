@@ -1,0 +1,319 @@
+- navigation:
+  - link [0] "Jump to main content":
+    - /url: "#main"
+  - link [1] "Jump to sidebar":
+    - /url: "#sidebar"
+- navigation:
+  - link [2] "Home":
+    - /url: /
+    - text: Postmill
+  - list:
+    - link [3] "Forums":
+      - /url: /forums
+    - link [4] "Wiki":
+      - /url: /wiki
+  - searchbox [5] "Search query"
+  - list:
+    - link [6] "Notifications (0)":
+      - /url: /notifications
+      - img
+    - link [7] "Submit":
+      - /url: /submit/explainlikeimfive
+      - img
+      - text: Submit
+    - button [8] "MarvelsGrantMan136":
+      - img
+      - strong: MarvelsGrantMan136
+- main:
+  - navigation:
+    - list:
+      - link [9] "/f/explainlikeimfive":
+        - /url: /f/explainlikeimfive
+        - img
+        - text: /f/
+        - strong: explainlikeimfive
+  - article:
+    - "heading \"ELI5: why do we eat so much after getting high\" [level=1]":
+      - link [10] "ELI5: why do we eat so much after getting high":
+        - /url: /f/explainlikeimfive/82504/eli5-why-do-we-eat-so-much-after-getting-high
+    - paragraph:
+      - text: Submitted by
+      - link [11] "ani77":
+        - /url: /user/ani77
+        - strong: ani77
+      - text: [t3_10mxt15]
+      - time: 3 years ago
+      - text: in
+      - link [12] "explainlikeimfive":
+        - /url: /f/explainlikeimfive
+        - strong: explainlikeimfive
+    - paragraph: I am always hungry or crave food after getting stoned.
+    - navigation:
+      - list:
+        - link [13] "10 comments":
+          - /url: /f/explainlikeimfive/82504/eli5-why-do-we-eat-so-much-after-getting-high
+          - strong: 10 comments
+    - button [14] "Upvote"
+    - text: 0
+    - button [15] "Downvote"
+  - heading "Comments" [level=2]
+  - textbox [16] "Comment"
+  - checkbox [17] "Formatting help +"
+  - text: Markdown allowed. Formatting help +
+  - button [18] "Post"
+  - list:
+    - link [19] "Nested":
+      - /url: /f/explainlikeimfive/82504/eli5-why-do-we-eat-so-much-after-getting-high
+    - link [20] "Linear":
+      - /url: /f/explainlikeimfive/82504/eli5-why-do-we-eat-so-much-after-getting-high/linear
+  - article:
+    - checkbox [21] "Hide −" [checked]
+    - "heading \"[deleted] [t1_j65yx5d] wrote 3 years ago\" [level=1]":
+      - link [22] "[deleted]":
+        - /url: /user/%5Bdeleted%5D
+        - strong: [deleted]
+      - text: [t1_j65yx5d] wrote
+      - time: 3 years ago
+    - list:
+      - Hide −
+    - paragraph: [removed]
+    - navigation:
+      - list:
+        - link [23] "Reply":
+          - /url: /f/explainlikeimfive/82504/-/comment/1539663
+          - strong: Reply
+        - link [24] "Permalink":
+          - /url: /f/explainlikeimfive/82504/-/comment/1539663
+    - button [25] "Upvote"
+    - text: 2
+    - button [26] "Downvote"
+    - article:
+      - checkbox [27] "Hide −" [checked]
+      - "heading \"Legal_Ad_9782 [t1_j65zt35] wrote 3 years ago\" [level=1]":
+        - link [28] "Legal_Ad_9782":
+          - /url: /user/Legal_Ad_9782
+          - strong: Legal_Ad_9782
+        - text: [t1_j65zt35] wrote
+        - time: 3 years ago
+      - list:
+        - Hide −
+      - paragraph: "explain like im 5"
+      - navigation:
+        - list:
+          - link [29] "Reply":
+            - /url: /f/explainlikeimfive/82504/-/comment/1539774
+            - strong: Reply
+          - link [30] "Permalink":
+            - /url: /f/explainlikeimfive/82504/-/comment/1539774
+          - link [31] "Parent":
+            - /url: /f/explainlikeimfive/82504/-/comment/1539663
+      - button [32] "Upvote"
+      - text: 0
+      - button [33] "Downvote"
+      - article:
+        - checkbox [34] "Hide −" [checked]
+        - "heading \"Lavatis [t1_j664lgz] wrote 3 years ago\" [level=1]":
+          - link [35] "Lavatis":
+            - /url: /user/Lavatis
+            - strong: Lavatis
+          - text: [t1_j664lgz] wrote
+          - time: 3 years ago
+        - list:
+          - Hide −
+        - paragraph: >LI5 means friendly, simplified and layperson-accessible explanations - not responses aimed at literal five-year-olds.
+        - paragraph: from the sidebar
+        - navigation:
+          - list:
+            - link [36] "Reply":
+              - /url: /f/explainlikeimfive/82504/-/comment/1540390
+              - strong: Reply
+            - link [37] "Permalink":
+              - /url: /f/explainlikeimfive/82504/-/comment/1540390
+            - link [38] "Parent":
+              - /url: /f/explainlikeimfive/82504/-/comment/1539774
+        - button [39] "Upvote"
+        - text: 1
+        - button [40] "Downvote"
+      - article:
+        - checkbox [41] "Hide −" [checked]
+        - "heading \"halpless2112 [t1_j668541] wrote 3 years ago\" [level=1]":
+          - link [42] "halpless2112":
+            - /url: /user/halpless2112
+            - strong: halpless2112
+          - text: [t1_j668541] wrote
+          - time: 3 years ago
+        - list:
+          - Hide −
+        - paragraph: I’d say their explaination is better than yours
+        - navigation:
+          - list:
+            - link [43] "Reply":
+              - /url: /f/explainlikeimfive/82504/-/comment/1540872
+              - strong: Reply
+            - link [44] "Permalink":
+              - /url: /f/explainlikeimfive/82504/-/comment/1540872
+            - link [45] "Parent":
+              - /url: /f/explainlikeimfive/82504/-/comment/1539774
+        - button [46] "Upvote"
+        - text: 1
+        - button [47] "Downvote"
+  - article:
+    - checkbox [48] "Hide −" [checked]
+    - "heading \"[deleted] [t1_j65rzrf] wrote 3 years ago\" [level=1]":
+      - link [49] "[deleted]":
+        - /url: /user/%5Bdeleted%5D
+        - strong: [deleted]
+      - text: [t1_j65rzrf] wrote
+      - time: 3 years ago
+    - list:
+      - Hide −
+    - paragraph: [removed]
+    - navigation:
+      - list:
+        - link [50] "Reply":
+          - /url: /f/explainlikeimfive/82504/-/comment/1538765
+          - strong: Reply
+        - link [51] "Permalink":
+          - /url: /f/explainlikeimfive/82504/-/comment/1538765
+    - button [52] "Upvote"
+    - text: 1
+    - button [53] "Downvote"
+  - article:
+    - checkbox [54] "Hide −" [checked]
+    - "heading \"[deleted] [t1_j65sucy] wrote 3 years ago\" [level=1]":
+      - link [55] "[deleted]":
+        - /url: /user/%5Bdeleted%5D
+        - strong: [deleted]
+      - text: [t1_j65sucy] wrote
+      - time: 3 years ago
+    - list:
+      - Hide −
+    - paragraph: [removed]
+    - navigation:
+      - list:
+        - link [56] "Reply":
+          - /url: /f/explainlikeimfive/82504/-/comment/1538869
+          - strong: Reply
+        - link [57] "Permalink":
+          - /url: /f/explainlikeimfive/82504/-/comment/1538869
+    - button [58] "Upvote"
+    - text: 1
+    - button [59] "Downvote"
+  - article:
+    - checkbox [60] "Hide −" [checked]
+    - "heading \"[deleted] [t1_j66sjo9] wrote 3 years ago\" [level=1]":
+      - link [61] "[deleted]":
+        - /url: /user/%5Bdeleted%5D
+        - strong: [deleted]
+      - text: [t1_j66sjo9] wrote
+      - time: 3 years ago
+    - list:
+      - Hide −
+    - paragraph: [removed]
+    - navigation:
+      - list:
+        - link [62] "Reply":
+          - /url: /f/explainlikeimfive/82504/-/comment/1543871
+          - strong: Reply
+        - link [63] "Permalink":
+          - /url: /f/explainlikeimfive/82504/-/comment/1543871
+    - button [64] "Upvote"
+    - text: 1
+    - button [65] "Downvote"
+  - article:
+    - checkbox [66] "Hide −" [checked]
+    - "heading \"Yavcho181 [t1_j67rvux] wrote 3 years ago\" [level=1]":
+      - link [67] "Yavcho181":
+        - /url: /user/Yavcho181
+        - strong: Yavcho181
+      - text: [t1_j67rvux] wrote
+      - time: 3 years ago
+    - list:
+      - Hide −
+    - paragraph: Your brain has little slots called receptors (in this case they are called CB1 receptors) . Your brain uses lipids that can bind to the cb1 receptors causing you to feel hungry. THC found in weed binds to the CB1 receptors in your brain "tricking" you into feeling hungry.
+    - paragraph: My partner is a nursery worker and wrote this based on my ' too scientific for a five year old' description.
+    - paragraph: "Your brain is a puzzle. The weed copies matching pieces. When brain and weed pieces join together, it makes you hungery."
+    - paragraph: Your brain can naturally complete this puzzle when you need to eat however weed can complete it without your brain's permission.
+    - navigation:
+      - list:
+        - link [68] "Reply":
+          - /url: /f/explainlikeimfive/82504/-/comment/1548686
+          - strong: Reply
+        - link [69] "Permalink":
+          - /url: /f/explainlikeimfive/82504/-/comment/1548686
+    - button [70] "Upvote"
+    - text: 1
+    - button [71] "Downvote"
+  - article:
+    - checkbox [72] "Hide −" [checked]
+    - "heading \"ranma_one_half [t1_j67xbup] wrote 3 years ago\" [level=1]":
+      - link [73] "ranma_one_half":
+        - /url: /user/ranma_one_half
+        - strong: ranma_one_half
+      - text: [t1_j67xbup] wrote
+      - time: 3 years ago
+    - list:
+      - Hide −
+    - paragraph: The brain is a chemical plant. Every thing you do and think is a result of chemicals in the brain reacting. Those chemicals are common. You can get them from outside sources. Weed is a bunch off chemicals that tell your brain a bunch of things. One of those things it tells you sometimes is that your hungry.
+    - navigation:
+      - list:
+        - link [74] "Reply":
+          - /url: /f/explainlikeimfive/82504/-/comment/1549461
+          - strong: Reply
+        - link [75] "Permalink":
+          - /url: /f/explainlikeimfive/82504/-/comment/1549461
+    - button [76] "Upvote"
+    - text: 1
+    - button [77] "Downvote"
+  - article:
+    - checkbox [78] "Hide −" [checked]
+    - "heading \"RandyTar [t1_j66zepu] wrote 3 years ago\" [level=1]":
+      - link [79] "RandyTar":
+        - /url: /user/RandyTar
+        - strong: RandyTar
+      - text: [t1_j66zepu] wrote
+      - time: 3 years ago
+    - list:
+      - Hide −
+    - paragraph: As I was taught, the reason is that pot has a natural element that lowers blood sugar. As your blood sugar goes down, your body's natural response is to get hungry...so...
+    - navigation:
+      - list:
+        - link [80] "Reply":
+          - /url: /f/explainlikeimfive/82504/-/comment/1544797
+          - strong: Reply
+        - link [81] "Permalink":
+          - /url: /f/explainlikeimfive/82504/-/comment/1544797
+    - button [82] "Upvote"
+    - text: −1
+    - button [83] "Downvote"
+- complementary:
+  - paragraph:
+    - strong: 0 points
+    - text: (+0, −0)
+  - "heading \"Short URL:\" [level=4]"
+  - paragraph: "http://143.215.184.110:9999/82504"
+  - "heading \"explainlikeimfive\" [level=1]":
+    - link [84] "explainlikeimfive":
+      - /url: /f/explainlikeimfive
+  - button [85] "Subscribe No subscribers": Subscribe 0
+  - paragraph: t5_2sokd
+  - separator
+  - list:
+    - text: Created
+    - time: 3 years ago
+    - link [86] "Subscribe via RSS":
+      - /url: /f/explainlikeimfive/new.atom
+      - img
+      - text: Subscribe via RSS
+  - group [87]: Hide this forum
+  - heading "Toolbox" [level=1]
+  - list:
+    - link [88] "Bans":
+      - /url: /f/explainlikeimfive/bans
+    - link [89] "Moderation log":
+      - /url: /f/explainlikeimfive/moderation_log
+- contentinfo:
+  - paragraph:
+    - text: Running
+    - link [90] "Postmill":
+      - /url: "https://postmill.xyz/"

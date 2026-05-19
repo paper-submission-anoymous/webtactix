@@ -1,0 +1,271 @@
+- navigation:
+  - link [0] "Jump to main content":
+    - /url: "#main"
+  - link [1] "Jump to sidebar":
+    - /url: "#sidebar"
+- navigation:
+  - link [2] "Home":
+    - /url: /
+    - text: Postmill
+  - list:
+    - link [3] "Forums":
+      - /url: /forums
+    - link [4] "Wiki":
+      - /url: /wiki
+  - searchbox [5] "Search query": DMV city life
+  - list:
+    - link [6] "Notifications (0)":
+      - /url: /notifications
+      - img
+    - link [7] "Submit":
+      - /url: /submit
+      - img
+      - text: Submit
+    - button [8] "MarvelsGrantMan136":
+      - img
+      - strong: MarvelsGrantMan136
+- main:
+  - heading "Search" [level=1]
+  - text: Search query
+  - searchbox [9] "Search query": DMV city life
+  - button [10] "Search"
+  - "heading \"6 results for DMV city life:\" [level=2]":
+    - text: 6 results for
+    - emphasis: DMV city life
+    - text: ":"
+  - article:
+    - checkbox [11] "Hide −" [checked]
+    - "heading \"Blackice1625 [t1_j56767k] wrote 3 years ago\" [level=1]":
+      - link [12] "Blackice1625":
+        - /url: /user/Blackice1625
+        - strong: Blackice1625
+      - text: [t1_j56767k] wrote
+      - time: 3 years ago
+    - list:
+      - Hide −
+    - img
+    - paragraph:
+      - text: Reply to
+      - link [13] "“Everybody here is a transplant”":
+        - /url: /f/washingtondc/94883
+        - strong: “Everybody here is a transplant”
+      - text: by
+      - link [14] "Devastator1981":
+        - /url: /user/Devastator1981
+        - strong: Devastator1981
+    - paragraph:
+      - text: spent years living in the
+      - mark: city
+      - text: before I was born. PGCPS all K-12. Went to colleges in MD. Moved into the
+      - mark: city
+      - text: to teach and be closer to my students. Wanted to teach ... When I got a job it was at a HS in the
+      - mark: city
+      - text: . No longer teaching so I’ve considered leaving the
+      - mark: city
+      - text: and moving to MD but my rent is actually cheaper than ... teachers weren’t from the
+      - mark: DMV
+      - text: either. My whole
+      - mark: life
+      - text: is rooted here. Maybe I’m even scared to leave the
+      - mark: DMV
+      - text: . That’s why people need to do more than talk to their circle
+    - navigation:
+      - list:
+        - link [15] "Reply":
+          - /url: /f/washingtondc/94883/-/comment/1418554
+          - strong: Reply
+        - link [16] "Permalink":
+          - /url: /f/washingtondc/94883/-/comment/1418554
+    - button [17] "Upvote"
+    - text: 1
+    - button [18] "Downvote"
+  - article:
+    - checkbox [19] "Hide −" [checked]
+    - "heading \"SgtKetchup [t1_j1tc1v2] wrote 3 years ago\" [level=1]":
+      - link [20] "SgtKetchup":
+        - /url: /user/SgtKetchup
+        - strong: SgtKetchup
+      - text: [t1_j1tc1v2] wrote
+      - time: 3 years ago
+    - list:
+      - Hide −
+    - img
+    - paragraph:
+      - text: Reply to comment by
+      - link [21] "LightGraves":
+        - /url: /user/LightGraves
+        - strong: LightGraves
+      - text: in
+      - link [22] "Moving Mondays - New Resident Questions":
+        - /url: /f/philadelphia/66567
+        - strong: Moving Mondays - New Resident Questions
+      - text: by
+      - link [23] "AutoModerator":
+        - /url: /user/AutoModerator
+        - strong: AutoModerator
+    - paragraph:
+      - text: live here without a car. If you are living in center
+      - mark: city
+      - text: , south Philly, or west Philly, I would venture to say your
+      - mark: life
+      - text: will be happier without a car to worry about ... being your car, I would highly suggest letting AAA handle it for you on arrival. The
+      - mark: DMV
+      - text: won't do it, you have to use a third party notary or inspection ship
+    - navigation:
+      - list:
+        - link [24] "Reply":
+          - /url: /f/philadelphia/66567/-/comment/1087656
+          - strong: Reply
+        - link [25] "Permalink":
+          - /url: /f/philadelphia/66567/-/comment/1087656
+        - link [26] "Parent":
+          - /url: /f/philadelphia/66567/-/comment/1077940
+    - button [27] "Upvote"
+    - text: 6
+    - button [28] "Downvote"
+  - article:
+    - checkbox [29] "Hide −" [checked]
+    - "heading \"whodoUthinkUare_i_am [t1_j50p7aq] wrote 3 years ago\" [level=1]":
+      - link [30] "whodoUthinkUare_i_am":
+        - /url: /user/whodoUthinkUare_i_am
+        - strong: whodoUthinkUare_i_am
+      - text: [t1_j50p7aq] wrote
+      - time: 3 years ago
+    - list:
+      - Hide −
+    - img
+    - paragraph:
+      - text: Reply to
+      - link [31] "How to make friends in the area?":
+        - /url: /f/washingtondc/94898
+        - strong: How to make friends in the area?
+      - text: by
+      - link [32] "Gizzle_":
+        - /url: /user/Gizzle_
+        - strong: Gizzle_
+    - paragraph:
+      - text: college-Greek
+      - mark: life
+      - text: vibe than the scene in DC, where you’ll find a much more diverse cast of characters and locales to explore. Just my perspective having lived in the
+      - mark: DMV
+      - text: for 10+ years ... worry if you take some flak from being a DC non-resident while in the
+      - mark: city
+      - text: . It’s mostly in jest and everyone knows on the real that the
+      - mark: DMV
+      - text: is in it together. Hope
+    - navigation:
+      - list:
+        - link [33] "Reply":
+          - /url: /f/washingtondc/94898/-/comment/1406916
+          - strong: Reply
+        - link [34] "Permalink":
+          - /url: /f/washingtondc/94898/-/comment/1406916
+    - button [35] "Upvote"
+    - text: 2
+    - button [36] "Downvote"
+  - article:
+    - "heading \"Not able to register my car in my residential zone for parking, help!\" [level=1]":
+      - link [37] "Not able to register my car in my residential zone for parking, help!":
+        - /url: /f/washingtondc/72687/not-able-to-register-my-car-in-my-residential-zone-for
+    - paragraph:
+      - text: Submitted by
+      - link [38] "src0104":
+        - /url: /user/src0104
+        - strong: src0104
+      - text: [t3_zlfilg]
+      - time: 3 years ago
+      - text: in
+      - link [39] "washingtondc":
+        - /url: /f/washingtondc
+        - strong: washingtondc
+    - paragraph:
+      - text: address and got my updated registration but was still registered to Zone 5. I went to the
+      - mark: DMV
+      - text: to ask why that was and they gave a surprising response. They said I would be unable ... area, this seems like the apartments and
+      - mark: city
+      - text: are forcing residents to pay their outrageous $250+ monthly parking fees. I’ve lived in DC my whole
+      - mark: life
+      - text: and have paid DC taxes my whole
+      - mark: life
+    - navigation:
+      - list:
+        - link [40] "22 comments":
+          - /url: /f/washingtondc/72687/not-able-to-register-my-car-in-my-residential-zone-for
+          - strong: 22 comments
+    - button [41] "Upvote"
+    - text: 0
+    - button [42] "Downvote"
+  - article:
+    - "heading \"One Year in New Hampshire\" [level=1]":
+      - link [43] "One Year in New Hampshire":
+        - /url: /f/newhampshire/64651/one-year-in-new-hampshire
+    - paragraph:
+      - text: Submitted by
+      - link [44] "AlexTheTolerable":
+        - /url: /user/AlexTheTolerable
+        - strong: AlexTheTolerable
+      - text: [t3_zhsylu]
+      - time: 3 years ago
+      - text: in
+      - link [45] "newhampshire":
+        - /url: /f/newhampshire
+        - strong: newhampshire
+    - paragraph:
+      - text: here, it seems like once you’ve made a friend, they’re a friend for
+      - mark: life
+      - text: and will truly do anything to help. It’s also a very beautiful state. The White Mountains are quite ... vote at the
+      - mark: DMV
+      - text: , and in the case of Massachusetts you can register and change parties online. Not in New Hampshire, though, here you have to go to
+      - mark: city
+      - text: hall to register or change parties
+    - navigation:
+      - list:
+        - link [46] "40 comments":
+          - /url: /f/newhampshire/64651/one-year-in-new-hampshire
+          - strong: 40 comments
+    - button [47] "Upvote"
+    - text: 38
+    - button [48] "Downvote"
+  - article:
+    - checkbox [49] "Hide −" [checked]
+    - "heading \"Loki-Don [t1_iy211g8] wrote 3 years ago\" [level=1]":
+      - link [50] "Loki-Don":
+        - /url: /user/Loki-Don
+        - strong: Loki-Don
+      - text: [t1_iy211g8] wrote
+      - time: 3 years ago
+    - list:
+      - Hide −
+    - img
+    - paragraph:
+      - text: Reply to
+      - link [51] "Gutting a Cap Hill rowhouse?":
+        - /url: /f/washingtondc/50888
+        - strong: Gutting a Cap Hill rowhouse?
+      - text: by
+      - link [52] "sb2677":
+        - /url: /user/sb2677
+        - strong: sb2677
+    - paragraph:
+      - text: "aware of: Historic overlays. Even if you technically aren’t in one,if you are close the"
+      - mark: city
+      - text: will scrutinize your permit applications even more, and neighbors tend to insert themselves into your business. Structural ... tool chest belonging to the contractor “take a walk”. DCRA is worse than dealing with the
+      - mark: DMV
+      - text: . Your contractor will call for inspections and It frequently took 5-7 business days for them to show ... redo. I’ve built and or renovated homes in 4 other places not in DC in my
+      - mark: life
+      - text: and DCRA is hands down the worst permitting authority. For a full gut you should
+    - navigation:
+      - list:
+        - link [53] "Reply":
+          - /url: /f/washingtondc/50888/-/comment/723719
+          - strong: Reply
+        - link [54] "Permalink":
+          - /url: /f/washingtondc/50888/-/comment/723719
+    - button [55] "Upvote"
+    - text: 2
+    - button [56] "Downvote"
+- contentinfo:
+  - paragraph:
+    - text: Running
+    - link [57] "Postmill":
+      - /url: "https://postmill.xyz/"

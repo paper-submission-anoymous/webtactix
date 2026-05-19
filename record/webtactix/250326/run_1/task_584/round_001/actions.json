@@ -1,0 +1,2 @@
+{"type": "exec_begin", "src": "v1", "action_sig": "goto http://143.215.184.110:9999", "plan_name": "web_operation", "goal": "Create a new forum named Karaoke with description 'Place for Karaoke lovers' and sidebar items ['devices', 'setup']", "time_utc": "2026-03-25T21:38:35.414721+00:00", "t": 25.28229439072311, "round": 1}
+{"type": "exec_ok", "src": "v1", "dst": "v2", "action_sig": "goto http://143.215.184.110:9999", "url_after": "http://143.215.184.110:9999/", "time_utc": "2026-03-25T21:38:37.591919+00:00", "t": 27.459493124857545, "round": 1}

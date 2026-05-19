@@ -1,0 +1,2 @@
+{"type": "exec_begin", "src": "v4", "action_sig": "click(button Downvote)", "plan_name": "web_operation", "goal": "Thumbs down the top 1 post ever in gadgets.", "time_utc": "2026-03-24T01:26:05.463558+00:00", "t": 135.65148859657347, "round": 4}
+{"type": "exec_ok", "src": "v4", "dst": "v5", "action_sig": "click(button Downvote)", "url_after": "http://143.215.184.110:9999/f/gadgets/top", "time_utc": "2026-03-24T01:26:17.363463+00:00", "t": 147.55140373669565, "round": 4}

@@ -1,0 +1,598 @@
+- navigation:
+  - link [0] "Jump to main content":
+    - /url: "#main"
+  - link [1] "Jump to sidebar":
+    - /url: "#sidebar"
+- navigation:
+  - link [2] "Home":
+    - /url: /
+    - text: Postmill
+  - list:
+    - link [3] "Forums":
+      - /url: /forums
+    - link [4] "Wiki":
+      - /url: /wiki
+  - searchbox [5] "Search query"
+  - list:
+    - link [6] "Notifications (0)":
+      - /url: /notifications
+      - img
+    - link [7] "Submit":
+      - /url: /submit/gadgets
+      - img
+      - text: Submit
+    - button [8] "MarvelsGrantMan136":
+      - img
+      - strong: MarvelsGrantMan136
+- main:
+  - "heading \"/f/gadgets\" [level=1]":
+    - text: /f/
+    - strong: gadgets
+  - navigation:
+    - list:
+      - link [9] "Submissions":
+        - /url: /f/gadgets
+      - link [10] "Comments":
+        - /url: /f/gadgets/comments
+    - list:
+      - button [11] "Sort by: Top":
+        - img
+        - text: Top
+      - button [12] "From: All time":
+        - img
+        - text: All time
+  - article:
+    - "heading \"A custom gaming PC built inside a vintage 1940s Motorola radio case\" [level=1]":
+      - link [13] "A custom gaming PC built inside a vintage 1940s Motorola radio case":
+        - /url: "https://www.digitaltrends.com/computing/gaming-pc-inside-vintage-radio/?amp"
+    - link [14] "digitaltrends.com":
+      - /url: /search?q=www.digitaltrends.com
+    - paragraph:
+      - text: Submitted by
+      - link [15] "thebelsnickle1991":
+        - /url: /user/thebelsnickle1991
+        - strong: thebelsnickle1991
+      - text: [t3_yii9ww]
+      - time: 3 years ago
+    - navigation:
+      - list:
+        - link [16] "49 comments":
+          - /url: /f/gadgets/19459/a-custom-gaming-pc-built-inside-a-vintage-1940s-motorola
+          - strong: 49 comments
+    - button [17] "Upvote"
+    - text: −1
+    - button [18] "Retract downvote"
+  - article:
+    - "heading \"NASA aces test of robot balloon that could one day explore Venus\" [level=1]":
+      - link [19] "NASA aces test of robot balloon that could one day explore Venus":
+        - /url: "https://www.digitaltrends.com/space/nasa-aces-robot-balloon-test-ahead-of-possible-venus-mission/?utm_source=reddit&amp;utm_medium=pe&amp;utm_campaign=pd"
+    - link [20] "digitaltrends.com":
+      - /url: /search?q=www.digitaltrends.com
+    - paragraph:
+      - text: Submitted by
+      - link [21] "MicroSofty88":
+        - /url: /user/MicroSofty88
+        - strong: MicroSofty88
+      - text: [t3_y5lz23]
+      - time: 3 years ago
+    - navigation:
+      - list:
+        - link [22] "149 comments":
+          - /url: /f/gadgets/19439/nasa-aces-test-of-robot-balloon-that-could-one-day-explore
+          - strong: 149 comments
+    - button [23] "Upvote"
+    - text: 7737
+    - button [24] "Downvote"
+  - article:
+    - "heading \"Open-source tool from MIT’s Senseable City Lab lets people check air quality, cheaply.\" [level=1]":
+      - link [25] "Open-source tool from MIT’s Senseable City Lab lets people check air quality, cheaply.":
+        - /url: "https://news.mit.edu/2023/low-cost-device-can-measure-air-pollution-anywhere-0316"
+    - link [26] "news.mit.edu":
+      - /url: /search?q=news.mit.edu
+    - paragraph:
+      - text: Submitted by
+      - link [27] "chrisdh79":
+        - /url: /user/chrisdh79
+        - strong: chrisdh79
+      - text: [t3_11st06o]
+      - time: 3 years ago
+    - navigation:
+      - list:
+        - link [28] "187 comments":
+          - /url: /f/gadgets/125967/open-source-tool-from-mit-s-senseable-city-lab-lets-people
+          - strong: 187 comments
+    - button [29] "Upvote"
+    - text: 7666
+    - button [30] "Downvote"
+  - article:
+    - "heading \"Blu-ray player gathering dust? Turn it into a laser-scanning microscope | Not as powerful as a commerical one, but thousands cheaper.\" [level=1]":
+      - link [31] "Blu-ray player gathering dust? Turn it into a laser-scanning microscope | Not as powerful as a commerical one, but thousands cheaper.":
+        - /url: "https://arstechnica.com/gadgets/2022/12/blu-ray-player-gathering-dust-turn-it-into-a-laser-scanning-microscope/"
+    - link [32] "arstechnica.com":
+      - /url: /search?q=arstechnica.com
+    - paragraph:
+      - text: Submitted by
+      - link [33] "chrisdh79":
+        - /url: /user/chrisdh79
+        - strong: chrisdh79
+      - text: [t3_zsvmry]
+      - time: 3 years ago
+    - navigation:
+      - list:
+        - link [34] "169 comments":
+          - /url: /f/gadgets/61308/blu-ray-player-gathering-dust-turn-it-into-a-laser-scanning
+          - strong: 169 comments
+    - button [35] "Upvote"
+    - text: 6758
+    - button [36] "Downvote"
+  - article:
+    - "heading \"New type of surgical robot used to remove throat tumour\" [level=1]":
+      - link [37] "New type of surgical robot used to remove throat tumour":
+        - /url: "https://www.bbc.co.uk/news/uk-england-gloucestershire-63805685"
+    - link [38] "bbc.co.uk":
+      - /url: /search?q=www.bbc.co.uk
+    - paragraph:
+      - text: Submitted by
+      - link [39] "diacewrb":
+        - /url: /user/diacewrb
+        - strong: diacewrb
+      - text: [t3_zd7j40]
+      - time: 3 years ago
+    - navigation:
+      - list:
+        - link [40] "178 comments":
+          - /url: /f/gadgets/61284/new-type-of-surgical-robot-used-to-remove-throat-tumour
+          - strong: 178 comments
+    - button [41] "Upvote"
+    - text: 5677
+    - button [42] "Downvote"
+  - article:
+    - "heading \"Hobbyist adds a hinge to the Game Boy Pocket, delighting everyone | No, it's not a Game Boy Advance SP. This is the monochrome Pocket with hinge.\" [level=1]":
+      - link [43] "Hobbyist adds a hinge to the Game Boy Pocket, delighting everyone | No, it's not a Game Boy Advance SP. This is the monochrome Pocket with hinge.":
+        - /url: "https://arstechnica.com/gaming/2022/11/this-modded-game-boy-pocket-goes-against-nature-by-folding-in-half/"
+    - link [44] "arstechnica.com":
+      - /url: /search?q=arstechnica.com
+    - paragraph:
+      - text: Submitted by
+      - link [45] "chrisdh79":
+        - /url: /user/chrisdh79
+        - strong: chrisdh79
+      - text: [t3_ywe0m4]
+      - time: 3 years ago
+    - navigation:
+      - list:
+        - link [46] "170 comments":
+          - /url: /f/gadgets/40126/hobbyist-adds-a-hinge-to-the-game-boy-pocket-delighting
+          - strong: 170 comments
+    - button [47] "Upvote"
+    - text: 4359
+    - button [48] "Downvote"
+  - article:
+    - "heading \"New York breaks the right to repair bill as it’s signed into law | The bill was signed by NY governor Kathy Hochul on December 28th, making New York the first US state to broadly protect a consumer’s right to repair their own tech.\" [level=1]":
+      - link [49] "New York breaks the right to repair bill as it’s signed into law | The bill was signed by NY governor Kathy Hochul on December 28th, making New York the first US state to broadly protect a consumer’s right to repair their own tech.":
+        - /url: "https://www.theverge.com/2022/12/29/23530733/right-to-repair-law-new-york-tech-hochul-oems-parts"
+    - link [50] "theverge.com":
+      - /url: /search?q=www.theverge.com
+    - paragraph:
+      - text: Submitted by
+      - link [51] "chrisdh79":
+        - /url: /user/chrisdh79
+        - strong: chrisdh79
+      - text: [t3_zy9con]
+      - time: 3 years ago
+    - navigation:
+      - list:
+        - link [52] "169 comments":
+          - /url: /f/gadgets/61316/new-york-breaks-the-right-to-repair-bill-as-it-s-signed-into
+          - strong: 169 comments
+    - button [53] "Upvote"
+    - text: 4280
+    - button [54] "Downvote"
+  - article:
+    - "heading \"Volkswagen built a Star Trek captain’s chair that goes 12mph\" [level=1]":
+      - link [55] "Volkswagen built a Star Trek captain’s chair that goes 12mph":
+        - /url: "https://www.theverge.com/2022/11/11/23453665/volkswagen-star-trek-office-chair-video"
+    - link [56] "theverge.com":
+      - /url: /search?q=www.theverge.com
+    - paragraph:
+      - text: Submitted by
+      - link [57] "Genevieves_bitch":
+        - /url: /user/Genevieves_bitch
+        - strong: Genevieves_bitch
+      - text: [t3_yt6m6i]
+      - time: 3 years ago
+    - navigation:
+      - list:
+        - link [58] "197 comments":
+          - /url: /f/gadgets/40119/volkswagen-built-a-star-trek-captain-s-chair-that-goes-12mph
+          - strong: 197 comments
+    - button [59] "Upvote"
+    - text: 4244
+    - button [60] "Downvote"
+  - article:
+    - "heading \"LG Display’s ‘invisible’ speaker brings sound to any surface in your car\" [level=1]":
+      - link [61] "LG Display’s ‘invisible’ speaker brings sound to any surface in your car":
+        - /url: "https://www.digitaltrends.com/home-theater/lg-displays-invisible-speaker-brings-sound-to-any-surface-in-your-car/?utm_source=reddit&amp;utm_medium=pe&amp;utm_campaign=pd"
+    - link [62] "digitaltrends.com":
+      - /url: /search?q=www.digitaltrends.com
+    - paragraph:
+      - text: Submitted by
+      - link [63] "MicroSofty88":
+        - /url: /user/MicroSofty88
+        - strong: MicroSofty88
+      - text: [t3_z6smkl]
+      - time: 3 years ago
+    - navigation:
+      - list:
+        - link [64] "202 comments":
+          - /url: /f/gadgets/40134/lg-display-s-invisible-speaker-brings-sound-to-any-surface
+          - strong: 202 comments
+    - button [65] "Upvote"
+    - text: 4039
+    - button [66] "Downvote"
+  - article:
+    - "heading \"USB-C will be mandatory for all smart devices sold in India\" [level=1]":
+      - link [67] "USB-C will be mandatory for all smart devices sold in India":
+        - /url: "https://www.livemint.com/technology/gadgets/usbc-will-be-mandatory-for-all-smart-devices-sold-in-india-11668629936237.html"
+    - link [68] "livemint.com":
+      - /url: /search?q=www.livemint.com
+    - paragraph:
+      - text: Submitted by
+      - link [69] "Sam1515024":
+        - /url: /user/Sam1515024
+        - strong: Sam1515024
+      - text: [t3_yyageb]
+      - time: 3 years ago
+    - navigation:
+      - list:
+        - link [70] "181 comments":
+          - /url: /f/gadgets/40128/usb-c-will-be-mandatory-for-all-smart-devices-sold-in-india
+          - strong: 181 comments
+    - button [71] "Upvote"
+    - text: 3589
+    - button [72] "Downvote"
+  - article:
+    - "heading \"Steam Deck now shipping across Asia, plus a new Steam Deck Stable Client update\" [level=1]":
+      - link [73] "Steam Deck now shipping across Asia, plus a new Steam Deck Stable Client update":
+        - /url: "https://www.gamingonlinux.com/2022/12/steam-deck-now-shipping-across-asia-plus-a-new-steam-deck-stable-client-update/"
+    - link [74] "gamingonlinux.com":
+      - /url: /search?q=www.gamingonlinux.com
+    - paragraph:
+      - text: Submitted by
+      - link [75] "thebelsnickle1991":
+        - /url: /user/thebelsnickle1991
+        - strong: thebelsnickle1991
+      - text: [t3_zoxk37]
+      - time: 3 years ago
+    - navigation:
+      - list:
+        - link [76] "156 comments":
+          - /url: /f/gadgets/61303/steam-deck-now-shipping-across-asia-plus-a-new-steam-deck
+          - strong: 156 comments
+    - button [77] "Upvote"
+    - text: 3535
+    - button [78] "Downvote"
+  - article:
+    - "heading \"Last Boeing 747 rolls off line after half a century of production\" [level=1]":
+      - link [79] "Last Boeing 747 rolls off line after half a century of production":
+        - /url: "https://www.theguardian.com/business/2022/dec/08/last-boeing-747-rolls-off-line-after-half-a-century-of-production"
+    - link [80] "theguardian.com":
+      - /url: /search?q=www.theguardian.com
+    - paragraph:
+      - text: Submitted by
+      - link [81] "diacewrb":
+        - /url: /user/diacewrb
+        - strong: diacewrb
+      - text: [t3_zfwe7c]
+      - time: 3 years ago
+    - navigation:
+      - list:
+        - link [82] "160 comments":
+          - /url: /f/gadgets/61288/last-boeing-747-rolls-off-line-after-half-a-century-of
+          - strong: 160 comments
+    - button [83] "Upvote"
+    - text: 3478
+    - button [84] "Downvote"
+  - article:
+    - "heading \"Two unreleased and 'never digitized' NES games are up for auction on eBay\" [level=1]":
+      - link [85] "Two unreleased and 'never digitized' NES games are up for auction on eBay":
+        - /url: "https://www.engadget.com/nes-games-battlefields-of-napoleon-production-boards-090721687.html"
+    - link [86] "engadget.com":
+      - /url: /search?q=www.engadget.com
+    - paragraph:
+      - text: Submitted by
+      - link [87] "thebelsnickle1991":
+        - /url: /user/thebelsnickle1991
+        - strong: thebelsnickle1991
+      - text: [t3_y2w79b]
+      - time: 3 years ago
+    - navigation:
+      - list:
+        - link [88] "197 comments":
+          - /url: /f/gadgets/19433/two-unreleased-and-never-digitized-nes-games-are-up-for
+          - strong: 197 comments
+    - button [89] "Upvote"
+    - text: 3432
+    - button [90] "Downvote"
+  - article:
+    - "heading \"News Release: NREL Creates Highest Efficiency 1-Sun Solar Cell - 39.5% efficiency\" [level=1]":
+      - link [91] "News Release: NREL Creates Highest Efficiency 1-Sun Solar Cell - 39.5% efficiency":
+        - /url: "https://www.nrel.gov/news/press/2022/nrel-creates-highest-efficiency-1-sun-solar-cell.html"
+    - link [92] "nrel.gov":
+      - /url: /search?q=www.nrel.gov
+    - paragraph:
+      - text: Submitted by
+      - link [93] "TimeSpentWasting":
+        - /url: /user/TimeSpentWasting
+        - strong: TimeSpentWasting
+      - text: [t3_z60rfh]
+      - time: 3 years ago
+    - navigation:
+      - list:
+        - link [94] "184 comments":
+          - /url: /f/gadgets/40133/news-release-nrel-creates-highest-efficiency-1-sun-solar
+          - strong: 184 comments
+    - button [95] "Upvote"
+    - text: 3405
+    - button [96] "Downvote"
+  - article:
+    - "heading \"iPhone 14 Crash Detection gets man to wife's accident before ambulance\" [level=1]":
+      - link [97] "iPhone 14 Crash Detection gets man to wife's accident before ambulance":
+        - /url: "https://appleinsider.com/articles/22/12/13/iphone-14-crash-detection-gets-man-to-wifes-accident-before-ambulance"
+    - link [98] "appleinsider.com":
+      - /url: /search?q=appleinsider.com
+    - paragraph:
+      - text: Submitted by
+      - link [99] "chrisdh79":
+        - /url: /user/chrisdh79
+        - strong: chrisdh79
+      - text: [t3_zkwn81]
+      - time: 3 years ago
+    - navigation:
+      - list:
+        - link [100] "178 comments":
+          - /url: /f/gadgets/61296/iphone-14-crash-detection-gets-man-to-wife-s-accident-before
+          - strong: 178 comments
+    - button [101] "Upvote"
+    - text: 3382
+    - button [102] "Downvote"
+  - article:
+    - "heading \"Japan to Manufacture 2nm Chips With a Little Help From IBM\" [level=1]":
+      - link [103] "Japan to Manufacture 2nm Chips With a Little Help From IBM":
+        - /url: "https://www.pcmag.com/news/japan-to-manufacture-2nm-chips-with-a-little-help-from-ibm"
+    - link [104] "pcmag.com":
+      - /url: /search?q=www.pcmag.com
+    - paragraph:
+      - text: Submitted by
+      - link [105] "Avieshek":
+        - /url: /user/Avieshek
+        - strong: Avieshek
+      - text: [t3_zlw4sz]
+      - time: 3 years ago
+    - navigation:
+      - list:
+        - link [106] "127 comments":
+          - /url: /f/gadgets/61297/japan-to-manufacture-2nm-chips-with-a-little-help-from-ibm
+          - strong: 127 comments
+    - button [107] "Upvote"
+    - text: 3338
+    - button [108] "Downvote"
+  - article:
+    - "heading \"Audio-Technica resurrects its Sound Burger portable turntable from the '80s\" [level=1]":
+      - link [109] "Audio-Technica resurrects its Sound Burger portable turntable from the '80s":
+        - /url: "https://www.engadget.com/audio-technica-2022-sound-burger-announced-130041048.html"
+    - link [110] "engadget.com":
+      - /url: /search?q=www.engadget.com
+    - paragraph:
+      - text: Submitted by
+      - link [111] "thebelsnickle1991":
+        - /url: /user/thebelsnickle1991
+        - strong: thebelsnickle1991
+      - text: [t3_yjlrwz]
+      - time: 3 years ago
+    - navigation:
+      - list:
+        - link [112] "165 comments":
+          - /url: /f/gadgets/40103/audio-technica-resurrects-its-sound-burger-portable
+          - strong: 165 comments
+    - button [113] "Upvote"
+    - text: 3283
+    - button [114] "Downvote"
+  - article:
+    - "heading \"New medical device can detect and analyze cancer cells from blood samples, allowing doctors to avoid invasive biopsy surgeries, and to monitor treatment progress.\" [level=1]":
+      - link [115] "New medical device can detect and analyze cancer cells from blood samples, allowing doctors to avoid invasive biopsy surgeries, and to monitor treatment progress.":
+        - /url: "https://newatlas.com/medical/device-detect-cancer-blood-sample/"
+    - link [116] "newatlas.com":
+      - /url: /search?q=newatlas.com
+    - paragraph:
+      - text: Submitted by
+      - link [117] "chrisdh79":
+        - /url: /user/chrisdh79
+        - strong: chrisdh79
+      - text: [t3_11e9adh]
+      - time: 3 years ago
+    - navigation:
+      - list:
+        - link [118] "37 comments":
+          - /url: /f/gadgets/105084/new-medical-device-can-detect-and-analyze-cancer-cells-from
+          - strong: 37 comments
+    - button [119] "Upvote"
+    - text: 3174
+    - button [120] "Downvote"
+  - article:
+    - "heading \"Framework now sells 2TB Steam Deck upgrade drives.\" [level=1]":
+      - link [121] "Framework now sells 2TB Steam Deck upgrade drives.":
+        - /url: "https://www.theverge.com/2023/2/9/23593352/steam-deck-framework-2tb-m2-2230-ssd"
+    - link [122] "theverge.com":
+      - /url: /search?q=www.theverge.com
+    - paragraph:
+      - text: Submitted by
+      - link [123] "SUPRVLLAN":
+        - /url: /user/SUPRVLLAN
+        - strong: SUPRVLLAN
+      - text: [t3_10yw9sd]
+      - time: 3 years ago
+    - navigation:
+      - list:
+        - link [124] "101 comments":
+          - /url: /f/gadgets/105045/framework-now-sells-2tb-steam-deck-upgrade-drives
+          - strong: 101 comments
+    - button [125] "Upvote"
+    - text: 3121
+    - button [126] "Downvote"
+  - article:
+    - "heading \"Samsung develops industry’s first 12nm-Class DDR5 DRAM\" [level=1]":
+      - link [127] "Samsung develops industry’s first 12nm-Class DDR5 DRAM":
+        - /url: "https://news.samsung.com/global/samsung-electronics-develops-industrys-first-12nm-class-ddr5-dram"
+    - link [128] "news.samsung.com":
+      - /url: /search?q=news.samsung.com
+    - paragraph:
+      - text: Submitted by
+      - link [129] "thebelsnickle1991":
+        - /url: /user/thebelsnickle1991
+        - strong: thebelsnickle1991
+      - text: [t3_zv14ci]
+      - time: 3 years ago
+    - navigation:
+      - list:
+        - link [130] "125 comments":
+          - /url: /f/gadgets/61311/samsung-develops-industry-s-first-12nm-class-ddr5-dram
+          - strong: 125 comments
+    - button [131] "Upvote"
+    - text: 3120
+    - button [132] "Downvote"
+  - article:
+    - "heading \"Android phones offered early US quake warning, beating iPhones to the punch | Google's earthquake detection network turns Android phones into seismometers, and it paid off yesterday.\" [level=1]":
+      - link [133] "Android phones offered early US quake warning, beating iPhones to the punch | Google's earthquake detection network turns Android phones into seismometers, and it paid off yesterday.":
+        - /url: "https://www.androidauthority.com/android-phones-earthquake-detection-warning-usa-3224704/"
+    - link [134] "androidauthority.com":
+      - /url: /search?q=www.androidauthority.com
+    - paragraph:
+      - text: Submitted by
+      - link [135] "chrisdh79":
+        - /url: /user/chrisdh79
+        - strong: chrisdh79
+      - text: [t3_ydupbt]
+      - time: 3 years ago
+    - navigation:
+      - list:
+        - link [136] "198 comments":
+          - /url: /f/gadgets/19455/android-phones-offered-early-us-quake-warning-beating
+          - strong: 198 comments
+    - button [137] "Upvote"
+    - text: 3092
+    - button [138] "Downvote"
+  - article:
+    - "heading \"AMD Now Powers 101 of the World's Fastest Supercomputers\" [level=1]":
+      - link [139] "AMD Now Powers 101 of the World's Fastest Supercomputers":
+        - /url: "https://www.tomshardware.com/news/amd-now-powers-101-of-the-top-500-supercomputers-a-38-percent-increase"
+    - link [140] "tomshardware.com":
+      - /url: /search?q=www.tomshardware.com
+    - paragraph:
+      - text: Submitted by
+      - link [141] "Avieshek":
+        - /url: /user/Avieshek
+        - strong: Avieshek
+      - text: [t3_yvp77t]
+      - time: 3 years ago
+    - navigation:
+      - list:
+        - link [142] "159 comments":
+          - /url: /f/gadgets/40124/amd-now-powers-101-of-the-world-s-fastest-supercomputers
+          - strong: 159 comments
+    - button [143] "Upvote"
+    - text: 3089
+    - button [144] "Downvote"
+  - article:
+    - "heading \"These prosthetics break the mold with third thumbs, spikes, and superhero skins\" [level=1]":
+      - link [145] "These prosthetics break the mold with third thumbs, spikes, and superhero skins":
+        - /url: "https://www.technologyreview.com/2023/02/10/1067838/prosthetics-that-break-the-mold/"
+    - link [146] "technologyreview.com":
+      - /url: /search?q=www.technologyreview.com
+    - paragraph:
+      - text: Submitted by
+      - link [147] "ChickenTeriyakiBoy1":
+        - /url: /user/ChickenTeriyakiBoy1
+        - strong: ChickenTeriyakiBoy1
+      - text: [t3_110qca9]
+      - time: 3 years ago
+    - navigation:
+      - list:
+        - link [148] "154 comments":
+          - /url: /f/gadgets/105049/these-prosthetics-break-the-mold-with-third-thumbs-spikes
+          - strong: 154 comments
+    - button [149] "Upvote"
+    - text: 2999
+    - button [150] "Downvote"
+  - article:
+    - "heading \"PotatoP Laptop Aims for Two Years of Battery Life\" [level=1]":
+      - link [151] "PotatoP Laptop Aims for Two Years of Battery Life":
+        - /url: "https://www.tomshardware.com/news/potatop-laptop-promises-2-years-of-battery-life"
+    - link [152] "tomshardware.com":
+      - /url: /search?q=www.tomshardware.com
+    - paragraph:
+      - text: Submitted by
+      - link [153] "diacewrb":
+        - /url: /user/diacewrb
+        - strong: diacewrb
+      - text: [t3_11qm8ok]
+      - time: 3 years ago
+    - navigation:
+      - list:
+        - link [154] "183 comments":
+          - /url: /f/gadgets/125961/potatop-laptop-aims-for-two-years-of-battery-life
+          - strong: 183 comments
+    - button [155] "Upvote"
+    - text: 2944
+    - button [156] "Downvote"
+  - article:
+    - "heading \"‘iPhones are made in hell’: 3 months inside China’s iPhone city - Workers describe a peak production season marred by labor protests and Covid-19 chaos, right as Apple reconsiders its China supply chain.\" [level=1]":
+      - link [157] "‘iPhones are made in hell’: 3 months inside China’s iPhone city - Workers describe a peak production season marred by labor protests and Covid-19 chaos, right as Apple reconsiders its China supply chain.":
+        - /url: "https://restofworld.org/2023/foxconn-iphone-factory-china/"
+    - link [158] "restofworld.org":
+      - /url: /search?q=restofworld.org
+    - paragraph:
+      - text: Submitted by
+      - link [159] "speckz":
+        - /url: /user/speckz
+        - strong: speckz
+      - text: [t3_10sk2st]
+      - time: 3 years ago
+    - navigation:
+      - list:
+        - link [160] "162 comments":
+          - /url: /f/gadgets/105035/iphones-are-made-in-hell-3-months-inside-china-s-iphone-city
+          - strong: 162 comments
+    - button [161] "Upvote"
+    - text: 2873
+    - button [162] "Downvote"
+  - navigation:
+    - list:
+      - link [163] "More":
+        - /url: "http://143.215.184.110:9999/f/gadgets/top?next%5BnetScore%5D=2468&next%5Bid%5D=40120"
+- complementary:
+  - "heading \"gadgets\" [level=1]":
+    - link [164] "gadgets":
+      - /url: /f/gadgets
+  - button [165] "Subscribe No subscribers": Subscribe 0
+  - paragraph: t5_2qgzt
+  - separator
+  - list:
+    - text: Created
+    - time: 3 years ago
+    - link [166] "Subscribe via RSS":
+      - /url: /f/gadgets/new.atom
+      - img
+      - text: Subscribe via RSS
+  - group [167]: Hide this forum
+  - heading "Toolbox" [level=1]
+  - list:
+    - link [168] "Bans":
+      - /url: /f/gadgets/bans
+    - link [169] "Moderation log":
+      - /url: /f/gadgets/moderation_log
+- contentinfo:
+  - paragraph:
+    - text: Running
+    - link [170] "Postmill":
+      - /url: "https://postmill.xyz/"

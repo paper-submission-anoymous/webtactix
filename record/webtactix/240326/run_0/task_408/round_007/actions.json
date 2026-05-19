@@ -1,0 +1,2 @@
+{"type": "exec_begin", "src": "v7", "action_sig": "goto http://143.215.184.110:9999/r/explainlikeim5?sort=new/", "plan_name": "web_operation", "goal": "Upvote the newest post in explain like im 5 subreddit", "time_utc": "2026-03-24T18:26:26.645098+00:00", "t": 310.0574967805296, "round": 7}
+{"type": "exec_ok", "src": "v7", "dst": "v9", "action_sig": "goto http://143.215.184.110:9999/r/explainlikeim5?sort=new/", "url_after": "http://143.215.184.110:9999/r/explainlikeim5?sort=new/", "time_utc": "2026-03-24T18:26:26.735001+00:00", "t": 310.14740557968616, "round": 7}

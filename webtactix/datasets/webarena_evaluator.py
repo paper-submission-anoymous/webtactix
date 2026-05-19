@@ -12,13 +12,15 @@ import requests
 from webtactix.core.schemas import TaskSpec
 from webtactix.browser.playwright_session import PlaywrightSession, wait_for_page_stable
 
-REDDIT = "http://127.0.0.1:9999"
-SHOPPING = "http://127.0.0.1:7770"
-SHOPPING_ADMIN = "http://127.0.0.1:7780/admin"
-GITLAB = "http://127.0.0.1:8023"
-WIKIPEDIA = "http://127.0.0.1:8888/wikipedia_en_all_maxi_2022-05/A/User:The_other_Kiwix_guy/Landing"
-MAP = "https://127.0.0.1:3000/"
-HOMEPAGE = "http://127.0.0.1:4399"
+from browser_env.env_config import (
+    REDDIT,
+    SHOPPING,
+    SHOPPING_ADMIN,
+    GITLAB,
+    WIKIPEDIA,
+    MAP,
+    HOMEPAGE,
+)
 
 ACCOUNTS = {
     "reddit": {"username": "MarvelsGrantMan136", "password": "test1234"},

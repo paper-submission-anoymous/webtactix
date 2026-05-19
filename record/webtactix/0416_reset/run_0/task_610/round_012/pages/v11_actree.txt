@@ -1,0 +1,98 @@
+- navigation:
+  - link [0] "Jump to main content":
+    - /url: "#main"
+  - link [1] "Jump to sidebar":
+    - /url: "#sidebar"
+- navigation:
+  - link [2] "Home":
+    - /url: /
+    - text: Postmill
+  - list:
+    - link [3] "Forums":
+      - /url: /forums
+    - link [4] "Wiki":
+      - /url: /wiki
+  - searchbox [5] "Search query"
+  - list:
+    - link [6] "Notifications (0)":
+      - /url: /notifications
+      - img
+    - link [7] "Submit":
+      - /url: /submit/books
+      - img
+      - text: Submit
+    - button [8] "MarvelsGrantMan136":
+      - img
+      - strong: MarvelsGrantMan136
+- main:
+  - navigation:
+    - list:
+      - link [9] "/f/books":
+        - /url: /f/books
+        - img
+        - text: /f/
+        - strong: books
+  - article:
+    - "heading \"Review: To Kill a Mockingbird by Harper Lee\" [level=1]":
+      - link [10] "Review: To Kill a Mockingbird by Harper Lee":
+        - /url: /f/books/2/review-to-kill-a-mockingbird-by-harper-lee
+    - paragraph:
+      - text: Submitted by
+      - link [11] "MarvelsGrantMan136":
+        - /url: /user/MarvelsGrantMan136
+        - strong: MarvelsGrantMan136
+      - time: 1 second ago
+      - text: in
+      - link [12] "books":
+        - /url: /f/books
+        - strong: books
+    - paragraph: good book!
+    - navigation:
+      - list:
+        - link [13] "No comments":
+          - /url: /f/books/2/review-to-kill-a-mockingbird-by-harper-lee
+          - strong: No comments
+        - link [14] "Edit":
+          - /url: /f/books/2/-/edit
+        - button [15] "Delete"
+    - button [16] "Retract upvote"
+    - text: 1
+    - button [17] "Downvote"
+  - heading "Comments" [level=2]
+  - textbox [18] "Comment"
+  - checkbox [19] "Formatting help +"
+  - text: Markdown allowed. Formatting help +
+  - button [20] "Post"
+  - img "A tense emoji": (ﾟдﾟ)
+  - text: There's nothing here…
+- complementary:
+  - paragraph:
+    - strong: 1 point
+    - text: (+1, −0)
+  - "heading \"Short URL:\" [level=4]"
+  - paragraph: "http://143.215.184.110:9999/2"
+  - "heading \"books\" [level=1]":
+    - link [21] "books":
+      - /url: /f/books
+  - button [22] "Subscribe No subscribers": Subscribe 0
+  - paragraph: t5_2qh4i
+  - separator
+  - list:
+    - text: Created
+    - time: 4 years ago
+    - link [23] "Subscribe via RSS":
+      - /url: /f/books/new.atom
+      - img
+      - text: Subscribe via RSS
+  - group [24]: Hide this forum
+  - heading "Toolbox" [level=1]
+  - list:
+    - link [25] "Bans":
+      - /url: /f/books/bans
+    - link [26] "Moderation log":
+      - /url: /f/books/moderation_log
+- contentinfo:
+  - paragraph:
+    - text: Running
+    - link [27] "Postmill":
+      - /url: "https://postmill.xyz/"

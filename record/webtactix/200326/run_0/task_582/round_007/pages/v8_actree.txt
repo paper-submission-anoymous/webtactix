@@ -1,0 +1,83 @@
+- navigation:
+  - link [0] "Jump to main content":
+    - /url: "#main"
+  - link [1] "Jump to sidebar":
+    - /url: "#sidebar"
+- navigation:
+  - link [2] "Home":
+    - /url: /
+    - text: Postmill
+  - list:
+    - link [3] "Forums":
+      - /url: /forums
+    - link [4] "Wiki":
+      - /url: /wiki
+  - searchbox [5] "Search query"
+  - list:
+    - link [6] "Notifications (0)":
+      - /url: /notifications
+      - img
+    - link [7] "Submit":
+      - /url: /submit/Cyberpunk
+      - img
+      - text: Submit
+    - button [8] "MarvelsGrantMan136":
+      - img
+      - strong: MarvelsGrantMan136
+- main:
+  - "heading \"/f/Cyberpunk\" [level=1]":
+    - text: /f/
+    - strong: Cyberpunk
+  - navigation:
+    - list:
+      - link [9] "Submissions":
+        - /url: /f/Cyberpunk
+      - link [10] "Comments":
+        - /url: /f/Cyberpunk/comments
+    - list:
+      - button [11] "Sort by: Hot":
+        - img
+        - text: Hot
+  - img "A tense emoji": (._.)
+  - text: There's nothing here…
+- complementary:
+  - "heading \"Cyberpunk\" [level=1]":
+    - link [12] "Cyberpunk":
+      - /url: /f/Cyberpunk
+  - button [13] "Unsubscribe 1 subscriber": Unsubscribe 1
+  - paragraph: Games, Books, Movies, Future
+  - separator
+  - list:
+    - text: Created
+    - time: 0 seconds ago
+    - link [14] "Subscribe via RSS":
+      - /url: /f/Cyberpunk/new.atom
+      - img
+      - text: Subscribe via RSS
+  - group [15]: Hide this forum
+  - heading "Toolbox" [level=1]
+  - list:
+    - link [16] "Appearance":
+      - /url: /f/Cyberpunk/appearance
+    - link [17] "Bans":
+      - /url: /f/Cyberpunk/bans
+    - link [18] "Delete forum":
+      - /url: /f/Cyberpunk/delete
+    - link [19] "Edit forum":
+      - /url: /f/Cyberpunk/edit
+    - link [20] "Moderation log":
+      - /url: /f/Cyberpunk/moderation_log
+    - link [21] "Trash":
+      - /url: /f/Cyberpunk/trash
+  - heading "Moderators" [level=1]
+  - list:
+    - link [22] "MarvelsGrantMan136":
+      - /url: /user/MarvelsGrantMan136
+  - paragraph:
+    - link [23] "See full list":
+      - /url: /f/Cyberpunk/moderators
+- contentinfo:
+  - paragraph:
+    - text: Running
+    - link [24] "Postmill":
+      - /url: "https://postmill.xyz/"

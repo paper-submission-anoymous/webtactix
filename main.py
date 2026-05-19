@@ -6,12 +6,14 @@ import asyncio
 import multiprocessing as mp
 from statistics import mode
 import shutil
+import subprocess
 import time
 from dataclasses import dataclass, asdict
 from pathlib import Path
 import traceback
 from typing import Sequence, List, Dict, Any, Optional
 
+from webtactix import set_seeds
 from webtactix.browser.playwright_session import PlaywrightConfig, PlaywrightSession
 from webtactix.core.semantic_tree import SemanticTree
 from webtactix.llm.openai_compat import OpenAICompatClient
@@ -33,7 +35,9 @@ SHOPPING_ADMIN = [0, 1, 2, 3, 4, 5, 6, 11, 12, 13, 14, 15, 41, 42, 43, 62, 63, 6
 MAP = [7, 8, 9, 10, 16, 17, 18, 19, 20, 32, 33, 34, 35, 36, 37, 38, 39, 40, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 70, 71, 72, 73, 74, 75, 76, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 98, 99, 100, 101, 137, 138, 139, 140, 151, 152, 153, 154, 155, 218, 219, 220, 221, 222, 223, 224, 236, 237, 248, 249, 250, 251, 252, 253, 254, 255, 256, 257, 287, 356, 363, 364, 365, 366, 367, 369, 370, 371, 372, 373, 377, 378, 379, 380, 381, 382, 383, 757, 758, 761, 762, 763, 764, 765, 766, 767]
 SHOPPING = [21, 22, 23, 24, 25, 26, 47, 48, 49, 50, 51, 96, 117, 118, 124, 125, 126, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150, 158, 159, 160, 161, 162, 163, 164, 165, 166, 167, 188, 189, 190, 191, 192, 225, 226, 227, 228, 229, 230, 231, 232, 233, 234, 235, 238, 239, 240, 241, 242, 260, 261, 262, 263, 264, 269, 270, 271, 272, 273, 274, 275, 276, 277, 278, 279, 280, 281, 282, 283, 284, 285, 286, 298, 299, 300, 301, 302, 313, 319, 320, 321, 322, 323, 324, 325, 326, 327, 328, 329, 330, 331, 332, 333, 334, 335, 336, 337, 338, 351, 352, 353, 354, 355, 358, 359, 360, 361, 362, 368, 376, 384, 385, 386, 387, 388, 431, 432, 433, 434, 435, 436, 437, 438, 439, 440, 465, 466, 467, 468, 469, 506, 507, 508, 509, 510, 511, 512, 513, 514, 515, 516, 517, 518, 519, 520, 521, 528, 529, 530, 531, 532, 571, 572, 573, 574, 575, 585, 586, 587, 588, 589, 653, 654, 655, 656, 657, 689, 690, 691, 692, 693, 792, 793, 794, 795, 796, 797, 798]
 # REDDIT = [29, 30, 31, 66, 67, 68, 69, 399, 400, 401, 402, 403, 404, 405, 406, 407, 408, 409, 410, 580, 581, 582, 583, 584, 595, 596, 597, 598, 599, 600, 601, 602, 603, 604, 605, 606, 607, 608, 609, 610, 611, 612, 613, 614, 615, 616, 617, 618, 619, 620, 621, 622, 623, 624, 625, 626, 627, 628, 629, 630, 631, 632, 633, 634, 635, 636, 637, 638, 639, 640, 641, 642, 643, 644, 645, 646, 647, 648, 649, 650, 651, 652, 714, 715, 716, 717, 718, 719, 720, 721, 722, 723, 724, 725, 726, 727, 728, 729, 730, 731, 732, 733, 734, 735]
-REDDIT = [581, 596, 633, 596, 410, 68, 625, 601, 31, 717, 635, 33,604, 735, 609, 734, 727, 725, 401, 639,650, 67, 610, 582, 606, 632, 404, 724, 403, 652]
+REDDIT = [583, 66, 31, 597, 610]
+
+#REDDIT = [597]
 GITLAB = [44, 45, 46, 102, 103, 104, 105, 106, 132, 133, 134, 135, 136, 156, 168, 169, 170, 171, 172, 173, 174, 175, 176, 177, 178, 179, 180, 181, 182, 205, 206, 207, 258, 259, 293, 294, 295, 296, 297, 303, 304, 305, 306, 307, 308, 309, 310, 311, 312, 314, 315, 316, 317, 318, 339, 340, 341, 342, 343, 349, 350, 357, 389, 390, 391, 392, 393, 394, 395, 396, 397, 398, 411, 412, 413, 414, 415, 416, 417, 418, 419, 420, 421, 422, 441, 442, 443, 444, 445, 446, 447, 448, 449, 450, 451, 452, 475, 476, 477, 478, 479, 480, 481, 482, 483, 484, 485, 522, 523, 524, 525, 526, 527, 533, 534, 535, 536, 537, 567, 568, 569, 570, 576, 577, 578, 579, 590, 591, 592, 593, 594, 658, 659, 660, 661, 662, 663, 664, 665, 666, 667, 668, 669, 670, 736, 742, 743, 744, 745, 746, 747, 748, 749, 750, 751, 752, 753, 754, 755, 756, 783, 784, 785, 786, 787, 788, 789, 799, 800, 801, 802, 803, 804, 805, 806, 807, 808, 809, 810, 811]
 MULTISITE = [97, 265, 266, 267, 268, 424, 425, 426, 427, 428, 429, 430, 552, 553, 554, 555, 556, 557, 558, 559, 560, 561, 562, 563, 564, 565, 566, 671, 672, 673, 674, 675, 681, 682, 683, 684, 685, 686, 687, 688, 737, 738, 739, 740, 741, 759, 760, 791]
 
@@ -46,18 +50,12 @@ class TaskRunOutput:
 
 
 def _make_llm(runner_cfg: RunnerConfig, *, key_num: int) -> Any:
-    if runner_cfg.llm_type == "deepseek":
-        llm_cfg = preset_openrouter(key_num=key_num)
-        return llm_cfg
-    elif runner_cfg.llm_type == "vllm":
+    # if runner_cfg.llm_type == "deepseek":
+    #     llm_cfg = preset_openrouter(key_num=key_num)
+    #     return llm_cfg
+    if runner_cfg.llm_type == "vllm":
         llm_cfg = preset_vllm(key_num=key_num)
         return VLLMClient(llm_cfg)
-    elif runner_cfg.llm_type == "qwen32b":
-        llm_cfg = preset_qwen32b(key_num=key_num)
-    elif runner_cfg.llm_type == "gpt-4o":
-        llm_cfg = preset_chatgpt(key_num=key_num)
-    else:
-        raise ValueError(f"Unknown llm_type: {runner_cfg.llm_type}")
     return OpenAICompatClient(llm_cfg)
 
 
@@ -264,6 +262,7 @@ def _lane_entrypoint(
     cfg: Dict[str, Any],
     out_q: mp.Queue,
 ) -> None:
+    set_seeds()
     outs = asyncio.run(
         _run_lane_async(
             lane_id=lane_id,
@@ -282,6 +281,19 @@ def _lane_entrypoint(
     out_q.put(("ok", lane_id, [o.__dict__ for o in outs]))
 
 
+def reset_environment(reset_script: Path = Path("reset_forum.sh")) -> None:
+    script = reset_script.resolve()
+    if not script.exists():
+        print(f"[RESET] WARNING: {script} not found, skipping env reset.")
+        return
+    print(f"[RESET] Resetting web environment via {script} ...")
+    t0 = time.monotonic()
+    result = subprocess.run(["bash", str(script)], cwd=script.parent)
+    if result.returncode != 0:
+        raise RuntimeError(f"[RESET] {script.name} exited with code {result.returncode}")
+    print(f"[RESET] Done ({time.monotonic() - t0:.1f}s)")
+
+
 def amain_process(
     *,
     dataset: str = "webarena",
@@ -297,6 +309,8 @@ def amain_process(
     run_num: int = 0,
     agent_name: str = "webtactix",
 ) -> int:
+    reset_environment()
+
     ctx = mp.get_context("spawn")
     out_q: mp.Queue = ctx.Queue()
 
@@ -372,6 +386,7 @@ def amain_process(
 
 
 def main() -> None:
+    set_seeds()
     #
     # WebArena
     dataset = "webarena"
@@ -413,7 +428,7 @@ def main() -> None:
         # lane_task_ids=[Task_1], # For Online Mind2Web
         headless=True,# Set to False to see the browser in action. True is recommended for faster runs and less resource usage.
         max_rounds=15,
-        max_parallel=3,
+        max_parallel=1,
         table_max_rows=10,
         mode=args.mode,
         timestamp=args.timestamp,

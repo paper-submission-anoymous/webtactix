@@ -48,11 +48,17 @@ class SemanticTree:
         self._next_id += 1
         return nid
 
+    @staticmethod
+    def _normalize_url(url: str) -> str:
+        parsed = urlparse(url)
+        return parsed._replace(fragment="", path=parsed.path.rstrip("/")).geturl()
+
     def add_root(self, url: str = "", enc: EncodedObservation = None) -> NodeId:
         if self._root_id is not None:
             raise RuntimeError("Root already exists.")
         self.nodes["virtual"] = SemanticNode(node_id="virtual", url="")
 
+        url = self._normalize_url(url)
         rid = self.new_node_id()
         self.nodes[rid] = SemanticNode(node_id=rid, url=url)
         self.state[rid] = NodeState(url=url,enc=enc)
@@ -126,9 +132,7 @@ class SemanticTree:
           - If url changes (url_after != parent_url_before), child replay_steps resets to empty
           - If url same, child replay_steps = parent.replay_steps + plan.steps
         """
-        parsed_url = urlparse(url_after)
-
-        url_after = parsed_url._replace(fragment="").geturl()
+        url_after = self._normalize_url(url_after)
 
         if parent not in self.nodes:
             raise KeyError(f"Unknown parent node: {parent}")

@@ -1,0 +1,91 @@
+- link [0] "Imgur":
+  - /url: /
+  - img "Imgur"
+- link [1] "New post":
+  - /url: /upload
+  - img "New post"
+- link [2] "Make a Meme":
+  - /url: /meme-generator
+  - img "Make a Meme"
+- link [3] "Open Arcade Open Arcade 8h":
+  - /url: /arcade
+  - img "Open Arcade"
+  - text: Open Arcade 8h
+- link [4] "NextChevron Pointing Right":
+  - /url: /gallery/absolutely-fucking-love-this-kid-whos-found-e-dream-stranger-doing-everything-to-support-that-new-generation-of-potential-astronauts-scientists-love-PyJZhco
+  - text: Next
+  - img "Chevron Pointing Right"
+- link [5] "Sign in":
+  - /url: "https://imgur.com/signin#%2Fa%2F5aSTETX"
+- link [6] "Sign up":
+  - /url: "https://imgur.com/register#%2Fa%2F5aSTETX"
+- img "Add to Favorites"
+- img "Share"
+- text: 22,842 Views • January 13 2023
+- img "Options Menu"
+- heading "I made a makeup table for my girlfriend's birthday out of an old bar cabinet" [level=1]
+- img "End-result-I-made-makeup-table-girlfriend-s-birthday-out-of-old-bar-cabinet"
+- img "End-result-I-made-makeup-table-girlfriend-s-birthday-out-of-old-bar-cabinet"
+- text: End result
+- img "I-made-makeup-table-girlfriend-s-birthday-out-of-old-bar-cabinet"
+- img "I-made-makeup-table-girlfriend-s-birthday-out-of-old-bar-cabinet"
+- text: The old bar cabinet
+- img "I-made-makeup-table-girlfriend-s-birthday-out-of-old-bar-cabinet"
+- img "I-made-makeup-table-girlfriend-s-birthday-out-of-old-bar-cabinet"
+- button [7] "Load 10 more images Chevron Pointing Down":
+  - text: Load 10 more images
+  - img "Chevron Pointing Down"
+- "heading \"Newest in most viral\" [level=3]":
+  - link [8] "Newest in most viral":
+    - /url: /
+- link [9] "Absolutely fucking love this!! A kid who's found e dream, a stranger doing ...":
+  - /url: /gallery/absolutely-fucking-love-this-kid-whos-found-e-dream-stranger-doing-everything-to-support-that-new-generation-of-potential-astronauts-scientists-love-PyJZhco
+  - img
+  - text: Absolutely fucking love this!! A kid who's found e dream, a stranger doing ...
+- link [10] "Billionaires don't get enough hate":
+  - /url: /gallery/billionaires-dont-get-enough-hate-4O2IGYG
+  - img
+  - text: Billionaires don't get enough hate
+- link [11] "For those at the back...Abortions are healthcare, for many reasons, including ...":
+  - /url: /gallery/those-back-abortions-are-healthcare-many-reasons-including-mental-health-then-going-on-to-have-miscarriage-of-wanted-pregnancy-are-two-very-very-different-things-vKsfRSt
+  - img
+  - text: For those at the back...Abortions are healthcare, for many reasons, including ...
+- link [12] "9 SWORDS will be at Wellycon! Tickets on sale now":
+  - /url: /gallery/swords-will-be-wellycon-tickets-on-sale-now-x2BFQJQ
+  - text: 9
+  - img
+  - text: SWORDS will be at Wellycon! Tickets on sale now
+- link [13] "Republicans offer nothing but hate":
+  - /url: /gallery/republicans-offer-nothing-hate-MAyXF7e
+  - img
+  - text: Republicans offer nothing but hate
+- list:
+  - © 2026 Imgur, Inc
+  - link [14] "About":
+    - /url: "https://imgur.com/about"
+  - link [15] "Terms":
+    - /url: "https://imgur.com/tos"
+  - link [16] "Privacy":
+    - /url: "https://imgur.com/privacy"
+  - link [17] "Rules":
+    - /url: "https://imgur.com/rules"
+  - link [18] "Help":
+    - /url: "https://help.imgur.com/hc/en-us"
+  - link [19] "Emerald":
+    - /url: /emerald?source=footer
+  - link [20] "Wellness":
+    - /url: "https://imgur.com/community-resources"
+  - link [21] "CCPA":
+    - /url: "https://imgur.com/ccpa"
+  - link [22] "EU DSA":
+    - /url: "https://help.imgur.com/hc/en-us/articles/26478501198491"
+  - link [23] "Trending":
+    - /url: "https://imgur.com/trending"
+- link [24] "Get the App":
+  - /url: "https://imgur.com/apps"
+- iframe
+- iframe
+- iframe
+- iframe
+- iframe
+- iframe

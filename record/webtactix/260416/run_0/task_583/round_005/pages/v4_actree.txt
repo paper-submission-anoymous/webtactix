@@ -1,0 +1,48 @@
+- navigation:
+  - link [0] "Jump to main content":
+    - /url: "#main"
+  - link [1] "Jump to sidebar":
+    - /url: "#sidebar"
+- navigation:
+  - link [2] "Home":
+    - /url: /
+    - text: Postmill
+  - list:
+    - link [3] "Forums":
+      - /url: /forums
+    - link [4] "Wiki":
+      - /url: /wiki
+  - searchbox [5] "Search query"
+  - list:
+    - link [6] "Notifications (0)":
+      - /url: /notifications
+      - img
+    - link [7] "Submit":
+      - /url: /submit
+      - img
+      - text: Submit
+    - button [8] "MarvelsGrantMan136":
+      - img
+      - strong: MarvelsGrantMan136
+- main:
+  - heading "Create submission" [level=1]
+  - radio [9] "URL" [checked]
+  - text: URL
+  - radio [10] "Image"
+  - text: Image
+  - textbox [11] "URL"
+  - text: Title *
+  - textbox [12] "Title This field is required."
+  - text: Body
+  - textbox [13] "Body"
+  - checkbox [14] "Formatting help +"
+  - text: Markdown allowed. Formatting help + Forum *
+  - combobox [15] "PlantsForCatParents":
+    - textbox [16] "PlantsForCatParents ❤️":
+      - img
+  - button [17] "Create submission"
+- contentinfo:
+  - paragraph:
+    - text: Running
+    - link [18] "Postmill":
+      - /url: "https://postmill.xyz/"

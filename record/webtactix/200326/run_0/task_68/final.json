@@ -1,0 +1,89 @@
+{
+  "time_utc": "2026-03-21T01:16:09.107936+00:00",
+  "t_end": 51.10537120886147,
+  "dataset": "webarena",
+  "task_id": "68",
+  "status": "finish",
+  "answer": "Provide author name and book name from posts that recommend a single book among top 10 posts.",
+  "final_node_id": null,
+  "reason": "finish",
+  "real_answer": {
+    "eval_types": [
+      "string_match"
+    ],
+    "reference_answers": {
+      "must_include": [
+        "A Christmas Carol",
+        "Levar Burton",
+        "The Hobbit",
+        "J. R. R. Tolkien"
+      ]
+    },
+    "reference_url": "",
+    "string_note": "",
+    "program_html": [],
+    "reference_answer_raw_annotation": "A Christmas Carol by Levar Burton: , The Hobbit by J. R. R. Tolkien",
+    "raw": {
+      "eval_types": [
+        "string_match"
+      ],
+      "reference_answers": {
+        "must_include": [
+          "A Christmas Carol",
+          "Levar Burton",
+          "The Hobbit",
+          "J. R. R. Tolkien"
+        ]
+      },
+      "reference_url": "",
+      "program_html": [],
+      "string_note": "",
+      "reference_answer_raw_annotation": "A Christmas Carol by Levar Burton: , The Hobbit by J. R. R. Tolkien"
+    }
+  },
+  "eval_result": {
+    "ok": false,
+    "score": 0.0,
+    "reason": "failed",
+    "details": {
+      "per_type": [
+        {
+          "ok": false,
+          "score": 0.0,
+          "reason": "string_match_failed",
+          "details": {
+            "pred": "Provide author name and book name from posts that recommend a single book among top 10 posts.",
+            "checks": {
+              "must_include": {
+                "ok": false,
+                "refs": [
+                  "A Christmas Carol",
+                  "Levar Burton",
+                  "The Hobbit",
+                  "J. R. R. Tolkien"
+                ],
+                "pred": "Provide author name and book name from posts that recommend a single book among top 10 posts."
+              }
+            }
+          }
+        }
+      ]
+    }
+  },
+  "summary": {
+    "total_tokens": 30333,
+    "total_prompt_tokens": 26689,
+    "total_completion_tokens": 3644,
+    "llm_calls": 5,
+    "estimated_calls": 0,
+    "planner_calls": 2,
+    "decision_calls": 2,
+    "total_rounds": 3,
+    "total_nodes": null,
+    "planner_frontier_sizes": {
+      "0": 0,
+      "1": 1,
+      "2": 1
+    }
+  }
+}

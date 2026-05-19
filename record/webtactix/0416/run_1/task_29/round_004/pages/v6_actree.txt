@@ -1,0 +1,727 @@
+- navigation:
+  - link [0] "Jump to main content":
+    - /url: "#main"
+  - link [1] "Jump to sidebar":
+    - /url: "#sidebar"
+- navigation:
+  - link [2] "Home":
+    - /url: /
+    - text: Postmill
+  - list:
+    - link [3] "Forums":
+      - /url: /forums
+    - link [4] "Wiki":
+      - /url: /wiki
+  - searchbox [5] "Search query"
+  - list:
+    - link [6] "Notifications (0)":
+      - /url: /notifications
+      - img
+    - link [7] "Submit":
+      - /url: /submit/DIY
+      - img
+      - text: Submit
+    - button [8] "MarvelsGrantMan136":
+      - img
+      - strong: MarvelsGrantMan136
+- main:
+  - navigation:
+    - list:
+      - link [9] "/f/DIY":
+        - /url: /f/DIY
+        - img
+        - text: /f/
+        - strong: DIY
+  - article:
+    - "heading \"Share: DIY A 12.8V 120Ah LiFePO4 Battery For My Travel Trailer(AGM Battery Replacement)\" [level=1]":
+      - link [10] "Share: DIY A 12.8V 120Ah LiFePO4 Battery For My Travel Trailer(AGM Battery Replacement)":
+        - /url: /f/DIY/76189/share-diy-a-12-8v-120ah-lifepo4-battery-for-my-travel
+    - paragraph:
+      - text: Submitted by
+      - link [11] "QH-Technology":
+        - /url: /user/QH-Technology
+        - strong: QH-Technology
+      - text: [t3_10o0n2b]
+      - time: 3 years ago
+      - text: in
+      - link [12] "DIY":
+        - /url: /f/DIY
+        - strong: DIY
+    - paragraph: Hello, folks.
+    - paragraph: Several months ago, my AGM travel trailer battery is broken. After comparing YouTube and Google, I decided to build a 12V 120Ah LiFePO4 battery. I buy the battery cells and the kits online. After preparing all the tools and materials, I start to build it and finally got it done. I'd like to share the full process.
+    - paragraph: "&#x200B;"
+    - paragraph:
+      - strong: "Materials Used:"
+    - list:
+      - 3.2V 120Ah LiFePO4 battery cells (4 pieces)
+      - BMS (Battery Manage System, 1 piece)
+      - Connectors (About 4 pieces)
+      - "Others: EVA cotton, screws, ribbon cables, plastic pipes, etc."
+    - paragraph: "&#x200B;"
+    - paragraph:
+      - strong: "Tool Used:"
+    - list:
+      - Spot Welder
+      - Spot Welding Pen
+      - Soldering Iron
+      - Wire Cutter
+      - Wire Stripper
+      - Multimeter
+    - paragraph: "&#x200B;"
+    - paragraph:
+      - strong: Assembly Process
+    - list:
+      - First, place four battery cells on the work table. Before we assemble the battery pack, we should check the quality and ensure consistency, which means they are produced by the same brand with the same voltage, and capacity.
+    - paragraph:
+      - link [13] "https://preview.redd.it/gsd4qrv26xea1.png?width=1275&format=png&auto=webp&v=enabled&s=3338162904a2415c97f16ecd35611f2d1b0098d5":
+        - /url: "https://preview.redd.it/gsd4qrv26xea1.png?width=1275&format=png&auto=webp&v=enabled&s=3338162904a2415c97f16ecd35611f2d1b0098d5"
+    - list:
+      - Next, we can put the epoxy boards between the batteries. The epoxy board is made of alkali-free E-glass cloth impregnated with epoxy resin by processing under heat and pressure. Which have extremely high mechanical strength, Insulation, heat resistance, electrical properties, and good moisture resistance properties.
+    - paragraph:
+      - link [14] "https://preview.redd.it/z663o1kd6xea1.png?width=1275&format=png&auto=webp&v=enabled&s=7833b14427566feaf7b1e401711ad945969375e1":
+        - /url: "https://preview.redd.it/z663o1kd6xea1.png?width=1275&format=png&auto=webp&v=enabled&s=7833b14427566feaf7b1e401711ad945969375e1"
+    - list:
+      - We place them in order and fix them with fiber tape. The fiber tape is made of hot melt adhesive and forms a stronger tape that is resistant to tears and has better temperature tolerance than regular tape. It is explosion-proof and leak-proof, providing high-strength insulation protection.
+    - paragraph:
+      - link [15] "https://preview.redd.it/l5op72ci7xea1.png?width=1275&format=png&auto=webp&v=enabled&s=9aa5e9a9cf4f92ee271144b2afed56968750994b":
+        - /url: "https://preview.redd.it/l5op72ci7xea1.png?width=1275&format=png&auto=webp&v=enabled&s=9aa5e9a9cf4f92ee271144b2afed56968750994b"
+    - list:
+      - Connect the cells using the connectors in series while connecting the indicator cables to the CPM and the cells. Don’t tighten connectors and nuts too tightly.
+    - paragraph: When connecting the voltage collection lines (equalization lines), do not connect the external protection board to avoid accidental burning of the protection board.
+    - paragraph: "&#x200B;"
+    - paragraph:
+      - link [16] "https://preview.redd.it/8id2nyip7xea1.png?width=1275&format=png&auto=webp&v=enabled&s=e6cb667b5933147cb789987f413ce12f69b6bf55":
+        - /url: "https://preview.redd.it/8id2nyip7xea1.png?width=1275&format=png&auto=webp&v=enabled&s=e6cb667b5933147cb789987f413ce12f69b6bf55"
+    - list:
+      - Terminal blocks are available as rows, but each terminal connects to only a single wire, which can prevent the loosening of signal wires.
+    - paragraph:
+      - link [17] "https://preview.redd.it/ouw4u01k8xea1.png?width=1275&format=png&auto=webp&v=enabled&s=988bc76fc247556a693dfd3c1fa7b7bc25dd2289":
+        - /url: "https://preview.redd.it/ouw4u01k8xea1.png?width=1275&format=png&auto=webp&v=enabled&s=988bc76fc247556a693dfd3c1fa7b7bc25dd2289"
+    - list:
+      - After soldering the wires (the balancing leads and the charging-discharging cables), we can tidy up the messy wires.
+    - paragraph:
+      - link [18] "https://preview.redd.it/9obkt3579xea1.png?width=1275&format=png&auto=webp&v=enabled&s=f22bd7cb88f91a4b113153bcb21bd03dcc467522":
+        - /url: "https://preview.redd.it/9obkt3579xea1.png?width=1275&format=png&auto=webp&v=enabled&s=f22bd7cb88f91a4b113153bcb21bd03dcc467522"
+    - list:
+      - We can not put the battery pack into bare condition. It is an excellent choice to put it into a plastic shell. Compared with the aluminum shell, the plastic shell has a good insulation performance and is cheaper. Most of the cases of lithium batteries are mass molded manufacturing, production of high cost, and personal customization of the case is difficult. You can look for the case on sale online and pay attention to the size.
+    - paragraph:
+      - link [19] "https://preview.redd.it/748ylg1c9xea1.png?width=1275&format=png&auto=webp&v=enabled&s=050d2788f3f9e3218f40d9d3cbea0048798db900":
+        - /url: "https://preview.redd.it/748ylg1c9xea1.png?width=1275&format=png&auto=webp&v=enabled&s=050d2788f3f9e3218f40d9d3cbea0048798db900"
+    - list:
+      - The thermally conductive tape for battery packs keeps the BMS in place and protects them from the shock of extreme temperature changes. Besides, these tapes provide electrical insulation, which prevents short circuits and provides a barrier to BMS.
+    - paragraph:
+      - link [20] "https://preview.redd.it/1phtqgdd9xea1.png?width=1275&format=png&auto=webp&v=enabled&s=5395915f9c0da19c9317f04093a60f2a651103a9":
+        - /url: "https://preview.redd.it/1phtqgdd9xea1.png?width=1275&format=png&auto=webp&v=enabled&s=5395915f9c0da19c9317f04093a60f2a651103a9"
+    - list:
+      - A BMS is one of the most important elements in a LiFePO4 battery, like the brain of the battery pack. It calculates the State of Charge (the amount of energy remaining in the battery) by tracking how much energy goes in and out of the battery pack and by monitoring cell voltages, which can prevent the battery pack from overcharging, over-discharging, and balancing all the cells voltage equally.
+    - paragraph: There are two main sets of wires we need to install, the thick wires and the thin wires. The thick wires are your charging/discharging wires and the thin wires are your balance wires. Not every BMS is the same, but most are similar. Your BMS will likely have 3 thick wires or 3 pads to solder on your own heavy gauge wires. These are the B-, P-, and C- wires (or pads for adding wires). We usually start with the B- wire. We can connect the B- of BMS to the negative pole of the battery pack.
+    - paragraph:
+      - link [21] "https://preview.redd.it/vft8gqbl9xea1.png?width=1275&format=png&auto=webp&v=enabled&s=efdd62f57d2b9ccccafc1dc190d6fd32e891ecf9":
+        - /url: "https://preview.redd.it/vft8gqbl9xea1.png?width=1275&format=png&auto=webp&v=enabled&s=efdd62f57d2b9ccccafc1dc190d6fd32e891ecf9"
+    - list:
+      - If you connect the negative to the ground first then the current will flow through the positive terminal to your body when you connect the positive terminal but when you connect the positive terminal first then while connecting the negative terminal the current will pass through the negative to ground wire instead of your body to ground as the resistance of your body is greater than the resistance of wire path and current will always flow through the lowest resistive path. Thus always connect the positive terminal first.
+    - paragraph:
+      - link [22] "https://preview.redd.it/l69kndto9xea1.png?width=1275&format=png&auto=webp&v=enabled&s=5b614403f95a42d4039599b5766e82ffb1812311":
+        - /url: "https://preview.redd.it/l69kndto9xea1.png?width=1275&format=png&auto=webp&v=enabled&s=5b614403f95a42d4039599b5766e82ffb1812311"
+    - list:
+      - If you connect the negative to the ground first then the current will flow through the positive terminal to your body when you connect the positive terminal but when you connect the positive terminal first then while connecting the negative terminal the current will pass through the negative to ground wire instead of your body to ground as the resistance of your body is greater than the resistance of wire path and current will always flow through the lowest resistive path. Thus always connect the positive terminal first.
+    - paragraph:
+      - link [23] "https://preview.redd.it/ravlclat9xea1.png?width=1275&format=png&auto=webp&v=enabled&s=05cf688e7816a288291fa83b8f8f9828aa4b96e1":
+        - /url: "https://preview.redd.it/ravlclat9xea1.png?width=1275&format=png&auto=webp&v=enabled&s=05cf688e7816a288291fa83b8f8f9828aa4b96e1"
+    - list:
+      - Measure battery temperature with the probe. Use tape to secure it near the battery pack.
+    - paragraph:
+      - link [24] "https://preview.redd.it/z8d67srz9xea1.png?width=1275&format=png&auto=webp&v=enabled&s=400ee1c99ad54760bb4caac693b99280a251b7a2":
+        - /url: "https://preview.redd.it/z8d67srz9xea1.png?width=1275&format=png&auto=webp&v=enabled&s=400ee1c99ad54760bb4caac693b99280a251b7a2"
+    - list:
+      - The total input and output ports of the battery pack are assembled. The assembly of this battery pack is almost done.
+    - paragraph:
+      - link [25] "https://preview.redd.it/y2uhv2x2axea1.png?width=1275&format=png&auto=webp&v=enabled&s=cafa7f8a6419d166c89eb23080839861b3bd7a51":
+        - /url: "https://preview.redd.it/y2uhv2x2axea1.png?width=1275&format=png&auto=webp&v=enabled&s=cafa7f8a6419d166c89eb23080839861b3bd7a51"
+    - list:
+      - EVA cotton can be shockproof, fireproof, and insulated, protecting the battery pack well. It can reduce the expansion force of the battery and improve the service life of the battery.
+    - paragraph:
+      - link [26] "https://preview.redd.it/6xmzznr7axea1.png?width=1275&format=png&auto=webp&v=enabled&s=b2ad8ef18173e712725aace335abcdb8ed429aea":
+        - /url: "https://preview.redd.it/6xmzznr7axea1.png?width=1275&format=png&auto=webp&v=enabled&s=b2ad8ef18173e712725aace335abcdb8ed429aea"
+    - list:
+      - Check the signal lines in the correct order, or the wrong sequence may cause BMS to burn out!
+    - paragraph:
+      - link [27]:
+        - /url: "https://preview.redd.it/r722uj9raxea1.png?width=1275&format=png&auto=webp&v=enabled&s=4449ae1426276348523aed4fa2b5d00441bdea8a"
+    - list:
+      - The signal acquisition technology can provide accurate parameters for battery balancing, SOC estimation, and BMS centralized monitoring to meet the actual requirements of battery packs.
+    - paragraph: Using the signal acquisition technology, the voltage signal, temperature signal, current signal, etc. In addition, data from the battery pack CAN be transmitted to the central control unit.
+    - paragraph:
+      - link [28] "https://preview.redd.it/99u3q9czaxea1.png?width=1275&format=png&auto=webp&v=enabled&s=5e2a39ad00c2125099027c16a1786379c25ce562":
+        - /url: "https://preview.redd.it/99u3q9czaxea1.png?width=1275&format=png&auto=webp&v=enabled&s=5e2a39ad00c2125099027c16a1786379c25ce562"
+    - paragraph:
+      - strong: Battery Tests
+    - paragraph:
+      - strong: 1. Test The Voltage Of The Battery Pack
+    - paragraph: In this step, we can use a multimeter to check the voltage of the whole battery pack. Attach the multimeter probes to the positive and negative battery terminals. Then we can check the voltage on the screen. The multimeter’s red probe must be connected to the positive terminal, while the black probe must be connected to the negative one.
+    - paragraph: A fully-charged battery must indicate a slightly higher voltage than the voltage listed on the battery. For instance, a 12 volts battery will indicate about 12.8 volts when it is fully charged.
+    - paragraph:
+      - link [29] "https://preview.redd.it/ef64zzmbbxea1.png?width=1275&format=png&auto=webp&v=enabled&s=db5e07eafe48321b06e94b3ae6e3ad1323279fec":
+        - /url: "https://preview.redd.it/ef64zzmbbxea1.png?width=1275&format=png&auto=webp&v=enabled&s=db5e07eafe48321b06e94b3ae6e3ad1323279fec"
+    - paragraph:
+      - strong: 2. Charging Test
+    - paragraph: Through the test, we can check that the charging value is normal and that the battery is abnormal during the charging process. We need to pay attention to the battery charging time and charging current.
+    - paragraph:
+      - link [30] "https://preview.redd.it/ru1ol6jebxea1.png?width=1275&format=png&auto=webp&v=enabled&s=b0b82419ec0cb88ffd7b1bc53f3d1f27c5ad7f2d":
+        - /url: "https://preview.redd.it/ru1ol6jebxea1.png?width=1275&format=png&auto=webp&v=enabled&s=b0b82419ec0cb88ffd7b1bc53f3d1f27c5ad7f2d"
+    - paragraph:
+      - strong: 3. Discharging Test
+    - paragraph: The discharge test of the battery is beneficial to the battery cycle life and discharge performance evaluation. We can use a professional device(Such as a Programmable DC Electronic Load) to check whether the battery works well during the discharging process, which can protect our battery and devices for further daily use.
+    - paragraph: When testing, there are three factors we need to pay attention to the port voltage of the battery, the resistance of the wire between the battery and the electronic load, and the temperature of the storm.
+    - paragraph:
+      - link [31] "https://preview.redd.it/bbbbgbqnbxea1.png?width=1275&format=png&auto=webp&v=enabled&s=e75af4e9a95ded3acb7a7965c92d41aed6a509c1":
+        - /url: "https://preview.redd.it/bbbbgbqnbxea1.png?width=1275&format=png&auto=webp&v=enabled&s=e75af4e9a95ded3acb7a7965c92d41aed6a509c1"
+    - navigation:
+      - list:
+        - link [32] "21 comments":
+          - /url: /f/DIY/76189/share-diy-a-12-8v-120ah-lifepo4-battery-for-my-travel
+          - strong: 21 comments
+    - button [33] "Retract upvote"
+    - text: 1
+    - button [34] "Downvote"
+  - heading "Comments" [level=2]
+  - textbox [35] "Comment"
+  - checkbox [36] "Formatting help +"
+  - text: Markdown allowed. Formatting help +
+  - button [37] "Post"
+  - list:
+    - link [38] "Nested":
+      - /url: /f/DIY/76189/share-diy-a-12-8v-120ah-lifepo4-battery-for-my-travel
+    - link [39] "Linear":
+      - /url: /f/DIY/76189/share-diy-a-12-8v-120ah-lifepo4-battery-for-my-travel/linear
+  - article:
+    - checkbox [40] "Hide −" [checked]
+    - "heading \"cdude [t1_j6chkez] wrote 3 years ago\" [level=1]":
+      - link [41] "cdude":
+        - /url: /user/cdude
+        - strong: cdude
+      - text: [t1_j6chkez] wrote
+      - time: 3 years ago
+    - list:
+      - Hide −
+    - paragraph: Sure it's a good build, but is this really a DIY? The images are screenshots from a video that showcases their lithium battery products and business. OP's name is obviously their business, which you can look up with a quick search.
+    - navigation:
+      - list:
+        - link [42] "Reply":
+          - /url: /f/DIY/76189/-/comment/1576484
+          - strong: Reply
+        - link [43] "Permalink":
+          - /url: /f/DIY/76189/-/comment/1576484
+    - button [44] "Upvote"
+    - text: 95
+    - button [45] "Downvote"
+    - article:
+      - checkbox [46] "Hide −" [checked]
+      - "heading \"HoboMucus [t1_j6ciqfg] wrote 3 years ago\" [level=1]":
+        - link [47] "HoboMucus":
+          - /url: /user/HoboMucus
+          - strong: HoboMucus
+        - text: [t1_j6ciqfg] wrote
+        - time: 3 years ago
+      - list:
+        - Hide −
+      - paragraph: Whoops!
+      - navigation:
+        - list:
+          - link [48] "Reply":
+            - /url: /f/DIY/76189/-/comment/1576639
+            - strong: Reply
+          - link [49] "Permalink":
+            - /url: /f/DIY/76189/-/comment/1576639
+          - link [50] "Parent":
+            - /url: /f/DIY/76189/-/comment/1576484
+      - button [51] "Upvote"
+      - text: 18
+      - button [52] "Downvote"
+    - article:
+      - checkbox [53] "Hide −" [checked]
+      - "heading \"Walkop [t1_j6d42r9] wrote 3 years ago\" [level=1]":
+        - link [54] "Walkop":
+          - /url: /user/Walkop
+          - strong: Walkop
+        - text: [t1_j6d42r9] wrote
+        - time: 3 years ago
+      - list:
+        - Hide −
+      - paragraph: Meh, I don't really care. Anyone could still DIY this and it's a great guide, with easily available parts. Guy is obviously knowledgeable and didn't try to sell his product. Why are you trying to ruin a good thing?
+      - navigation:
+        - list:
+          - link [55] "Reply":
+            - /url: /f/DIY/76189/-/comment/1580364
+            - strong: Reply
+          - link [56] "Permalink":
+            - /url: /f/DIY/76189/-/comment/1580364
+          - link [57] "Parent":
+            - /url: /f/DIY/76189/-/comment/1576484
+      - button [58] "Upvote"
+      - text: 9
+      - button [59] "Downvote"
+      - article:
+        - checkbox [60] "Hide −" [checked]
+        - "heading \"lunas2525 [t1_j6f98a7] wrote 3 years ago\" [level=1]":
+          - link [61] "lunas2525":
+            - /url: /user/lunas2525
+            - strong: lunas2525
+          - text: [t1_j6f98a7] wrote
+          - time: 3 years ago
+        - list:
+          - Hide −
+        - paragraph: Because he missed steps didnt provide links to exact parts.
+        - paragraph: Unless those cells are designed to not need compression apparently they are rare and have aluminim housings. I doubt that flimsy plastic box provides 300kg per ft of compression to prevent the cells from premature delamination...
+        - navigation:
+          - list:
+            - link [62] "Reply":
+              - /url: /f/DIY/76189/-/comment/1593312
+              - strong: Reply
+            - link [63] "Permalink":
+              - /url: /f/DIY/76189/-/comment/1593312
+            - link [64] "Parent":
+              - /url: /f/DIY/76189/-/comment/1580364
+        - button [65] "Upvote"
+        - text: 6
+        - button [66] "Downvote"
+  - article:
+    - checkbox [67] "Hide −" [checked]
+    - "heading \"roshanpr [t1_j6ck0r1] wrote 3 years ago\" [level=1]":
+      - link [68] "roshanpr":
+        - /url: /user/roshanpr
+        - strong: roshanpr
+      - text: [t1_j6ck0r1] wrote
+      - time: 3 years ago
+    - list:
+      - Hide −
+    - paragraph: Self promotion
+    - navigation:
+      - list:
+        - link [69] "Reply":
+          - /url: /f/DIY/76189/-/comment/1576826
+          - strong: Reply
+        - link [70] "Permalink":
+          - /url: /f/DIY/76189/-/comment/1576826
+    - button [71] "Upvote"
+    - text: 38
+    - button [72] "Downvote"
+  - article:
+    - checkbox [73] "Hide −" [checked]
+    - "heading \"Hattix [t1_j6c35r2] wrote 3 years ago\" [level=1]":
+      - link [74] "Hattix":
+        - /url: /user/Hattix
+        - strong: Hattix
+      - text: [t1_j6c35r2] wrote
+      - time: 3 years ago
+    - list:
+      - Hide −
+    - paragraph: While you're technically (the best kind of) right on the terminal connection order, 12V is far too low to be much of an electrocution risk to unbroken skin.
+    - paragraph: Nice neat job, well documented and waaaaay cleaner than the 10S 9P/18P ebike battery I'm making.
+    - navigation:
+      - list:
+        - link [75] "Reply":
+          - /url: /f/DIY/76189/-/comment/1574269
+          - strong: Reply
+        - link [76] "Permalink":
+          - /url: /f/DIY/76189/-/comment/1574269
+    - button [77] "Upvote"
+    - text: 30
+    - button [78] "Downvote"
+    - article:
+      - checkbox [79] "Hide −" [checked]
+      - "heading \"QH-Technology Original poster [t1_j6c5rtg] wrote 3 years ago\" [level=1]":
+        - link [80] "QH-Technology":
+          - /url: /user/QH-Technology
+          - strong: QH-Technology
+        - text: [OP] [t1_j6c5rtg] wrote
+        - time: 3 years ago
+      - list:
+        - Hide −
+      - paragraph: Thanks for your suggestion!
+      - navigation:
+        - list:
+          - link [81] "Reply":
+            - /url: /f/DIY/76189/-/comment/1574717
+            - strong: Reply
+          - link [82] "Permalink":
+            - /url: /f/DIY/76189/-/comment/1574717
+          - link [83] "Parent":
+            - /url: /f/DIY/76189/-/comment/1574269
+      - button [84] "Upvote"
+      - text: −18
+      - button [85] "Downvote"
+    - article:
+      - checkbox [86] "Hide −" [checked]
+      - "heading \"nonemoreunknown [t1_j6c68vi] wrote 3 years ago\" [level=1]":
+        - link [87] "nonemoreunknown":
+          - /url: /user/nonemoreunknown
+          - strong: nonemoreunknown
+        - text: [t1_j6c68vi] wrote
+        - time: 3 years ago
+      - list:
+        - Hide −
+      - paragraph: Voltage is less important than amperage. 20mA can paralyze your lungs and cause defib. 2A will stop your heart. These are 100Ah cells, they are capable of putting off lethal current.
+      - paragraph: "Edit: Rather than respond to so many people individually, I'll do so with an edit."
+      - paragraph: First, thanks for many well thought out responses. My response was intentionally kept short because I didn't want to go as in depth as some of you did, I was just laying down for bed when I saw the comment and felt it was important enough to make a response.
+      - paragraph:
+        - text: "Next, a lot of different scenarios were used in the responses: AC/DC, the assumption of dry sky, and the assumption that everything was done right during assembly. I didn't make assumptions, only pointed out that 12V"
+        - emphasis: can be
+        - text: lethal. Likely? No. Possible? Yes. So safety first, and I applaud the OP for pointed that out.
+      - paragraph: "Lastly, to those responses that were personal attacks: You don't know me and you don't know what I've been through. I have worked in electrical fields all my life from an Avionics Electrician, oil equipment calibration, to semiconductors. Yes, I know Ohms Law. Yes, I know what Amp Hours are. Again, I kept my response brief because I think it's safer to remind people that low voltage can still be dangerous in the wrong situations."
+      - paragraph: And I feel it's better to make a blanket statement like "voltage is less important than amperage" rather that "12V is safe".
+      - paragraph: So, I'm sorry for not being more detailed in my response. But ya'll are quite hurtful, so I guess I'll go back to lurking.
+      - navigation:
+        - list:
+          - link [88] "Reply":
+            - /url: /f/DIY/76189/-/comment/1574800
+            - strong: Reply
+          - link [89] "Permalink":
+            - /url: /f/DIY/76189/-/comment/1574800
+          - link [90] "Parent":
+            - /url: /f/DIY/76189/-/comment/1574269
+      - button [91] "Upvote"
+      - text: −73
+      - button [92] "Downvote"
+      - article:
+        - checkbox [93] "Hide −" [checked]
+        - "heading \"Hattix [t1_j6c8til] wrote 3 years ago\" [level=1]":
+          - link [94] "Hattix":
+            - /url: /user/Hattix
+            - strong: Hattix
+          - text: [t1_j6c8til] wrote
+          - time: 3 years ago
+        - list:
+          - Hide −
+        - paragraph: You don't seem to understand what current (or atrial fibrillation, but that's another topic) or current capacity is.
+        - paragraph: Current is pushed through a resistance by a voltage, at the most basic level. The resistance of unbroken dry human skin is 100 kohms. This does vary, but 100 k is a decent ballpark when working out safety. I've just measured the resistance across my body with two probes to get 1.2 mega-ohms, but we'll use 100 k.
+        - paragraph: "Using the very simple equation I = V/R we get:"
+        - paragraph: I = 12/100000 = 0.00012 A = 0.12 mA. = 120 uA
+        - paragraph:
+          - text: So no, they are not capable of lethal current (and "it's the current not the volts" is only true for AC or where the voltage changes rapidly, it gets far more complicated than that, to the point where you can put five amps through someone without harm). Your "capable of lethal current" is
+          - emphasis: four orders of magnitude
+          - text: out. That's somewhat like saying a pencil is the same size as the moon.
+        - paragraph:
+          - text: A "100Ah" rating tells you the duration for which a current can be maintained, it is a measure of capacity, not capability. In our case, it could maintain that 120 microamps across your arms for a few years. You'd probably get very bored. A capacity rating doesn't tell you
+          - emphasis: anything
+          - text: about how much current you can pull at any one time.
+        - navigation:
+          - list:
+            - link [95] "Reply":
+              - /url: /f/DIY/76189/-/comment/1575233
+              - strong: Reply
+            - link [96] "Permalink":
+              - /url: /f/DIY/76189/-/comment/1575233
+            - link [97] "Parent":
+              - /url: /f/DIY/76189/-/comment/1574800
+        - button [98] "Upvote"
+        - text: 41
+        - button [99] "Downvote"
+      - article:
+        - checkbox [100] "Hide −" [checked]
+        - "heading \"btribble [t1_j6cbfzh] wrote 3 years ago\" [level=1]":
+          - link [101] "btribble":
+            - /url: /user/btribble
+            - strong: btribble
+          - text: [t1_j6cbfzh] wrote
+          - time: 3 years ago
+        - list:
+          - Hide −
+        - paragraph: No
+        - navigation:
+          - list:
+            - link [102] "Reply":
+              - /url: /f/DIY/76189/-/comment/1575628
+              - strong: Reply
+            - link [103] "Permalink":
+              - /url: /f/DIY/76189/-/comment/1575628
+            - link [104] "Parent":
+              - /url: /f/DIY/76189/-/comment/1574800
+        - button [105] "Upvote"
+        - text: 25
+        - button [106] "Downvote"
+      - article:
+        - checkbox [107] "Hide −" [checked]
+        - "heading \"penguiin_ [t1_j6cn3sy] wrote 3 years ago\" [level=1]":
+          - link [108] "penguiin_":
+            - /url: /user/penguiin_
+            - strong: penguiin_
+          - text: [t1_j6cn3sy] wrote
+          - time: 3 years ago
+        - list:
+          - Hide −
+        - paragraph: stop perpetuating this dumb phrase without understanding it
+        - paragraph: you would have to have 2 metal stakes piercing your chest with battery leads hooked up to them to deliver the current where it would stop your heart. ugh
+        - navigation:
+          - list:
+            - link [109] "Reply":
+              - /url: /f/DIY/76189/-/comment/1577316
+              - strong: Reply
+            - link [110] "Permalink":
+              - /url: /f/DIY/76189/-/comment/1577316
+            - link [111] "Parent":
+              - /url: /f/DIY/76189/-/comment/1574800
+        - button [112] "Upvote"
+        - text: 15
+        - button [113] "Downvote"
+      - article:
+        - checkbox [114] "Hide −" [checked]
+        - "heading \"trundlinggrundle [t1_j6d258u] wrote 3 years ago\" [level=1]":
+          - link [115] "trundlinggrundle":
+            - /url: /user/trundlinggrundle
+            - strong: trundlinggrundle
+          - text: [t1_j6d258u] wrote
+          - time: 3 years ago
+        - list:
+          - Hide −
+        - paragraph: Roughly 50v is required to overcome the resistance of dry skin. Unless you're putting 12v electrical contacts directly across your heart, inside your chest, you'll be fine. Think of current as a volume of water, and voltage as a pump that pushes it though pipes.
+        - navigation:
+          - list:
+            - link [116] "Reply":
+              - /url: /f/DIY/76189/-/comment/1580000
+              - strong: Reply
+            - link [117] "Permalink":
+              - /url: /f/DIY/76189/-/comment/1580000
+            - link [118] "Parent":
+              - /url: /f/DIY/76189/-/comment/1574800
+        - button [119] "Upvote"
+        - text: 9
+        - button [120] "Downvote"
+        - article:
+          - checkbox [121] "Hide −" [checked]
+          - "heading \"Hinote21 [t1_j6d3yjm] wrote 3 years ago\" [level=1]":
+            - link [122] "Hinote21":
+              - /url: /user/Hinote21
+              - strong: Hinote21
+            - text: [t1_j6d3yjm] wrote
+            - time: 3 years ago
+          - list:
+            - Hide −
+          - paragraph: Not that I ever thought about this before but this must be why it's totally safe to stick a 9V battery on your tongue. Not that I ever did that... Multiple times... In middle school...
+          - navigation:
+            - list:
+              - link [123] "Reply":
+                - /url: /f/DIY/76189/-/comment/1580336
+                - strong: Reply
+              - link [124] "Permalink":
+                - /url: /f/DIY/76189/-/comment/1580336
+              - link [125] "Parent":
+                - /url: /f/DIY/76189/-/comment/1580000
+          - button [126] "Upvote"
+          - text: 5
+          - button [127] "Downvote"
+        - article:
+          - checkbox [128] "Hide −" [checked]
+          - "heading \"SatanLifeProTips [t1_j6dn4eb] wrote 3 years ago\" [level=1]":
+            - link [129] "SatanLifeProTips":
+              - /url: /user/SatanLifeProTips
+              - strong: SatanLifeProTips
+            - text: [t1_j6dn4eb] wrote
+            - time: 3 years ago
+          - list:
+            - Hide −
+          - paragraph: This. Unless you are making out with your battery, 12v is incredibly safe unless you arc come metal across the contacts. Doing a more powerful PV system right these days means stepping up to 48V and even that is pretty safe to handle with bare dry (not wet) hands. Maybe thin skinned baby hands will feel it? Caloused man hands don’t give 2 shits.
+          - paragraph: My solar PV array is 48v. A lot of the electric forklifts I work on are 48. It’s fine. Electrical Code changes at 60V and then you need to take it more seriously.
+          - paragraph: And if you don’t feel like fucking around spot welding a battery pack you can buy off the shelf LFP batteries that are a drop in replacement for lead acid including the BMS baked right into a plastic shell. They even look like a lead battery but are 1/3 the weight. Motorcycle versions even have a low battery protection system and will shut off at 20% life left when the bike is parked. Press a button on the battery and it wakes right up again.
+          - navigation:
+            - list:
+              - link [130] "Reply":
+                - /url: /f/DIY/76189/-/comment/1583677
+                - strong: Reply
+              - link [131] "Permalink":
+                - /url: /f/DIY/76189/-/comment/1583677
+              - link [132] "Parent":
+                - /url: /f/DIY/76189/-/comment/1580000
+          - button [133] "Upvote"
+          - text: 3
+          - button [134] "Downvote"
+      - article:
+        - checkbox [135] "Hide −" [checked]
+        - "heading \"wut3va [t1_j6cqfbi] wrote 3 years ago\" [level=1]":
+          - link [136] "wut3va":
+            - /url: /user/wut3va
+            - strong: wut3va
+          - text: [t1_j6cqfbi] wrote
+          - time: 3 years ago
+        - list:
+          - Hide −
+        - paragraph: Ohms law says they can't. Your skin is about 100,000 ohms. 12.8 / 100,000 = 0.000128 or 0.128 mA.
+        - navigation:
+          - list:
+            - link [137] "Reply":
+              - /url: /f/DIY/76189/-/comment/1577845
+              - strong: Reply
+            - link [138] "Permalink":
+              - /url: /f/DIY/76189/-/comment/1577845
+            - link [139] "Parent":
+              - /url: /f/DIY/76189/-/comment/1574800
+        - button [140] "Upvote"
+        - text: 6
+        - button [141] "Downvote"
+      - article:
+        - checkbox [142] "Hide −" [checked]
+        - "heading \"fkenthrowaway [t1_j6cv2zq] wrote 3 years ago\" [level=1]":
+          - link [143] "fkenthrowaway":
+            - /url: /user/fkenthrowaway
+            - strong: fkenthrowaway
+          - text: [t1_j6cv2zq] wrote
+          - time: 3 years ago
+        - list:
+          - Hide −
+        - paragraph: imagine being so confident about something you know nothing about. Incredible
+        - navigation:
+          - list:
+            - link [144] "Reply":
+              - /url: /f/DIY/76189/-/comment/1578638
+              - strong: Reply
+            - link [145] "Permalink":
+              - /url: /f/DIY/76189/-/comment/1578638
+            - link [146] "Parent":
+              - /url: /f/DIY/76189/-/comment/1574800
+        - button [147] "Upvote"
+        - text: 4
+        - button [148] "Downvote"
+        - article:
+          - checkbox [149] "Hide −" [checked]
+          - "heading \"nonemoreunknown [t1_j6d8m7j] wrote 3 years ago\" [level=1]":
+            - link [150] "nonemoreunknown":
+              - /url: /user/nonemoreunknown
+              - strong: nonemoreunknown
+            - text: [t1_j6d8m7j] wrote
+            - time: 3 years ago
+          - list:
+            - Hide −
+          - paragraph: Imagine using this stock response to a stranger on the internet you know nothing about. Hurtful.
+          - navigation:
+            - list:
+              - link [151] "Reply":
+                - /url: /f/DIY/76189/-/comment/1581199
+                - strong: Reply
+              - link [152] "Permalink":
+                - /url: /f/DIY/76189/-/comment/1581199
+              - link [153] "Parent":
+                - /url: /f/DIY/76189/-/comment/1578638
+          - button [154] "Upvote"
+          - text: −2
+          - button [155] "Downvote"
+          - article:
+            - checkbox [156] "Hide −" [checked]
+            - "heading \"steveatari [t1_j6jw09e] wrote 3 years ago\" [level=1]":
+              - link [157] "steveatari":
+                - /url: /user/steveatari
+                - strong: steveatari
+              - text: [t1_j6jw09e] wrote
+              - time: 3 years ago
+            - list:
+              - Hide −
+            - paragraph: Thanks for replying. No need to take it to personal. Thanks for striking up the further conversation and once again reminding most laymen that they're are technically other things to consider beyond voltage
+            - navigation:
+              - list:
+                - link [158] "Reply":
+                  - /url: /f/DIY/76189/-/comment/1628558
+                  - strong: Reply
+                - link [159] "Permalink":
+                  - /url: /f/DIY/76189/-/comment/1628558
+                - link [160] "Parent":
+                  - /url: /f/DIY/76189/-/comment/1581199
+            - button [161] "Upvote"
+            - text: 1
+            - button [162] "Downvote"
+  - article:
+    - checkbox [163] "Hide −" [checked]
+    - "heading \"lunas2525 [t1_j6f8fts] wrote 3 years ago\" [level=1]":
+      - link [164] "lunas2525":
+        - /url: /user/lunas2525
+        - strong: lunas2525
+      - text: [t1_j6f8fts] wrote
+      - time: 3 years ago
+    - list:
+      - Hide −
+    - paragraph: I have 1 modification for you get a frame so you can put the cells in compression. They need 300kg of pressure from the ouside to stabilize and prevent swelling and premature delamination i dont think your build achieved that.
+    - paragraph:
+      - link [165] "https://batteryfinds.com/should-i-make-lifepo4-battery-compression/#:~:text=LiFePO4%20battery%20compression%20refers%20to,delaminating%20and%20causing%20irreversible%20damage":
+        - /url: "https://batteryfinds.com/should-i-make-lifepo4-battery-compression/#:~:text=LiFePO4%20battery%20compression%20refers%20to,delaminating%20and%20causing%20irreversible%20damage"
+      - text: .
+    - navigation:
+      - list:
+        - link [166] "Reply":
+          - /url: /f/DIY/76189/-/comment/1593181
+          - strong: Reply
+        - link [167] "Permalink":
+          - /url: /f/DIY/76189/-/comment/1593181
+    - button [168] "Upvote"
+    - text: 3
+    - button [169] "Downvote"
+  - article:
+    - checkbox [170] "Hide −" [checked]
+    - "heading \"[deleted] [t1_j6cmdm7] wrote 3 years ago\" [level=1]":
+      - link [171] "[deleted]":
+        - /url: /user/%5Bdeleted%5D
+        - strong: [deleted]
+      - text: [t1_j6cmdm7] wrote
+      - time: 3 years ago
+    - list:
+      - Hide −
+    - paragraph: [removed]
+    - navigation:
+      - list:
+        - link [172] "Reply":
+          - /url: /f/DIY/76189/-/comment/1577168
+          - strong: Reply
+        - link [173] "Permalink":
+          - /url: /f/DIY/76189/-/comment/1577168
+    - button [174] "Upvote"
+    - text: 1
+    - button [175] "Downvote"
+  - article:
+    - checkbox [176] "Hide −" [checked]
+    - "heading \"shaqule_brk [t1_j6fc24n] wrote 3 years ago\" [level=1]":
+      - link [177] "shaqule_brk":
+        - /url: /user/shaqule_brk
+        - strong: shaqule_brk
+      - text: [t1_j6fc24n] wrote
+      - time: 3 years ago
+    - list:
+      - Hide −
+    - paragraph: Well, better get a good fire extinguisher because this is a pretty dangerous. Would not recommend to anyone.
+    - navigation:
+      - list:
+        - link [178] "Reply":
+          - /url: /f/DIY/76189/-/comment/1593796
+          - strong: Reply
+        - link [179] "Permalink":
+          - /url: /f/DIY/76189/-/comment/1593796
+    - button [180] "Upvote"
+    - text: 1
+    - button [181] "Downvote"
+- complementary:
+  - paragraph:
+    - strong: 1 point
+    - text: (+1, −0)
+  - "heading \"Short URL:\" [level=4]"
+  - paragraph: "http://143.215.184.110:9999/76189"
+  - "heading \"DIY\" [level=1]":
+    - link [182] "DIY":
+      - /url: /f/DIY
+  - button [183] "Subscribe No subscribers": Subscribe 0
+  - paragraph: t5_2qh7d
+  - separator
+  - list:
+    - text: Created
+    - time: 4 years ago
+    - link [184] "Subscribe via RSS":
+      - /url: /f/DIY/new.atom
+      - img
+      - text: Subscribe via RSS
+  - group [185]: Hide this forum
+  - heading "Toolbox" [level=1]
+  - list:
+    - link [186] "Bans":
+      - /url: /f/DIY/bans
+    - link [187] "Moderation log":
+      - /url: /f/DIY/moderation_log
+- contentinfo:
+  - paragraph:
+    - text: Running
+    - link [188] "Postmill":
+      - /url: "https://postmill.xyz/"

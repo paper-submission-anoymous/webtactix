@@ -1,0 +1,2 @@
+{"type": "exec_begin", "src": "v1", "action_sig": "click(link consoles, consoles)", "plan_name": "web_operation", "goal": "Open a trending post in the consoles forum and subscribe to it", "time_utc": "2026-04-16T22:54:12.093083+00:00", "t": 40.65146479010582, "round": 1}
+{"type": "exec_ok", "src": "v1", "dst": "v2", "action_sig": "click(link consoles, consoles)", "url_after": "http://143.215.184.110:9999/f/consoles", "time_utc": "2026-04-16T22:54:24.565341+00:00", "t": 53.12372972816229, "round": 1}

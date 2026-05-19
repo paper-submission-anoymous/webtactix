@@ -1,0 +1,545 @@
+- navigation:
+  - link [0] "Jump to main content":
+    - /url: "#main"
+  - link [1] "Jump to sidebar":
+    - /url: "#sidebar"
+- navigation:
+  - link [2] "Home":
+    - /url: /
+    - text: Postmill
+  - list:
+    - link [3] "Forums":
+      - /url: /forums
+    - link [4] "Wiki":
+      - /url: /wiki
+  - searchbox [5] "Search query"
+  - list:
+    - link [6] "Notifications (0)":
+      - /url: /notifications
+      - img
+    - link [7] "Submit":
+      - /url: /submit/explainlikeimfive
+      - img
+      - text: Submit
+    - button [8] "MarvelsGrantMan136":
+      - img
+      - strong: MarvelsGrantMan136
+- main:
+  - "heading \"/f/explainlikeimfive\" [level=1]":
+    - text: /f/
+    - strong: explainlikeimfive
+  - navigation:
+    - list:
+      - link [9] "Submissions":
+        - /url: /f/explainlikeimfive
+      - link [10] "Comments":
+        - /url: /f/explainlikeimfive/comments
+    - list:
+      - button [11] "Sort by: New":
+        - img
+        - text: New
+  - article:
+    - "heading \"Eli5 why does pressing my palms against my eyes create a kaleidoscope effect?\" [level=1]":
+      - link [12] "Eli5 why does pressing my palms against my eyes create a kaleidoscope effect?":
+        - /url: /f/explainlikeimfive/125342/eli5-why-does-pressing-my-palms-against-my-eyes-create-a
+    - paragraph:
+      - text: Submitted by
+      - link [13] "TheSilkySpoon76":
+        - /url: /user/TheSilkySpoon76
+        - strong: TheSilkySpoon76
+      - text: [t3_1280hwq]
+      - time: 3 years ago
+    - navigation:
+      - list:
+        - link [14] "No comments":
+          - /url: /f/explainlikeimfive/125342/eli5-why-does-pressing-my-palms-against-my-eyes-create-a
+          - strong: No comments
+    - button [15] "Retract upvote"
+    - text: 1
+    - button [16] "Downvote"
+  - article:
+    - "heading \"ELI5 why aren't tranquilizer guns used on humans during stand-offs\" [level=1]":
+      - link [17] "ELI5 why aren't tranquilizer guns used on humans during stand-offs":
+        - /url: /f/explainlikeimfive/125341/eli5-why-aren-t-tranquilizer-guns-used-on-humans-during
+    - paragraph:
+      - text: Submitted by
+      - link [18] "Cold_Chemical5151":
+        - /url: /user/Cold_Chemical5151
+        - strong: Cold_Chemical5151
+      - text: [t3_127gsd6]
+      - time: 3 years ago
+    - navigation:
+      - list:
+        - link [19] "No comments":
+          - /url: /f/explainlikeimfive/125341/eli5-why-aren-t-tranquilizer-guns-used-on-humans-during
+          - strong: No comments
+    - button [20] "Upvote"
+    - text: 2
+    - button [21] "Downvote"
+  - article:
+    - "heading \"ELI5: Why does drinking beer give (mostly men) a unique overweight belly? I understand the massive calorie intake, but it seems beer creates a different kind of overweight stomach than say fast food.\" [level=1]":
+      - link [22] "ELI5: Why does drinking beer give (mostly men) a unique overweight belly? I understand the massive calorie intake, but it seems beer creates a different kind of overweight stomach than say fast food.":
+        - /url: /f/explainlikeimfive/125340/eli5-why-does-drinking-beer-give-mostly-men-a-unique
+    - paragraph:
+      - text: Submitted by
+      - link [23] "CuriousHuman111":
+        - /url: /user/CuriousHuman111
+        - strong: CuriousHuman111
+      - text: [t3_127b6hm]
+      - time: 3 years ago
+    - navigation:
+      - list:
+        - link [24] "No comments":
+          - /url: /f/explainlikeimfive/125340/eli5-why-does-drinking-beer-give-mostly-men-a-unique
+          - strong: No comments
+    - button [25] "Upvote"
+    - text: 3
+    - button [26] "Downvote"
+  - article:
+    - "heading \"ELI5: How do they kill animals for us to eat? Looking for kid-friendly version for a 6yo.\" [level=1]":
+      - link [27] "ELI5: How do they kill animals for us to eat? Looking for kid-friendly version for a 6yo.":
+        - /url: /f/explainlikeimfive/125339/eli5-how-do-they-kill-animals-for-us-to-eat-looking-for-kid
+    - paragraph:
+      - text: Submitted by
+      - link [28] "jeanduponttt":
+        - /url: /user/jeanduponttt
+        - strong: jeanduponttt
+      - text: [t3_1275157]
+      - time: 3 years ago
+    - navigation:
+      - list:
+        - link [29] "No comments":
+          - /url: /f/explainlikeimfive/125339/eli5-how-do-they-kill-animals-for-us-to-eat-looking-for-kid
+          - strong: No comments
+    - button [30] "Upvote"
+    - text: 0
+    - button [31] "Downvote"
+  - article:
+    - "heading \"ELI5 Why do overly sweet foods make your teeth “hurt”\" [level=1]":
+      - link [32] "ELI5 Why do overly sweet foods make your teeth “hurt”":
+        - /url: /f/explainlikeimfive/125338/eli5-why-do-overly-sweet-foods-make-your-teeth-hurt
+    - paragraph:
+      - text: Submitted by
+      - link [33] "long-time__lurker":
+        - /url: /user/long-time__lurker
+        - strong: long-time__lurker
+      - text: [t3_12717h6]
+      - time: 3 years ago
+    - navigation:
+      - list:
+        - link [34] "No comments":
+          - /url: /f/explainlikeimfive/125338/eli5-why-do-overly-sweet-foods-make-your-teeth-hurt
+          - strong: No comments
+    - button [35] "Upvote"
+    - text: 0
+    - button [36] "Downvote"
+  - article:
+    - "heading \"ELI5 why do boats still use knots?\" [level=1]":
+      - link [37] "ELI5 why do boats still use knots?":
+        - /url: /f/explainlikeimfive/125337/eli5-why-do-boats-still-use-knots
+    - paragraph:
+      - text: Submitted by
+      - link [38] "Imaginary_Fennel6772":
+        - /url: /user/Imaginary_Fennel6772
+        - strong: Imaginary_Fennel6772
+      - text: [t3_126pewg]
+      - time: 3 years ago
+    - navigation:
+      - list:
+        - link [39] "No comments":
+          - /url: /f/explainlikeimfive/125337/eli5-why-do-boats-still-use-knots
+          - strong: No comments
+    - button [40] "Upvote"
+    - text: 1
+    - button [41] "Downvote"
+  - article:
+    - "heading \"Eli5 What are the Freemasons?\" [level=1]":
+      - link [42] "Eli5 What are the Freemasons?":
+        - /url: /f/explainlikeimfive/125336/eli5-what-are-the-freemasons
+    - paragraph:
+      - text: Submitted by
+      - link [43] "shutshutdope":
+        - /url: /user/shutshutdope
+        - strong: shutshutdope
+      - text: [t3_126llbq]
+      - time: 3 years ago
+    - navigation:
+      - list:
+        - link [44] "No comments":
+          - /url: /f/explainlikeimfive/125336/eli5-what-are-the-freemasons
+          - strong: No comments
+    - button [45] "Upvote"
+    - text: 1
+    - button [46] "Downvote"
+  - article:
+    - "heading \"Eli5: Why shouldn’t you always wear the highest SPF sunblock available?\" [level=1]":
+      - link [47] "Eli5: Why shouldn’t you always wear the highest SPF sunblock available?":
+        - /url: /f/explainlikeimfive/125335/eli5-why-shouldn-t-you-always-wear-the-highest-spf-sunblock
+    - paragraph:
+      - text: Submitted by
+      - link [48] "DahjNotSoji":
+        - /url: /user/DahjNotSoji
+        - strong: DahjNotSoji
+      - text: [t3_126bmf4]
+      - time: 3 years ago
+    - navigation:
+      - list:
+        - link [49] "No comments":
+          - /url: /f/explainlikeimfive/125335/eli5-why-shouldn-t-you-always-wear-the-highest-spf-sunblock
+          - strong: No comments
+    - button [50] "Upvote"
+    - text: 5
+    - button [51] "Downvote"
+  - article:
+    - "heading \"eli5 : how big ship anchors don't get stuck in the sea bed rocks ?\" [level=1]":
+      - link [52] "eli5 : how big ship anchors don't get stuck in the sea bed rocks ?":
+        - /url: /f/explainlikeimfive/125334/eli5-how-big-ship-anchors-don-t-get-stuck-in-the-sea-bed
+    - paragraph:
+      - text: Submitted by
+      - link [53] "imnotgruut":
+        - /url: /user/imnotgruut
+        - strong: imnotgruut
+      - text: [t3_12656wf]
+      - time: 3 years ago
+    - navigation:
+      - list:
+        - link [54] "No comments":
+          - /url: /f/explainlikeimfive/125334/eli5-how-big-ship-anchors-don-t-get-stuck-in-the-sea-bed
+          - strong: No comments
+    - button [55] "Upvote"
+    - text: 3
+    - button [56] "Downvote"
+  - article:
+    - "heading \"Eli5: How do the tiny wheels of airplanes carry it?\" [level=1]":
+      - link [57] "Eli5: How do the tiny wheels of airplanes carry it?":
+        - /url: /f/explainlikeimfive/125333/eli5-how-do-the-tiny-wheels-of-airplanes-carry-it
+    - paragraph:
+      - text: Submitted by
+      - link [58] "Mo_JoEz":
+        - /url: /user/Mo_JoEz
+        - strong: Mo_JoEz
+      - text: [t3_125n495]
+      - time: 3 years ago
+    - navigation:
+      - list:
+        - link [59] "No comments":
+          - /url: /f/explainlikeimfive/125333/eli5-how-do-the-tiny-wheels-of-airplanes-carry-it
+          - strong: No comments
+    - button [60] "Upvote"
+    - text: 2
+    - button [61] "Downvote"
+  - article:
+    - "heading \"ELI5: why does your body get achy when you are sick?\" [level=1]":
+      - link [62] "ELI5: why does your body get achy when you are sick?":
+        - /url: /f/explainlikeimfive/125332/eli5-why-does-your-body-get-achy-when-you-are-sick
+    - paragraph:
+      - text: Submitted by
+      - link [63] "ngilman22":
+        - /url: /user/ngilman22
+        - strong: ngilman22
+      - text: [t3_125mtt3]
+      - time: 3 years ago
+    - navigation:
+      - list:
+        - link [64] "No comments":
+          - /url: /f/explainlikeimfive/125332/eli5-why-does-your-body-get-achy-when-you-are-sick
+          - strong: No comments
+    - button [65] "Upvote"
+    - text: 2
+    - button [66] "Downvote"
+  - article:
+    - "heading \"ELI5: Where did southern accents in the US come from?\" [level=1]":
+      - link [67] "ELI5: Where did southern accents in the US come from?":
+        - /url: /f/explainlikeimfive/125331/eli5-where-did-southern-accents-in-the-us-come-from
+    - paragraph:
+      - text: Submitted by
+      - link [68] "rockemulator2":
+        - /url: /user/rockemulator2
+        - strong: rockemulator2
+      - text: [t3_125a9ca]
+      - time: 3 years ago
+    - navigation:
+      - list:
+        - link [69] "No comments":
+          - /url: /f/explainlikeimfive/125331/eli5-where-did-southern-accents-in-the-us-come-from
+          - strong: No comments
+    - button [70] "Upvote"
+    - text: 3
+    - button [71] "Downvote"
+  - article:
+    - "heading \"ELI5: What are \\"deductibles\\" in the context of medical insurance? If you're paying insurance, why do you still get charged an often large part of your medical expenses when you have an accident?\" [level=1]":
+      - "link [72] \"ELI5: What are \\"deductibles\\" in the context of medical insurance? If you're paying insurance, why do you still get charged an often large part of your medical expenses when you have an accident?\"":
+        - /url: /f/explainlikeimfive/125330/eli5-what-are-deductibles-in-the-context-of-medical
+    - paragraph:
+      - text: Submitted by
+      - link [73] "alvar368":
+        - /url: /user/alvar368
+        - strong: alvar368
+      - text: [t3_124soei]
+      - time: 3 years ago
+    - navigation:
+      - list:
+        - link [74] "No comments":
+          - /url: /f/explainlikeimfive/125330/eli5-what-are-deductibles-in-the-context-of-medical
+          - strong: No comments
+    - button [75] "Upvote"
+    - text: 2
+    - button [76] "Downvote"
+  - article:
+    - "heading \"ELI5: how do architects calculate if a structure like a bridge is stable?\" [level=1]":
+      - link [77] "ELI5: how do architects calculate if a structure like a bridge is stable?":
+        - /url: /f/explainlikeimfive/125329/eli5-how-do-architects-calculate-if-a-structure-like-a
+    - paragraph:
+      - text: Submitted by
+      - link [78] "sonyeahh":
+        - /url: /user/sonyeahh
+        - strong: sonyeahh
+      - text: [t3_124lxre]
+      - time: 3 years ago
+    - navigation:
+      - list:
+        - link [79] "No comments":
+          - /url: /f/explainlikeimfive/125329/eli5-how-do-architects-calculate-if-a-structure-like-a
+          - strong: No comments
+    - button [80] "Upvote"
+    - text: 4
+    - button [81] "Downvote"
+  - article:
+    - "heading \"ELI5: How do DOT snow plow drivers get to work, considering the conditions are terrible?\" [level=1]":
+      - link [82] "ELI5: How do DOT snow plow drivers get to work, considering the conditions are terrible?":
+        - /url: /f/explainlikeimfive/125328/eli5-how-do-dot-snow-plow-drivers-get-to-work-considering
+    - paragraph:
+      - text: Submitted by
+      - link [83] "Teik_":
+        - /url: /user/Teik_
+        - strong: Teik_
+      - text: [t3_124gxpn]
+      - time: 3 years ago
+    - navigation:
+      - list:
+        - link [84] "No comments":
+          - /url: /f/explainlikeimfive/125328/eli5-how-do-dot-snow-plow-drivers-get-to-work-considering
+          - strong: No comments
+    - button [85] "Upvote"
+    - text: 5
+    - button [86] "Downvote"
+  - article:
+    - "heading \"ELI5: How are tea and coffee “decaffeinated”? What is the process? (Please explain like I’m actually five)\" [level=1]":
+      - link [87] "ELI5: How are tea and coffee “decaffeinated”? What is the process? (Please explain like I’m actually five)":
+        - /url: /f/explainlikeimfive/125327/eli5-how-are-tea-and-coffee-decaffeinated-what-is-the
+    - paragraph:
+      - text: Submitted by
+      - link [88] "bookish-hooker":
+        - /url: /user/bookish-hooker
+        - strong: bookish-hooker
+      - text: [t3_12430d6]
+      - time: 3 years ago
+    - navigation:
+      - list:
+        - link [89] "No comments":
+          - /url: /f/explainlikeimfive/125327/eli5-how-are-tea-and-coffee-decaffeinated-what-is-the
+          - strong: No comments
+    - button [90] "Upvote"
+    - text: 3
+    - button [91] "Downvote"
+  - article:
+    - "heading \"Eli5: Why do we get a heart sinking feeling when we hear bad news?\" [level=1]":
+      - link [92] "Eli5: Why do we get a heart sinking feeling when we hear bad news?":
+        - /url: /f/explainlikeimfive/125326/eli5-why-do-we-get-a-heart-sinking-feeling-when-we-hear-bad
+    - paragraph:
+      - text: Submitted by
+      - link [93] "Ivesy_":
+        - /url: /user/Ivesy_
+        - strong: Ivesy_
+      - text: [t3_123q9pm]
+      - time: 3 years ago
+    - navigation:
+      - list:
+        - link [94] "No comments":
+          - /url: /f/explainlikeimfive/125326/eli5-why-do-we-get-a-heart-sinking-feeling-when-we-hear-bad
+          - strong: No comments
+    - button [95] "Upvote"
+    - text: 0
+    - button [96] "Downvote"
+  - article:
+    - "heading \"ELI5 How does anesthesia work?\" [level=1]":
+      - link [97] "ELI5 How does anesthesia work?":
+        - /url: /f/explainlikeimfive/125325/eli5-how-does-anesthesia-work
+    - paragraph:
+      - text: Submitted by
+      - link [98] "fbdhdhsh":
+        - /url: /user/fbdhdhsh
+        - strong: fbdhdhsh
+      - text: [t3_123cyt8]
+      - time: 3 years ago
+    - navigation:
+      - list:
+        - link [99] "No comments":
+          - /url: /f/explainlikeimfive/125325/eli5-how-does-anesthesia-work
+          - strong: No comments
+    - button [100] "Upvote"
+    - text: 1
+    - button [101] "Downvote"
+  - article:
+    - "heading \"ELI5: Why is 1920x1080 and 1280x720 used to define high definition instead of say 2000x1000 or 1300x700? Why are certain pixel counts used instead of round, whole numbers?\" [level=1]":
+      - link [102] "ELI5: Why is 1920x1080 and 1280x720 used to define high definition instead of say 2000x1000 or 1300x700? Why are certain pixel counts used instead of round, whole numbers?":
+        - /url: /f/explainlikeimfive/125324/eli5-why-is-1920x1080-and-1280x720-used-to-define-high
+    - paragraph:
+      - text: Submitted by
+      - link [103] "[deleted]":
+        - /url: /user/%5Bdeleted%5D
+        - strong: [deleted]
+      - text: [t3_123clwa]
+      - time: 3 years ago
+    - navigation:
+      - list:
+        - link [104] "No comments":
+          - /url: /f/explainlikeimfive/125324/eli5-why-is-1920x1080-and-1280x720-used-to-define-high
+          - strong: No comments
+    - button [105] "Upvote"
+    - text: 4
+    - button [106] "Downvote"
+  - article:
+    - "heading \"ELI5: where is the ringing noise coming from with tinnitus?? can’t google because it thinks im asking how people get tinnitus…\" [level=1]":
+      - link [107] "ELI5: where is the ringing noise coming from with tinnitus?? can’t google because it thinks im asking how people get tinnitus…":
+        - /url: /f/explainlikeimfive/125323/eli5-where-is-the-ringing-noise-coming-from-with-tinnitus
+    - paragraph:
+      - text: Submitted by
+      - link [108] "FreakingYikesMyGuy":
+        - /url: /user/FreakingYikesMyGuy
+        - strong: FreakingYikesMyGuy
+      - text: [t3_122s1c0]
+      - time: 3 years ago
+    - navigation:
+      - list:
+        - link [109] "No comments":
+          - /url: /f/explainlikeimfive/125323/eli5-where-is-the-ringing-noise-coming-from-with-tinnitus
+          - strong: No comments
+    - button [110] "Upvote"
+    - text: 3
+    - button [111] "Downvote"
+  - article:
+    - "heading \"ELI5 How did planes know exactly where to go before GPS was invented?\" [level=1]":
+      - link [112] "ELI5 How did planes know exactly where to go before GPS was invented?":
+        - /url: /f/explainlikeimfive/125322/eli5-how-did-planes-know-exactly-where-to-go-before-gps-was
+    - paragraph:
+      - text: Submitted by
+      - link [113] "Gailosaurus-Rex":
+        - /url: /user/Gailosaurus-Rex
+        - strong: Gailosaurus-Rex
+      - text: [t3_122pndc]
+      - time: 3 years ago
+    - navigation:
+      - list:
+        - link [114] "No comments":
+          - /url: /f/explainlikeimfive/125322/eli5-how-did-planes-know-exactly-where-to-go-before-gps-was
+          - strong: No comments
+    - button [115] "Upvote"
+    - text: 1
+    - button [116] "Downvote"
+  - article:
+    - "heading \"ELI5: Why are houses made of wood rather than concrete in the tornado zones in the USA?\" [level=1]":
+      - link [117] "ELI5: Why are houses made of wood rather than concrete in the tornado zones in the USA?":
+        - /url: /f/explainlikeimfive/125321/eli5-why-are-houses-made-of-wood-rather-than-concrete-in-the
+    - paragraph:
+      - text: Submitted by
+      - link [118] "Better-Hold":
+        - /url: /user/Better-Hold
+        - strong: Better-Hold
+      - text: [t3_1228zt1]
+      - time: 3 years ago
+    - navigation:
+      - list:
+        - link [119] "No comments":
+          - /url: /f/explainlikeimfive/125321/eli5-why-are-houses-made-of-wood-rather-than-concrete-in-the
+          - strong: No comments
+    - button [120] "Upvote"
+    - text: 2
+    - button [121] "Downvote"
+  - article:
+    - "heading \"ELI5: What is a bad faith arguement, exactly?\" [level=1]":
+      - link [122] "ELI5: What is a bad faith arguement, exactly?":
+        - /url: /f/explainlikeimfive/125320/eli5-what-is-a-bad-faith-arguement-exactly
+    - paragraph:
+      - text: Submitted by
+      - link [123] "SuperN9999":
+        - /url: /user/SuperN9999
+        - strong: SuperN9999
+      - text: [t3_1225920]
+      - time: 3 years ago
+    - navigation:
+      - list:
+        - link [124] "No comments":
+          - /url: /f/explainlikeimfive/125320/eli5-what-is-a-bad-faith-arguement-exactly
+          - strong: No comments
+    - button [125] "Upvote"
+    - text: 5
+    - button [126] "Downvote"
+  - article:
+    - "heading \"ELI5 why wet wipes can be labeled flushable, when none of them are\" [level=1]":
+      - link [127] "ELI5 why wet wipes can be labeled flushable, when none of them are":
+        - /url: /f/explainlikeimfive/125319/eli5-why-wet-wipes-can-be-labeled-flushable-when-none-of
+    - paragraph:
+      - text: Submitted by
+      - link [128] "rottedflowers":
+        - /url: /user/rottedflowers
+        - strong: rottedflowers
+      - text: [t3_121kepb]
+      - time: 3 years ago
+    - navigation:
+      - list:
+        - link [129] "No comments":
+          - /url: /f/explainlikeimfive/125319/eli5-why-wet-wipes-can-be-labeled-flushable-when-none-of
+          - strong: No comments
+    - button [130] "Upvote"
+    - text: 4
+    - button [131] "Downvote"
+  - article:
+    - "heading \"ELI5 What is Critical Thinking\" [level=1]":
+      - link [132] "ELI5 What is Critical Thinking":
+        - /url: /f/explainlikeimfive/125318/eli5-what-is-critical-thinking
+    - paragraph:
+      - text: Submitted by
+      - link [133] "FlipTastic_DisneyFan":
+        - /url: /user/FlipTastic_DisneyFan
+        - strong: FlipTastic_DisneyFan
+      - text: [t3_1218fyd]
+      - time: 3 years ago
+    - navigation:
+      - list:
+        - link [134] "No comments":
+          - /url: /f/explainlikeimfive/125318/eli5-what-is-critical-thinking
+          - strong: No comments
+    - button [135] "Upvote"
+    - text: 3
+    - button [136] "Downvote"
+  - navigation:
+    - list:
+      - link [137] "More":
+        - /url: "http://143.215.184.110:9999/f/explainlikeimfive/new?next%5Bid%5D=125317"
+- complementary:
+  - "heading \"explainlikeimfive\" [level=1]":
+    - link [138] "explainlikeimfive":
+      - /url: /f/explainlikeimfive
+  - button [139] "Subscribe No subscribers": Subscribe 0
+  - paragraph: t5_2sokd
+  - separator
+  - list:
+    - text: Created
+    - time: 3 years ago
+    - link [140] "Subscribe via RSS":
+      - /url: /f/explainlikeimfive/new.atom
+      - img
+      - text: Subscribe via RSS
+  - group [141]: Hide this forum
+  - heading "Toolbox" [level=1]
+  - list:
+    - link [142] "Bans":
+      - /url: /f/explainlikeimfive/bans
+    - link [143] "Moderation log":
+      - /url: /f/explainlikeimfive/moderation_log
+- contentinfo:
+  - paragraph:
+    - text: Running
+    - link [144] "Postmill":
+      - /url: "https://postmill.xyz/"

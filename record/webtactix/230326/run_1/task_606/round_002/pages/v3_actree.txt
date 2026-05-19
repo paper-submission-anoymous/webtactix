@@ -1,0 +1,68 @@
+- navigation:
+  - link [0] "Jump to main content":
+    - /url: "#main"
+  - link [1] "Jump to sidebar":
+    - /url: "#sidebar"
+- navigation:
+  - link [2] "Home":
+    - /url: /
+    - text: Postmill
+  - list:
+    - link [3] "Forums":
+      - /url: /forums
+    - link [4] "Wiki":
+      - /url: /wiki
+  - searchbox [5] "Search query"
+  - list:
+    - link [6] "Notifications (0)":
+      - /url: /notifications
+      - img
+    - link [7] "Submit":
+      - /url: /submit/nyc
+      - img
+      - text: Submit
+    - button [8] "MarvelsGrantMan136":
+      - img
+      - strong: MarvelsGrantMan136
+- main:
+  - heading "Create submission" [level=1]
+  - radio [9] "URL" [checked]
+  - text: URL
+  - radio [10] "Image"
+  - text: Image
+  - textbox [11] "URL"
+  - text: Title *
+  - textbox [12] "Title This field is required."
+  - text: Body
+  - textbox [13] "Body"
+  - checkbox [14] "Formatting help +"
+  - text: Markdown allowed. Formatting help + Forum *
+  - combobox [15] "nyc":
+    - textbox [16] "nyc"
+  - button [17] "Create submission"
+- complementary:
+  - "heading \"nyc\" [level=1]":
+    - link [18] "nyc":
+      - /url: /f/nyc
+  - button [19] "Subscribe No subscribers": Subscribe 0
+  - paragraph: t5_2qhu2
+  - separator
+  - list:
+    - text: Created
+    - time: 3 years ago
+    - link [20] "Subscribe via RSS":
+      - /url: /f/nyc/new.atom
+      - img
+      - text: Subscribe via RSS
+  - group [21]: Hide this forum
+  - heading "Toolbox" [level=1]
+  - list:
+    - link [22] "Bans":
+      - /url: /f/nyc/bans
+    - link [23] "Moderation log":
+      - /url: /f/nyc/moderation_log
+- contentinfo:
+  - paragraph:
+    - text: Running
+    - link [24] "Postmill":
+      - /url: "https://postmill.xyz/"

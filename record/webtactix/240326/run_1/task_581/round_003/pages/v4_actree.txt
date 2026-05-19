@@ -1,0 +1,158 @@
+- navigation:
+  - link [0] "Jump to main content":
+    - /url: "#main"
+  - link [1] "Jump to sidebar":
+    - /url: "#sidebar"
+- navigation:
+  - link [2] "Home":
+    - /url: /
+    - text: Postmill
+  - list:
+    - link [3] "Forums":
+      - /url: /forums
+    - link [4] "Wiki":
+      - /url: /wiki
+  - searchbox [5] "Search query"
+  - list:
+    - link [6] "Notifications (0)":
+      - /url: /notifications
+      - img
+    - link [7] "Submit":
+      - /url: /submit
+      - img
+      - text: Submit
+    - button [8] "MarvelsGrantMan136":
+      - img
+      - strong: MarvelsGrantMan136
+- main:
+  - heading "Create submission" [level=1]
+  - radio [9] "URL" [checked]
+  - text: URL
+  - radio [10] "Image"
+  - text: Image
+  - textbox [11] "URL"
+  - text: Title *
+  - textbox [12] "Title This field is required."
+  - text: Body
+  - textbox [13] "Body"
+  - checkbox [14] "Formatting help +"
+  - text: Markdown allowed. Formatting help + Forum *
+  - combobox [15] "Choose one…" [expanded]:
+    - textbox [16] "Choose one…"
+    - listbox [17] [expanded]:
+      - option [18] "Choose one…" [selected]
+      - option [19] "books":
+        - text: books
+        - img
+      - option [20] "cmu_lti":
+        - text: cmu_lti
+        - img
+      - option [21] "consoles":
+        - text: consoles
+        - img
+      - option [22] "Cyberpunk":
+        - text: Cyberpunk
+        - img
+      - option [23] "PlantsForCatParents":
+        - text: PlantsForCatParents
+        - img
+      - option [24] "allentown"
+      - option [25] "arlingtonva"
+      - option [26] "Art"
+      - option [27] "AskReddit"
+      - option [28] "askscience"
+      - option [29] "aww"
+      - option [30] "baltimore"
+      - option [31] "boston"
+      - option [32] "BridgeportCT"
+      - option [33] "BuyItForLife"
+      - option [34] "CambridgeMA"
+      - option [35] "ColumbiaMD"
+      - option [36] "Connecticut"
+      - option [37] "coolgithubprojects"
+      - option [38] "creepy"
+      - option [39] "dataisbeautiful"
+      - option [40] "deeplearning"
+      - option [41] "DIY"
+      - option [42] "Documentaries"
+      - option [43] "EarthPorn"
+      - option [44] "explainlikeimfive"
+      - option [45] "food"
+      - option [46] "funny"
+      - option [47] "Futurology"
+      - option [48] "gadgets"
+      - option [49] "gaming"
+      - option [50] "GetMotivated"
+      - option [51] "gifs"
+      - option [52] "Hartford"
+      - option [53] "headphones"
+      - option [54] "history"
+      - option [55] "IAmA"
+      - option [56] "InternetIsBeautiful"
+      - option [57] "iphone"
+      - option [58] "jerseycity"
+      - option [59] "Jokes"
+      - option [60] "lakewood"
+      - option [61] "LifeProTips"
+      - option [62] "listentothis"
+      - option [63] "LowellMA"
+      - option [64] "MachineLearning"
+      - option [65] "Maine"
+      - option [66] "ManchesterNH"
+      - option [67] "massachusetts"
+      - option [68] "MechanicalKeyboards"
+      - option [69] "memes"
+      - option [70] "mildlyinteresting"
+      - option [71] "monitor"
+      - option [72] "movies"
+      - option [73] "Music"
+      - option [74] "Newark"
+      - option [75] "newhampshire"
+      - option [76] "newhaven"
+      - option [77] "newjersey"
+      - option [78] "news"
+      - option [79] "nosleep"
+      - option [80] "nottheonion"
+      - option [81] "nyc"
+      - option [82] "OldSchoolCool"
+      - option [83] "Paterson"
+      - option [84] "Pennsylvania"
+      - option [85] "personalfinance"
+      - option [86] "philadelphia"
+      - option [87] "philosophy"
+      - option [88] "photoshopbattles"
+      - option [89] "pics"
+      - option [90] "pittsburgh"
+      - option [91] "providence"
+      - option [92] "relationship_advice"
+      - option [93] "RhodeIsland"
+      - option [94] "rva"
+      - option [95] "science"
+      - option [96] "Showerthoughts"
+      - option [97] "singularity"
+      - option [98] "space"
+      - option [99] "sports"
+      - option [100] "springfieldMO"
+      - option [101] "StamfordCT"
+      - option [102] "technology"
+      - option [103] "television"
+      - option [104] "tifu"
+      - option [105] "todayilearned"
+      - option [106] "UpliftingNews"
+      - option [107] "vermont"
+      - option [108] "videos"
+      - option [109] "wallstreetbets"
+      - option [110] "Washington"
+      - option [111] "washingtondc"
+      - option [112] "WaterburyCT"
+      - option [113] "WorcesterMA"
+      - option [114] "worldnews"
+      - option [115] "WritingPrompts"
+      - option [116] "yonkers"
+  - button [117] "Create submission"
+- contentinfo:
+  - paragraph:
+    - text: Running
+    - link [118] "Postmill":
+      - /url: "https://postmill.xyz/"
+- searchbox [119]

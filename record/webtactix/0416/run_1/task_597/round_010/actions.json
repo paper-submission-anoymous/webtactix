@@ -1,0 +1,2 @@
+{"type": "exec_begin", "src": "v2", "action_sig": "goto http://143.215.184.110:9999/f/consoles", "plan_name": "web_operation", "goal": "Open the thread of the trending post \"Mario anyone....\" and subscribe to it.", "time_utc": "2026-04-16T23:16:34.740738+00:00", "t": 275.505203878507, "round": 10}
+{"type": "exec_ok", "src": "v2", "dst": "v7", "action_sig": "goto http://143.215.184.110:9999/f/consoles", "url_after": "http://143.215.184.110:9999/f/consoles", "time_utc": "2026-04-16T23:16:35.620210+00:00", "t": 276.38467022404075, "round": 10}

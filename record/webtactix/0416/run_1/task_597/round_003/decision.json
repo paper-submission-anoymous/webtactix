@@ -1,0 +1,18 @@
+{
+  "t_end": 94.48740423098207,
+  "t_start": 94.48738680779934,
+  "duration": 1.7423182725906372e-05,
+  "usage": {
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "estimated": false,
+    "model": "Pass"
+  },
+  "result": {
+    "kind": "select_and_execute",
+    "selected": "v3",
+    "reason": "This is the only option.",
+    "extra_info": ""
+  }
+}
