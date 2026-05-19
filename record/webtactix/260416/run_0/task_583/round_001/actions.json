@@ -1,2 +1,0 @@
-{"type": "exec_begin", "src": "v1", "action_sig": "click(link Submit)", "plan_name": "web_operation", "goal": "Navigate to the forum creation page by clicking the Submit link.", "time_utc": "2026-04-16T22:41:45.936337+00:00", "t": 19.223858484998345, "round": 1}
-{"type": "exec_ok", "src": "v1", "dst": "v2", "action_sig": "click(link Submit)", "url_after": "http://143.215.184.110:9999/submit", "time_utc": "2026-04-16T22:41:57.995952+00:00", "t": 31.283484887331724, "round": 1}

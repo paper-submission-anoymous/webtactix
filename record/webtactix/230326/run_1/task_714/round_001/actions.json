@@ -1,2 +1,0 @@
-{"type": "exec_begin", "src": "v1", "action_sig": "goto http://143.215.184.110:9999/f/gadgets -> click(button Sort by: Hot, Top)", "plan_name": "web_operation", "goal": "Thumbs down the top 1 post ever in gadgets", "time_utc": "2026-03-24T01:25:09.611806+00:00", "t": 79.79975409805775, "round": 1}
-{"type": "exec_ok", "src": "v1", "dst": "v2", "action_sig": "goto http://143.215.184.110:9999/f/gadgets -> click(button Sort by: Hot, Top)", "url_after": "http://143.215.184.110:9999/f/gadgets", "time_utc": "2026-03-24T01:25:22.931209+00:00", "t": 93.11914575658739, "round": 1}

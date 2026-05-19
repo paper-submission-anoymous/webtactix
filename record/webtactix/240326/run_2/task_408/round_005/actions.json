@@ -1,2 +1,0 @@
-{"type": "exec_begin", "src": "v5", "action_sig": "click(button Sort by: Hot)", "plan_name": "web_operation", "goal": "Change sort to New and upvote the newest post", "time_utc": "2026-03-24T18:47:41.929121+00:00", "t": 122.7362183444202, "round": 5}
-{"type": "exec_ok", "src": "v5", "dst": "v6", "action_sig": "click(button Sort by: Hot)", "url_after": "http://143.215.184.110:9999/f/explainlikeimfive", "time_utc": "2026-03-24T18:47:53.722510+00:00", "t": 134.52961254492402, "round": 5}

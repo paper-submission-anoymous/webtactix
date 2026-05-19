@@ -1,2 +1,0 @@
-{"type": "exec_begin", "src": "v2", "action_sig": "goto http://143.215.184.110:9999", "plan_name": "web_operation", "goal": "Post a review of \"To Kill a Mockingbird by Harper Lee\" in r/books with comment \"good book!\"", "time_utc": "2026-04-16T23:39:43.351681+00:00", "t": 58.59862191602588, "round": 3}
-{"type": "exec_ok", "src": "v2", "dst": "v3", "action_sig": "goto http://143.215.184.110:9999", "url_after": "http://143.215.184.110:9999/", "time_utc": "2026-04-16T23:39:45.512092+00:00", "t": 60.75903484970331, "round": 3}

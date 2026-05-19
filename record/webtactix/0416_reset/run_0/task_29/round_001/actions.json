@@ -1,2 +1,0 @@
-{"type": "exec_begin", "src": "v1", "action_sig": "goto http://143.215.184.110:9999/f/Diy", "plan_name": "web_operation", "goal": "Navigate to the DIY forum page to prepare for extracting the latest post and author information.", "time_utc": "2026-04-16T23:34:41.148796+00:00", "t": 54.07174989953637, "round": 1}
-{"type": "exec_ok", "src": "v1", "dst": "v2", "action_sig": "goto http://143.215.184.110:9999/f/Diy", "url_after": "http://143.215.184.110:9999/f/DIY", "time_utc": "2026-04-16T23:34:43.273453+00:00", "t": 56.1963916644454, "round": 1}

@@ -1,2 +1,0 @@
-{"type": "exec_begin", "src": "v5", "action_sig": "click(searchbox Search query)", "plan_name": "web_operation", "goal": "Search for posts in the explain like im 5 subreddit, sort by new, and upvote the newest post.", "time_utc": "2026-03-24T01:05:47.955010+00:00", "t": 168.1020700186491, "round": 5}
-{"type": "exec_ok", "src": "v5", "dst": "v6", "action_sig": "click(searchbox Search query)", "url_after": "http://143.215.184.110:9999/", "time_utc": "2026-03-24T01:05:59.793198+00:00", "t": 179.94026145525277, "round": 5}

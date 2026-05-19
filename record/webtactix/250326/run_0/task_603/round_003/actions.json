@@ -1,2 +1,0 @@
-{"type": "exec_begin", "src": "v2", "action_sig": "click(combobox Choose one…)", "plan_name": "web_operation", "goal": "Post the question \"Safe and budget apartment to live in NYC\" in r/AskNYC", "time_utc": "2026-03-25T20:55:35.723392+00:00", "t": 177.01984835788608, "round": 3}
-{"type": "exec_ok", "src": "v2", "dst": "v3", "action_sig": "click(combobox Choose one…)", "url_after": "http://143.215.184.110:9999/submit", "time_utc": "2026-03-25T20:55:46.998158+00:00", "t": 188.294620083645, "round": 3}

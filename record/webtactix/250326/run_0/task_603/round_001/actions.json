@@ -1,2 +1,0 @@
-{"type": "exec_begin", "src": "v1", "action_sig": "click(link Submit)", "plan_name": "web_operation", "goal": "Navigate to the submit page, choose subreddit, enter title and body, and submit the post.", "time_utc": "2026-03-25T20:54:34.905465+00:00", "t": 116.20193070918322, "round": 1}
-{"type": "exec_ok", "src": "v1", "dst": "v2", "action_sig": "click(link Submit)", "url_after": "http://143.215.184.110:9999/submit", "time_utc": "2026-03-25T20:54:47.099915+00:00", "t": 128.39637969993055, "round": 1}

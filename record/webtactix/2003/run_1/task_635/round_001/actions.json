@@ -1,2 +1,0 @@
-{"type": "exec_begin", "src": "v1", "action_sig": "click(link Submit)", "plan_name": "web_operation", "goal": "Navigate to the submit page, select subreddit r/headphones, and create a post asking for noise-cancelling headphone recommendations within $200.", "time_utc": "2026-03-20T18:58:44.356247+00:00", "t": 31.15292233787477, "round": 1}
-{"type": "exec_ok", "src": "v1", "dst": "v2", "action_sig": "click(link Submit)", "url_after": "http://143.215.184.110:9999/submit", "time_utc": "2026-03-20T18:58:56.359269+00:00", "t": 43.15594025142491, "round": 1}

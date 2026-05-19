@@ -1,2 +1,0 @@
-{"type": "exec_begin", "src": "v11", "action_sig": "click(link Go to home page)", "plan_name": "web_operation", "goal": "Navigate to the home page to enable posting in r/sports", "time_utc": "2026-03-20T18:34:27.624766+00:00", "t": 189.68290421180427, "round": 11}
-{"type": "exec_ok", "src": "v11", "dst": "v12", "action_sig": "click(link Go to home page)", "url_after": "http://127.0.0.1:9999/", "time_utc": "2026-03-20T18:34:39.383242+00:00", "t": 201.44138385169208, "round": 11}

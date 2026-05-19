@@ -1,2 +1,0 @@
-{"type": "exec_begin", "src": "v2", "action_sig": "click(link 184 comments)", "plan_name": "web_operation", "goal": "Open a trending thread in the \"books\" forum and subscribe to it.", "time_utc": "2026-03-24T20:40:06.247114+00:00", "t": 50.75782056897879, "round": 2}
-{"type": "exec_ok", "src": "v2", "dst": "v3", "action_sig": "click(link 184 comments)", "url_after": "http://143.215.184.110:9999/f/books/81371/the-letters-of-t-s-eliot-to-emily-hale-that-were-kept-sealed", "time_utc": "2026-03-24T20:40:21.025785+00:00", "t": 65.5364990402013, "round": 2}

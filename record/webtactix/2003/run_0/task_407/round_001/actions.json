@@ -1,2 +1,0 @@
-{"type": "exec_begin", "src": "v1", "action_sig": "goto http://127.0.0.1:9999/r/deeplearning -> click(button Upvote, Upvote)", "plan_name": "web_operation", "goal": "Upvote the newest post in deeplearning subreddit", "time_utc": "2026-03-20T18:12:47.245883+00:00", "t": 17.51074154675007, "round": 1}
-{"type": "exec_ok", "src": "v1", "dst": "v2", "action_sig": "goto http://127.0.0.1:9999/r/deeplearning -> click(button Upvote, Upvote)", "url_after": "http://127.0.0.1:9999/r/deeplearning", "time_utc": "2026-03-20T18:12:54.777252+00:00", "t": 25.042108688503504, "round": 1}

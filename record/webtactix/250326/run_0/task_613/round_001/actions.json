@@ -1,2 +1,0 @@
-{"type": "exec_begin", "src": "v1", "action_sig": "goto http://143.215.184.110:9999", "plan_name": "web_operation", "goal": "Create a new Reddit post in r/books titled \"Love story\" with comment \"I cried\".", "time_utc": "2026-03-25T20:59:41.047846+00:00", "t": 37.393430054187775, "round": 1}
-{"type": "exec_ok", "src": "v1", "dst": "v2", "action_sig": "goto http://143.215.184.110:9999", "url_after": "http://143.215.184.110:9999/", "time_utc": "2026-03-25T20:59:43.233566+00:00", "t": 39.579146802425385, "round": 1}

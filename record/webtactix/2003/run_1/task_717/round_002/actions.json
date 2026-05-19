@@ -1,2 +1,0 @@
-{"type": "exec_begin", "src": "v2", "action_sig": "goto http://143.215.184.110:9999/", "plan_name": "web_operation", "goal": "Thumb down the top 4 posts ever in movies subreddit", "time_utc": "2026-03-20T18:56:36.792794+00:00", "t": 38.6221382394433, "round": 2}
-{"type": "exec_ok", "src": "v2", "dst": "v3", "action_sig": "goto http://143.215.184.110:9999/", "url_after": "http://143.215.184.110:9999/", "time_utc": "2026-03-20T18:56:37.582001+00:00", "t": 39.41134871728718, "round": 2}

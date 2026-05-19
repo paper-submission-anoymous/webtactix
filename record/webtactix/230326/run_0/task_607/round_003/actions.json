@@ -1,2 +1,0 @@
-{"type": "exec_begin", "src": "v3", "action_sig": "input(searchbox Search query, Pittsburgh) -> press_enter( )", "plan_name": "web_operation", "goal": "Search for Pittsburgh subreddit and navigate to it", "time_utc": "2026-03-24T02:18:38.531298+00:00", "t": 149.18080230802298, "round": 3}
-{"type": "exec_ok", "src": "v3", "dst": "v5", "action_sig": "input(searchbox Search query, Pittsburgh) -> press_enter( )", "url_after": "http://143.215.184.110:9999/", "time_utc": "2026-03-24T02:18:42.260992+00:00", "t": 152.91050261445343, "round": 3}

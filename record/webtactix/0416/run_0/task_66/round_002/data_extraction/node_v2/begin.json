@@ -1,8 +1,0 @@
-{
-  "node_id": "v2",
-  "goal": "Provide the URL of the post that recommends a single book among the top 10 posts in the books forum.",
-  "url": "http://143.215.184.110:9999/f/books",
-  "time_utc": "2026-04-16T22:52:43.140005+00:00",
-  "t_start": 107.86590408161283,
-  "round": 2
-}

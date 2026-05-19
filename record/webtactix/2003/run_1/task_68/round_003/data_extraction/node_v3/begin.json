@@ -1,8 +1,0 @@
-{
-  "node_id": "v3",
-  "goal": "Extract author name and book name from the post \"Apple Books has a free audiobook of A Christmas Carol narrated by LeVar Burton!\"",
-  "url": "http://143.215.184.110:9999/f/books?sort=top",
-  "time_utc": "2026-03-20T18:43:30.234062+00:00",
-  "t_start": 90.13835210725665,
-  "round": 3
-}

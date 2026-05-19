@@ -1,2 +1,0 @@
-{"type": "exec_begin", "src": "v2", "action_sig": "input(searchbox Search query, Lord of the Rings) -> press_enter( )", "plan_name": "web_operation", "goal": "Search for the post titled \"Lord of the Rings\"", "time_utc": "2026-04-16T22:57:10.443775+00:00", "t": 81.91214374639094, "round": 2}
-{"type": "exec_ok", "src": "v2", "dst": "v3", "action_sig": "input(searchbox Search query, Lord of the Rings) -> press_enter( )", "url_after": "http://143.215.184.110:9999/", "time_utc": "2026-04-16T22:57:14.553600+00:00", "t": 86.02195612713695, "round": 2}

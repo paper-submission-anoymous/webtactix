@@ -1,2 +1,0 @@
-{"type": "exec_begin", "src": "v8", "action_sig": "click(button Create submission)", "plan_name": "web_operation", "goal": "Submit the post to r/books with title \"Love story\" and body \"I cried\".", "time_utc": "2026-03-25T21:06:11.280586+00:00", "t": 427.62616078928113, "round": 10}
-{"type": "exec_ok", "src": "v8", "dst": "v9", "action_sig": "click(button Create submission)", "url_after": "http://143.215.184.110:9999/f/books/36/love-story", "time_utc": "2026-03-25T21:06:23.160994+00:00", "t": 439.5065750274807, "round": 10}

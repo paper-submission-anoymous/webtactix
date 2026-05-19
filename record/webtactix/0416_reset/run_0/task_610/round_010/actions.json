@@ -1,2 +1,0 @@
-{"type": "exec_begin", "src": "v8", "action_sig": "click(combobox Choose one…)", "plan_name": "web_operation", "goal": "Submit a review post to r/books with title \"Review: To Kill a Mockingbird by Harper Lee\" and body \"good book!\"", "time_utc": "2026-04-16T23:41:45.483571+00:00", "t": 180.7305218409747, "round": 10}
-{"type": "exec_ok", "src": "v8", "dst": "v9", "action_sig": "click(combobox Choose one…)", "url_after": "http://143.215.184.110:9999/submit", "time_utc": "2026-04-16T23:41:56.869190+00:00", "t": 192.11612118594348, "round": 10}

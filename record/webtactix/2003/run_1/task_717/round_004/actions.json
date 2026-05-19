@@ -1,2 +1,0 @@
-{"type": "exec_begin", "src": "v4", "action_sig": "click(button Downvote)", "plan_name": "web_operation", "goal": "Downvote the top 4 posts in the movies subreddit.", "time_utc": "2026-03-20T18:57:07.518549+00:00", "t": 69.34789360314608, "round": 4}
-{"type": "exec_ok", "src": "v4", "dst": "v5", "action_sig": "click(button Downvote)", "url_after": "http://143.215.184.110:9999/f/movies?sort=top&t=all", "time_utc": "2026-03-20T18:57:19.535633+00:00", "t": 81.36498077586293, "round": 4}

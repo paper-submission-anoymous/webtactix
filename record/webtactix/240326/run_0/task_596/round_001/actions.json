@@ -1,2 +1,0 @@
-{"type": "exec_begin", "src": "v1", "action_sig": "goto http://143.215.184.110:9999", "plan_name": "web_operation", "goal": "Open the trending post thread in the books forum and subscribe to it.", "time_utc": "2026-03-24T20:14:46.144317+00:00", "t": 42.52890495210886, "round": 1}
-{"type": "exec_ok", "src": "v1", "dst": "v2", "action_sig": "goto http://143.215.184.110:9999", "url_after": "http://143.215.184.110:9999/", "time_utc": "2026-03-24T20:14:48.429391+00:00", "t": 44.813976760953665, "round": 1}
