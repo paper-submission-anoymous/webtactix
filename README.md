@@ -60,7 +60,8 @@ WebTactix is a modular framework for web-based task execution and evaluation. It
 ## 🔗 Links
 
 - **Introduction**: https://paper-submission-anoymous.github.io/webtactix_introduction/
-- **Results**: https://drive.google.com/file/d/1jPKQrfx8dzNP82kBsaW96l-NujUbPDYI/view?usp=drive_link
+- **Results**: https://drive.google.com/file/d/1jPKQrfx8dzNP82kBsaW96l-NujUbPDYI/view?usp=drive_link](https://drive.google.com/open?id=11Sg4X0NNIe6ZQgTmKbBME3zc8uSTQue5&usp=drive_fs
+The extraction password is 666777.
 
 ## 🛠️ Installation
 
