@@ -69,12 +69,22 @@ To get started with WebTactix, you can either clone the repository or use it in 
 
 ### Prerequisites
 
-1. Python 3.7+ (Recommended)
+1. Python 3.10–3.13 (Python 3.12 recommended)
 2. Install the required dependencies:
 
 ```bash
 pip install -r requirements.txt
 ```
+
+After installing the Python packages, install the browser used by Playwright:
+
+```bash
+playwright install
+```
+
+The legacy WebArena package under `webarena/` has a separate requirements file
+and environment. Install it separately only when running the original WebArena
+runner; it is not part of the WebTactix runtime dependencies.
 
 ## 🚀 Running the Code
 
